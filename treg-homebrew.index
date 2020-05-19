@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
+    <name>Treg's Homebrew</name>
+		<description>A collection of homebrew items for DnD 5e</description>
     <update version="1.0">
-      <file name="treg-homebrew.index" url="https://raw.githubusercontent.com/tregolani/homebrew-spells/master/treg-homebrew.index" />
+      <file name="treg-homebrew.index" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/treg-homebrew.index" />
     </update>
   </info>
   <files>
-    <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/homebrew-spells/master/homebrew-spells.xml" />
+    <file name="homebrew-spells.index" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.index" />
   </files>
 </index>

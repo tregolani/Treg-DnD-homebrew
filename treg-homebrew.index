@@ -2,11 +2,10 @@
 <index>
   <info>
     <update version="1.0">
-      <file name="treg-homebrew.index" url="http://hosting.com/files/sample.index" />
+      <file name="treg-homebrew.index" url="https://raw.githubusercontent.com/tregolani/homebrew-spells/master/treg-homebrew.index" />
     </update>
   </info>
   <files>
-    <file name="source.xml" url="http://hosting.com/files/source.xml" />
-    <file name="items.xml" url="http://hosting.com/files/items.xml" />
+    <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/homebrew-spells/master/homebrew-spells.xml" />
   </files>
 </index>

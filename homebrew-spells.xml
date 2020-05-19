@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Spells</name>
+    <description>Custom Almir Spells</description>
+    <author>Homebrew</author>
+    <update version="0.1">
+      <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/spells.xml" />
+    </update>
+  </info>
+
+  <element name="Shockbolt" type="Spell" source="Custom Homebrew" id="ID_HOMEBREW_SPELL_SHOCKBOLT">
+    <supports>Sorcerer, Wizard, Artificer</supports>
+    <description>
+      <p>You charge your fist and launch an arcing bolt of lightning at a creature or object within range. Make a ranged spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage.</p>
+      <p class="indent">This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+    </description>
+    <setters>
+      <set name="keywords">lightning</set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+</elements>

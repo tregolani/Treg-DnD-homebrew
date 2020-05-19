@@ -8,6 +8,6 @@
     </update>
   </info>
   <files>
-    <file name="homebrew-spells.index" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.index" />
+    <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
   </files>
 </index>

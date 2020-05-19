@@ -4,8 +4,8 @@
     <name>Spells</name>
     <description>Custom Almir Spells</description>
     <author>Homebrew</author>
-    <update version="0.1">
-      <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/spells.xml" />
+    <update version="0.1.1">
+      <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/homebrew-spells/master/homebrew-spells.xml" />
     </update>
   </info>
 

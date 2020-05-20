@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Spells</name>
+    <description>Custom Almir Items</description>
+    <author>Homebrew</author>
+    <update version="0.1">
+      <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/homebrew-spells/master/homebrew-items.xml" />
+    </update>
+  </info>
+
+  	<element name="Amulet of Alter Self" type="Magic Item" source="Custom Homebrew" id="ID_HOMEBREW_MAGIC_ITEM_AMULET_OF_ALTER_SELF">
+		<description>
+			<p>While wearing this amulet, you can transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You cannot appear as a creature of a different size than you, and your basic shape stays the same; if you’re bipedal, you can’t use this amulet to become quadrupedal, for instance. The transformation ends if the amulet is removed.</p>
+		</description>
+		<setters>
+			<set name="keywords">transmutation</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>

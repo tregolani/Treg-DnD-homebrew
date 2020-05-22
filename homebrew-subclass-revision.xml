@@ -23,7 +23,7 @@
 	</element>
 	
 	    <!-- Sea Sorcery -->
-      <element name="Sea Sorcerer Revised" type="Archetype" source="Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_SEA_SORCERER">
+      <element name="Sea Sorcerer Revised" type="Archetype" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_SEA_SORCERER">
           <supports>Sorcerous Origin</supports>
           <description>
             <p>The power of water is the strength of flexibility, resilience, and a relentless nature. Water parts to allow a ship to sail over it or a diver to plunge into it, but their passing leaves no mark. Water flowing down a mountain reaches the sea. It might bend and turn across valleys and down hillsides, but it slowly and steadily returns to the waves. Those whose souls are touched by the power of elemental water command a similar power.</p>
@@ -60,7 +60,7 @@
         </rules>
       </element>
 
-      <element name="Ocean Magic" type="Archetype Feature" source="Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_OCEAN_MAGIC">
+      <element name="Ocean Magic" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_OCEAN_MAGIC">
 		<description>
 			<p><em>1st-level Sea Sorcerer feature</em></p>
 			<p><u>You learn additional spells when you reach certain levels in this class, as shown on the Sea Sorcerer table. Each spell counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know. These spells can’t be replaced when you gain a level in this class.</u></p>
@@ -104,7 +104,7 @@
 		</spellcasting>
       </element>
 
-      <element name="Curse of the Sea" type="Archetype Feature" source="Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_CURSE_OF_THE_SEA">
+      <element name="Curse of the Sea" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_CURSE_OF_THE_SEA">
         <description>
           <p>When you choose this origin at 1st level, you learn the secret of infusing your spells with a watery curse.</p>
           <p class="indent">When you hit a creature with a <u>Sorcerer spell</u> attack or when a creature fails a saving throw against your <u>spell</u>, you can curse the target until the end of your next turn or until you curse a different creature with this feature.</p>
@@ -128,7 +128,7 @@
 
         </rules>
       </element>
-      <element name="Watery Defense" type="Archetype Feature" source="Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATERY_DEFENSE">
+      <element name="Watery Defense" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATERY_DEFENSE">
         <description>
           <p>At 6th level, you gain resistance to fire damage. You also gain the ability to defend yourself by momentarily assuming a watery form. As a reaction when you are hit by an attack and take bludgeoning, piercing, or slashing damage from the attack, you can reduce that damage by an amount equal to your sorcerer level plus your Charisma score, and then you can move up to 30 feet without provoking opportunity attacks. Once you use this special reaction, you can't use it again until you finish a short or long rest, <u>unless you spend 4 sorcery points (as a bonus action) to replenish it.</u></p>
         </description>
@@ -144,7 +144,7 @@
         </rules>
       </element>
 
-      <element name="Shifting Form" type="Archetype Feature" source="Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SHIFTING_FORM">
+      <element name="Shifting Form" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SHIFTING_FORM">
         <description>
           <p>Starting at 14th level, when you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. <u>If you move through a creature's space, you can use your bonus action to curse the target, as if you had successfully affected it with a spell.</u></p>
 		  <p><u>Additionally, if you curse a creature that is Large or smaller, you can spend 1 sorcery point to attempt to grapple it, adding your spell casting proficiency bonus to the check against the target's Strength (Athletics) or Dexterity (Acrobatics). If you fail the check, you are pushed into a space adjacent to the target and lose any remaining movement.</u></p>
@@ -162,7 +162,7 @@
 		
       </element>
 
-      <element name="Water Soul" type="Archetype Feature" source="Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATER_SOUL">
+      <element name="Water Soul" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATER_SOUL">
         <description>
           <p>Starting at 18th level, you gain the following benefits:</p>
           <ul>

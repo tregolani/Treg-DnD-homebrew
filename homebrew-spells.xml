@@ -4,11 +4,26 @@
     <name>Tregolani Homebrew Spells</name>
     <description>These are some personal homebrew spells. Currently contains: Shockbolt</description>
     <author>Tregolani</author>
-    <update version="0.1.4">
+    <update version="0.1.5">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/homebrew-spells/master/homebrew-spells.xml" />
     </update>
   </info>
-
+  <element name="Tregolani Homebrew Spells" type="Source" source="Tregolani Homebrew Spells" id="ID_TREGOLANI_HB_SPELLS">
+		<description>
+			<p>This is a collection of homebrew spells that were created for DnD 5e.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">THBS20200522REV1</set>
+			<set name="author">Tregolani</set>
+			<set name="url"></set>
+			<set name="official">false</set>
+			<set name="playtest">true</set>
+			<set name="release">20200522</set>
+		</setters>
+	</element>
+  
+  <!--CANTRIPS-->
+  
   <element name="Shockbolt" type="Spell" source="Tregolani Homebrew Spells" id="ID_TREGOLANI_HB_SPELL_SHOCKBOLT">
     <supports>Sorcerer, Wizard, Artificer</supports>
     <description>

@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Unearthed Arcana additional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.1.4.1">
+		<update version="0.1.4.2">
 			<file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised" />
 		</update>
 	</info>
@@ -390,7 +390,7 @@
 			<p class="indent">On each subsequent turn, you can use a bonus action to spend 2 additional sorcery points to keep concentrating on both spells until the beginning of your next turn. During this time, if you fail a concentration saving throw, you lose both spells. If you choose to end either spell willingly at the start of your turn, you decide which spell ends while you keep concentration on the other.</p>
 		</description>
 		<sheet>
-			<description>When you cast a concentration spell while currently concentrating on another spell, you can spend 3 sorcery points to maintain concentration on both spells until the beginning of your next turn. On each subsequent turn, you can use a bonus action to spend 2 additional sorcery points to keep concentrating on both spells until the beginning of your next turn. During this time, if you fail a concentration saving throw, you lose both spells. If you choose to end either spell willingly at the start of your turn, you decide which spell ends while you keep concentration on the other.</p></description>
+			<description>When you cast a concentration spell while currently concentrating on another spell, you can spend 3 sorcery points to maintain concentration on both spells until the beginning of your next turn. On each subsequent turn, you can use a bonus action to spend 2 additional sorcery points to keep concentrating on both spells until the beginning of your next turn. During this time, if you fail a concentration saving throw, you lose both spells. If you choose to end either spell willingly at the start of your turn, you decide which spell ends while you keep concentration on the other.</description>
 		</sheet>
 	</element>
 	<element name="Heightened Spell" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_HEIGHTENED_SPELL">

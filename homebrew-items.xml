@@ -4,11 +4,23 @@
     <name>Spells</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.1.3">
+    <update version="0.1.4">
       <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/homebrew-spells/master/homebrew-items.xml" />
     </update>
   </info>
-
+<element name="Tregolani Homebrew Items" type="Source" source="Tregolani Homebrew Items" id="ID_TREGOLANI_HB_ITEMS">
+		<description>
+			<p>This is a collection of homebrew items that were custom created for DnD 5e.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">THBI20200522REV1</set>
+			<set name="author">Tregolani</set>
+			<set name="url"></set>
+			<set name="official">false</set>
+			<set name="playtest">true</set>
+			<set name="release">20200522</set>
+		</setters>
+	</element>	
   	<element name="Amulet of Alter Self" type="Magic Item" source="Tregolani Homebrew Items" id="ID_HOMEBREW_MAGIC_ITEM_AMULET_OF_ALTER_SELF">
 		<description>
 			<p>While wearing this amulet, you can transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You cannot appear as a creature of a different size than you, and your basic shape stays the same; if you’re bipedal, you can’t use this amulet to become quadrupedal, for instance. The transformation ends if the amulet is removed.</p>

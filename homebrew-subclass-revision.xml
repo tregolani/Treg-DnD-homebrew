@@ -4,7 +4,7 @@
         <name>Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.1">
+        <update version="0.1.1">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
@@ -23,7 +23,7 @@
 	</element>
 	
 	    <!-- Sea Sorcery -->
-      <element name="Sea Sorcerer (Revised)" type="Archetype" source="Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_SEA_SORCERER">
+      <element name="Sea Sorcerer Revised" type="Archetype" source="Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_SEA_SORCERER">
           <supports>Sorcerous Origin</supports>
           <description>
             <p>The power of water is the strength of flexibility, resilience, and a relentless nature. Water parts to allow a ship to sail over it or a diver to plunge into it, but their passing leaves no mark. Water flowing down a mountain reaches the sea. It might bend and turn across valleys and down hillsides, but it slowly and steadily returns to the waves. Those whose souls are touched by the power of elemental water command a similar power.</p>

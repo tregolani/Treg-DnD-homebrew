@@ -4,18 +4,18 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.1.5">
+        <update version="0.1.6">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
 	<element name="Tregolani Homebrew Subclass Revisions" type="Source" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_SUBCLASS_REVISIONS">
 		<description>
-			<p>This a collection of subclass revisions intended to improve playability and enjoyment. Current contains: Sea Sorcerer</p>
+			<p>This is a collection of subclass revisions intended to improve playability and enjoyment. Currently contains: Sea Sorcerer</p>
 		</description>
 		<setters>
 			<set name="abbreviation">UA20170206REV1</set>
 			<set name="author">Tregolani</set>
-			<set name="url">http://dnd.wizards.com/articles/unearthed-arcana/sorcerer</set>
+			<set name="url"></set>
 			<set name="official">false</set>
 			<set name="playtest">true</set>
 			<set name="release">20200521</set>

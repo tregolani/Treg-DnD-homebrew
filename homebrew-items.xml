@@ -4,7 +4,7 @@
     <name>Spells</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.1.2">
+    <update version="0.1.3">
       <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/homebrew-spells/master/homebrew-items.xml" />
     </update>
   </info>

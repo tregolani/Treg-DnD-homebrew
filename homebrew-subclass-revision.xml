@@ -4,7 +4,7 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.1.4">
+        <update version="0.1.5">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
@@ -23,7 +23,7 @@
 	</element>
 	
 	    <!-- Sea Sorcery -->
-      <element name="Sea Sorcerer Revised" type="Archetype" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_SEA_SORCERER">
+      <element name="Sea Sorcerer" type="Archetype" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_SEA_SORCERER">
           <supports>Sorcerous Origin</supports>
           <description>
             <p>The power of water is the strength of flexibility, resilience, and a relentless nature. Water parts to allow a ship to sail over it or a diver to plunge into it, but their passing leaves no mark. Water flowing down a mountain reaches the sea. It might bend and turn across valleys and down hillsides, but it slowly and steadily returns to the waves. Those whose souls are touched by the power of elemental water command a similar power.</p>
@@ -36,7 +36,7 @@
             <div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATER_SOUL" />
           </description>
           <sheet>
-            <description>Your heritage ties to powerful creatures of the sea.</description>
+            <description>Your soul's heritage ties to powerful creatures and deities of the sea.</description>
           </sheet>
           <rules>
             <grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SOUL_OF_THE_SEA" level="1" />
@@ -63,7 +63,7 @@
       <element name="Ocean Magic" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_OCEAN_MAGIC">
 		<description>
 			<p><em>1st-level Sea Sorcerer feature</em></p>
-			<p><u>You learn additional spells when you reach certain levels in this class, as shown on the Sea Sorcerer table. Each spell counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know. These spells can’t be replaced when you gain a level in this class.</u></p>
+			<p>You learn additional spells when you reach certain levels in this class, as shown on the Sea Sorcerer table. Each spell counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know. These spells can’t be replaced when you gain a level in this class.</p>
 			<h5 class="caption">Sea Sorcerer Spells</h5>
             <table>
                 <thead>
@@ -75,7 +75,7 @@
                 <tr><td>7th</td><td><em>control water</em></td></tr>
                 <tr><td>9th</td><td><em>maelstrom</em></td></tr>
 			</table>
-			<p><u>Additionally, your aquatic soul lets you choose from an expanded list of spells when you learn a sorcerer spell. The following spells are added to the sorcerer spell list for you.</u></p>
+			<p>Additionally, your aquatic soul lets you choose from an expanded list of spells when you learn a sorcerer spell. The following spells are added to the sorcerer spell list for you.</p>
       <h5 class="caption">Sea Sorcerer Expanded Spell List</h5>
       <table>
         <thead>
@@ -86,14 +86,10 @@
 		</description>
         <sheet display="false" />
         <rules>
-            <!--<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="1" spellcasting="Sorcerer" />-->
             <grant type="Spell" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" level="1" spellcasting="Sorcerer" />
             <grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="3" spellcasting="Sorcerer" />
-            <!--<grant type="Spell" id="ID_XGTE_SPELL_WARDING_WIND" level="3" spellcasting="Sorcerer" />-->
             <grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="5" spellcasting="Sorcerer" />
-            <!--<grant type="Spell" id="ID_PHB_SPELL_WATER_BREATHING" level="5" spellcasting="Sorcerer" />-->
             <grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="7" spellcasting="Sorcerer" />
-            <!--<grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="9" spellcasting="Sorcerer" />-->
             <grant type="Spell" id="ID_XGTE_SPELL_MAELSTROM" level="9" spellcasting="Sorcerer" />
 		</rules>
 		<spellcasting name="Sorcerer" extend="true">
@@ -107,21 +103,21 @@
       <element name="Curse of the Sea" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_CURSE_OF_THE_SEA">
         <description>
           <p>When you choose this origin at 1st level, you learn the secret of infusing your spells with a watery curse.</p>
-          <p class="indent">When you hit a creature with a <u>Sorcerer spell</u> attack or when a creature fails a saving throw against your <u>spell</u>, you can curse the target until the end of your next turn or until you curse a different creature with this feature.</p>
-          <p class="indent">Once per turn when you hit with a <u>Sorcerer</u> spell, you can trigger the curse if that spell deals cold or lightning damage to the cursed target or forces it to move. Doing so subjects the target to the appropriate additional effect below (you choose the effect to use if more than one effect applies):</p>
+          <p class="indent">When you hit a creature with a Sorcerer spell attack or when a creature fails a saving throw against your spell, you can curse the target until the end of your next turn or until you curse a different creature with this feature.</p>
+          <p class="indent">Once per turn when you hit with a Sorcerer spell, you can trigger the curse if that spell deals cold or lightning damage to the cursed target or forces it to move. Doing so subjects the target to the appropriate additional effect below (you choose the effect to use if more than one effect applies):</p>
           <ul>
             <li><b>Cold Damage: </b>If the affected target takes cold damage from your spell, the target’s speed is also reduced by 15 feet until the end of your next turn. If the spell already reduces the target’s speed, use whichever reduction is greater.</li>
             <li><b>Lightning Damage: </b>If the affected target takes lightning damage from your spell, the target takes additional lightning damage equal to your Charisma modifier.</li>
-            <li><b>Forced Movement: </b>If the target is moved by your spell, increase the distance it is moved by 15 feet. <u>If the target is affected by Tidal Wave or another water- or wind-based spell which doesn't incur forced movement (at the DM's discretion), it is moved 15 feet in the direction of the spell's force.</u></li>
+            <li><b>Forced Movement: </b>If the target is moved by your spell, increase the distance it is moved by 15 feet. If the target is affected by Tidal Wave or another water- or wind-based spell which doesn't incur forced movement (at the DM's discretion), it is moved 15 feet in the direction of the spell's force.</li>
           </ul>
         </description>
         <sheet>
           <description>
-            When you hit a creature with a <u>Sorcerer spell</u> attack or when a creature fails a saving throw against your <u>spell</u>, you can curse the target until the end of your next turn or until you curse a different creature with this feature.
-            Once per turn when you hit with a <u>Sorcerer</u> spell, you can trigger the curse if that spell deals cold or lightning damage to the cursed target or forces it to move. Doing so subjects the target to the appropriate additional effect below (you choose the effect to use if more than one effect applies):
-            <b>Cold Damage:</b> If the affected target takes cold damage from your spell, the target's speed is also reduced by 15 feet until the end of your next turn. If the spell already reduces the target's speed, use whichever reduction is greater.
-            <b>Lightning Damage:</b> If the affected target takes lightning damage from your spell, the target takes an additional {{charisma:modifier}} lightning damage.
-            <b>Forced Movement:</b> If the target is moved by your spell, increase the distance it is moved by 15 feet. <u>If the target is affected by Tidal Wave or another water- or wind-based spell which doesn't incur forced movement (at the DM's discretion), it is moved 15 feet in the direction of the spell's force.</u>
+            When you hit a creature with a Sorcerer spell attack or when a creature fails a saving throw against your spell, you can curse the target until the end of your next turn or until you curse a different creature with this feature.
+            Once per turn when you hit with a Sorcerer spell, you can trigger the curse if that spell deals cold or lightning damage to the cursed target or forces it to move. Doing so subjects the target to the appropriate additional effect below (you choose the effect to use if more than one effect applies):
+            •Cold Damage: If the affected target takes cold damage from your spell, the target's speed is also reduced by 15 feet until the end of your next turn. If the spell already reduces the target's speed, use whichever reduction is greater. 
+            •Lightning Damage: If the affected target takes lightning damage from your spell, the target takes an additional {{charisma:modifier}} lightning damage. 
+            •Forced Movement: If the target is moved by your spell, increase the distance it is moved by 15 feet. If the target is affected by Tidal Wave or another water- or wind-based spell which doesn't incur forced movement (at the DM's discretion), it is moved 15 feet in the direction of the spell's force.
           </description>
         </sheet>
         <rules>
@@ -130,11 +126,11 @@
       </element>
       <element name="Watery Defense" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATERY_DEFENSE">
         <description>
-          <p>At 6th level, you gain resistance to fire damage. You also gain the ability to defend yourself by momentarily assuming a watery form. As a reaction when you are hit by an attack and take bludgeoning, piercing, or slashing damage from the attack, you can reduce that damage by an amount equal to your sorcerer level plus your Charisma score, and then you can move up to 30 feet without provoking opportunity attacks. Once you use this special reaction, you can't use it again until you finish a short or long rest, <u>unless you spend 4 sorcery points (as a bonus action) to replenish it.</u></p>
+          <p>At 6th level, you gain resistance to fire damage. You also gain the ability to defend yourself by momentarily assuming a watery form. As a reaction when you are hit by an attack and take bludgeoning, piercing, or slashing damage from the attack, you can reduce that damage by an amount equal to your sorcerer level plus your Charisma score, and then you can move up to 30 feet without provoking opportunity attacks. Once you use this special reaction, you can't use it again until you finish a short or long rest, unless you spend 4 sorcery points to replenish it.</p>
         </description>
         <sheet>
           <description>
-            You gain resistance to fire damage. As a reaction when you are hit by an attack and take bludgeoning, piercing, or slashing damage from the attack, you can reduce that damage by {{watery defense}}, and then you can move up to 30 feet without provoking opportunity attacks. <u>This movement cannot be prevented by conditions that reduce movement to 0, such as Restrained or Grappled.</u> Once you use this special reaction, you can't use it again until you finish a short or long rest, <u>unless you spend 4 sorcery points (as a bonus action) to replenish it.</u>
+            You gain resistance to fire damage. As a reaction when you are hit by an attack and take bludgeoning, piercing, or slashing damage from the attack, you can reduce that damage by {{watery defense}}, and then you can move up to 30 feet without provoking opportunity attacks. This movement cannot be prevented by conditions that reduce movement to 0, such as Restrained or Grappled. Once you use this special reaction, you can't use it again until you finish a short or long rest, unless you spend 4 sorcery points to replenish it.
           </description>
         </sheet>
         <rules>
@@ -146,42 +142,32 @@
 
       <element name="Shifting Form" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SHIFTING_FORM">
         <description>
-          <p>Starting at 14th level, when you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. <u>If you move through a creature's space, you can use your bonus action to curse the target, as if you had successfully affected it with a spell.</u></p>
-		  <p><u>Additionally, if you curse a creature that is Large or smaller, you can spend 1 sorcery point to attempt to grapple it, adding your spell casting proficiency bonus to the check against the target's Strength (Athletics) or Dexterity (Acrobatics). If you fail the check, you are pushed into a space adjacent to the target and lose any remaining movement.</u></p>
-          <p>On your turn, you can move through any space that is at least <u>1 inch</u> in diameter and do so without squeezing. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement.</p>
+          <p>Starting at 14th level, when you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. If you move through a creature's space, you can use your bonus action to curse the target, as if you had successfully affected it with a spell.</p>
+		  <p>Additionally, if you curse a creature that is Large or smaller, you can spend 2 sorcery points to attempt to grapple it, adding your spell casting proficiency bonus to the check against the target's Strength (Athletics) or Dexterity (Acrobatics). If you fail the check, you are pushed into a space adjacent to the target and lose any remaining movement.</p>
+          <p>On your turn, you can move through any space that is at least 1 inch in diameter and do so without squeezing. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement.</p>
         </description>
         <sheet>
           <description>
-            When you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. <u>If you move through a creature's space, you can use your bonus action to curse the target, as if you had successfully affected it with a spell.
-			Additionally, if you curse a creature that is Large or smaller, you can spend 1 sorcery point to attempt to grapple it, adding your spell casting proficiency bonus to the check against the target's Strength (Athletics) or Dexterity (Acrobatics). If you fail the check, you are pushed into a space adjacent to the target and lose any remaining movement.</u>
-            On your turn, you can move through any space that is at least <u>1 inch</u> in diameter and do so without squeezing. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement.
+            When you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. If you move through a creature's space, you can use your bonus action to curse the target, as if you had successfully affected it with a spell. Additionally, if you curse a creature that is Large or smaller, you can spend 2 sorcery points to attempt to grapple it, adding your spell casting proficiency bonus to the check against the target's Strength (Athletics) or Dexterity (Acrobatics). If you fail the check, you are pushed into a space adjacent to the target and lose any remaining movement. On your turn, you can move through any space that is at least 1 inch in diameter and do so without squeezing. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement.
           </description>
         </sheet>
         <rules>
-        </rules>
-		
+        </rules>	
       </element>
 
       <element name="Water Soul" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATER_SOUL">
         <description>
           <p>Starting at 18th level, you gain the following benefits:</p>
           <ul>
-            <li>You no longer need to eat, drink, or <u>breathe</u></li>
+            <li>You no longer need to eat, drink, or sleep</li>
             <li>A critical hit against you becomes a normal hit.</li>
             <li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
-            <!--<li><u>Your innate connection with the sea has grown so powerful that you can harness the destructive force of the tsunami. The spell becomes a part of the Sorcerer spell list, and can be selected any time you choose to swap a spell for another.</u></li>-->
-			<li><u>You may affect more than one creature at a time with your Curse of the Sea. If your spell damages several creatures or if several creatures fail a saving throw against it, you can affect one creature normally, and spend 1 sorcery point to curse each additional creature. If you use Shifting Form to move through multiple creatures, you can spend 1 sorcery point to curse each additional creature beyond the first. Each curse lasts until invoked or until the end of your next turn as normal, and you can choose whether to invoke the curse for each creature separately.</u></li>
+	    <li>You may affect more than one creature at a time with your Curse of the Sea. If your spell damages several creatures or if several creatures fail a saving throw against it, you can affect one creature normally, and spend 1 sorcery point to curse each additional creature. If you use Shifting Form to move through multiple creatures, you can spend 1 sorcery point to curse each additional creature beyond the first. Each curse lasts until invoked or until the end of your next turn as normal, and you can choose whether to invoke the curse for each creature separately.</li>
           </ul>
         </description>
         <sheet>
           <description>
-            You gain the following benefits:
-              <ol>
-			  <li>You no longer need to eat, drink, or <u>breathe</u>.</li>
-              <li>A critical hit against you becomes a normal hit.</li>
-              <li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
-              <li><u>You may affect more than one creature at a time with your Curse of the Sea. If your spell damages several creatures or if several creatures fail a saving throw against it, you can affect one creature normally, and spend 1 sorcery point to curse each additional creature. If you use Shifting Form to move through multiple creatures, you can spend 1 sorcery point to curse each additional creature beyond the first. Each curse lasts until invoked or until the end of your next turn as normal, and you can choose whether to invoke the curse for each creature separately.</u></li>
-			  </ol>
+            You gain the following benefits: 1.You no longer need to eat, drink, or sleep. 2.A critical hit against you becomes a normal hit. 3.You have resistance to bludgeoning, piercing, and slashing damage. 4.You may affect more than one creature at a time with your Curse of the Sea. If your spell damages several creatures or if several creatures fail a saving throw against it, you can affect one creature normally, and spend 1 sorcery point to curse each additional creature. If you use Shifting Form to move through multiple creatures, you can spend 1 sorcery point to curse each additional creature beyond the first. Each curse lasts until invoked or until the end of your next turn as normal, and you can choose whether to invoke the curse for each creature separately.
           </description>
 		<rules>
 		</rules>

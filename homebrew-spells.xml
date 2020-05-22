@@ -4,7 +4,7 @@
     <name>Tregolani Homebrew Spells</name>
     <description>These are some personal homebrew spells. Currently contains: Shockbolt</description>
     <author>Tregolani</author>
-    <update version="0.1.3">
+    <update version="0.1.4">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/homebrew-spells/master/homebrew-spells.xml" />
     </update>
   </info>

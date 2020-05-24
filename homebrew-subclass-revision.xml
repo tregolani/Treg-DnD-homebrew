@@ -4,7 +4,7 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.2.0">
+        <update version="0.2.1">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
@@ -50,13 +50,14 @@
 
       <element name="Soul of the Sea" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SOUL_OF_THE_SEA">
         <description>
-          <p>At 1st level, your tie to the sea grants you the ability to breathe underwater, and you have a swim speed equal to your walking speed.</p>
+          <p>At 1st level, your tie to the sea grants you the ability to breathe underwater, and you have a swim speed equal to your walking speed. You also can speak Primordial, the language of the elements.</p>
         </description>
         <sheet>
           <description>You can breathe underwater and you have a swimming speed of {{speed}} feet.</description>
         </sheet>
         <rules>
           <stat name="speed:swim" value="speed" bonus="base" />
+	  <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
         </rules>
       </element>
 

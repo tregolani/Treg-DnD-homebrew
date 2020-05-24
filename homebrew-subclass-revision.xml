@@ -4,7 +4,7 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.2.1">
+        <update version="0.2.2">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
@@ -53,7 +53,7 @@
           <p>At 1st level, your tie to the sea grants you the ability to breathe underwater, and you have a swim speed equal to your walking speed. You also can speak Primordial, the language of the elements.</p>
         </description>
         <sheet>
-          <description>You can breathe underwater and you have a swimming speed of {{speed}} feet.</description>
+          <description>You can breathe underwater, have a swimming speed of {{speed}} feet, and can speak Primordial.</description>
         </sheet>
         <rules>
           <stat name="speed:swim" value="speed" bonus="base" />
@@ -168,9 +168,9 @@
 	    <li>You may affect more than one creature at a time with your Curse of the Sea. If your spell damages several creatures or if several creatures fail a saving throw against it, you can affect one creature normally, and spend 1 sorcery point to curse each additional creature. If you use Shifting Form to move through multiple creatures, you can spend 1 sorcery point to curse each additional creature beyond the first. Each curse lasts until invoked or until the end of your next turn as normal, and you can choose whether to invoke the curse for each creature separately.</li>
           </ul>
         </description>
-        <sheet>
+        <sheet display="true">
           <description>
-            You gain the following benefits: 1.You no longer need to eat, drink, or sleep. 2.A critical hit against you becomes a normal hit. 3.You have resistance to bludgeoning, piercing, and slashing damage. 4.You may affect more than one creature at a time with your Curse of the Sea. If your spell damages several creatures or if several creatures fail a saving throw against it, you can affect one creature normally, and spend 1 sorcery point to curse each additional creature. If you use Shifting Form to move through multiple creatures, you can spend 1 sorcery point to curse each additional creature beyond the first. Each curse lasts until invoked or until the end of your next turn as normal, and you can choose whether to invoke the curse for each creature separately.
+            You gain the following benefits: 1.You no longer need to eat, drink, or sleep. 2.A critical hit against you becomes a normal hit. 3.You have resistance to bludgeoning, piercing, and slashing damage. 4.You may affect more than one creature at a time with your Curse of the Sea by spending 1 sorcery point for each additional creature. Each curse lasts until invoked or until the end of your next turn as normal, and you can choose whether to invoke the curse for each creature separately.
           </description>
 		<rules>
 		</rules>

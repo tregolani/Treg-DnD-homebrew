@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Unearthed Arcana additional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.1.4.3">
+		<update version="0.2.0">
 			<file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised" />
 		</update>
 	</info>
@@ -75,7 +75,7 @@
 				<tr><td> 3rd</td><td>3</td><td class="left">Metamagic</td><td>4</td><td>4</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 4th</td><td>4</td><td class="left">Ability Score Improvement</td><td>5</td><td>5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 5th</td><td>5</td><td class="left">—</td><td>5</td><td>6</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 6th</td><td>6</td><td class="left">Sorcerous Origin feature, Sorcerous Recovery</td><td>5</td><td>7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>6</td><td class="left">Sorcerous Origin feature</td><td>5</td><td>7</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 7th</td><td>7</td><td class="left">—</td><td>5</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 8th</td><td>8</td><td class="left">Ability Score Improvement</td><td>5</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 9th</td><td>9</td><td class="left">—</td><td>5</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
@@ -89,7 +89,7 @@
 				<tr><td>17th</td><td>17</td><td class="left">Metamagic</td><td>6</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
 				<tr><td>18th</td><td>18</td><td class="left">Sorcerous Origin feature</td><td>6</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
 				<tr><td>19th</td><td>19</td><td class="left">Ability Score Improvement</td><td>6</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>20th</td><td>20</td><td class="left">Sorcerous Supremacy</td><td>6</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td>20</td><td class="left">Sorcerous Restoration</td><td>6</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
 			</table>
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER" />
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_ORIGIN" />
@@ -98,8 +98,8 @@
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_CATALYST_OF_MAGIC" />
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER" />
-			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_ABILITY_SORCEROUS_RECOVERY" />
-			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_SUPREMACY" />
+			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_ABILITY_SORCEROUS_RESTORATION" />
+			<!--<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_SUPREMACY" />-->
 		</description>
 		<sheet display="false">
 			<description>A spellcaster who draws on inherent magic from a gift, boon, bloodline, or mutation.</description>
@@ -124,8 +124,8 @@
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_CATALYST_OF_MAGIC" level="2" />
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC" level="3" />
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER" level="4" />
-			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_ABILITY_SORCEROUS_RECOVERY" level="6" />
-			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_SUPREMACY" level="20" />
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_ABILITY_SORCEROUS_RESTORATION" level="20" />
+			<!--<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_SUPREMACY" level="20" />-->
 		</rules>
 		<multiclass id="ID_WOTC_PHB_MULTICLASS_SORCERER">
 			<prerequisite>Charisma 13</prerequisite>
@@ -267,28 +267,33 @@
 	</element>
 	<element name="Catalyst of Magic" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_CATALYST_OF_MAGIC">
 		<description>
-			<p>At 2nd level, as your control over your innate magic grows, you can now use yourself as an arcane focus for your spells.</p>
+			<p>At 2nd level, as your control over your innate magic grows, you can now use yourself as an arcane focus for your spells. Additionally, by spending 2 sorcery points as a reaction, you can allow a creature touching you to use your body as an arcane focus for spells they cast until the start of your next turn.</p>
 		</description>
-		<sheet display="false" />
+		<sheet>
+		<description>
+			You can now use yourself as an arcane focus for your spells. Additionally, by spending 2 sorcery points as a reaction, you can allow a creature touching you to use your body as an arcane focus for spells they cast until the start of your next turn.
+		</description>
+		</sheet>
 	</element>	
 	<element name="Metamagic" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC">
 		<description>
-			<p>At 3rd level, you gain the ability to twist your spells to suit your needs. You gain three of the following Metamagic options of your choice. You gain another three at 10th and again at 17th level. During a long rest, you can choose to replace one of your Metamagic options with another of your choice.</p>
+			<p>At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another two at 10th and again at 17th level. During a long rest, you can choose to replace one of your Metamagic options with another of your choice.</p>
 			<p class="indent">You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</p>
 		</description>
 		<sheet>
 			<description>You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="3" number="3"/>
-			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="10" number="3"/>
-			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="17" number="3"/>
+			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="3" number="2"/>
+			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="10" number="2"/>
+			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="17" number="2"/>
 		</rules>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER">
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+			<p>If your DM allows the use of feats, you may instead take a feat.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -299,7 +304,9 @@
 			<select type="Class Feature" name="Improvement Option (Sorcerer 19)" supports="Improvement Option,Sorcerer,19" level="19" />
 		</rules>
 	</element>
-	<element name="Sorcerous Recovery" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_ABILITY_SORCEROUS_RECOVERY">
+<!--COMMENTING OUT SORCEROUS RECOVERY AND SUPREMACY IN PLACE OF SORCEROUS RESTORATION LATER
+
+ <element name="Sorcerous Recovery" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_ABILITY_SORCEROUS_RECOVERY">
 		<description>
 			<p>At 6th level, you have learned to regain some of your magical energy by channeling the latent arcane power of your soul's origin. When you finish a short rest, you can restore sorcery points up to half of your sorcery level, rounded down. You cannot use this feature again until you finish a long rest.</p>
 		</description>
@@ -322,9 +329,18 @@
 			</description>
 		</sheet>
 	</element>	
+-->
+	<element name="Sorcerous Restoration" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_ABILITY_SORCEROUS_RESTORATION">
+		<description>
+			<p>At 20th level, you regain expended sorcery points equal to your Charisma modifier whenever you finish a short rest.</p>
+		</description>
+		<sheet>
+			<description>You regain {{charisma:modifier}} expended sorcery points whenever you finish a short rest </description>
+		</sheet>
+	</element>
 <!--*********************METAMAGIC OPTIONS*********************-->
 
-	<element name="Augmented Spell" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_AUGMENTED_SPELL">
+	<!--<element name="Augmented Spell" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_AUGMENTED_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to change the initial save required to one of the other listed saves: Strength, Dexterity, Constitution for physical saves <b>OR</b> Intelligence, Wisdom, Charisma for mental saves.</p>
@@ -332,7 +348,7 @@
 		<sheet>
 			<description>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to change the initial save required to one of the other listed saves: Strength, Dexterity, Constitution for physical saves OR Intelligence, Wisdom, Charisma for mental saves.</description>
 		</sheet>
-	</element>
+	</element>-->
 	<element name="Careful Spell" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_CAREFUL_SPELL">
 		<supports>Metamagic</supports>
 		<description>
@@ -378,7 +394,7 @@
 			<stat name="metamagic empowered spell:rerolls" value="charisma:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Esoteric Spell" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_ESOTERIC_SPELL">
+	<!--<element name="Esoteric Spell" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_ESOTERIC_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p>When you cast a spell that deals a type of damage from the following list, you can spend 2 sorcery points to change that damage type to one of the other listed types: force, necrotic, phychic, radiant.</p>
@@ -386,7 +402,7 @@
 		<sheet>
 			<description>When you cast a spell that deals a type of damage from the following list, you can spend 2 sorcery points to change that damage type to one of the other listed types: force, necrotic, phychic, radiant.</description>
 		</sheet>
-	</element>
+	</element>-->
 	<element name="Extended Spell" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_EXTENDED_SPELL">
 		<supports>Metamagic</supports>
 		<description>
@@ -396,7 +412,7 @@
 			<description>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.</description>
 		</sheet>
 	</element>
-	<element name="Focused Spell" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_FOCUSED_SPELL">
+	<!--<element name="Focused Spell" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_FOCUSED_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p>When you cast a concentration spell while currently concentrating on another spell, you can spend 3 sorcery points to maintain concentration on both spells until the beginning of your next turn.</p>
@@ -405,7 +421,7 @@
 		<sheet>
 			<description>When you cast a concentration spell while currently concentrating on another spell, you can spend 3 sorcery points to maintain concentration on both spells until the beginning of your next turn. On each subsequent turn, you can use a bonus action to spend 2 additional sorcery points to keep concentrating on both spells until the beginning of your next turn. During this time, if you fail a concentration saving throw, you lose both spells. If you choose to end either spell willingly at the start of your turn, you decide which spell ends while you keep concentration on the other.</description>
 		</sheet>
-	</element>
+	</element>-->
 	<element name="Heightened Spell" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_HEIGHTENED_SPELL">
 		<supports>Metamagic</supports>
 		<description>
@@ -460,7 +476,7 @@
 			<description>If you make a spell attack roll and miss, you can spend 2 sorcery points to reroll the attack roll. You must use the result of the second roll. You can use Unerring Spell even if you have already used a different Metamagic option during the casting of the spell.</description>
 		</sheet>
 	</element>
-	<element name="Widen Spell" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_WIDEN_SPELL">
+	<!--<element name="Widen Spell" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_WIDEN_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p>When you cast an area-of-effect spell with an instantaneous duration, you can spend 2 sorcery points to increase the area of that spell in one of the following ways:</p>
@@ -473,5 +489,5 @@
 			<description>When you cast an area-of-effect spell with an instantaneous duration, you can spend 2 sorcery points to increase the area of that spell in one of the following ways: 1)Add 5 feet to the radius of a sphere or cylinder.  2)Add 10 feet to the length of a cone, cube, or line, or 5 feet if the original length is 15 feet or less.
 			</description>
 		</sheet>
-	</element>
+	</element>-->
 </elements>

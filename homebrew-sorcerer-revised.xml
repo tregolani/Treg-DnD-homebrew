@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Unearthed Arcana additional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.2.0">
+		<update version="0.2.1">
 			<file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised" />
 		</update>
 	</info>
@@ -374,7 +374,7 @@
 	<element name="Elemental Spell" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_ELEMENTAL_SPELL">
 		<supports>Metamagic</supports>
 		<description>
-			<p>When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: acid, cold, fire, lightning, thunder.</p>
+			<p>When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, thunder.</p>
 		</description>
 		<sheet>
 			<description>When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: acid, cold, fire, lightning, thunder.</description>

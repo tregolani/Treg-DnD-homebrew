@@ -81,15 +81,15 @@
 				<tr><td> 9th</td><td>9</td><td class="left">—</td><td>5</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td>10th</td><td>10</td><td class="left">Metamagic</td><td>6</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td>11th</td><td>11</td><td class="left">—</td><td>6</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>12th</td><td>12</td><td class="left">Ability Score Improvement</td><td>6</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>13th</td><td>13</td><td class="left">—</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
-				<tr><td>14th</td><td>14</td><td class="left">Sorcerous Origin feature</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
-				<tr><td>15th</td><td>15</td><td class="left">—</td><td>6</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
-				<tr><td>16th</td><td>16</td><td class="left">Ability Score Improvement</td><td>6</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
-				<tr><td>17th</td><td>17</td><td class="left">Metamagic</td><td>6</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>18th</td><td>18</td><td class="left">Sorcerous Origin feature</td><td>6</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>19th</td><td>19</td><td class="left">Ability Score Improvement</td><td>6</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>20th</td><td>20</td><td class="left">Sorcerous Restoration</td><td>6</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+				<tr><td>12th</td><td>12</td><td class="left">Ability Score Improvement</td><td>6</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>13</td><td class="left">—</td><td>6</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td>14</td><td class="left">Sorcerous Origin feature</td><td>6</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td>15</td><td class="left">—</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td>16</td><td class="left">Ability Score Improvement</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td>17</td><td class="left">Metamagic</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td>18</td><td class="left">Sorcerous Origin feature</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td>19</td><td class="left">Ability Score Improvement</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td>20</td><td class="left">Sorcerous Restoration</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
 			</table>
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER" />
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_ORIGIN" />
@@ -202,15 +202,15 @@
 			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Sorcerer"/>
 			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Sorcerer"/>
 			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="12" spellcasting="Sorcerer"/>
+			<!--<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="12" spellcasting="Sorcerer"/>-->
 			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" spellcasting="Sorcerer"/>
+			<!--<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" spellcasting="Sorcerer"/>-->
 			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" spellcasting="Sorcerer"/>
+			<!--<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" spellcasting="Sorcerer"/>-->
 			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="18" spellcasting="Sorcerer"/>
+			<!--<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="18" spellcasting="Sorcerer"/>
 			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Sorcerer"/>
-			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="Sorcerer"/>-->
 		</rules>
 	</element>
 	<element name="Sorcerous Origin" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_ORIGIN">
@@ -304,6 +304,7 @@
 			<select type="Class Feature" name="Improvement Option (Sorcerer 19)" supports="Improvement Option,Sorcerer,19" level="19" />
 		</rules>
 	</element>
+	
 <!--COMMENTING OUT SORCEROUS RECOVERY AND SUPREMACY IN PLACE OF SORCEROUS RESTORATION LATER
 
  <element name="Sorcerous Recovery" type="Class Feature" source="Tregolani Homebrew Sorcerer" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_ABILITY_SORCEROUS_RECOVERY">

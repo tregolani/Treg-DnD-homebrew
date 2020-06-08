@@ -4,7 +4,7 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.2.3">
+        <update version="0.2.4">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
@@ -168,15 +168,15 @@
 	    <li>You may affect more than one creature at a time with your Curse of the Sea. If your spell damages several creatures or if several creatures fail a saving throw against it, you can affect one creature normally, and spend 1 sorcery point to curse each additional creature. If you use Shifting Form to move through multiple creatures, you can spend 1 sorcery point to curse each additional creature beyond the first. Each curse lasts until invoked or until the end of your next turn as normal, and you can choose whether to invoke the curse for each creature separately.</li>
           </ul>
         </description>
-        <sheet display="true">
+        <sheet>
           <description>
 		  •You no longer need to eat, drink, or sleep. 
 		  •A critical hit against you becomes a normal hit. 
 		  •You have resistance to bludgeoning, piercing, and slashing damage. 
 		  •You may affect more than one creature at a time with your Curse of the Sea by spending 1 sorcery point for each additional creature. Each curse lasts until invoked or until the end of your next turn as normal, and you can choose whether to invoke the curse for each creature separately.
           </description>
-		<rules>
-		</rules>
-        </sheet>
+	</sheet>
+	<rules>
+	</rules>
       </element>
 </elements>

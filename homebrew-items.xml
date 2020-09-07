@@ -4,7 +4,7 @@
     <name>Spells</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.1.7">
+    <update version="0.1.7.1">
       <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/homebrew-spells/master/homebrew-items.xml" />
     </update>
   </info>
@@ -24,16 +24,13 @@
   	<element name="Sapphire of the Tides" type="Magic Item" source="Tregolani Homebrew Items" id="ID_HOMEBREW_MAGIC_ITEM_SAPPHIRE_OF_THE_TIDES">
 		<description>
 			<p>A magnificent small blue gem that pulses slowly, like the ebb and flow of the tides. Upon its surface glow the tiny runes of a cryptic inscription: "Is it through power we gain control? Or is it through control we gain power?”</p>
-			<p>class="indent"><strong><em>Tides Unleashed:</em></strong>When casting any water-based spell, can activate the gem to double all of the spell’s damage and effects, but with a chance (30%) for the spell to hit a random target instead. Once used, cannot be used again until you finish a long rest.</p>
+			<p class="indent"><strong><em>Tides Unleashed:</em></strong> When casting any water-based spell, can activate the gem to double all of the spell’s damage and effects, but with a chance (30%) for the spell to hit a random target instead. Once used, cannot be used again until you finish a long rest.</p>
 		</description>
 		<setters>
-			<set name="keywords">evocation</set>
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0.1 lb.</set>
-			<set name="slot">carried</set>
+			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">false</set>
 			<set name="rarity">Artifact</set>
 		</setters>
 	</element>

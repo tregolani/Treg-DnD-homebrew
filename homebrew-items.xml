@@ -4,7 +4,7 @@
     <name>Spells</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.1.7.4">
+    <update version="0.1.7.5">
       <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/homebrew-spells/master/homebrew-items.xml" />
     </update>
   </info>
@@ -18,14 +18,14 @@
 			<set name="url"></set>
 			<set name="official">false</set>
 			<set name="playtest">true</set>
-			<set name="release">20200911</set>
+			<set name="release">20200916</set>
 		</setters>
 	</element>	
 	  	<element name="Cursed Amulet of the Chameleon" type="Magic Item" source="Tregolani Homebrew Items" id="ID_HOMEBREW_MAGIC_ITEM_AMULET_OF_ALTER_SELF">
 		<description>
 			<p>A simple silver chain adorned with an intricately carved depiction of a chameleon with a small jade gem inset for its eye. Small runes run surround the gem, depicting the elvish word "aethen".</p>
 			<p>While attuned to this amulet, you can touch the gem and speak the command word <em>"aethen"</em> to transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You cannot appear as a creature of a different size than you, and your basic shape stays the same; if you’re bipedal, you can’t use this amulet to become quadrupedal, for instance. The transformation ends when the wearer touches the gem and speaks the command word again.</p>
-			<p class="indent"><strong><em>Cursed:</em></strong> This item is cursed. Attuning to it inflicts a debilitating curse which saps the wearer's physical body, permanently reducing your Strength score by 1 for each year you remain attuned to the amulet. As long as you remain cursed, you cannot discard the amulet (which immediately teleports back into your pocket or pack), nor can you break your attunement with it. This curse cannot be removed until you are targeted by a <em>remove curse</em> spell or similar magic of at least 5th level, but your reduced Strength score can only be restored by a <em>greater restoration</em> or <em>wish</em> spell.</p>
+			<p class="indent"><strong><em>Cursed:</em></strong> This item is cursed. Attuning to it inflicts a debilitating curse which saps the wearer's physical body, permanently reducing your Strength score by 1 for each year you remain attuned to the amulet. As long as you remain cursed, you cannot discard the amulet (which immediately teleports back into your pocket or pack), nor can you break your attunement with it. This curse cannot be removed until you are targeted by a <em>remove curse</em> spell or similar magic of at least 5th level, but your reduced Strength score cannot be restored by anything other than a <em>wish</em> spell.</p>
 		</description>
 		<setters>
 			<set name="keywords">transmutation</set>

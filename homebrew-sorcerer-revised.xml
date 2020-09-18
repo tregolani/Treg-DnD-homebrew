@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Unearthed Arcana additional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.2.3">
+		<update version="0.2.4">
 			<file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised" />
 		</update>
 	</info>
@@ -199,6 +199,18 @@
 			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Sorcerer"/>
 			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="Sorcerer"/>-->
 		</rules>
+		<spellcasting name="Sorcerer" extend="true">
+				<extend>ID_XGTE_SPELL_PRIMAL_SAVAGERY</extend>
+				<extend>ID_PHB_SPELL_GREASE</extend>
+				<extend>ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD</extend>
+				<extend>ID_PHB_SPELL_FLAME_BLADE</extend>
+				<extend>ID_PHB_SPELL_FLAMING_SPHERE</extend>
+				<extend>ID_PHB_SPELL_VAMPIRIC_TOUCH</extend>
+				<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+				<extend>ID_PHB_SPELL_FLESH_TO_STONE</extend>
+				<extend>ID_PHB_SPELL_DEMIPLANE</extend>
+				<extend>ID_PHB_SPELL_FORESIGHT</extend>
+		</spellcasting>
 	</element>
 	<element name="Sorcerous Origin" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_ORIGIN">
 		<description>

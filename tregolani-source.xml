@@ -1,10 +1,10 @@
 <elements>
 	<info>
-		<update version="0.1">
+		<update version="0.2">
 			<file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
 		</update>
 	</info>
-	<element name="Tregolani Homebrew Collection" type="Source" source="Personal Homebrew" id="ID_TREGOLANI_HOMEBREW">
+	<element name="Tregolani Homebrew Collection" type="Source" source="Personal Homebrew" id="ID_TREGOLANI_HOMEBREW_SOURCE">
 		<description>
         <![CDATA[<p>This is a collection of personal homebrew created by Tregolani for DnD campaigns. Currently included in the collection are: </p>
       			<ul>

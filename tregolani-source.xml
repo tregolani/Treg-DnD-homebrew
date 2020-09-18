@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
 		<update version="0.2">
@@ -12,7 +13,7 @@
               <li><strong>Spells:</strong> Cantrips: <em>shockbolt</em></li>
               <li><strong>Classes:</strong> Sorcerer (Revised)</li>
               <li><strong>Subclasses:</strong> Sea Sorcery (Revised)</li>
-            </ul>
+            </ul>]]>
       </description>
 		<setters>
 			<set name="abbreviation">THBC20200918</set>

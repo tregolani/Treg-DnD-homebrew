@@ -1,0 +1,26 @@
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
+		</update>
+	</info>
+	<element name="Tregolani Homebrew Collection" type="Source" source="Personal Homebrew" id="ID_TREGOLANI_HOMEBREW">
+		<description>
+        <![CDATA[<p>This is a collection of personal homebrew created by Tregolani for DnD campaigns. Currently included in the collection are: </p>
+      			<ul>
+              <li><strong>Items:</strong> Cursed Amulet of the Chameleon</li>
+              <li><strong>Spells:</strong> Cantrips: <em>shockbolt</em></li>
+              <li><strong>Classes:</strong> Sorcerer (Revised)</li>
+              <li><strong>Subclasses:</strong> Sea Sorcery (Revised)</li>
+            </ul>
+      </description>
+		<setters>
+			<set name="abbreviation">THBC20200918</set>
+      			<set name="author">Tregolani</set>
+			<set name="url"></set>
+			<set name="official">false</set>
+			<set name="playtest">true</set>
+			<set name="release">20200918</set>
+		</setters>
+	</element>
+</elements> 

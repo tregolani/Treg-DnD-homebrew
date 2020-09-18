@@ -4,32 +4,18 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.2.5">
+        <update version="0.2.6">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
-	<element name="Tregolani Homebrew Subclass Revisions" type="Source" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_SUBCLASS_REVISIONS">
-		<description>
-			<p>This is a collection of subclass revisions intended to improve playability and enjoyment. Currently contains: Sea Sorcerer</p>
-		</description>
-		<setters>
-			<set name="abbreviation">UA20170206REV1</set>
-			<set name="author">Tregolani</set>
-			<set name="url"></set>
-			<set name="official">false</set>
-			<set name="playtest">true</set>
-			<set name="release">20200521</set>
-		</setters>
-	</element>
-	
 	    <!-- Sea Sorcery -->
-      <element name="Sea Sorcerer" type="Archetype" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_SEA_SORCERER">
+      <element name="Sea Sorcerer" type="Archetype" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_SEA_SORCERER">
           <supports>Sorcerous Origin</supports>
           <description>
             <p>The power of water is the strength of flexibility, resilience, and a relentless nature. Water parts to allow a ship to sail over it or a diver to plunge into it, but their passing leaves no mark. Water flowing down a mountain reaches the sea. It might bend and turn across valleys and down hillsides, but it slowly and steadily returns to the waves. Those whose souls are touched by the power of elemental water command a similar power.</p>
             <p class="indent">Your heritage ties to powerful creatures of the sea, such as nereids, the lords of the merfolk, and elemental powers. Like a river, you feel the call of the ocean. The call is ever present in your heart, and you are never completely at peace until you are near the sea.</p>
             <div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SOUL_OF_THE_SEA" />
-			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_OCEAN_MAGIC" />
+	    <div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_OCEAN_MAGIC" />
             <div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_CURSE_OF_THE_SEA" />
             <div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATERY_DEFENSE" />
             <div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SHIFTING_FORM" />
@@ -40,7 +26,7 @@
           </sheet>
           <rules>
             <grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SOUL_OF_THE_SEA" level="1" />
-			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_OCEAN_MAGIC" level="1" />
+	    <grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_OCEAN_MAGIC" level="1" />
             <grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_CURSE_OF_THE_SEA" level="1" />
             <grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATERY_DEFENSE" level="6" />
             <grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SHIFTING_FORM" level="14" />
@@ -48,7 +34,7 @@
           </rules>
       </element>
 
-      <element name="Soul of the Sea" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SOUL_OF_THE_SEA">
+      <element name="Soul of the Sea" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SOUL_OF_THE_SEA">
         <description>
           <p>At 1st level, your tie to the sea grants you the ability to breathe underwater, and you have a swim speed equal to your walking speed. You also can speak, read, and write Primordial, the language of the elemental planes.</p>
         </description>
@@ -61,7 +47,7 @@
         </rules>
       </element>
 
-      <element name="Ocean Magic" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_OCEAN_MAGIC">
+      <element name="Ocean Magic" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_OCEAN_MAGIC">
 		<description>
 			<p><em>1st-level Sea Sorcerer feature</em></p>
 			<p>You learn additional spells when you reach certain levels in this class, as shown on the Sea Sorcerer table. Each spell counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know. These spells can’t be replaced when you gain a level in this class.</p>
@@ -69,13 +55,13 @@
             <table>
                 <thead>
                     <tr><td>Sorcerer Level</td><td>Spells</td></tr>
-				</thead>
-                <tr><td>1st</td><td><em>create or destroy water, fog cloud</em></td></tr>
-                <tr><td>3rd</td><td><em>gust of wind, misty step</em></td></tr>
-                <tr><td>5th</td><td><em>tidal wave, wind wall</em></td></tr>
-                <tr><td>7th</td><td><em>control water, storm sphere</em></td></tr>
-                <tr><td>9th</td><td><em>maelstrom, control winds</em></td></tr>
-			</table>
+		</thead>
+                	<tr><td>1st</td><td><em>create or destroy water, fog cloud</em></td></tr>
+                	<tr><td>3rd</td><td><em>gust of wind, misty step</em></td></tr>
+                	<tr><td>5th</td><td><em>tidal wave, wind wall</em></td></tr>
+                	<tr><td>7th</td><td><em>control water, storm sphere</em></td></tr>
+                	<tr><td>9th</td><td><em>maelstrom, control winds</em></td></tr>
+	    </table>
 			<p>Additionally, your aquatic soul lets you choose from an expanded list of spells when you learn a sorcerer spell. The following spells are added to the sorcerer spell list for you.</p>
       <h5 class="caption">Sea Sorcerer Expanded Spell List</h5>
       <table>
@@ -103,7 +89,7 @@
 		</spellcasting>
       </element>
 
-      <element name="Curse of the Sea" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_CURSE_OF_THE_SEA">
+      <element name="Curse of the Sea" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_CURSE_OF_THE_SEA">
         <description>
           <p>When you choose this origin at 1st level, you learn the secret of infusing your spells with a watery curse.</p>
           <p class="indent">When you hit a creature with a spell attack or when a creature fails a saving throw against your spell, you can curse the target until the end of your next turn or until you curse a different creature with this feature.</p>
@@ -124,10 +110,9 @@
           </description>
         </sheet>
         <rules>
-
         </rules>
       </element>
-      <element name="Watery Defense" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATERY_DEFENSE">
+      <element name="Watery Defense" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATERY_DEFENSE">
         <description>
           <p>At 6th level, you gain resistance to fire damage. You also gain the ability to defend yourself by momentarily assuming a watery form. As a reaction when you are hit by an attack and take bludgeoning, piercing, or slashing damage from the attack, you can reduce that damage by an amount equal to your sorcerer level plus your Charisma score. You can then move up to 30 feet without provoking opportunity attacks, ignoring any ability or condition that reduces your movement speed. Once you use this special reaction, you can't use it again until you finish a short or long rest, or until you spend 4 sorcery points as a bonus action to replenish it.</p>
         </description>
@@ -143,28 +128,28 @@
         </rules>
       </element>
 
-      <element name="Shifting Form" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SHIFTING_FORM">
+      <element name="Shifting Form" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SHIFTING_FORM">
         <description>
-          <p>Starting at 14th level, when you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. If you move through a creature's space, you can use your bonus action to curse the target, as if you had successfully affected it with a spell.</p>
+          <p>Starting at 14th level, when you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. If you move through a creature's space, you can use your bonus action to apply your <em>Curse of the Sea</em> to the target, as if you had successfully affected it with a spell.</p>
           <p>On your turn, you can move through any space that is at least 3 inches in diameter and do so without squeezing. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement.</p>
         </description>
         <sheet>
           <description>
-            When you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. If you move through a creature's space, you can use your bonus action to curse the target. On your turn, you can move through any space that is at least 3 inches in diameter. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement.
+            When you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. If you move through a creature's space, you can use your bonus action to apply your Curse of the Sea to  the target. On your turn, you can move through any space that is at least 3 inches in diameter. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement.
           </description>
         </sheet>
         <rules>
         </rules>	
       </element>
 
-      <element name="Water Soul" type="Archetype Feature" source="Tregolani Homebrew Subclass Revisions" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATER_SOUL">
+      <element name="Water Soul" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_WATER_SOUL">
         <description>
           <p>Starting at 18th level, you gain the following benefits:</p>
           <ul>
             <li>You no longer need to eat, drink, or sleep</li>
             <li>A critical hit against you becomes a normal hit.</li>
             <li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
-	    <li>You may affect more than one creature at a time with your Curse of the Sea. If your spell damages several creatures or if several creatures fail a saving throw against it, you can affect one creature normally, and spend 1 sorcery point to curse each additional creature. If you use Shifting Form to move through multiple creatures, you can spend 1 sorcery point to curse each additional creature beyond the first. Each curse lasts until invoked or until the end of your next turn as normal, and you can choose whether to invoke the curse for each creature separately.</li>
+		  <li>You may affect more than one creature at a time with your <em>Curse of the Sea</em>. If your spell damages several creatures or if several creatures fail a saving throw against it, you can affect one creature normally, and spend 1 sorcery point to curse each additional creature. If you use Shifting Form to move through multiple creatures, you can spend 1 sorcery point to curse each additional creature beyond the first. Each curse lasts until invoked or until the end of your next turn as normal, and you can choose whether to invoke the curse for each creature separately.</li>
           </ul>
         </description>
         <sheet>

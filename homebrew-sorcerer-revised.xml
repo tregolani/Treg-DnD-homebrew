@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Unearthed Arcana additional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.2.5">
+		<update version="0.2.6">
 			<file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised" />
 		</update>
 	</info>
@@ -149,19 +149,8 @@
 		<sheet display="false">
 			<description>You have the ability to cast spells.</description>
 		</sheet>
-		<spellcasting name="Sorcerer" ability="Charisma" allowReplace="true" extend="true">
+		<spellcasting name="Sorcerer" ability="Charisma" allowReplace="true">
 			<list>Sorcerer</list>
-			<!-- CFV Spell Extensions -->
-				<extend>ID_XGTE_SPELL_PRIMAL_SAVAGERY</extend>
-				<extend>ID_PHB_SPELL_GREASE</extend>
-				<extend>ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD</extend>
-				<extend>ID_PHB_SPELL_FLAME_BLADE</extend>
-				<extend>ID_PHB_SPELL_FLAMING_SPHERE</extend>
-				<extend>ID_PHB_SPELL_VAMPIRIC_TOUCH</extend>
-				<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
-				<extend>ID_PHB_SPELL_FLESH_TO_STONE</extend>
-				<extend>ID_PHB_SPELL_DEMIPLANE</extend>
-				<extend>ID_PHB_SPELL_FORESIGHT</extend>
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
@@ -226,6 +215,19 @@
 			<p>Whenever you finish a long rest, you can replace one spell you learned from this Spellcasting feature with another spell from the sorcerer spell list. The new spell must be the same level as the spell you replace.</p>
 		</description>
 		<sheet display="false" />
+		<spellcasting name="Sorcerer" extend="true">
+			<!-- CFV Spell Extensions -->
+				<extend>ID_XGTE_SPELL_PRIMAL_SAVAGERY</extend>
+				<extend>ID_PHB_SPELL_GREASE</extend>
+				<extend>ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD</extend>
+				<extend>ID_PHB_SPELL_FLAME_BLADE</extend>
+				<extend>ID_PHB_SPELL_FLAMING_SPHERE</extend>
+				<extend>ID_PHB_SPELL_VAMPIRIC_TOUCH</extend>
+				<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+				<extend>ID_PHB_SPELL_FLESH_TO_STONE</extend>
+				<extend>ID_PHB_SPELL_DEMIPLANE</extend>
+				<extend>ID_PHB_SPELL_FORESIGHT</extend>
+		</spellcasting>
 	</element>
 	<element name="Font of Magic" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
 		<description>

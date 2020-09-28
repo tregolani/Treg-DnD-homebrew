@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.1">
+		<update version="0.2.2">
 			<file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
 		</update>
 	</info>
@@ -13,7 +13,8 @@
               <li><strong>Spells:</strong>
   		<ul>
 		<li><em>Cantrips: shockbolt</em></li>
- 	 	<li><em>3rd-level: charged sphere</em></li>
+ 		<li><em>2nd-level: freezing lance</em></li>
+   		<li><em>3rd-level: storm conduit</em></li>
   		</ul>
               </li>
               <li><strong>Classes:</strong> Sorcerer (Revised)</li>

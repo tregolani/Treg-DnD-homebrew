@@ -2,9 +2,9 @@
 <elements>
   <info>
     <name>Tregolani Homebrew Spells</name>
-    <description>These are some personal homebrew spells. Currently contains: Shockbolt, Charged Sphere</description>
+    <description>These are some personal homebrew spells. Currently contains: Shockbolt, Freezing Lance, Storm Conduit</description>
     <author>Tregolani</author>
-    <update version="0.2.0">
+    <update version="0.2.1">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     </update>
   </info>
@@ -33,13 +33,38 @@
     </setters>
   </element>
   
+  <!--2nd Level-->
+  
+  <element name="Freezing Lance" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_FREEZING_LANCE">
+    <supports>Sorcerer, Wizard</supports>
+    <description>
+      <p>You create four floating lances of pure ice and hurl them at targets within range. You can hurl them at one target or several.</p>
+      <p class="indent">Make a ranged spell attack for each lance. On a hit, the target takes 2d4 cold damage and its speed is reduced by 10 feet until the start of your next turn. A creature can only have its speed reduced once, regardless of how many lances it is hit by.</p>
+      <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 3rd level or higher, you create one additional lance for each slot level above 2nd.</p>
+    </description>
+    <setters>
+            <set name="keywords">cold</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">90 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+    </setters>
+  </element>
+  
   <!--3rd Level-->
   
-  <element name="Charged Sphere" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_CHARGED_SPHERE">
+  <element name="Storm Conduit" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_STORM_CONDUIT">
     <supports>Sorcerer, Wizard, Artificer, Fighter (Eldritch Knight)</supports>
     <description>
-      <p>You channel arcane lightning into the copper sphere, causing six of the runes upon its surface to glow and spark wildly as it begins to float and orbit you for the spell's duration. When you cast the spell—and as a bonus action on each of your turns thereafter—you can expend one or two of the sphere's glowing runes, sending a bolt of lightning streaking out from it in a line 100 feet long and 5 feet in a direction you choose. Each creature within the line must make a Dexterity saving throw. A creature takes 2d6 lightning damage on a failed save, or half as much damage on a successful one. Once you have expended all of the runes, the sphere falls to the ground and the spell ends.</p>
-      <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, the number of the sphere's runes you can imbue increases by two for each slot level above 3rd.</p>
+      <p>You sheathe yourself in arcane energy, causing six runes, arcing and thrumming with lightning, to appear upon your forearms. When you cast the spell—and as a bonus action on each of your turns thereafter—you can expend one or two of the runes, each causing a bolt of lightning to blast out from your hand in a line 100 feet long and 5 feet wide in a direction you choose. The first two creatures within the line must make a Dexterity saving throw, taking 3d4 lightning damage on a failed save, or half as much damage on a successful one. Each bolt can only affect a maximum of two creatures. Once all of the runes have been expended, the spell ends.</p>
+      <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, the number of runes created increases by two for each slot level above 3rd.</p>
     </description>
     <setters>
             <set name="keywords">lightning</set>
@@ -51,7 +76,7 @@
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">a runed-covered copper sphere</set>
+            <set name="materialComponent">a runed-covered metallic sphere</set>
             <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
     </setters>

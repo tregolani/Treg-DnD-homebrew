@@ -4,7 +4,7 @@
     <name>Tregolani Homebrew Spells</name>
     <description>These are some personal homebrew spells. Currently contains: Shockbolt, Freezing Lance, Storm Conduit, Sonic Boom</description>
     <author>Tregolani</author>
-    <update version="0.2.2">
+    <update version="0.2.3">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     </update>
   </info>
@@ -100,7 +100,7 @@
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">a smooth stone and a silken fan/set>
+            <set name="materialComponent">a smooth stone and a silken fan</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
     </setters>

@@ -2,9 +2,9 @@
 <elements>
   <info>
     <name>Tregolani Homebrew Spells</name>
-    <description>These are some personal homebrew spells. Currently contains: Shockbolt, Freezing Lance, Storm Conduit, Sonic Boom</description>
+    <description>These are some personal homebrew spells. Currently contains: Shockbolt, Lance of Faith, Freezing Lance, Storm Conduit, Sonic Boom</description>
     <author>Tregolani</author>
-    <update version="0.2.3">
+    <update version="0.2.4">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     </update>
   </info>
@@ -24,6 +24,28 @@
       <set name="time">1 action</set>
       <set name="duration">Instantaneous</set>
       <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+ 
+  <element name="Lance of Faith" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_LANCE_OF_FAITH">
+    <supports>Cleric</supports>
+    <description>
+      <p>You conjure a lance of divine energy and hurl it at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d6 radiant radiant damage (if you are good or neutral) or 1d6 necrotic damage (if you are evil), and the lance embeds itself within the creature. The first time it is hit by a weapon attack made by a creature other than yourself before the start of your next turn, the lance detonates, dealing radiant (or necrotic) damage equal to your spellcasting modifier.</p>
+      <p class="indent">This spell's damage increases when you reach higher levels. At 5th level, the ranged attack deals an extra 1d6 radiant or necrotic damage to the target, and the detonation damage increases to 1d4 + your spellcasting ability modifier. Both damage rolls increase by 1d6/1d4 at 11th level and 17th level.</p>
+    </description>
+    <setters>
+      <set name="keywords">radiant, necrotic</set>
+      <set name="level">0</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">30 feet</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>

@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Tasha's Cauldron of Everything optional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.2.7">
+		<update version="0.2.8">
 			<file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised" />
 		</update>
 	</info>
@@ -262,7 +262,9 @@
 			<p class="indent"><strong><em>Converting a Spell Slot to Sorcery Points.</em></strong> As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot’s level.</p>
 		</description>
 		<sheet action="Sorcery Point Usage">
-			<description>You have {{sorcery-points}} Sorcery Points, and can use them in the following ways: 1)As a bonus action, you can transform unexpended sorcery points into one spell slot (2 > 1st, 3 > 2nd, 5 > 3rd, 6 > 4th, 7 > 5th) on your turn, or you can expend one spell slot and gain a number of sorcery points equal to the slot’s level.  2)As a bonus action, you can touch one nonmagical weapon and spend 2 sorcery points to imbue it with magic for 1 minute. For the duration, the weapon is considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks.  3)You can spend 2 sorcery points when making an ability check to gain advantage on the check.  4)As an action, you can spend any number of sorcery points and roll a d4 for each point expended to gain temporary hit points equal to the total rolled.
+			<description>You have {{sorcery-points}} Sorcery Points, and can use them as a bonus action in the following ways:
+			&#13;&#10;• You can transform unexpended sorcery points into one spell slot (2 > 1st, 3 > 2nd, 5 > 3rd, 6 > 4th, 7 > 5th) on your turn
+			&#13;&#10;• You can expend one spell slot and gain a number of sorcery points equal to the slot’s level
 			</description>
 		</sheet>
 		<rules>
@@ -316,7 +318,7 @@
 				<li>Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the sorcerer spell list.</li>
 			</ul>
 		</description>
-		<sheet display="false">
+		<sheet display="false" />
 	</element>
 	<element name="Magical Guidance" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_MAGICAL_GUIDANCE">
 		<description>
@@ -324,6 +326,7 @@
 		</description>
 		<sheet>
 			<description>When you make an ability check that fails, you can spend 1 sorcery point to reroll the d20, and you must use the new roll, potentially turning the failure into a success.</description>
+		</sheet>
 	</element>
 	
 <!--COMMENTING OUT SORCEROUS RECOVERY AND SUPREMACY IN PLACE OF SORCEROUS RESTORATION LATER

@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.1.7.7">
+    <update version="0.2">
       <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-items.xml" />
     </update>
   </info>
@@ -24,5 +24,61 @@
 			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
 		</setters>
+	</element>
+	<element name="Handwraps of the Flowing Soul, +1" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_TREGOLANI_HOMEBREW_MAGIC_ITEM_HANDWRAPS_OF_THE_FLOWING_SOUL_1">
+		<description>
+			<p>These fine silk handwraps are trimmed with a flowing pattern of golden thread. While you wear these handwraps, your unarmed attacks gain a +1 bonus to attack and damage rolls, and you gain a +1 bonus to your Ki saving throw DC.</p>
+			<p>Whenever you score a critical hit with your unarmed or monk weapon attacks, you regain 1 expended ki point.</p>
+		</description>
+		<setters>
+			<set name="keywords">monk</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement" addition="by a monk">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<stat name="ki:dc" value="1" bonus="handwraps of the flowing soul" />
+		</rules>
+	</element>
+	<element name="Handwraps of the Flowing Soul, +2" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_TREGOLANI_HOMEBREW_MAGIC_ITEM_HANDWRAPS_OF_THE_FLOWING_SOUL_2">
+		<description>
+			<p>These fine silk handwraps are trimmed with a flowing pattern of golden thread. While you wear these handwraps, your unarmed attacks gain a +2 bonus to attack and damage rolls, and you gain a +2 bonus to your Ki saving throw DC.</p>
+			<p>Whenever you score a critical hit with your unarmed or monk weapon attacks, you regain 1 expended ki point.</p>
+		</description>
+		<setters>
+			<set name="keywords">monk</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement" addition="by a monk">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="ki:dc" value="2" bonus="handwraps of the flowing soul" />
+		</rules>
+	</element>	<element name="Handwraps of the Flowing Soul, +3" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_TREGOLANI_HOMEBREW_MAGIC_ITEM_HANDWRAPS_OF_THE_FLOWING_SOUL_3">
+		<description>
+			<p>These fine silk handwraps are trimmed with a flowing pattern of golden thread. While you wear these handwraps, your unarmed attacks gain a +3 bonus to attack and damage rolls, and you gain a +3 bonus to your Ki saving throw DC.</p>
+			<p>Whenever you score a critical hit with your unarmed or monk weapon attacks, you regain 1 expended ki point.</p>
+		</description>
+		<setters>
+			<set name="keywords">monk</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement" addition="by a monk">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<stat name="ki:dc" value="3" bonus="handwraps of the flowing soul" />
+		</rules>
 	</element>
 </elements>

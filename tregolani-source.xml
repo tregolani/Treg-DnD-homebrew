@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.4">
+		<update version="0.2.5">
 			<file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
 		</update>
 	</info>
@@ -9,7 +9,7 @@
 		<description>
         <![CDATA[<p>This is a collection of personal homebrew created by Tregolani for DnD campaigns. Currently included in the collection are: </p>
       			<ul>
-              <li><strong>Items:</strong> Cursed Amulet of the Chameleon</li>
+              <li><strong>Items:</strong> Cursed Amulet of the Chameleon, Handwraps of the Flowing Soul</li>
               <li><strong>Spells:</strong>
   		<ul>
   		<li><em><strong>Cantrips: </strong>shockbolt, lance of faith</em></li>
@@ -28,7 +28,7 @@
 			<set name="url"></set>
 			<set name="official">false</set>
 			<set name="playtest">true</set>
-			<set name="release">20200918</set>
+			<set name="release">20201128</set>
 		</setters>
 	</element>
 </elements> 

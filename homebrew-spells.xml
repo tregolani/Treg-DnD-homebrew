@@ -4,7 +4,7 @@
     <name>Tregolani Homebrew Spells</name>
     <description>These are some personal homebrew spells. Currently contains: Shockbolt, Lance of Faith, Freezing Lance, Storm Conduit, Sonic Boom</description>
     <author>Tregolani</author>
-    <update version="0.2.4">
+    <update version="0.2.5">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     </update>
   </info>
@@ -61,7 +61,7 @@
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>You create four floating lances of pure ice and hurl them at targets within range. You can hurl them at one target or several.</p>
-      <p class="indent">Make a ranged spell attack for each lance. On a hit, the target takes 2d4 cold damage and its speed is reduced by 10 feet until the start of your next turn. A creature can only have its speed reduced once, regardless of how many lances it is hit by.</p>
+      <p class="indent">Make a ranged spell attack for each lance. On a hit, the target takes 2d4 cold damage and its speed is reduced by 10 feet until the start of your next turn. A creature can only have its speed reduced once per turn, regardless of how many lances it is hit by.</p>
       <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 3rd level or higher, you create one additional lance for each slot level above 2nd.</p>
     </description>
     <setters>

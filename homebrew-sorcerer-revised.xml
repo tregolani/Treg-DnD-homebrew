@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Tasha's Cauldron of Everything optional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.2.8">
+		<update version="0.2.9">
 			<file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised" />
 		</update>
 	</info>
@@ -80,13 +80,12 @@
 			</table>
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER" />
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_ORIGIN" />
-<!--			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SPELL_VERSATILITY" /> -->
-			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC" />
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_CATALYST_OF_MAGIC" />
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER" />
-			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_VERSATILITY" />
-			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_MAGICAL_GUIDANCE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SORCERER_SORCEROUS_VERSATILITY" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_SORCERER_MAGICAL_GUIDANCE" />
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_ABILITY_SORCEROUS_RESTORATION" />
 			<!--<div element="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_SUPREMACY" />-->
 		</description>
@@ -109,12 +108,12 @@
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER" level="1" />
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_ORIGIN" level="1"/>
 <!--			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SPELL_VERSATILITY" level="1" /> -->
-			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC" level="2" />
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_CATALYST_OF_MAGIC" level="2" />
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC" level="3" />
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER" level="4" />
-			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_VERSATILITY" level="4" />
-			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_MAGICAL_GUIDANCE" level="5" />
+<!--			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_VERSATILITY" level="4" />
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_MAGICAL_GUIDANCE" level="5" />-->
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_ABILITY_SORCEROUS_RESTORATION" level="20" />
 			<!--<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_SORCEROUS_SUPREMACY" level="20" />-->
 		</rules>
@@ -233,17 +232,17 @@
 				<extend>ID_PHB_SPELL_FORESIGHT</extend>
 		</spellcasting>
 	</element>-->
-	<element name="Font of Magic" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
+<!--	<element name="Font of Magic" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
 		<description>
 			<p>At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.</p>
 			<h5>SORCERY POINTS</h5>
 			<p>You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.</p>
-<!--			<h5>EMPOWERING RESERVES</h5>
+			<h5>EMPOWERING RESERVES</h5>
 			<p>When you make an ability check on your turn, you can spend 2 sorcery points to gain advantage on the check.</p>
 			<h5>IMBUING TOUCH</h5>
 			<p>As a bonus action, you can touch one nonmagical weapon and spend 2 sorcery points to imbue it with magic for 1 minute. For the duration, the weapon is considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks.</p>
 			<h5>SORCEROUS FORTITUDE</h5>
-			<p>As an action, you can spend any number of sorcery points to roll a d4 for each point expended. You gain a number of temporary hit points equal to the total rolled.</p>-->
+			<p>As an action, you can spend any number of sorcery points to roll a d4 for each point expended. You gain a number of temporary hit points equal to the total rolled.</p>
 			<h5>FLEXIBLE CASTING</h5>
 			<p>You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.</p>
 			<p class="indent"><strong><em>Creating Spell Slots.</em></strong> You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.</p>
@@ -270,7 +269,7 @@
 		<rules>
 			<stat name="sorcery-points" value="level:sorcerer" />
 		</rules>
-	</element>
+	</element>-->
 	<element name="Catalyst of Magic" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_CATALYST_OF_MAGIC">
 		<description>
 			<p>At 2nd level, as your control over your innate magic grows, you can now use yourself as an arcane focus for your spells. Additionally, by spending 2 sorcery points as a reaction, you can allow a creature touching you to use your body as an arcane focus for spells they cast until the start of your next turn.</p>

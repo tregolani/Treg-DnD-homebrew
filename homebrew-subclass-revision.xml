@@ -4,7 +4,7 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.2.8">
+        <update version="0.2.9">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
@@ -165,6 +165,7 @@
         </description>
         <sheet>
           <description>
+		  You gain the following benefits:&#13;
 		  •You no longer need to eat, drink, or sleep.&#13; 
 		  •A critical hit against you becomes a normal hit.&#13; 
 		  •You have resistance to bludgeoning, piercing, and slashing damage.&#13; 

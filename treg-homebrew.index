@@ -4,7 +4,7 @@
     <name>Tregolani Homebrew Collection</name>
 	<description>A collection of homebrew items for DnD 5e</description>
 	<author>"Tregolani"</author>  
-    <update version="1.5">
+    <update version="1.6">
       <file name="treg-homebrew.index" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/treg-homebrew.index" />
     </update>
   </info>
@@ -12,6 +12,7 @@
     <file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
     <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-items.xml" />
+    <file name="homebrew-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-feats.xml" />
     <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
     <file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised.xml" />
   </files>

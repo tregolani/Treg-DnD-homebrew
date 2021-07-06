@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Items</name>
+    <description>Tregolani Homebrew Feats</description>
+    <author>Homebrew</author>
+    <update version="0.1">
+      <file name="homebrew-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-feats.xml" />
+    </update>
+  </info>
+	<element name="Elemental Blood" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_ELEMENTAL_BLOOD">
+		<description>
+			<p>Your exposure to the leylines of the Elemental Planes has changed you, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li>You learn the <i>alter self</i> spell and one 1st-level spell of your choice. The 1st-level spell must be from the conjuration or transmutation schools of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can’t cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability increased by this feat.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can cast this feat’s spells without a spell slot once. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is {{elemental blood:ability}}.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase, Elemental Blood" supports="ID_TREGOLANI_HB_FEAT_FEATURE_ELEMENTAL_BLOOD_INTELLIGENCE|ID_TREGOLANI_HB_FEAT_FEATURE_ELEMENTAL_BLOOD_WISDOM|ID_TREGOLANI_HB_FEAT_FEATURE_ELEMENTAL_BLOOD_CHARISMA" />
+			<grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" />
+			<select type="Spell" name="Spell, Elemental Blood" supports="1,(Conjuration||Transmutation)" />
+		</rules>
+	</element>
+	<element name="Intelligence (Elemental Blood)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEATURE_ELEMENTAL_BLOOD_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>ELemental Blood</supports>
+		<requirements>ID_TREGOLANI_HB_FEAT_ELEMENTAL_BLOOD</requirements>
+		<description>
+			<p>Increase your Intelligence by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" alt="Elemental Blood" />
+			<stat name="elemental blood:ability" value="Intelligence" inline="true"/>
+		</rules>
+	</element>
+	<element name="Wisdom (Elemental Blood)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEATURE_ELEMENTAL_BLOOD_WISDOM">
+		<compendium display="false" />
+		<supports>ELemental Blood</supports>
+		<requirements>ID_TREGOLANI_HB_FEAT_ELEMENTAL_BLOOD</requirements>
+		<description>
+			<p>Increase your Wisdom by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" alt="Elemental Blood" />
+			<stat name="elemental blood:ability" value="Wisdom" inline="true"/>
+		</rules>
+	</element>
+	<element name="Charisma (Elemental Blood)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEATURE_ELEMENTAL_BLOOD_CHARISMA">
+		<compendium display="false" />
+		<supports>ELemental Blood</supports>
+		<requirements>ID_TREGOLANI_HB_FEAT_ELEMENTAL_BLOOD</requirements>
+		<description>
+			<p>Increase your Charisma by 1, to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" alt="Elemental Blood" />
+			<stat name="elemental blood:ability" value="Charisma" inline="true"/>
+		</rules>
+	</element>
+</elements>

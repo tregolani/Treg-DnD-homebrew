@@ -4,7 +4,7 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.2.9">
+        <update version="0.3.0">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
@@ -171,7 +171,12 @@
 		  •You have resistance to bludgeoning, piercing, and slashing damage.&#13; 
 		  •You may affect more than one creature at a time with your Curse of the Sea by spending 1 sorcery point for each additional creature. Each curse lasts until invoked or until the end of your next turn as normal, and you can choose whether to invoke the curse for each creature separately.
           </description>
-	</sheet>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+		</rules>
       </element>
 	<append id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER">
 		<supports>Create or Destroy Water</supports>

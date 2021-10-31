@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.2.3">
+    <update version="0.2.4">
       <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-items.xml" />
     </update>
   </info>
@@ -83,7 +83,7 @@
 	</element>
 	<element name="Sentinel Shield +1" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_MAGIC_ITEM_SENTINEL_SHIELD_1">
 		<description>
-			<p>While holding this shield, you have advantage on initiative rolls and Wisdom (Perception) checks. The shield is emblazoned with a symbol of an eye.</p>
+			<p>While holding this shield, you gain a +1 to your AC and have advantage on initiative rolls and Wisdom (Perception) checks. The shield is emblazoned with a symbol of an eye.</p>
 		</description>
 		<setters>
 			<set name="keywords">shield</set>
@@ -95,6 +95,7 @@
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
 		</setters>
 		<rules>
+			<stat name="ac:shield" value="1" bonus="enhancement" />
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
 		</rules>
 	</element>

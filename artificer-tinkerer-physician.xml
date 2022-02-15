@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="artificer-tinkerer-physician.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/artificer-tinkerer-physician.xml" />
+		</update>
+	</info>
+	
+	<element name="Tinkerer Physician" type="Archetype" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_ARTIFICER_TINKERER_PHYSICIAN">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>Armies require protection, and someone has to put things back together if defenses fail. A combination of protector and medic, a Tinkerer Physician is an expert at healing and defending others and repairing both material and personnel. To aid in their work, Tinkerer Physicians are usually accompanied by a steel defender, a protective companion of their own creation. Many soldiers tell stories of nearly dying before being saved by a Tinkerer Physician and a steel defender.</p>
+			<p class="indent">Tinkerer Physicians are a rare sight in the world, but the gnomes of Gleamsplockett have developed a reputation for their alchemical expertise, arcane applications of transmutative magic, and medicinal altruism</p>
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_TOOL_PROFICIENCY" />
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_TINKERER_PHYSICIAN_SPELLS" />
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_BATTLE_READY" />
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_STEEL_DEFENDER" />
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_MEDICINAL_SAVANT" />
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_ARCANE_JOLT" />
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_IMPROVED_DEFENDER" />
+<!--		<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_ARCANE_RESTORATION" /> -->
+<!--		<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_BATTLE_MEDIC" /> -->
+		</description>
+		<sheet display="false">
+			<description>People require protection, and someone has to put things back together if injuries happen or defenses fail.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_TINKERER_PHYSICIAN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_BATTLE_READY" level="3" />
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_STEEL_DEFENDER" level="3" />
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_MEDICINAL_SAVANT" level="5" />
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_ARCANE_JOLT" level="9" />
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_IMPROVED_DEFENDER" level="15" />
+<!--		<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_ARCANE_RESTORATION" level="9" /> -->
+<!--		<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_BATTLE_MEDIC" level="15" /> -->
+		</rules>
+	</element>
+	<element name="Tool Proficiency" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_TOOL_PROFICIENCY">
+		<description>
+			<p>When you adopt this specialization at 3rd level, you gain proficiency with smith’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with smith’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Tinkerer Physician" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Tinkerer Physician Spells" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_TINKERER_PHYSICIAN_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Tinkerer Physician Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<p><strong>TINKERER PHYSICIAN SPELLS</strong></p>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>heroism, shield</em></td></tr>
+				<tr><td>5th</td><td><em>ray of enfeeblement, warding bond</em></td></tr>
+				<tr><td>9th</td><td><em>aura of vitality, life transference</em></td></tr>
+				<tr><td>13th</td><td><em>aura of purity, death ward</em></td></tr>
+				<tr><td>17th</td><td><em>raise dead, mass cure wounds</em></td></tr>
+			</table>			
+		</description>
+		<sheet display="false">
+			<description>You always have certain spells prepared after you reach particular levels in this class, as shown in the Tinkerer Physician Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_VITALITY" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_LIFE_TRANSFERENCE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_PURITY" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Battle Ready" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_BATTLE_READY">
+		<description>
+			<p>When you reach 3rd level, your combat training and your experiments with magic have paid off in two ways:</p>
+			<ul>
+				<li>You gain proficiency with martial weapons.</li>
+				<li>When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
+	</element>
+	<element name="Steel Defender" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_STEEL_DEFENDER">
+		<description>
+			<p>By 3rd level, your tinkering has borne you a faithful companion, a steel defender. It is friendly to you and your companions, and it obeys your commands. See this creature’s game statistics in the Steel Defender stat block, which uses your proficiency bonus (PB) in several places. You determine the creature’s appearance and whether it has two legs or four; your choice has no effect on its game statistics.</p>
+			<p class="indent">In combat, the defender shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the defender can take any action of its choice, not just Dodge.</p>
+			<p class="indent">If the mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith’s tools as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored.</p>
+			<p class="indent">At the end of a long rest, you can create a new steel defender if you have your smith’s tools with you. If you already have a steel defender from this feature, the first one immediately perishes. The defender also perishes if you die.</p>
+		</description>
+		<sheet>
+			<description>In combat, the defender shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the defender can take any action of its choice, not just Dodge.
+			If the mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith’s tools as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored.
+			At the end of a long rest, you can create a new steel defender if you have your smith’s tools with you.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Steel Defender" supports="Steel Defender" default="ID_WOTC_ERLW_COMPANION_ARTIFICER_STEEL_DEFENDER" />
+		</rules>
+	</element>
+	<element name="Medicinal Savant" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_MEDICINAL_SAVANT">
+		<description>
+			<p>At 5th level, you develop masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist’s supplies as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, cold, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).</p>
+		</description>
+		<sheet>
+			<description>Whenever you cast a spell using your alchemist’s supplies, you gain a +{{alchemical savant:bonus}} bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, cold, necrotic, or poison damage.</description>
+		</sheet>
+		<rules>
+			<stat name="alchemical savant:bonus" value="1" bonus="base" />
+			<stat name="alchemical savant:bonus" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Arcane Jolt" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_ARCANE_JOLT">
+		<description>
+			<p>At 9th level, you learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel defender hits a target, you can channel magical energy through the strike to create one of the following effects:</p>
+			<ul>
+				<li>The target takes an extra 2d6 force damage.</li>
+				<li>Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 hit points to it.</li>
+			</ul>
+			<p class="indent">You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>When either you hit a target with a magic weapon attack or your steel defender hits a target, you can create one of the following effects:&#13;
+			• The target takes an extra {{arcane jolt damage:dice:amount}}d6 force damage.&#13;
+			• Choose one creature or object you can see within 30 feet of the target restoring {{arcane jolt healing:dice:amount}}d6 hit points to it.</description>
+		</sheet>
+		<rules>
+			<stat name="arcane jolt damage:dice:amount" value="2" />
+			<stat name="arcane jolt healing:dice:amount" value="2" />
+		</rules>
+	</element>
+	<element name="Improved Defender" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_IMPROVED_DEFENDER">
+		<description>
+			<p>At 15th level, your Arcane jolt and steel defender become more powerful:</p>
+			<ul>
+				<li>The extra damage and the healing of your Arcane jolt both increase to 4d6.</li>
+				<li>Your steel defender gains a +2 bonus to Armor Class.</li>
+				<li>Whenever your steel defender uses its Deflect Attack, the attacker takes force damage equal to 1d4 + your Intelligence modifier.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Whenever your steel defender uses its Deflect Attack, the attacker takes 1d4+{{intelligence:modifier}} force damage.</description>
+		</sheet>
+		<rules>
+			<stat name="arcane jolt damage:dice:amount" value="2" />
+			<stat name="arcane jolt healing:dice:amount" value="2" />
+			<stat name="companion:ac" value="2" />
+		</rules>
+	</element>
+	
+	<element name="Arcane Restoration" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_ARCANE_RESTORATION">
+		<description>
+			<p>At 9th level, you learn to channel restorative arcane energy into your attacks. You gain the following options:</p>
+			<ul>
+				<li>When either you hit a target with a magic weapon attack or your steel defender hits a target, choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 hit points to it.</li>
+				<li>You can cast lesser restoration without expending a spell slot and without preparing the spell, provided you use alchemist’s supplies as the spellcasting focus.</li>
+			</ul>
+			<p class="indent">You can either of these options a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{intelligence:modifier}}/Long Rest">
+			<description>You gain the following options:&#13;
+			• When either you hit a target with a magic weapon attack or your steel defender hits a target, choose one creature you can see within 30ft of the target, restoring {{arcane jolt healing:dice:amount}}d6 hit points to it.&#13;
+			• You can cast lesser restoration without expending a spell slot and without preparing the spell, provided you use alchemist’s supplies as the spellcasting focus.</description>
+		</sheet>
+		<rules>
+			<stat name="arcane jolt healing:dice:amount" value="2" />
+		</rules>
+	</element>
+	<element name="Battle Medic" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_BATTLE_MEDIC">
+		<description>
+			<p>At 15th level, your ability to manipulate restorative and protective arcane energies becomes more effective:</p>
+			<ul>
+				<li>The extra healing of your Arcane restoration increases to 4d6.</li>
+				<li>Your steel defender gains a +2 bonus to Armor Class.</li>
+				<li>You can cast greater restoration and heal without expending a spell slot, without preparing the spell, and without material components, provided you use alchemist’s supplies as the spellcasting focus. Once you cast either spell with this feature, you can’t cast that spell with it again until you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast greater restoration and heal without expending a spell slot, without preparing the spell, and without material components, provided you use alchemist’s supplies as the spellcasting focus. </description>
+		</sheet>
+		<rules>
+			<stat name="arcane jolt healing:dice:amount" value="2" />
+			<stat name="companion:ac" value="2" />
+		</rules>
+	</element> -->
+
+</elements>

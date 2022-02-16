@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2">
+		<update version="0.2.1">
 			<file name="artificer-tinkerer-physician.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/artificer-tinkerer-physician.xml" />
 		</update>
 	</info>
@@ -179,7 +179,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Proficiency" name="Tool Proficiency, Tinkerer Physician" supports="Tools" />
+			<select type="Proficiency" name="Tool Proficiency, Tinkerer Physician" supports="Tool" />
 		</rules>
 	</element>
 														 

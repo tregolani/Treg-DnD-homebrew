@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.1">
+		<update version="0.2.2">
 			<file name="artificer-tinkerer-physician.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/artificer-tinkerer-physician.xml" />
 		</update>
 	</info>
@@ -131,6 +131,7 @@
 		</sheet>
 		<rules>
 			<stat name="arcane jolt healing:dice:amount" value="2" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" />
 		</rules>
 	</element>
 	<element name="Battle Medic" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_BATTLE_MEDIC">
@@ -148,6 +149,8 @@
 		<rules>
 			<stat name="arcane jolt healing:dice:amount" value="2" />
 			<stat name="companion:ac" value="2" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEAL" />
 		</rules>
 	</element>
 

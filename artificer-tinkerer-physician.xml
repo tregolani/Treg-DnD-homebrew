@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.2">
+		<update version="0.2.3">
 			<file name="artificer-tinkerer-physician.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/artificer-tinkerer-physician.xml" />
 		</update>
 	</info>
@@ -39,12 +39,15 @@
 	<element name="Tool Proficiency" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_TOOL_PROFICIENCY">
 		<description>
 			<p>When you adopt this specialization at 3rd level, you gain proficiency with smith’s tools or alchemist's supplier. If you already have these proficiencies, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+			<p class="indent">Additionally, when making a Medicine (Wisdom) check, you can make a Medicine (Intelligence) check instead.</p>
 		</description>
 		<sheet display="false">
-			<description>You gain proficiency with smith’s tools or alchemist's supplies. If you already have these proficiencies, you gain proficiency with one other type of artisan’s tools of your choice.</description>
+			<description>You gain proficiency with smith’s tools or alchemist's supplies. If you already have these proficiencies, you gain proficiency with one other type of artisan’s tools of your choice. Additionally, you can use Intelligence for Medicine checks instead of Wisdom.</description>
 		</sheet>
 		<rules>
 			<select type="Archetype Feature" name="Tool Proficiency, Tinkerer Physician" supports="Physician Tools" />
+			<stat name="medicine:misc" value="-wisdom:modifier" />
+			<stat name="medicine:misc" value="intelligence:modifier" />
 		</rules>
 	</element>
 	<element name="Tinkerer Physician Spells" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_TINKERER_PHYSICIAN_TINKERER_PHYSICIAN_SPELLS">

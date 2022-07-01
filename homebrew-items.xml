@@ -4,11 +4,13 @@
     <name>Items</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.2.4">
+    <update version="0.2.5">
       <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-items.xml" />
     </update>
   </info>
-  	<element name="Cursed Amulet of the Chameleon" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_MAGIC_ITEM_AMULET_OF_ALTER_SELF">
+
+<!--Wondrous Items-->
+	<element name="Cursed Amulet of the Chameleon" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_MAGIC_ITEM_AMULET_OF_ALTER_SELF">
 		<description>
 			<p>A simple silver chain adorned with an intricately carved depiction of a chameleon with a small jade gem inset for its eye. Small runes run surround the gem, depicting the elvish word "aethen".</p>
 			<p>While attuned to this amulet, you can touch the gem and speak the command word <em>"aethen"</em> to transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You cannot appear as a creature of a different size than you, and your basic shape stays the same; if you’re bipedal, you can’t use this amulet to become quadrupedal, for instance. The transformation ends when the wearer touches the gem and speaks the command word again.</p>
@@ -98,5 +100,32 @@
 			<stat name="ac:shield" value="1" bonus="enhancement" />
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
 		</rules>
+	</element>
+
+<!--Tools-->
+	<element name="Surgeon's tools" type="Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ITEM_TOOL_SURGEONS_TOOLS">
+		<description>
+			<p>This black leather bag contains everything you'd need to perform surgery.  Proficiency with these tools allows you to add your proficiency bonus to any ability check you make to perform surgery or autopsy. Proficiency with surgeons' tool is required to attempt surgery.</p>
+			<p class="indent"><strong><em>Components.</em></strong> Surgeon's tools include anesthetics, scalpels, clamps, bandages, salves, and catgut sutures imbued with healing potion residue to help speed healing and prevent infection.</p>
+			<p class="indent"><strong><em>Investigation and Insight.</em></strong> When examining a creature, your expertise lends additional insight to the history and nature of external wounds, scars or deformities.</p>
+			<p class="indent"><strong><em>Medicine.</em></strong> Your mastery of medicinal tools improves your ability to treat wounds directly and efficiently.</p>
+			<p class="indent"><strong><em>Nature.</em></strong> A creature's abilities are inherent to their physiology. When examining or dissecting a creature, you gain insights into its habits, environment, and possibly any strange or unique abilities it might have.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="3">3 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS</set>
+		</setters>
+	</element>
+	
+	<element name="Tool Proficiency (Surgeon's tools)" type="Proficiency" source="Tregolani Homebrew Collection" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS">
+		<supports>Tool, Artisan tools</supports>
+		<requirements />
+		<description>
+			<p>These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft.</p>
+		</description>
+		<rules />
 	</element>
 </elements>

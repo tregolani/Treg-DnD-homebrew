@@ -2,9 +2,9 @@
 <elements>
   <info>
     <name>Tregolani Homebrew Spells</name>
-    <description>These are some personal homebrew spells. Currently contains: Shockbolt, Lance of Faith, Glacial Snap, and Tempest Wall</description>
+    <description>These are some personal homebrew spells. Currently contains: Shockbolt, Lance of Faith, Glacial Snap, Tempest Wall, and Forked Lightning</description>
     <author>Tregolani</author>
-    <update version="0.2.7">
+    <update version="0.2.8">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     </update>
   </info>
@@ -170,6 +170,30 @@
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a glass bowl and a small metal sphere</set>
 			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!-- 5th Level -->
+	<element name="Forked Lightning" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_FORKED_LIGHTNING">
+		<supports>Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.</p>
+			<p class="indent">A target must make a Dexterity saving throw. The target takes 8d8 lightning damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, one additional bolt leaps from the first target to another target for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">5</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bit of fur, a piece of amber, glass, or crystal rod, and three silver pins</set>
+			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>

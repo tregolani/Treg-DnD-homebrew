@@ -2,9 +2,9 @@
 <elements>
   <info>
     <name>Tregolani Homebrew Spells</name>
-    <description>These are some personal homebrew spells. Currently contains: Shockbolt, Lance of Faith, Glacial Snap, Tempest Wall, and Forked Lightning</description>
+    <description>These are some personal homebrew spells. Currently contains: Shockbolt, Lance of Faith, Glacial Snap, Tempest Wall, Forked Lightning, and Storm Conduit</description>
     <author>Tregolani</author>
-    <update version="0.2.8">
+    <update version="0.2.9">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     </update>
   </info>
@@ -83,7 +83,7 @@
   -->
   <!--3rd Level-->
   <!--
-  <element name="Storm Conduit" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_STORM_CONDUIT">
+  <element name="Crackling Runes" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_CRACKLING_RUNES">
     <supports>Sorcerer, Wizard, Artificer, Fighter (Eldritch Knight)</supports>
     <description>
       <p>You sheathe yourself in arcane energy, causing six runes, arcing and thrumming with lightning, to appear upon your forearms. When you cast the spell—and as a bonus action on each of your turns thereafter—you can expend one or two of the runes, each causing a bolt of lightning to blast out from your hand in a line 100 feet long and 5 feet wide in a direction you choose. The first two creatures within the line must make a Dexterity saving throw, taking 3d4 lightning damage on a failed save, or half as much damage on a successful one. Each bolt can only affect a maximum of two creatures. Once all of the runes have been expended, the spell ends.</p>
@@ -194,6 +194,30 @@
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a bit of fur, a piece of amber, glass, or crystal rod, and three silver pins</set>
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!-- 6th Level -->
+	<element name="Storm Conduit" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_STORM_CONDUIT">
+		<supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>A scintillating cascade of lightning flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Dexterity saving throw. On a failed save, a creature takes 6d8 lightning damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. Creatures wearing metal armor or carrying metal weapons have disadvantage on this saving throw.</p>
+			<p class="indent">You can create a new blast of lightning as your action on any turn until the spell ends.</p>
+			<p class="indent">For the duration, your body crackles violently with the power of a condensed storm. You shed bright light in a 15-foot radius and dim light for an additional 15 feet, and any creature within 15ft of you has disadvantage on Wisdom (Perception) check to see or listen.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">6</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (60-foot line)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a chunk of fulgurite</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>

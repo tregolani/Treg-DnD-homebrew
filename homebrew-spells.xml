@@ -4,7 +4,7 @@
     <name>Tregolani Homebrew Spells</name>
     <description>These are some personal homebrew spells. Currently contains: Shockbolt, Lance of Faith, Glacial Snap, Tempest Wall, Forked Lightning, and Storm Conduit</description>
     <author>Tregolani</author>
-    <update version="0.2.9">
+    <update version="0.2.10">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     </update>
   </info>
@@ -180,7 +180,7 @@
 		<description>
 			<p>You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.</p>
 			<p class="indent">A target must make a Dexterity saving throw. The target takes 8d8 lightning damage on a failed save, or half as much damage on a successful one.</p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, one additional bolt leaps from the first target to another target for each slot level above 5th.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, you can choose one of the following: the damage increases by 2d8 for each slot level above 5th or one additional bolt leaps from the first target to another target for each slot level above 5th.</p>
 		</description>
 		<setters>
 			<set name="keywords">lightning</set>
@@ -205,6 +205,7 @@
 			<p>A scintillating cascade of lightning flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Dexterity saving throw. On a failed save, a creature takes 6d8 lightning damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. Creatures wearing metal armor or carrying metal weapons have disadvantage on this saving throw.</p>
 			<p class="indent">You can create a new blast of lightning as your action on any turn until the spell ends.</p>
 			<p class="indent">For the duration, your body crackles violently with the power of a condensed storm. You shed bright light in a 15-foot radius and dim light for an additional 15 feet, and any creature within 15ft of you has disadvantage on Wisdom (Perception) check to see or listen.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d8 for each slot level above 6th.</p>
 		</description>
 		<setters>
 			<set name="keywords">lightning</set>

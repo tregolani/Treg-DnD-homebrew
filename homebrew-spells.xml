@@ -2,9 +2,9 @@
 <elements>
   <info>
     <name>Tregolani Homebrew Spells</name>
-    <description>These are some personal homebrew spells. Currently contains: Shockbolt, Lance of Faith, Glacial Snap, Tempest Wall, Forked Lightning, and Storm Conduit</description>
+    <description>These are some personal homebrew spells. Currently contains: Shockbolt, Lance of Faith, Glacial Snap, Tempest Wall, Crushing Breaker, Forked Lightning, and Storm Conduit</description>
     <author>Tregolani</author>
-    <update version="0.2.11">
+    <update version="0.2.12">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     </update>
   </info>
@@ -129,7 +129,30 @@
     </setters>
   </element>
   --> 
-      <element name="Glacial Snap" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_GLACIAL_SNAP">
+	<element name="Crushing Breaker" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_CRUSHING_BREAKER">
+		<supports>Cleric, Druid, Sorcerer, Spell Saving Throw</supports>
+		<description>
+		<p>A great wave of salt water bursts from the ground beneath your feet. Each creature in a 30-foot cube originating from you must make a Strength saving throw. On a failed save, a creature takes 4d10 bludgeoning damage and is pushed 15 feet away from you. On a successful save, the creature takes half as much damage and is not pushed away.</p>
+		<p class="indent">Along with the wave, you conjure the spirit of a great shark or other powerful sea creature. Choose one creature that failed its saving throw as the spirit's prey. That target takes an extra 2d10 piercing damage and is restrained by the spirit's jaws or claws for 1 minute. A target restrained in this way can use its action to make a Strength check against your spell save DC. On a success, it frees itself and the spirit disappears.</p>
+		<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th or higher, the damage of the wave and spirit each increase by 1d10 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">bludgeoning, piercing</set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self (30-foot cube)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shark's tooth</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Glacial Snap" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_GLACIAL_SNAP">
         <supports>Sorcerer, Wizard, Druid, Spell Saving Throw</supports>
         <description>
             <p>You point at a location within range, and a glowing 1-foot shard of jagged ice streaks there and explodes in a 20-foot radius sphere. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 10d4 cold damage and another 5d4 cold damage at the end of its next turn. On a successful save, a creature takes half the initial damage and no damage at the end of its next turn.</p>

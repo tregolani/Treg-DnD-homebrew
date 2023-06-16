@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Tasha's Cauldron of Everything optional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.2.9">
+		<update version="0.2.10">
 			<file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised" />
 		</update>
 	</info>
@@ -360,6 +360,57 @@
 		</description>
 		<sheet>
 			<description>You regain {{charisma:modifier}} expended sorcery points whenever you finish a short rest </description>
+		</sheet>
+	</element>
+	
+<!--Modified Metamagic-->
+	<element name="Careful Spell (Improved)" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_CAREFUL_SPELL_IMPROVED">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature is unaffected by the spell.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 sorcery point and choose up to {{metamagic careful spell:creatures}} of those creatures. A chosen creature is unaffected by the spell.</description>
+		</sheet>
+		<rules>
+			<stat name="metamagic careful spell:creatures" value="1" bonus="base" />
+			<stat name="metamagic careful spell:creatures" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Distant Spell (Improved)" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_DISTANT_SPELL_IMPROVED">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to increase the spell's range by a number of feet equal to 30 times your Sorcerer level. Alternatively, if you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to increase the spell's range by a number of feet equal to 30 times your Sorcerer level. Alternatively, if you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</description>
+		</sheet>
+	</element>
+	<element name="Extended Spell (Improved)" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_EXTENDED_SPELL_IMPROVED">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that has a duration of 1 minute or longer, you can spend a number of sorcery points equal to the spell's level to increase the duration to its next increment, to a maximum of 24 hours. For example, a duration of 1 minute because 10 minutes, and a duration of 10 minutes becomes an hour.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that has a duration of 1 minute or longer, you can spend a number of sorcery points equal to the spell's level to increase the duration to its next increment, to a maximum of 24 hours. For example, a duration of 1 minute because 10 minutes, and a duration of 10 minutes becomes an hour.</description>
+		</sheet>
+	</element>
+	<element name="Heightened Spell (Improved)" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_HEIGHTENED_SPELL_IMPROVED">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 2 sorcery points to give one target of the spell disadvantage on all its saving throws against the spell.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 2 sorcery points to give one target of the spell disadvantage on all its saving throws against the spell.</description>
+		</sheet>
+	</element>
+	<element name="Subtle Spell (Improved)" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_SUBTLE_SPELL_IMPROVED">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell, you can spend 1 sorcery point to cast it without any somatic, verbal, or material components without a gp cost.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell, you can spend 1 sorcery point to cast it without any somatic, verbal, or material components without a gp cost.</description>
 		</sheet>
 	</element>
 </elements>

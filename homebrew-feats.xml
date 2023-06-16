@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.1">
+    <update version="0.1.1">
       <file name="homebrew-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-feats.xml" />
     </update>
   </info>
@@ -62,6 +62,26 @@
 		<rules>
 			<stat name="charisma" value="1" alt="Elemental Blood" />
 			<stat name="elemental blood:ability" value="Charisma" inline="true"/>
+		</rules>
+	</element>
+	<element name="Healer (Improved)" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_HEALER_IMPROVED">
+		<description>
+			<p>You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:</p>
+			<ul>
+				<li><b>Skill Proficiency.</b> You gain proficiency in the Medicine skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</li>
+				<li><b>Battle Medic.</b> As an action, you can spend one use of a healer's kit to tend to a creature and restore 1d6 + your Intelligence or Wisdom Modifier hit points to it, plus additional hit points equal to yours or the creature's maximum number of Hit Dice (whichever is higher.) The creature can't regain hit points from this feat again until it finishes a short or long rest.</li>
+				<li><b>First Responder.</b> When you use a healer’s kit to stabilize a dying creature, that creature also regains hit points equal to your Intelligence or Wisdom modifier.</li>
+				<li><b>Healing Rerolls.</b> Whenever you roll a die to determine the number of hit points you restore with a spell, potion, or any other ability, you can reroll the die if it rolls a 1, and you must use the new roll.</li>
+			</ul>
+		</description>
+		<sheet action="Action">
+			<description>You can spend one use of a healer's kit to tend to a creature and restore 1d6 + {{healer:bonus}} hit points to it, plus additional hit points equal to yours or the creature's maximum number of Hit Dice (whichever is higher.) The creature can't regain hit points from this feat again until it finishes a short or long rest.&#13;
+			When you use a healer’s kit to stabilize a dying creature, that creature also regains {{healer:bonus}} hit points.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_MEDICINE" />
+			<stat name="healer:bonus" value="intelligence:modifier" bonus="healer" />
+			<stat name="healer:bonus" value="wisdom:modifier" bonus="healer" />
 		</rules>
 	</element>
 </elements>

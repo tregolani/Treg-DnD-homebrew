@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.2.5">
+    <update version="0.2.6">
       <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-items.xml" />
     </update>
   </info>
@@ -100,6 +100,32 @@
 			<stat name="ac:shield" value="1" bonus="enhancement" />
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
 		</rules>
+	</element>
+	<element name="Captain's Wright" type="Magic Item" source="The Griffon's Saddlebag" id="ID_TGS_MAGIC_ITEM_STAFF_CAPTAINS_WRIGHT">
+		<description>
+			<p>This staff is slung together and carved from the mast of a sunken ship. While on a vehicle, you can use the staff to perform a ritual over the course of 1 minute. At the end of the ritual, you and the staff are magically linked to that vehicle. While holding the staff, you gain the following benefits:</p>
+			<ul>
+				<li>While you are within 10 miles of the linked vehicle, you can notice and identify damage taken by it as if you suffered the injury yourself. The sensation is harmless.</li>
+				<li>While you are within 1 mile of the linked vehicle, you can use an action to see and hear as if you were in any space on or adjacent to it until the start of your next turn. During this time, you are deaf and blind with regard to your own senses.</li>
+				<li>While you are within 100 feet of the linked vehicle, you can use an action to cause the sound of your voice to originate from any point on or adjacent to it. While speaking in this way, you can make your voice boom up to three times as normal until the start of your next turn.</li>
+				<li>As an action, or as part of an action made to control the linked vehicle, you can touch it and expend one Hit Die to repair it. Roll the die twice. The vehicle regains a number of hit points equal to the total of the two rolls, plus your Constitution modifier.</li>
+				<li>Any creature that can see or hear you, including yourself, has advantage on any check made to control or repair the linked vehicle.</li>
+			</ul>
+			<p>Your link to a vehicle ends when the vehicle is destroyed. It ends early if you use an action to mentally sever the link, or if you perform the ritual again with a different vehicle. If the linked vehicle is destroyed, you also take 3d10 psychic damage before the link is severed.</p>
+			<p><strong><em>Spells.</em></strong> The staff has 10 charges. While holding the staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it: <em>animal messenger</em> (1 charge), <em>floating disk</em> (1 charge), <em>levitate</em> (2 charges), <em>mending</em> (no charges), <em>rope trick</em> (2 charges), <em>teleport</em> (7 charges), or <em>water walk</em> (3 charges). This version of the teleport spell targets only yourself, and the destination must be a location on the linked vehicle. The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses this property.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">10</set>
+		</setters>
 	</element>
 
 <!--Tools-->

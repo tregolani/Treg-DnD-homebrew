@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.7">
+		<update version="0.2.8">
 			<file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
 		</update>
 	</info>
@@ -9,17 +9,17 @@
 		<description>
         <![CDATA[<p>This is a collection of personal homebrew created by Tregolani for DnD campaigns. Currently included in the collection are: </p>
       			<ul>
-              <li><strong>Items:</strong> Cursed Amulet of the Chameleon, Handwraps of the Flowing Soul</li>
-              <li><strong>Feats:</strong> Elemental Blood</li>
+              <li><strong>Items:</strong> Cursed Amulet of the Chameleon, Handwraps of the Flowing Soul, Sentinel Shield +1, Captain's Wright, Surgeon's Tools</li>
+              <li><strong>Feats:</strong> Elemental Blood, Healer (Improved)</li>
               <li><strong>Spells:</strong>
   		<ul>
   		<li><em><strong>Cantrips: </strong>shockbolt, lance of faith</em></li>
-   		<li><em><strong>2nd-level: </strong>freezing lance</em></li>
-     		<li><em><strong>3rd-level: </strong>storm conduit</em></li>
-     		<li><em><strong>4th-level: </strong>glacial snap, sonic boom</em></li>
+		<li><em><strong>4th-level: </strong>crushing breaker, glacial snap, tempest wall</em></li>
+		<li><em><strong>5th-level: </strong>forked lightning</em></li>
+		<li><em><strong>6th-level: </strong>storm conduit</em></li>
   		</ul>
               </li>
-              <li><strong>Classes:</strong> Sorcerer (Revised)</li>
+              <li><strong>Classes:</strong> Sorcerer (Revised), Sorcerer (Wisdom)</li>
               <li><strong>Subclasses:</strong> Sea Sorcery (Revised), Tinkerer Physician (Artificer)</li>
             </ul>]]>
       </description>
@@ -29,7 +29,7 @@
 			<set name="url"></set>
 			<set name="official">false</set>
 			<set name="playtest">true</set>
-			<set name="release">20210705</set>
+			<set name="release">20230927</set>
 		</setters>
 	</element>
 </elements> 

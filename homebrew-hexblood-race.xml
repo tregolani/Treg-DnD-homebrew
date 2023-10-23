@@ -4,7 +4,7 @@
 		<name>Hexblood (Halloween)</name>
 		<description>Slight modification of the Hexblood race for Nox's Halloween one-shot</description>
 		<author>Tregolani</author>
-		<update version="0.0.1">
+		<update version="0.1.1">
 			<file name="homebrew-hexblood-race.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-hexblood-race.xml" />
 		</update>
 	</info>
@@ -44,7 +44,7 @@
 			<p class="indent"><strong>Remote Viewing.</strong>  If you are within 10 miles of the token, you can enter a trance as an action. The trance lasts for 1 minute, but it ends early if you dismiss it (no action required) or are incapacitated. During this trance, you can see and hear from the token as if you were located where it is. While you are using your senses at the token’s location, you are blinded and deafened in regard to your own surroundings. When the trance ends, the token is harmlessly destroyed.</p>
 			<h5 style="margin-top:5px" />
 			<p class="indent">Once you create a token using this feature, you can’t do so again until you finish a long rest, at which point your missing part regrows.</p>
-			<p class="indent"><strong><em>Hex Magic.</em></strong> You can cast the <i>disguise self</i> and <i>hex</i> spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have.</p>
+			<p class="indent"><strong><em>Hex Magic.</em></strong> You can cast the <i>disguise self</i> and <i>hideous laughter</i> spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have.</p>
 			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose the ability when you gain this lineage).</p>
 			<p class="indent"><strong><em>Languages.</em></strong> Your character can speak, read, and write Common and one other language that you and your DM agree is appropriate for the character.</p>
 		</description>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.9">
+		<update version="0.2.10">
 			<file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
 		</update>
 	</info>
@@ -21,6 +21,7 @@
               </li>
               <li><strong>Classes:</strong> Sorcerer (Revised), Sorcerer (Wisdom)</li>
               <li><strong>Subclasses:</strong> College of Glamour (One-Dnd), Sea Sorcery (Revised), Tinkerer Physician (Artificer)</li>
+              <li><strong>Races:</strong> Hexblood</li>
             </ul>]]>
       </description>
 		<setters>

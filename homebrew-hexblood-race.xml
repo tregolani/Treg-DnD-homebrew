@@ -4,7 +4,7 @@
 		<name>Hexblood (Halloween)</name>
 		<description>Slight modification of the Hexblood race for Nox's Halloween one-shot</description>
 		<author>Tregolani</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="homebrew-hexblood-race.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-hexblood-race.xml" />
 		</update>
 	</info>
@@ -71,9 +71,39 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Racial Trait" name="Spellcasting Ability (Hex Magic)" supports="ID_WOTC_VRGTR_RACIAL_TRAIT_HEXBLOOD_HEX_MAGIC_INTELLIGENCE | ID_WOTC_VRGTR_RACIAL_TRAIT_HEXBLOOD_HEX_MAGIC_WISDOM | ID_WOTC_VRGTR_RACIAL_TRAIT_HEXBLOOD_HEX_MAGIC_CHARISMA" />
+			<select type="Racial Trait" name="Spellcasting Ability (Hex Magic)" supports="ID_TREGOLANI_HB_RACIAL_TRAIT_HEXBLOOD_HEX_MAGIC_INTELLIGENCE | ID_TREGOLANI_HB_RACIAL_TRAIT_HEXBLOOD_HEX_MAGIC_WISDOM | ID_TREGOLANI_HB_RACIAL_TRAIT_HEXBLOOD_HEX_MAGIC_CHARISMA" />
 			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
 			<grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" />
 		</rules>
+	</element>
+	
+	<element name="Intelligence" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_RACIAL_TRAIT_HEXBLOOD_HEX_MAGIC_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Hex Magic">
+			<description>You can cast the <i>disguise self</i> and <i>hideous laughter</i> spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have. Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_RACIAL_TRAIT_HEXBLOOD_HEX_MAGIC_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Hex Magic">
+			<description>You can cast the <i>disguise self</i> and <i>hideous laughter</i> spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have. Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_RACIAL_TRAIT_HEXBLOOD_HEX_MAGIC_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Hex Magic">
+			<description>You can cast the <i>disguise self</i> and <i>hideous laughter</i> spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have. Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
 	</element>
 </elements>

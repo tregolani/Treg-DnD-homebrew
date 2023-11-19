@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Tasha's Cauldron of Everything optional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.2.10">
+		<update version="0.2.11">
 			<file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised" />
 		</update>
 	</info>
@@ -367,10 +367,10 @@
 	<element name="Careful Spell (Improved)" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_CAREFUL_SPELL_IMPROVED">
 		<supports>Metamagic</supports>
 		<description>
-			<p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature is unaffected by the spell.</p>
+			<p>When you cast a spell that affects an area, you can spend 1 sorcery point, and choose a number of creatures up to your Charisma modifier in the area (minimum of one creature). A chosen creature is unaffected by the spell.</p>
 		</description>
 		<sheet>
-			<description>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 sorcery point and choose up to {{metamagic careful spell:creatures}} of those creatures. A chosen creature is unaffected by the spell.</description>
+			<description>When you cast a spell that affects an area, you can spend 1 sorcery point and choose up to {{metamagic careful spell:creatures}} creatures in the spell's area. A chosen creature is unaffected by the spell.</description>
 		</sheet>
 		<rules>
 			<stat name="metamagic careful spell:creatures" value="1" bonus="base" />
@@ -398,7 +398,7 @@
 	<element name="Heightened Spell (Improved)" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_HEIGHTENED_SPELL_IMPROVED">
 		<supports>Metamagic</supports>
 		<description>
-			<p>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 2 sorcery points to give one target of the spell disadvantage on all its saving throws against the spell.</p>
+			<p>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on all its saving throws against the spell.</p>
 		</description>
 		<sheet>
 			<description>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 2 sorcery points to give one target of the spell disadvantage on all its saving throws against the spell.</description>

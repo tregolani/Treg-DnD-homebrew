@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Tasha's Cauldron of Everything optional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.2.11">
+		<update version="0.2.12">
 			<file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised" />
 		</update>
 	</info>
@@ -401,7 +401,7 @@
 			<p>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on all its saving throws against the spell.</p>
 		</description>
 		<sheet>
-			<description>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 2 sorcery points to give one target of the spell disadvantage on all its saving throws against the spell.</description>
+			<description>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on all its saving throws against the spell.</description>
 		</sheet>
 	</element>
 	<element name="Subtle Spell (Improved)" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC_SUBTLE_SPELL_IMPROVED">

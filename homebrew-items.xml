@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.2.6">
+    <update version="0.2.7">
       <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-items.xml" />
     </update>
   </info>
@@ -103,7 +103,8 @@
 	</element>
 	<element name="Captain's Wright" type="Magic Item" source="The Griffon's Saddlebag" id="ID_TGS_MAGIC_ITEM_STAFF_CAPTAINS_WRIGHT">
 		<description>
-			<p>This staff is slung together and carved from the mast of a sunken ship. While on a vehicle, you can use the staff to perform a ritual over the course of 1 minute. At the end of the ritual, you and the staff are magically linked to that vehicle. While holding the staff, you gain the following benefits:</p>
+			<p>This walking cane—a gift from Lady Annette Drask following their voyage from Galeran to Dun'Morach—is made of dark ebony and inlaid with narwhal ivory. Coiled around the cane's straight handle is carved the alluring likeness of a mermaid, her swirling hair made of polished pearl. A small clasp can be undone to allow the handle to pull free from the rest of the cane, revealing a short, pointed blade that functions as a standard dagger.</p>
+			<p class="indent">While on a vehicle, you can use the staff to perform a ritual over the course of 1 minute. At the end of the ritual, you and the staff are magically linked to that vehicle. While holding the staff, you gain the following benefits:</p>
 			<ul>
 				<li>While you are within 10 miles of the linked vehicle, you can notice and identify damage taken by it as if you suffered the injury yourself. The sensation is harmless.</li>
 				<li>While you are within 1 mile of the linked vehicle, you can use an action to see and hear as if you were in any space on or adjacent to it until the start of your next turn. During this time, you are deaf and blind with regard to your own senses.</li>

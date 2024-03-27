@@ -2,17 +2,60 @@
 <elements>
   <info>
     <name>Tregolani Homebrew Spells</name>
-    <description>These are some personal homebrew spells. Currently contains: Shockbolt, Lance of Faith, Glacial Snap, Tempest Wall, Crushing Breaker, Forked Lightning, and Storm Conduit</description>
+    <description>These are some personal homebrew spells. Currently contains: Jolt, Lance of Faith, Shockbolt, Crushing Breaker, Forked Lightning, and Storm Conduit</description>
     <author>Tregolani</author>
-    <update version="0.2.12">
+    <update version="0.2.13">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     </update>
   </info>
 
   <!--CANTRIPS-->
-  
+    <element name="Jolt" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_JOLT">
+    <supports>Sorcerer, Warlock, Wizard, Artificer, Ranged Spell Attack</supports>
+    <description>
+      <p>Static energy surges through your arm as you blast a creature with a jolt of electricity. Make a ranged spell attack against a target within range. On a hit, the target takes 1d8 lightning damage, or 1d12 lightning damage if the target is wearing metal armor or wielding a martial weapon made of metal.</p>
+      <p class="indent">The spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).</p>
+    </description>
+    <setters>
+      <set name="keywords">lightning</set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">90 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+	
+  <element name="Lance of Faith" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_LANCE_OF_FAITH">
+    <supports>Cleric, Ranged Spell Attack</supports>
+    <description>
+      <p>You conjure a lance of divine energy and hurl it at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d6 radiant radiant damage (if you are good or neutral) or 1d6 necrotic damage (if you are evil), and the lance embeds itself within the creature. The first time it is hit by a weapon attack made by a creature other than yourself before the start of your next turn, the lance detonates, dealing radiant (or necrotic) damage equal to your spellcasting modifier.</p>
+      <p class="indent">This spell's damage increases when you reach higher levels. At 5th level, the ranged attack deals an extra 1d6 radiant or necrotic damage to the target, and the detonation damage increases to 1d4 + your spellcasting ability modifier. Both damage rolls increase by 1d6/1d4 at 11th level and 17th level.</p>
+    </description>
+    <setters>
+      <set name="keywords">radiant, necrotic</set>
+      <set name="level">0</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+	
   <element name="Shockbolt" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_SHOCKBOLT">
-    <supports>Sorcerer, Wizard, Artificer</supports>
+    <supports>Sorcerer, Wizard, Artificer, Ranged Spell Attack</supports>
     <description>
       <p>You charge your fist and launch an arcing bolt of lightning at a creature or object within range. Make a ranged spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage.</p>
       <p class="indent">This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
@@ -33,28 +76,6 @@
     </setters>
   </element>
  
-  <element name="Lance of Faith" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_LANCE_OF_FAITH">
-    <supports>Cleric</supports>
-    <description>
-      <p>You conjure a lance of divine energy and hurl it at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d6 radiant radiant damage (if you are good or neutral) or 1d6 necrotic damage (if you are evil), and the lance embeds itself within the creature. The first time it is hit by a weapon attack made by a creature other than yourself before the start of your next turn, the lance detonates, dealing radiant (or necrotic) damage equal to your spellcasting modifier.</p>
-      <p class="indent">This spell's damage increases when you reach higher levels. At 5th level, the ranged attack deals an extra 1d6 radiant or necrotic damage to the target, and the detonation damage increases to 1d4 + your spellcasting ability modifier. Both damage rolls increase by 1d6/1d4 at 11th level and 17th level.</p>
-    </description>
-    <setters>
-      <set name="keywords">radiant, necrotic</set>
-      <set name="level">0</set>
-      <set name="school">Conjuration</set>
-      <set name="time">1 action</set>
-      <set name="duration">Instantaneous</set>
-      <set name="range">30 feet</set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>
-  
   <!--2nd Level-->
   
   <!--
@@ -152,7 +173,7 @@
 		</setters>
 	</element>
 	
-	<element name="Glacial Snap" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_GLACIAL_SNAP">
+<!--	<element name="Glacial Snap" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_GLACIAL_SNAP">
         <supports>Sorcerer, Wizard, Druid, Spell Saving Throw</supports>
         <description>
             <p>You point at a location within range, and a glowing 1-foot shard of jagged ice streaks there and explodes in a 20-foot radius sphere. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 10d4 cold damage and another 5d4 cold damage at the end of its next turn. On a successful save, a creature takes half the initial damage and no damage at the end of its next turn.</p>
@@ -195,7 +216,7 @@
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
+	</element>-->
 	
 <!-- 5th Level -->
 	<element name="Forked Lightning" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_FORKED_LIGHTNING">
@@ -228,7 +249,7 @@
 			<p>A scintillating cascade of lightning flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Dexterity saving throw. On a failed save, a creature takes 6d8 lightning damage and is blinded until the start of your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. Creatures wearing metal armor or carrying metal weapons have disadvantage on this saving throw.</p>
 			<p class="indent">You can create a new blast of lightning as your action on any turn until the spell ends.</p>
 			<p class="indent">For the duration, your body crackles violently with the power of a condensed storm. You shed bright light in a 15-foot radius and dim light for an additional 15 feet, and any creature within 15ft of you has disadvantage on Wisdom (Perception) check to see or listen. In addition, any creature that touches you or hits you with a melee attack takes 2d8 lightning damage.</p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d8 for each slot level above 6th.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the damage of both the blast and the contact retaliation increase by 1d8 for each slot level above 6th.</p>
 		</description>
 		<setters>
 			<set name="keywords">lightning</set>

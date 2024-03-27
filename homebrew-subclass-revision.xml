@@ -4,7 +4,7 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.3.4">
+        <update version="0.3.5">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
@@ -85,6 +85,8 @@
 			<select type="Spell" name="Spell, Oceanic Spells" supports="4,(Transmutation||Conjuration||Storm Sphere),(($(spellcasting:list))||Druid||Wizard)" level="7" default="ID_XGTE_SPELL_STORM_SPHERE" spellcasting="Sorcerer" />
 			<select type="Spell" name="Spell, Oceanic Spells" supports="5,(Transmutation||Conjuration),(($(spellcasting:list))||Druid||Wizard)||Maelstrom" level="9" default="ID_XGTE_SPELL_MAELSTROM" spellcasting="Sorcerer" />
 			<select type="Spell" name="Spell, Oceanic Spells" supports="5,(Transmutation||Conjuration),(($(spellcasting:list))||Druid||Wizard)" level="9" default="ID_XGTE_SPELL_CONTROL_WINDS" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell, Oceanic Spells" supports="8,(Control Weather||Tsunami),(($(spellcasting:list))||Druid||Wizard)" level="15" default="ID_PHB_SPELL_TSUNAMI" spellcasting="Sorcerer" />
+		
 <!--
 			<grant type="Spell" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" level="1" spellcasting="Sorcerer" />
 			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="1" spellcasting="Sorcerer" />
@@ -97,10 +99,10 @@
 			<grant type="Spell" id="ID_XGTE_SPELL_MAELSTROM" level="9" spellcasting="Sorcerer" />
 			<grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="9" spellcasting="Sorcerer" />-->
 		</rules>
-		<spellcasting name="Sorcerer" extend="true">
+<!--		<spellcasting name="Sorcerer" extend="true">
 				<extend>ID_PHB_SPELL_CONTROL_WEATHER</extend>
 				<extend>ID_PHB_SPELL_TSUNAMI</extend>
-		</spellcasting>
+		</spellcasting>-->
       </element>
 
       <element name="Curse of the Sea" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_CURSE_OF_THE_SEA">
@@ -179,6 +181,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />	
 		</rules>
       </element>
+
 	<append id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER">
 		<supports>Create or Destroy Water</supports>
 	</append>
@@ -196,5 +199,11 @@
 	</append>
 	<append id="ID_XGTE_SPELL_MAELSTROM">
 		<supports>Maelstrom</supports>
+	</append>
+	<append id="ID_PHB_SPELL_CONTROL_WEATHER">
+		<supports>Control Weather</supports>
+	</append>
+	<append id="ID_PHB_SPELL_TSUNAMI">
+		<supports>Tsunami</supports>
 	</append>
 </elements>

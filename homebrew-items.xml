@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.2.7">
+    <update version="0.2.9">
       <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-items.xml" />
     </update>
   </info>
@@ -101,6 +101,75 @@
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
 		</rules>
 	</element>
+	<element name="Quiver of Radiance" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_MAGIC_ITEM_QUIVER_OF_RADIANCE">
+		<description>
+			<p>This leather quiver is embossed with intricate Evocation runes. When a common arrow is stored in the quiver for a minimum of one hour, the arrow is imbued with magical energy. Arrows pulled from this quiver shine with dim light in a 5-foot radius. When a successful attack is made with an arrow pulled from this quiver, the attack deals an additional 1d6 radiant damage to the target. Once the arrow is fired, it will not deal radiant damage again until it is stored in the quiver for a minimum of one hour.</p>
+			<p class="indent">The quiver can hold a maximum of 20 arrows at a time, and has no effect on arrows that already contain magical properties</p>
+		</description>
+		<setters>
+			<set name="keywords">ammunition</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Earrings of Alluring Charisma" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_MAGIC_ITEM_EARRINGS_OF_ALLURING_CHARISMA">
+		<description>
+			<p>These magical earrings, set with brilliant ever-glinting rubies, convey an aura of gregariousness upon the wearer. While worn, the wearer's Charisma score is increased by 6, to a maximum of 20. If their Charisma score is already 20 without the earrings, they can instead bring the wearer's Charisma score to a maximum of 22.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">ear</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="6" />
+		</rules>
+	</element>
+	<element name="Necklace of Inspired Wisdom" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_MAGIC_ITEM_NECKLACE_OF_INSPIRED_WISDOM">
+		<description>
+			<p>This simple chain, adorned with a small silver pendant inset with an opal, carries with it the collective ageless wisdom of those who have touched it before. While worn, the wearer's Wisdom score is increased by 6, to a maximum of 20. If their Wisdom score is already 20 without the necklace, they can instead bring the wearer's Wisdom score to a maximum of 22.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">neck</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="6" />
+		</rules>
+	</element>
+	<element name="Sandals of Incredible Dexterity" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_MAGIC_ITEM_SANDALS_OF_INCREDIBLE_DEXTERITY">
+		<description>
+			<p>These soft shoes, constructed of an impossibly supple leather, bestow an uncanny poise and balance to the wearer's movements. While worn, the wearer's Dexterity score is increased by 6, to a maximum of 20. If their Dexterity score is already 20 without the sandals, they can instead bring the wearer's Dexterity score to a maximum of 22.</p>
+		</description>
+		<setters>
+			<set name="keywords">dexterity</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">foot</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="6" />
+		</rules>
+	</element>
+
+<!--Staffs-->
 	<element name="Captain's Wright" type="Magic Item" source="The Griffon's Saddlebag" id="ID_TGS_MAGIC_ITEM_STAFF_CAPTAINS_WRIGHT">
 		<description>
 			<p>This walking cane—a gift from Lady Annette Drask following their voyage from Galeran to Dun'Morach—is made of dark ebony and inlaid with narwhal ivory. Coiled around the cane's straight handle is carved the alluring likeness of a mermaid, her swirling hair made of polished pearl. A small clasp can be undone to allow the handle to pull free from the rest of the cane, revealing a short, pointed blade that functions as a standard dagger.</p>

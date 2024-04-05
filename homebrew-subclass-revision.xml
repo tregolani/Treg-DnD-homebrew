@@ -4,7 +4,7 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.3.7">
+        <update version="0.3.8">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
@@ -140,7 +140,7 @@
         <rules>
 	  <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
 	  <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
-  	  <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISONED" />
+<!--  	  <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISONED" /> -->
           <stat name="watery defense" value="level:sorcerer" />
           <stat name="watery defense" value="charisma:score" />
         </rules>

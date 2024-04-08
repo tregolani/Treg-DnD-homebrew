@@ -2,9 +2,9 @@
 <elements>
   <info>
     <name>Tregolani Homebrew Spells</name>
-    <description>These are some personal homebrew spells. Currently contains: Jolt, Lance of Faith, Shockbolt, Crushing Breaker, Forked Lightning, and Storm Conduit</description>
+    <description>These are some personal homebrew spells. Currently contains: Jolt, Lance of Faith, Shockbolt, Crushing Breaker, Forked Lightning, Storm Conduit, and Tempest Barrage</description>
     <author>Tregolani</author>
-    <update version="0.2.13">
+    <update version="0.2.14">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     </update>
   </info>
@@ -266,4 +266,33 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+<!-- 7th Level -->
+
+<!-- 8th Level -->
+
+<!-- 9th Level -->
+        <element name="Tempest Barrage" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_TEMPEST_BARRAGE">
+                <supports>Sorcerer, Wizard, Spell Saving Throw</supports>
+                <description>
+                        <p>A churning storm front forms, centered 500 feet above a point within range and expanding in a half-mile radius. With a deafening crack of thunder, a barrage of lightning bolts streak down and explode upon the ground at seven different points you can see beneath the cloud front. Each creature in a 20-foot radius sphere centered on each impact point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 15d6 lightning damage and 15d6 thunder damage and is <i>blinded</i> for 1 minute on a failed save, or half as much damage and is not <i>blinded</i> on a successful one. A creature in the area of more than one impact is affected only once.</p>
+                        <p class="indent">A creature damaged by a bolt of lightning is also <i>deafened</i> and <i>dazed</i>, meaning it cannot take bonus actions or reactions, and can only move or take one action on their turn, not both. This lasts for 1 minute, but the creature may make a Constitution saving throw at the end of each of its turns, ending the conditions on a success.</p>
+			<p class="indent">The spell damages objects in the area and ignites flammable objects that aren't being worn or carried.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 10th level or higher, one additional bolt streaks down from the clouds for each slot level above 9th.</p>
+		</description>
+                <setters>
+                        <set name="keywords">lightning, thunder</set>
+                        <set name="level">9</set>
+                        <set name="school">Evocation</set>
+                        <set name="time">1 action</set>
+                        <set name="duration">Instantaneous</set>
+                        <set name="range">1 mile</set>
+                        <set name="hasVerbalComponent">true</set>
+                        <set name="hasSomaticComponent">true</set>
+                        <set name="hasMaterialComponent">false</set>
+                        <set name="materialComponent" />
+                        <set name="isConcentration">false</set>
+                        <set name="isRitual">false</set>
+                </setters>
+        </element>
 </elements>

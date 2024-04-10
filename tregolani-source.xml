@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.10">
+		<update version="0.2.11">
 			<file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
 		</update>
 	</info>
@@ -9,14 +9,15 @@
 		<description>
         <![CDATA[<p>This is a collection of personal homebrew created by Tregolani for DnD campaigns. Currently included in the collection are: </p>
       			<ul>
-              <li><strong>Items:</strong> Cursed Amulet of the Chameleon, Handwraps of the Flowing Soul, Sentinel Shield +1, Captain's Wright, Surgeon's Tools</li>
+              <li><strong>Items:</strong> Captain's Wright, Cursed Amulet of the Chameleon, Earrings of Alluring Charisma, Handwraps of the Flowing Soul, Necklace of Inspired Wisdom, Quiver of Radiance, Sandals of Incredible Dexterity, Sentinel Shield +1, Surgeon's Tools</li>
               <li><strong>Feats:</strong> Elemental Blood, Healer (Improved)</li>
               <li><strong>Spells:</strong>
   		<ul>
-  		<li><em><strong>Cantrips: </strong>shockbolt, lance of faith</em></li>
-		<li><em><strong>4th-level: </strong>crushing breaker, glacial snap, tempest wall</em></li>
+  		<li><em><strong>Cantrips: </strong>jolt, shockbolt, lance of faith</em></li>
+		<li><em><strong>4th-level: </strong>crushing breaker</em></li>
 		<li><em><strong>5th-level: </strong>forked lightning</em></li>
 		<li><em><strong>6th-level: </strong>storm conduit</em></li>
+		<li><em><strong>9th-level: </strong>tempest barrage</em></li>
   		</ul>
               </li>
               <li><strong>Classes:</strong> Sorcerer (Revised), Sorcerer (Wisdom)</li>

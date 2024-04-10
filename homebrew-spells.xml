@@ -4,7 +4,7 @@
     <name>Tregolani Homebrew Spells</name>
     <description>These are some personal homebrew spells. Currently contains: Jolt, Lance of Faith, Shockbolt, Crushing Breaker, Forked Lightning, Storm Conduit, and Tempest Barrage</description>
     <author>Tregolani</author>
-    <update version="0.2.16">
+    <update version="0.2.17">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     </update>
   </info>
@@ -303,7 +303,7 @@
 <!-- Conditions -->
 	<element name="Shocked" type="Condition" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CONDITION_SHOCKED">
 		<description>
-			<p>A <i>shocked</i> creature cannot take reactions and has disadvantage on Dexterity checks and saving throws. If a <i>shocked</i> creature moves within 5 feet of another creature, roll a number of d6s equal to the creature's size—1 being tiny or small, 2 being medium, 3 being large, 4 being huge or larger. The two creatures each suffer lightning damage equal to half of the total rolled, and the condition ends.</p>
+			<p>A <i>shocked</i> creature cannot take reactions and has disadvantage on Dexterity checks and saving throws.</p>
 		</description>
 	</element>
 	<element name="Dazed" type="Condition" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CONDITION_DAZED">

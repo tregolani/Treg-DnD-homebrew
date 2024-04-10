@@ -4,7 +4,7 @@
     <name>Tregolani Homebrew Spells</name>
     <description>These are some personal homebrew spells. Currently contains: Jolt, Lance of Faith, Shockbolt, Crushing Breaker, Forked Lightning, Storm Conduit, and Tempest Barrage</description>
     <author>Tregolani</author>
-    <update version="0.2.15">
+    <update version="0.2.16">
       <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
     </update>
   </info>
@@ -273,12 +273,16 @@
 
 <!-- 9th Level -->
         <element name="Tempest Barrage" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_TEMPEST_BARRAGE">
-                <supports>Sorcerer, Wizard, Spell Saving Throw</supports>
+                <supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
                 <description>
-                        <p>A churning storm front forms, centered on a point within range and expanding in a half-mile radius. With a deafening crack of thunder, a barrage of lightning bolts streak down and explode upon the ground at seven different points you can see beneath the cloud front. Each creature in a 20-foot radius sphere centered on each impact point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 15d6 lightning damage and 15d6 thunder damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one impact is affected only once.</p>
-                        <p class="indent">A creature damaged by a bolt of lightning is <i>deafened</i> for one minute. Additionally, it receives one stack of the <i>shocked</i> condition for every 30 damage it takes from the spell. While <i>shocked</i>, a creature cannot take reactions and suffers a penalty to Dexterity checks and saving throws equal to the number of stacks it currently has. If a <i>shocked</i> creature moves within 5 feet of another creature, roll a number of d6s equal to the sum of stacks of the <i>shocked</i> condition between the two creatures. You each suffer lightning damage equal to half of the total rolled, and the condition ends.</p>
+                        <p>A churning storm front forms, centered on a point within range and expanding in a half-mile radius. With a deafening crack of thunder, a barrage of lightning bolts streak down and explode upon the ground at six different points you can see beneath the cloud front. Each creature in a 30-foot radius sphere centered on each impact point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 15d6 lightning damage and 15d6 thunder damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one impact is affected only once.</p>
+                        <p class="indent">A creature that takes 45 or more damage from the spell is <i>deafened</i> and <i>shocked</i> for 1 minute. A creature that takes 90 or more damage is also <i>dazed</i> for 1 minute. A creature suffering any of these conditions due to this spell may make a Constitution saving throw at the end of each of its turns, ending them all on a success.</p>
 			<p class="indent">The spell damages objects in the area and ignites flammable objects that aren't being worn or carried.</p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 10th level or higher, the number of bolts increases by two for each slot level above 9th.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 10th level or higher, the number of bolts increases by one for each slot level above 9th.</p>
+			<div class="reference">
+				<div element="ID_TREGOLANI_HB_CONDITION_SHOCKED" />
+				<div element="ID_TREGOLANI_HB_CONDITION_DAZED" />
+			</div>
 		</description>
                 <setters>
                         <set name="keywords">lightning, thunder</set>
@@ -295,4 +299,16 @@
                         <set name="isRitual">false</set>
                 </setters>
         </element>
+
+<!-- Conditions -->
+	<element name="Shocked" type="Condition" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CONDITION_SHOCKED">
+		<description>
+			<p>A <i>shocked</i> creature cannot take reactions and has disadvantage on Dexterity checks and saving throws. If a <i>shocked</i> creature moves within 5 feet of another creature, roll a number of d6s equal to the creature's size—1 being tiny or small, 2 being medium, 3 being large, 4 being huge or larger. The two creatures each suffer lightning damage equal to half of the total rolled, and the condition ends.</p>
+		</description>
+	</element>
+	<element name="Dazed" type="Condition" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CONDITION_DAZED">
+		<description>
+			<p>A <i>dazed</i> creature cannot take reactions or bonus actions, and can only move or take one action on its turn, not both.</p>
+		</description>
+	</element>
 </elements>

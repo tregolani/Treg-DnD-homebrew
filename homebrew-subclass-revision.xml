@@ -4,7 +4,7 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.3.8">
+        <update version="0.3.9">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
@@ -134,7 +134,7 @@
         </description>
         <sheet action="Reaction" usage="1/Short Rest" alt="Watery Defense">
           <description>
-            You gain resistance to fire damage. As a reaction when you are hit by an attack dealing bludgeoning, piercing, or slashing damage, you can reduce that damage by {{watery defense}} and then move up to 30 feet without provoking opportunity attacks, ignoring any condition or ability that reduces movement speed. Once you use this special reaction, you can't use it again until you finish a short or long rest, or until you spend 4 sorcery points as a bonus action to replenish it.
+            You gain resistance to fire and poison damage. As a reaction when you are hit by an attack dealing bludgeoning, piercing, or slashing damage, you can reduce that damage by {{watery defense}} and then move up to 30 feet without provoking opportunity attacks, ignoring any condition or ability that reduces movement speed. Once you use this special reaction, you can't use it again until you finish a short or long rest, or until you spend 4 sorcery points as a bonus action to replenish it.
           </description>
         </sheet>
         <rules>

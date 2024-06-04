@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.1.1">
+    <update version="0.1.2">
       <file name="homebrew-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-feats.xml" />
     </update>
   </info>
@@ -83,5 +83,25 @@
 			<stat name="healer:bonus" value="intelligence:modifier" bonus="healer" />
 			<stat name="healer:bonus" value="wisdom:modifier" bonus="healer" />
 		</rules>
+	</element>
+	<element name="Titan Grip" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_TITAN_GRIP">
+			<prerequisite>Strength 15</prerequisite>
+			<requirements>[str:15]</requirements>
+			<description>
+			<p>You've learned to use the weight of your weapons effectively and have adapted to use large weapons one-handed.</p>
+			<ul>
+				<li><b>Guts Grip.</b> You may wield a two-handed melee weapon in one hand, treating it as a one-handed weapon. If you do, reduce the damage die by one step. For example, a greatsword or greataxe wielded in one hand deals 1d10 damage.</li>
+				<li><b>Heavy Handed.</b> The one- and two-handed damage die for versatile melee weapons you wield increases by 1 step. For example, a longsword deals 1d10 damage in one hand or 1d12 damage in two.</li>
+				<li><b>Versatility.</b> You gain a +1 bonus to attack rolls with light melee weapons. You gain a +2 bonus to damage rolls with heavy melee weapons. Increase the range you score a critical hit with a melee weapon that is neither heavy or light by 1.</li>
+				<li><b>Weightless Weapons.</b> You can ignore the heavy quality on weapons you wield, or add the light quality to weapons without the heavy quality (no action required). You may wield heavy weapons without penalties if you are Small or smaller.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You may wield two-handed melee weapons in one hand, reducing their damage die by one step&#13;
+			You may increase the damage die of versatile melee weapons by one step.&#13;
+			Gain a +1 bonus to attack rolls with light melee weapons, a +2 bonus to damage rolls with heavy melee weapons, or increase the critical range of melee weapons that are neither heavy or light by 1.&#13;
+			Can ignore the heavy quality on melee weapons, or add the light quality to all other melee weapons.&#13;
+			Can wield heavy weapons without penalty if you are Small or smaller.</description>
+		</sheet>
 	</element>
 </elements>

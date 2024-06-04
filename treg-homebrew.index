@@ -4,12 +4,13 @@
     <name>Tregolani Homebrew Collection</name>
 	<description>A collection of homebrew items for DnD 5e</description>
 	<author>"Tregolani"</author>  
-    <update version="1.9">
+    <update version="1.10">
       <file name="treg-homebrew.index" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/treg-homebrew.index" />
     </update>
   </info>
   <files>
     <file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
+    <file name="homebrew-barbarian-avarice.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-barbarian-avarice.xml" />
     <file name="homebrew-bard-glamour.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-bard-glamour.xml" />
     <file name="homebrew-hexblood-race.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-hexblood-race.xml" />
     <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />

@@ -4,7 +4,7 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.3.9">
+        <update version="0.3.10">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
@@ -73,7 +73,7 @@
         </table>-->
 		</description>
 		<sheet>
-			<description>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or a transmutation spell from the druid, sorcerer, warlock, or wizard spell list.</description>
+			<description>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or a transmutation spell from the druid, sorcerer, or wizard spell list.</description>
 		</sheet>
         <rules>
 			<select type="Spell" name="Spell, Oceanic Spells" supports="1,(Transmutation||Conjuration),(($(spellcasting:list))||Druid||Wizard)||Create or Destroy Water" level="1" default="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" spellcasting="Sorcerer" />
@@ -110,7 +110,7 @@
         <description>
           <p>When you choose this origin at 1st level, you learn the secret of infusing your spells with a watery curse.</p>
           <p class="indent">When you hit a creature with a spell’s attack or when a creature fails a saving throw against your spell, you can curse the target for 1 minute. You can maintain a number of curses on creatures equal to your proficiency bonus. If you curse another creature in excess of this number, you must end the curse on a cursed creature.</p>
-          <p class="indent">Once per turn when you hit with a spell, you can trigger the curse if that spell deals cold or lightning damage to the cursed target or forces it to move. Doing so subjects the target to the appropriate additional effect below (you choose the effect to use if more than one effect applies):</p>
+          <p class="indent">Once per turn when you hit with a spell, you can trigger the curse if that spell deals cold or lightning damage to a cursed target or forces one to move. Doing so subjects the target to the appropriate additional effect below (you choose the effect to use if more than one effect applies):</p>
           <ul>
             <li><b>Cold Damage: </b>If the affected target takes cold damage from your spell, the target’s speed is also reduced by 15 feet until the end of your next turn. If the spell already reduces the target’s speed, use whichever reduction is greater.</li>
             <li><b>Lightning Damage: </b>If the affected target takes lightning damage from your spell, the target takes additional lightning damage equal to your Charisma modifier.</li>
@@ -120,7 +120,7 @@
         <sheet>
           <description>
             When you hit a creature with a spell’s attack or when a creature fails a saving throw against your spell, you can curse the target for 1 minute. You can maintain up to {{proficiency}} curses on creatures at a time. If you curse another creature in excess of this number, you must end the curse on a cursed creature.&#13; 
-            Once per turn when you hit with a spell, you can trigger the curse if that spell deals cold or lightning damage to the cursed target or forces it to move. Doing so subjects the target to the appropriate additional effect below (you choose the effect to use if more than one effect applies):&#13;
+            Once per turn when you hit with a spell, you can trigger the curse if that spell deals cold or lightning damage to a cursed target or forces one to move. Doing so subjects the target to the appropriate additional effect below (you choose the effect to use if more than one effect applies):&#13;
             •Cold Damage: Target's speed is reduced by 15 feet until the end of your next turn.&#13;
             •Lightning Damage: Target takes an additional {{charisma:modifier}} lightning damage.&#13;
             •Forced Movement: Increase the distance moved by 15 feet
@@ -148,12 +148,12 @@
 
       <element name="Shifting Form" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_SEA_SORCERER_SHIFTING_FORM">
         <description>
-          <p>Starting at 14th level, when you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. If you move through a creature's space, you can use your bonus action to apply your <em>Curse of the Sea</em> to the target, as if you had successfully affected it with a spell.</p>
+          <p>Starting at 14th level, when you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. If you move through a creature's space, you can use your bonus action to apply your <em>Curse of the Sea</em> to the creature as if you had successfully affected it with a spell.</p>
           <p class="indent">On your turn, you can move through any space that is at least 3 inches in diameter and do so without squeezing. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement.</p>
         </description>
         <sheet>
           <description>
-		When you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. If you move through a creature's space, you can use your bonus action to apply your Curse of the Sea to  the target.&#13;
+		When you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space. If you move through a creature's space, you can use your bonus action to apply your Curse of the Sea to  the creature.&#13;
 		On your turn, you can move through any space that is at least 3 inches in diameter. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement.
           </description>
         </sheet>

@@ -1,161 +1,402 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-  <info>
-    <name>Tregolani Homebrew Spells</name>
-    <description>These are some personal homebrew spells. Currently contains: Jolt, Lance of Faith, Shockbolt, Crushing Breaker, Forked Lightning, Storm Conduit, and Tempest Barrage</description>
-    <author>Tregolani</author>
-    <update version="0.2.17">
-      <file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
-    </update>
-  </info>
+	<info>
+		<name>Tregolani Homebrew Spells</name>
+		<description>These are some personal homebrew spells. Currently contains: Caustic Strike, Crusader Strike, Fountain Blade, Frost Strike, Heart Strike, Jolt, Lance of Faith, Psi Blade, Rose Blade, Shockbolt, Shock Strike, Toxic Strike, True Strike, Wind Blade, Crushing Breaker, Forked Lightning, Storm Conduit, and Tempest Barrage</description>
+		<author>Tregolani</author>
+		<update version="0.2.18">
+		<file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
+		</update>
+	</info>
 
   <!--CANTRIPS-->
-    <element name="Jolt" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_JOLT">
-    <supports>Sorcerer, Warlock, Wizard, Artificer, Ranged Spell Attack</supports>
-    <description>
-      <p>Static energy surges through your arm as you blast a creature with a jolt of electricity. Make a ranged spell attack against a target within range. On a hit, the target takes 1d8 lightning damage, or 1d12 lightning damage if the target is wearing metal armor or wielding a martial weapon made of metal.</p>
-      <p class="indent">The spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).</p>
-    </description>
-    <setters>
-      <set name="keywords">lightning</set>
-      <set name="level">0</set>
-      <set name="school">Evocation</set>
-      <set name="time">1 action</set>
-      <set name="duration">Instantaneous</set>
-      <set name="range">90 feet</set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>
+	<element name="Caustic Strike" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_CAUSTIC_STRIKE">
+		<supports>Artificer, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within range. On a hit, the target suffers the weapon attack’s normal effects and volatile acid coats the creature's weapon or body until the start of your next turn. If the target makes an attack roll before your next turn, it immediately takes 1d8 acid damage and the spell ends.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 acid damage to the target on a hit, and the damage the target takes for making an attack roll increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">acid,melee</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Crusader Strike" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_CRUSADER_STRIKE">
+		<supports>Cleric, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within range. On a hit, the target suffers the weapon attack’s normal effects and a radiant mark of retribution hovers over the creature until the start of your next turn. If the target damages someone other than you before your next turn, it immediately takes 1d8 radiant damage and the spell ends.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 radiant damage to the target on a hit, and the damage the target takes for damaging a creature other than you increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant,melee</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Fountain Blade" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_FOUNTAIN_BLADE">
+		<supports>Artificer, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within range. On a hit, the target suffers the weapon attack’s normal effects and a geyser forms beneath the target's feet in the space they occupy until the end of its next turn. If the target ends its turn within 5 feet of the geyser, it erupts and blasts the creature with a torrential spray of water. The target takes 1d8 bludgeoning damage and the spell ends.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 bludgeoning damage to the target on a hit, and the damage the target takes for ending its turn next to the geyser increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">bludgeoning,melee</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 	
-  <element name="Lance of Faith" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_LANCE_OF_FAITH">
-    <supports>Cleric, Ranged Spell Attack</supports>
-    <description>
-      <p>You conjure a lance of divine energy and hurl it at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d6 radiant radiant damage (if you are good or neutral) or 1d6 necrotic damage (if you are evil), and the lance embeds itself within the creature. The first time it is hit by a weapon attack made by a creature other than yourself before the start of your next turn, the lance detonates, dealing radiant (or necrotic) damage equal to your spellcasting modifier.</p>
-      <p class="indent">This spell's damage increases when you reach higher levels. At 5th level, the ranged attack deals an extra 1d6 radiant or necrotic damage to the target, and the detonation damage increases to 1d4 + your spellcasting ability modifier. Both damage rolls increase by 1d6/1d4 at 11th level and 17th level.</p>
-    </description>
-    <setters>
-      <set name="keywords">radiant, necrotic</set>
-      <set name="level">0</set>
-      <set name="school">Conjuration</set>
-      <set name="time">1 action</set>
-      <set name="duration">Instantaneous</set>
-      <set name="range">30 feet</set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>
+	<element name="Frost Strike" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_FROST_STRIKE">
+		<supports>Artificer, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within range. On a hit, the target suffers the weapon attack’s normal effects and the target is struck with chilling energy until the start of your next turn. If the target is hit with another attack before then, it immediately takes 1d8 cold damage and the spell ends.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 cold damage to the target on a hit, and the damage the target takes for being hit by another attack increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">cold,melee</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 	
-  <element name="Shockbolt" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_SHOCKBOLT">
-    <supports>Sorcerer, Wizard, Artificer, Ranged Spell Attack</supports>
-    <description>
-      <p>You charge your fist and launch an arcing bolt of lightning at a creature or object within range. Make a ranged spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage.</p>
-      <p class="indent">This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
-    </description>
-    <setters>
-      <set name="keywords">lightning</set>
-      <set name="level">0</set>
-      <set name="school">Evocation</set>
-      <set name="time">1 action</set>
-      <set name="duration">Instantaneous</set>
-      <set name="range">60 feet</set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>
- 
-  <!--2nd Level-->
-  
-  <!--
-  <element name="Freezing Lance" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_FREEZING_LANCE">
-    <supports>Sorcerer, Wizard</supports>
-    <description>
-      <p>You create four floating lances of pure ice and hurl them at targets within range. You can hurl them at one target or several.</p>
-      <p class="indent">Make a ranged spell attack for each lance. On a hit, the target takes 2d4 cold damage and its speed is reduced by 10 feet until the start of your next turn. A creature can only have its speed reduced once per turn, regardless of how many lances it is hit by.</p>
-      <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 3rd level or higher, you create one additional lance for each slot level above 2nd.</p>
-    </description>
-    <setters>
-            <set name="keywords">cold</set>
-            <set name="level">2</set>
-            <set name="school">Evocation</set>
-            <set name="time">1 action</set>
-            <set name="duration">Instantaneous</set>
-            <set name="range">90 feet</set>
-            <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">false</set>
-            <set name="materialComponent"></set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
-    </setters>
-  </element>
-  -->
-  <!--3rd Level-->
-  <!--
-  <element name="Crackling Runes" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_CRACKLING_RUNES">
-    <supports>Sorcerer, Wizard, Artificer, Fighter (Eldritch Knight)</supports>
-    <description>
-      <p>You sheathe yourself in arcane energy, causing six runes, arcing and thrumming with lightning, to appear upon your forearms. When you cast the spell—and as a bonus action on each of your turns thereafter—you can expend one or two of the runes, each causing a bolt of lightning to blast out from your hand in a line 100 feet long and 5 feet wide in a direction you choose. The first two creatures within the line must make a Dexterity saving throw, taking 3d4 lightning damage on a failed save, or half as much damage on a successful one. Each bolt can only affect a maximum of two creatures. Once all of the runes have been expended, the spell ends.</p>
-      <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, the number of runes created increases by two for each slot level above 3rd.</p>
-    </description>
-    <setters>
-            <set name="keywords">lightning</set>
-            <set name="level">3</set>
-            <set name="school">Evocation</set>
-            <set name="time">1 action</set>
-            <set name="duration">Concentration, up to 10 minutes</set>
-            <set name="range">Self</set>
-            <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">a runed-covered metallic sphere</set>
-            <set name="isConcentration">true</set>
-            <set name="isRitual">false</set>
-    </setters>
-  </element>
-  -->
-  <!--4th Level-->
-  <!--
-  <element name="Sonic Boom" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_SONIC_BOOM">
-    <supports>Druid, Sorcerer, Wizard</supports>
-    <description>
-      <p>You point at a location within range, and a glowing 1-foot-diameter ball of whirling wind appears there and explodes in a 20-foot-radius sphere, emitting a thunderous boom which can be heard up to 1 mile away. Each creature in the area takes 6d4 thunder damage and must make a Strength saving throw. On a failed save, a creature is knocked prone. Any creature in half or three-quarters cover from the center of the explosion takes half as much damage and does not need to make a Strength saving throw.</p>
-      <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d4 for each slot level above 4th.</p>
-    </description>
-    <setters>
-            <set name="keywords">thunder</set>
-            <set name="level">4</set>
-            <set name="school">Evocation</set>
-            <set name="time">1 action</set>
-            <set name="duration">Instantaneous</set>
-            <set name="range">150 feet</set>
-            <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">a smooth stone and a silken fan</set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
-    </setters>
-  </element>
-  --> 
+	<element name="Heart Strike" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_HEART_STRIKE">
+		<supports>Cleric, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within range. On a hit, the target suffers the weapon attack’s normal effects and the target begins Bleeding. A Bleeding creature takes 1d4 necrotic damage at start of each of its turns, and any subsequent applications of Bleeding stack with this condition, dealing additional necrotic damage for each instance. The target can make a Constitution saving throw at the end of each of its turns, ending the condition on a success. The condition also ends if the target or another creature within 5 feet of it uses an Action to make a Wisdom (Medicine) check against your spell save DC, or if the target regains hit points from any healing.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d4 necrotic damage to the target on a hit, and the bleed damage increases to 2d4. Both damage rolls increase by 1d4 at 11th level (2d4 and 3d4) and again at 17th level (3d4 and 4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic,melee</set>
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon that deals piercing or slashing damage</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Jolt" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_JOLT">
+		<supports>Sorcerer, Warlock, Wizard, Artificer, Ranged Spell Attack</supports>
+		<description>
+			<p>Static energy surges through your arm as you blast a creature with a jolt of electricity. Make a ranged spell attack against a target within range. On a hit, the target takes 1d8 lightning damage, or 1d12 lightning damage if the target is wearing metal armor or wielding a martial weapon made of metal.</p>
+			<p class="indent">The spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Lance of Faith" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_LANCE_OF_FAITH">
+		<supports>Cleric, Ranged Spell Attack</supports>
+		<description>
+			<p>You conjure a lance of divine energy and hurl it at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d6 radiant radiant damage (if you are good or neutral) or 1d6 necrotic damage (if you are evil), and the lance embeds itself within the creature. The first time it is hit by a weapon attack made by a creature other than yourself before the start of your next turn, the lance detonates, dealing radiant (or necrotic) damage equal to your spellcasting modifier.</p>
+			<p class="indent">This spell's damage increases when you reach higher levels. At 5th level, the ranged attack deals an extra 1d6 radiant or necrotic damage to the target, and the detonation damage increases to 1d4 + your spellcasting ability modifier. Both damage rolls increase by 1d6/1d4 at 11th level and 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant, necrotic</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Psi Blade" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_PSI_BLADE">
+		<supports>Artificer, Bard, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within range. On a hit, the target suffers the weapon attack’s normal effects and a logic bomb is planted in the creature's mind until the start of your next turn. If the target speaks, such as to cast a spell with a verbal component, before your next turn, it immediately takes 1d8 psychic damage and the spell ends.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 psychic damage to the target on a hit, and the damage the target takes for speaking increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic,melee</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Rose Blade" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_ROSE_BLADE">
+		<supports>Bard, Druid, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within range. On a hit, the target suffers the weapon attack’s normal effects and thorny roses cover the creature until the start of your next turn. If the target fails a saving throw before the start of your next turn, it immediately takes 1d8 piercing damage and the spell ends.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 piercing damage to the target on a hit, and the damage the target takes for failing a saving throw increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">piercing,melee</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Shockbolt" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_SHOCKBOLT">
+		<supports>Sorcerer, Wizard, Artificer, Ranged Spell Attack</supports>
+		<description>
+			<p>You charge your fist and launch an arcing bolt of lightning at a creature or object within range. Make a ranged spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage.</p>
+			<p class="indent">This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Shock Strike" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_SHOCK_STRIKE">
+		<supports>Artificer, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within range. On a hit, the target suffers the weapon attack’s normal effects and static electricity begins to build on the target. At the end of the creature's next turn, it takes lightning damage equal to your spellcasting ability modifier, evenly divided among all creatures hostile to you within 5 feet of the target.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 lightning damage to the target on a hit, and the damage split amongst it and other enemies increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8) and again at 17th level (3d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning,melee</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Toxic Strike" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_TOXIC_STRIKE">
+		<supports>Artificer, Bard, Druid, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within range. On a hit, the target suffers the weapon attack’s normal effects plus an additional 1d6 poison damage. If the target is Poisoned, or becomes Poisoned as a result of this attack, it deals an additional 1d12 poison damage instead. A creature hit with this attack has Disadvantage on saving throws against poisons until the start of your next turn.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d6 or 1d12 poison damage to the target on a hit, depending on whether it is poisoned or not. The damage roll increases by 1d6 or 1d12 at 11th level (3d6 and 3d12) and again at 17th level (4d6 and 4d12).</p>
+		</description>
+		<setters>
+			<set name="keywords">poison,melee</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Trueforce Strike" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_TRUEFORCE_STRIKE">
+		<supports>Bard, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
+		<description>
+			<p>Guided by a flash of magical insight, you brandish the weapon used in the spell’s casting and make a weapon attack with it against one creature within range. This attack uses your spellcasting ability for the attack roll instead of using Strength or Dexterity. On a hit, the target suffers the weapon attack’s normal effects, using your spellcasting ability for the damage roll.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the attack deals an extra 1d8 force damage to the target on a hit. The damage roll increases by 1d8 at 11th level (2d8) and again at 17th level (3d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">force,melee</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon with which you have proficiency</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Wind Blade" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_WIND_BLADE">
+		<supports>Artificer, Bard, Druid, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
+		<description>
+			<p>You swing the weapon used in the spell's casting in an arc. Make a ranged weapon attack with it against one creature within range. On a hit, the target suffers the weapon attack’s normal effects plus an additional 1d4 slashing damage.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the attack deals an extra 1d4 slashing damage to the target on a hit. The damage roll increases by 1d4 at 11th level (3d4) and again at 17th level (4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords">slashing,melee</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!--2nd Level-->
+<!--
+	<element name="Freezing Lance" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_FREEZING_LANCE">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<p>You create four floating lances of pure ice and hurl them at targets within range. You can hurl them at one target or several.</p>
+			<p class="indent">Make a ranged spell attack for each lance. On a hit, the target takes 2d4 cold damage and its speed is reduced by 10 feet until the start of your next turn. A creature can only have its speed reduced once per turn, regardless of how many lances it is hit by.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 3rd level or higher, you create one additional lance for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">cold</set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+-->
+<!--3rd Level-->
+<!--
+	<element name="Crackling Runes" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_CRACKLING_RUNES">\
+		<supports>Sorcerer, Wizard, Artificer, Fighter (Eldritch Knight)</supports>
+		<description>
+			<p>You sheathe yourself in arcane energy, causing six runes, arcing and thrumming with lightning, to appear upon your forearms. When you cast the spell—and as a bonus action on each of your turns thereafter—you can expend one or two of the runes, each causing a bolt of lightning to blast out from your hand in a line 100 feet long and 5 feet wide in a direction you choose. The first two creatures within the line must make a Dexterity saving throw, taking 3d4 lightning damage on a failed save, or half as much damage on a successful one. Each bolt can only affect a maximum of two creatures. Once all of the runes have been expended, the spell ends.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, the number of runes created increases by two for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a runed-covered metallic sphere</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+-->
+<!--4th Level-->
+<!--
+	<element name="Sonic Boom" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_SONIC_BOOM">
+		<supports>Druid, Sorcerer, Wizard</supports>
+		<description>
+			<p>You point at a location within range, and a glowing 1-foot-diameter ball of whirling wind appears there and explodes in a 20-foot-radius sphere, emitting a thunderous boom which can be heard up to 1 mile away. Each creature in the area takes 6d4 thunder damage and must make a Strength saving throw. On a failed save, a creature is knocked prone. Any creature in half or three-quarters cover from the center of the explosion takes half as much damage and does not need to make a Strength saving throw.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d4 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">thunder</set>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a smooth stone and a silken fan</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+--> 
 	<element name="Crushing Breaker" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_CRUSHING_BREAKER">
 		<supports>Cleric, Druid, Sorcerer, Spell Saving Throw</supports>
 		<description>
-		<p>A great wave of salt water bursts from the ground beneath your feet. Each creature in a 30-foot cube originating from you must make a Strength saving throw. On a failed save, a creature takes 4d10 bludgeoning damage and is pushed 15 feet away from you. On a successful save, the creature takes half as much damage and is not pushed away.</p>
-		<p class="indent">Along with the wave, you conjure the spirit of a great shark or other powerful sea creature. Choose one creature that failed its saving throw as the spirit's prey. That target takes an extra 2d10 piercing damage and is restrained by the spirit's jaws or claws for 1 minute. A target restrained in this way can use its action to make a Strength check against your spell save DC. On a success, it frees itself and the spirit disappears.</p>
-		<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th or higher, the damage of the wave and spirit each increase by 1d10 for each slot level above 4th.</p>
+			<p>A great wave of salt water bursts from the ground beneath your feet. Each creature in a 30-foot cube originating from you must make a Strength saving throw. On a failed save, a creature takes 4d10 bludgeoning damage and is pushed 15 feet away from you. On a successful save, the creature takes half as much damage and is not pushed away.</p>
+			<p class="indent">Along with the wave, you conjure the spirit of a great shark or other powerful sea creature. Choose one creature that failed its saving throw as the spirit's prey. That target takes an extra 2d10 piercing damage and is restrained by the spirit's jaws or claws for 1 minute. A target restrained in this way can use its action to make a Strength check against your spell save DC. On a success, it frees itself and the spirit disappears.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th or higher, the damage of the wave and spirit each increase by 1d10 for each slot level above 4th.</p>
 		</description>
 		<setters>
 			<set name="keywords">bludgeoning, piercing</set>
@@ -272,11 +513,11 @@
 <!-- 8th Level -->
 
 <!-- 9th Level -->
-        <element name="Tempest Barrage" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_TEMPEST_BARRAGE">
-                <supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
-                <description>
-                        <p>A churning storm front forms, centered on a point within range and expanding in a half-mile radius. With a deafening crack of thunder, a barrage of lightning bolts streak down and explode upon the ground at six different points you can see beneath the cloud front. Each creature in a 30-foot radius sphere centered on each impact point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 15d6 lightning damage and 15d6 thunder damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one impact is affected only once.</p>
-                        <p class="indent">A creature that takes 45 or more damage from the spell is <i>deafened</i> and <i>shocked</i> for 1 minute. A creature that takes 90 or more damage is also <i>dazed</i> for 1 minute. A creature suffering any of these conditions due to this spell may make a Constitution saving throw at the end of each of its turns, ending them all on a success.</p>
+	<element name="Tempest Barrage" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_TEMPEST_BARRAGE">
+		<supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>A churning storm front forms, centered on a point within range and expanding in a half-mile radius. With a deafening crack of thunder, a barrage of lightning bolts streak down and explode upon the ground at six different points you can see beneath the cloud front. Each creature in a 30-foot radius sphere centered on each impact point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 15d6 lightning damage and 15d6 thunder damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one impact is affected only once.</p>
+			<p class="indent">A creature that takes 45 or more damage from the spell is <i>deafened</i> and <i>shocked</i> for 1 minute. A creature that takes 90 or more damage is also <i>dazed</i> for 1 minute. A creature suffering any of these conditions due to this spell may make a Constitution saving throw at the end of each of its turns, ending them all on a success.</p>
 			<p class="indent">The spell damages objects in the area and ignites flammable objects that aren't being worn or carried.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 10th level or higher, the number of bolts increases by one for each slot level above 9th.</p>
 			<div class="reference">
@@ -284,22 +525,21 @@
 				<div element="ID_TREGOLANI_HB_CONDITION_DAZED" />
 			</div>
 		</description>
-                <setters>
-                        <set name="keywords">lightning, thunder</set>
-                        <set name="level">9</set>
-                        <set name="school">Evocation</set>
-                        <set name="time">1 action</set>
-                        <set name="duration">Instantaneous</set>
-                        <set name="range">1 mile</set>
-                        <set name="hasVerbalComponent">true</set>
-                        <set name="hasSomaticComponent">true</set>
-                        <set name="hasMaterialComponent">false</set>
-                        <set name="materialComponent" />
-                        <set name="isConcentration">false</set>
-                        <set name="isRitual">false</set>
-                </setters>
-        </element>
-
+		<setters>
+			<set name="keywords">lightning, thunder</set>
+			<set name="level">9</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">1 mile</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 <!-- Conditions -->
 	<element name="Shocked" type="Condition" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CONDITION_SHOCKED">
 		<description>

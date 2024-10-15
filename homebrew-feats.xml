@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.1.2">
+    <update version="0.1.3">
       <file name="homebrew-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-feats.xml" />
     </update>
   </info>
@@ -83,6 +83,45 @@
 			<stat name="healer:bonus" value="intelligence:modifier" bonus="healer" />
 			<stat name="healer:bonus" value="wisdom:modifier" bonus="healer" />
 		</rules>
+	</element>
+	<element name="Skeptic" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_SKEPTIC">
+		<prerequisite>Wisdom 13 or higher</prerequisite>
+		<requirements>[wis:13]</requirements>
+		<description>
+			<p>You are exacting by nature, and slow to trust the word of others. You gain the following benefits:</p>
+			<ul>
+				<li>You gain proficiency in the Insight skill. If you are already proficient in the skill, you gain expertise instead.</li>
+				<li>You have a +5 bonus to your passive Wisdom (Insight) score and have advantage on Insight checks to determine if creatures are lying.</li>
+				<li>When you make an Insight check, you can choose to learn what the creature's bonus to Charisma (Deception) checks is. You can use this ability a number of times equal to your proficiency bonus. Once you have, you can't do so again until you finish a Long Rest.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INSIGHT" />
+			<grant type="Feat Feature" id="ID_TREGOLANI_HB_FEAT_FEATURE_SKEPTIC_INSIGHT_BOOST" />
+			<grant type="Feat Feature" id="ID_TREGOLANI_HB_FEAT_FEATURE_SKEPTIC_DECEPTION_ASSESSMENT" />
+		</rules>
+	</element>
+	<element name="Insight Boost" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEATURE_SKEPTIC_INSIGHT_BOOST">
+		<compendium display="false" />
+		<description>
+			<p>You have a +5 bonus to your passive Wisdom (Insight) score and have advantage on Insight checks to determine if creatures are lying.</p>
+		</description>
+		<sheet>
+			<description>You have a +5 bonus to your passive Wisdom (Insight) score and have advantage on Insight checks to determine if creatures are lying.</description>
+		</sheet>
+		<rules>
+			<stat name="insight:passive" value="5" />
+		</rules>	
+	</element>
+	<element name="Deception Assessment" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEATURE_SKEPTIC_DECEPTION_ASSESSMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you make an Insight check, you can choose to learn what the creature's bonus to Charisma (Deception) checks is. You can use this ability a number of times equal to your proficiency bonus. Once you have, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you make an Insight check, you can choose to learn what the creature's bonus to Charisma (Deception) checks is.</description>
+		</sheet>
 	</element>
 	<element name="Titan Grip" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_TITAN_GRIP">
 			<prerequisite>Strength 15</prerequisite>

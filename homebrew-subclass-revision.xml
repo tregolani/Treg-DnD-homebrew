@@ -4,7 +4,7 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.3.10">
+        <update version="0.3.11">
             <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
         </update>
     </info>
@@ -121,9 +121,9 @@
           <description>
             When you hit a creature with a spell’s attack or when a creature fails a saving throw against your spell, you can curse the target for 1 minute. You can maintain up to {{proficiency}} curses on creatures at a time. If you curse another creature in excess of this number, you must end the curse on a cursed creature.&#13; 
             Once per turn when you hit with a spell, you can trigger the curse if that spell deals cold or lightning damage to a cursed target or forces one to move. Doing so subjects the target to the appropriate additional effect below (you choose the effect to use if more than one effect applies):&#13;
-            •Cold Damage: Target's speed is reduced by 15 feet until the end of your next turn.&#13;
+            •Cold Damage: Target's speed is reduced by 15ft until the end of your next turn.&#13;
             •Lightning Damage: Target takes an additional {{charisma:modifier}} lightning damage.&#13;
-            •Forced Movement: Increase the distance moved by 15 feet
+            •Forced Movement: Increase the distance moved by 15ft
           </description>
         </sheet>
       </element>

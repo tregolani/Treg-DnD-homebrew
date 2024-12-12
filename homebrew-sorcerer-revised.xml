@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Tasha's Cauldron of Everything optional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.2.12">
+		<update version="0.2.13">
 			<file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised" />
 		</update>
 	</info>
@@ -274,10 +274,8 @@
 		<description>
 			<p>At 2nd level, as your control over your innate magic grows, you can now use yourself as an arcane focus for your spells. Additionally, by spending 2 sorcery points as a reaction, you can allow a creature touching you to use your body as an arcane focus for spells they cast until the start of your next turn.</p>
 		</description>
-		<sheet>
-		<description>
-			You can now use yourself as an arcane focus for your spells. Additionally, by spending 2 sorcery points as a reaction, you can allow a creature touching you to use your body as an arcane focus for spells they cast until the start of your next turn.
-		</description>
+		<sheet usage="Reaction">
+			<description>You can now use yourself as an arcane focus for your spells. Additionally, by spending 2 sorcery points as a reaction, you can allow a creature touching you to use your body as an arcane focus for spells they cast until the start of your next turn.</description>
 		</sheet>
 	</element>	
 	<element name="Metamagic" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_METAMAGIC">

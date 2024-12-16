@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.2.10">
+    <update version="0.2.11">
       <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-items.xml" />
     </update>
   </info>
@@ -184,6 +184,15 @@
 			<p>Your link to a vehicle ends when the vehicle is destroyed. It ends early if you use an action to mentally sever the link, or if you perform the ritual again with a different vehicle. If the linked vehicle is destroyed, you also take 3d10 psychic damage before the link is severed.</p>
 			<p><strong><em>Spells.</em></strong> The staff has 10 charges. While holding the staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it: <em>animal messenger</em> (1 charge), <em>floating disk</em> (1 charge), <em>levitate</em> (2 charges), <em>mending</em> (no charges), <em>rope trick</em> (2 charges), <em>teleport</em> (7 charges), or <em>water walk</em> (3 charges). This version of the teleport spell targets only yourself, and the destination must be a location on the linked vehicle. The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses this property.</p>
 		</description>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMAL_MESSENGER" />
+			<grant type="Spell" id="ID_PHB_SPELL_TENSERS_FLOATING_DISK" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEVITATE" />
+			<grant type="Spell" id="ID_PHB_SPELL_ROPE_TRICK" />
+			<grant type="Spell" id="ID_PHB_SPELL_WATER_WALK" />
+			<grant type="Spell" id="ID_PHB_SPELL_TELEPORT" />
+		</rules>
 		<setters>
 			<set name="keywords" />
 			<set name="category">Magic Weapons</set>

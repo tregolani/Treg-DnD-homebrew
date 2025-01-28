@@ -4,8 +4,8 @@
 		<name>Tregolani Homebrew Spells</name>
 		<description>These are some personal homebrew spells. Currently contains: Caustic Strike, Crusader Strike, Fountain Blade, Frost Strike, Heart Strike, Jolt, Lance of Faith, Psi Blade, Rose Blade, Shockbolt, Shock Strike, Toxic Strike, True Strike, Wind Blade, Crushing Breaker, Forked Lightning, Storm Conduit, and Tempest Barrage</description>
 		<author>Tregolani</author>
-		<update version="0.2.18">
-		<file name="homebrew-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-spells.xml" />
+		<update version="0.2.19">
+		<file name="thc-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-spells.xml" />
 		</update>
 	</info>
 

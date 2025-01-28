@@ -4,8 +4,8 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Tasha's Cauldron of Everything optional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.2.13">
-			<file name="homebrew-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-sorcerer-revised" />
+		<update version="0.2.14">
+			<file name="thc-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-sorcerer-revised" />
 		</update>
 	</info>
 	<element name="Sorcerer" type="Class" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_SORCERER">

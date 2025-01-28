@@ -4,8 +4,8 @@
 		<name>College of Glamour (One-DnD Version)</name>
 		<description>The College of Glamour from Xanathar’s Guide to Everything, modified with One-DnD updates</description>
         <author>Tregolani</author>
-		<update version="0.1">
-			<file name="homebrew-bard-glamour.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
+		<update version="0.1.1">
+			<file name="thc-bard-glamour.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-bard-glamour.xml" />
 		</update>
 	</info>
 

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.3">
-			<file name="artificer-tinkerer-physician.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/artificer-tinkerer-physician.xml" />
+		<name>Tinkerer Physician</name>
+		<description>The Tinkerer Physician subclass for the Artificer class</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.2.4">
+		<file name="thc-artificer-tinkerer-physician.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-artificer-tinkerer-physician.xml" />
 		</update>
 	</info>
 	

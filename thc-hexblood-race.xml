@@ -4,8 +4,8 @@
 		<name>Hexblood (Halloween)</name>
 		<description>Slight modification of the Hexblood race for Nox's Halloween one-shot</description>
 		<author>Tregolani</author>
-		<update version="0.1.2">
-			<file name="homebrew-hexblood-race.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-hexblood-race.xml" />
+		<update version="0.1.3">
+			<file name="thc-hexblood-race.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-hexblood-race.xml" />
 		</update>
 	</info>
     

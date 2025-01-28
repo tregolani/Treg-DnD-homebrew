@@ -4,8 +4,8 @@
 		<name>Barbarian</name>
 		<description>The Barbarian class from the Player’s Handbook, with edits for Avarice and Acquisitions</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.1">
-			<file name="homebrew-barbarian-avarice.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-barbarian-avarice.xml" />
+		<update version="0.1.1">
+			<file name="thc-barbarian-avarice.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-barbarian-avarice.xml" />
 		</update>
 	</info>
 

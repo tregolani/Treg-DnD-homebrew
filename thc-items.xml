@@ -4,8 +4,8 @@
     <name>Items</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.2.11">
-      <file name="homebrew-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-items.xml" />
+    <update version="0.2.12">
+      <file name="thc-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-items.xml" />
     </update>
   </info>
 

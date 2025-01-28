@@ -4,8 +4,8 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.1.3">
-      <file name="homebrew-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-feats.xml" />
+    <update version="0.1.4">
+      <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
 	<element name="Elemental Blood" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_ELEMENTAL_BLOOD">

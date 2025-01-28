@@ -4,8 +4,8 @@
         <name>Tregolani Homebrew Subclass Revisions</name>
         <description>These are some personal homebrew subclass revisions. Currently contains: Sea Sorcerer</description>
         <author>Tregolani</author>
-        <update version="0.3.11">
-            <file name="homebrew-subclass-revision.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/homebrew-subclass-revision.xml" />
+        <update version="0.3.12">
+            <file name="thc-sorcerer-sea-sorcery-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-sorcerer-sea-sorcery-revised.xml" />
         </update>
     </info>
 	    <!-- Sea Sorcery -->

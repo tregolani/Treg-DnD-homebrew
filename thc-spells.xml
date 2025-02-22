@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Tregolani Homebrew Spells</name>
-		<description>These are some personal homebrew spells. Currently contains: Caustic Strike, Crusader Strike, Fountain Blade, Frost Strike, Heart Strike, Jolt, Lance of Faith, Psi Blade, Rose Blade, Shockbolt, Shock Strike, Toxic Strike, Volt Strike, Wind Blade, Crushing Breaker, Forked Lightning, Storm Conduit, and Tempest Barrage</description>
+		<description>These are some personal homebrew spells. Currently contains: Caustic Strike, Crusader Strike, Fountain Blade, Frost Strike, Heart Strike, Jolt, Lance of Faith, Psi Blade, Rose Blade, Shockbolt, Shock Strike, Storm Strike, Toxic Strike,  Wind Blade, Crushing Breaker, Forked Lightning, Storm Conduit, and Tempest Barrage</description>
 		<author>Tregolani</author>
 		<update version="0.2.21">
 		<file name="thc-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-spells.xml" />
@@ -252,6 +252,28 @@
 		</setters>
 	</element>
 	
+	<element name="Storm Strike" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_STORM_STRIKE">
+		<supports>Bard, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
+		<description>
+			<p>A weapon you are holding flares brightly with the power of the storm. As part of the spell's casting, you brandish the charged weapon and make a weapon attack with it against one creature within range. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Lightning damage or the weapon's normal damage type (your choice).</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> Whether you deal Lightning damage or the weapon's normal damage type, the attack deals extra Lightning damage when you reach levels 5 (1d8), 11 (2d8), and 17 (3d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning,melee</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon with which you have proficiency and that is worth 1+ CP</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+	
 	<element name="Toxic Strike" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_TOXIC_STRIKE">
 		<supports>Artificer, Bard, Druid, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
 		<description>
@@ -269,28 +291,6 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a melee weapon</set>
-			<set name="isConcentration">false</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
-	
-	<element name="Volt Strike" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_VOLT_STRIKE">
-		<supports>Bard, Sorcerer, Warlock, Wizard, Melee Spell Attack</supports>
-		<description>
-			<p>A weapon you are holding flares brightly with the power of the storm. As part of the spell's casting, you brandish the charged weapon and make a weapon attack with it against one creature within range. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Lightning damage or the weapon's normal damage type (your choice).</p>
-			<p class="indent"><b><i>Cantrip Upgrade.</i></b> Whether you deal Lightning damage or the weapon's normal damage type, the attack deals extra Lightning damage when you reach levels 5 (1d8), 11 (2d8), and 17 (3d8).</p>
-		</description>
-		<setters>
-			<set name="keywords">lightning,melee</set>
-			<set name="level">0</set>
-			<set name="school">Transmutation</set>
-			<set name="time">1 action</set>
-			<set name="duration">Instantaneous</set>
-			<set name="range">Self</set>
-			<set name="hasVerbalComponent">false</set>
-			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">true</set>
-			<set name="materialComponent">a weapon with which you have proficiency and that is worth 1+ CP</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>

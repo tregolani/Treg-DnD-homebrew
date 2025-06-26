@@ -4,7 +4,7 @@
     <name>Tregolani Homebrew Collection</name>
 	<description>A collection of homebrew items for DnD 5e</description>
 	<author>"Tregolani"</author>  
-    <update version="1.12">
+    <update version="1.13">
       <file name="treg-homebrew.index" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/treg-homebrew.index" />
     </update>
   </info>
@@ -14,6 +14,7 @@
     <file name="thc-barbarian-avarice.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-barbarian-avarice.xml" />
     <file name="thc-bard-glamour.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-bard-glamour.xml" />
     <file name="thc-hexblood-race.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-hexblood-race.xml" />
+    <file name="thc-race-halfling.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-race-halfling.xml" />
     <file name="thc-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-spells.xml" />
     <file name="thc-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-items.xml" />
     <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />

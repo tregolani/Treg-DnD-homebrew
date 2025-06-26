@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Spells</name>
 		<description>These are some personal homebrew spells. Currently contains: Caustic Strike, Crusader Strike, Fountain Blade, Frost Strike, Heart Strike, Jolt, Lance of Faith, Psi Blade, Rose Blade, Shockbolt, Shock Strike, Storm Strike, Toxic Strike,  Wind Blade, Crushing Breaker, Forked Lightning, Storm Conduit, and Tempest Barrage</description>
 		<author>Tregolani</author>
-		<update version="0.2.21">
+		<update version="0.2.22">
 		<file name="thc-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-spells.xml" />
 		</update>
 	</info>
@@ -145,8 +145,8 @@
 	<element name="Lance of Faith" type="Spell" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SPELL_LANCE_OF_FAITH">
 		<supports>Cleric, Ranged Spell Attack</supports>
 		<description>
-			<p>You conjure a lance of divine energy and hurl it at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d6 radiant radiant damage (if you are good or neutral) or 1d6 necrotic damage (if you are evil), and the lance embeds itself within the creature. The first time it is hit by a weapon attack made by a creature other than yourself before the start of your next turn, the lance detonates, dealing radiant (or necrotic) damage equal to your spellcasting modifier.</p>
-			<p class="indent">This spell's damage increases when you reach higher levels. At 5th level, the ranged attack deals an extra 1d6 radiant or necrotic damage to the target, and the detonation damage increases to 1d4 + your spellcasting ability modifier. Both damage rolls increase by 1d6/1d4 at 11th level and 17th level.</p>
+			<p>You conjure a lance of divine energy and hurl or thrust it at a creature within range. Make a melee spell attack against the target. On a hit, the target takes 1d6 Radiant damage (if you are good or neutral) or 1d6 Necrotic damage (if you are evil), and the lance embeds itself within the creature. The first time it is hit by a weapon attack made by a creature other than yourself before the start of your next turn, the lance detonates, dealing Radiant or Necrotic damage (same as the initial attack) equal to your spellcasting modifier.</p>
+			<p class="indent">This spell's damage increases when you reach higher levels. At 5th level, the attack deals an extra 1d6 Radiant or Necrotic damage to the target, and the detonation damage increases to 1d4 + your spellcasting ability modifier. Both damage rolls increase by 1d6/1d4 at 11th level and 17th level.</p>
 		</description>
 		<setters>
 			<set name="keywords">radiant, necrotic</set>

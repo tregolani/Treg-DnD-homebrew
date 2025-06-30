@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
-			<file name="thc-barbarian-wildheart.xml" url="" />
+		<name>Items</name>
+		<description>Path of the Wildheart subclass, modified for Avarice and Acquisitions</description>
+		<update version="0.0.2">
+			<file name="thc-barbarian-wildheart.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-barbarian-wildheart.xml" />
 		</update>
 	</info>
 

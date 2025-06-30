@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Half-Orc</name>
+		<description>The Half-Orc species from the Player’s Handbook, modified for Solandria.</description>
+		<update version="0.0.1">
+			<file name="thc-race-halforc.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-race-halforc.xml" />
+		</update>
+	</info>
+	<element name="Half-Orc" type="Race" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_RACE_HALFORC">
+		<description>
+			<p class="flavor">Whether united under the leadership of a mighty warlock or having fought to a standstill after years of conflict, orc and human tribes sometimes form alliances, joining forces into a larger horde to the terror of civilized lands nearby. When these alliances are sealed by marriages, half-orcs are born. Some half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other more civilized races. Many of these become adventurers, achieving greatness for their mighty deeds and notoriety for their barbaric customs and savage fury.</p>
+			<h4>SCARRED AND STRONG</h4>
+			<p>Half-orcs’ grayish pigmentation, sloping foreheads, jutting jaws, prominent teeth, and towering builds make their orcish heritage plain for all to see. Half-orcs stand between 6 and 7 feet tall and usually weigh between 180 and 250 pounds.</p>
+			<p class="indent">Orcs regard battle scars as tokens of pride and ornamental scars as things of beauty. Other scars, though, mark an orc or half-orc as a former slave or a disgraced exile. Any half-orc who has lived among or near orcs has scars, whether they are marks of humiliation or of pride, recounting their past exploits and injuries. Such a half-orc living among humans might display these scars proudly or hide them in shame.</p>
+			<h4>THE MARK OF GRUUMSH</h4>
+			<p>The one-eyed god Gruumsh created the orcs, and even those orcs who turn away from his worship can’t fully escape his influence. The same is true of half-orcs, though their human blood moderates the impact of their orcish heritage. Some half-orcs hear the whispers of Gruumsh in their dreams, calling them to unleash the rage that simmers within them. Others feel Gruumsh’s exultation when they join in melee combat—and either exult along with him or shiver with fear and loathing. Half-orcs are not evil by nature, but evil does lurk within them, whether they embrace it or rebel against it.</p>
+			<p class="indent">Beyond the rage of Gruumsh, half-orcs feel emotion powerfully. Rage doesn’t just quicken their pulse, it makes their bodies burn. An insult stings like acid, and sadness saps their strength. But they laugh loudly and heartily, and simple bodily pleasures—feasting, drinking, wrestling, drumming, and wild dancing—fill their hearts with joy. They tend to be short-tempered and sometimes sullen, more inclined to action than contemplation and to fighting than arguing. The most accomplished half-orcs are those with enough self-control to get by in a civilized land.</p>
+			<h4>TRIBES AND SLUMS</h4>
+			<p>Half-orcs most often live among orcs. Of the other races, humans are most likely to accept half-orcs, and half-orcs almost always live in human lands when not living among orc tribes. Whether proving themselves among rough barbarian tribes or scrabbling to survive in the slums of larger cities, half-orcs get by on their physical might, their endurance, and the sheer determination they inherit from their human ancestry.</p>
+			
+			<h4>Half-Orc Traits</h4>
+			<p style="margin-top:15px"><strong><em>Creature Type:</em></strong> Humanoid</p>
+			<p><strong><em>Size:</em></strong> Medium (about 6–7 feet tall)</p>
+			<p><strong><em>Speed:</em></strong> 30 feet</p>
+			
+			<p>As a Half-Orc, you have these special traits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 120 feet.</p> 
+			<p class="indent"><strong><em>Primal Intuition.</em></strong> You have proficiency in two of the following skills of your choice: <em>Animal Handling, Insight, Intimidation, Medicine, Nature, Perception, and Survival.</em></p>
+			<p class="indent"><strong><em>Savage Attacks.</em></strong> When you score a critical hit with a weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.</p>
+			<p class="indent"><strong><em>Relentless Endurance.</em></strong> When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can’t do so again until you finish a Long Rest.</p> 
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Half-Orc)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Half-Orc)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Half-Orc)" supports="Standard||Exotic" number="2" />
+
+			<grant type="Racial Trait" id="ID_TREGOLANI_HB_RACIAL_TRAIT_HALF_ORC_PRIMAL_INTUITION" />
+			<grant type="Racial Trait" id="ID_TREGOLANI_HB_RACIAL_TRAIT_HALF_ORC_SAVAGE_ATTACKS" />
+			<grant type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_ORC_RELENTLESS_ENDURANCE" requirements="!ID_WOTC_PHB24_RACIAL_TRAIT_REPLACEMENT_ORC_RELENTLESS_ENDURANCE" />
+		</rules>
+	</element>
+
+	<element name="Primal Intuition" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_RACIAL_TRAIT_HALF_ORC_PRIMAL_INTUITION">
+		<description>
+			<p>You have proficiency in two of the following skills of your choice: <em>Animal Handling, Insight, Intimidation, Medicine, Nature, Perception, and Survival</em>.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Primal Intuition)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_WOTC_PHB24_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_INSIGHT|ID_WOTC_PHB24_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_WOTC_PHB24_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_WOTC_PHB24_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_WOTC_PHB24_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_WOTC_PHB24_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_WOTC_PHB24_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Primal Intuition)"  number="2" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>	
+	<element name="Savage Attacks" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_RACIAL_TRAIT_HALF_ORC_SAVAGE_ATTACKS">
+		<description>
+			<p>You can roll one additional weapon damage die when determining the extra damage for a critical hit with a weapon attack.</p>
+		</description>
+		<sheet>
+			<description>You can roll one additional weapon damage die when determining the extra damage for a critical hit with a weapon attack.</description>
+		</sheet>
+	</element>
+</elements>

@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.2.12">
+    <update version="0.2.13">
       <file name="thc-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-items.xml" />
     </update>
   </info>
@@ -115,6 +115,22 @@
 			<set name="type">Wondrous Item</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Land of the Dead Focus-Stone" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_MAGIC_ITEM_LAND_OF_THE_DEAD_FOCUS_STONE">
+		<description>
+			<p>This is far from an ordinary rock—the extra-planar nature of this stone has imbued it with magical storing properties.</p>
+			<p class="indent">This stone stores necromancy spells cast into it, holding them until the attuned holder uses them. The stone can store up to 5 levels worth of spells at a time. When found, it contains 1d6-1 levels of stored spells chosen by the DM.</p>
+			<p class="indent">Any creature can cast a spell of 1st through 5th level into the stone by touching the stone as the spell is cast. The spell has no effect, other than to be stored in the stone. If the stone can't hold the spell, the spell is expended without effect. If a spell other than one from the school of Necromancy is cast on the stone, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.</p>
+			<p class="indent">While holding this stone, you can cast any spell stored in it. The spell uses the slot level, spell save DC level, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the stone is no longer stored in it, freeing up space.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
 		</setters>
 	</element>
 	<element name="Earrings of Alluring Charisma" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_MAGIC_ITEM_EARRINGS_OF_ALLURING_CHARISMA">

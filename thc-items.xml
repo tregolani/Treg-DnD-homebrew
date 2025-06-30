@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.2.13">
+    <update version="0.2.14">
       <file name="thc-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-items.xml" />
     </update>
   </info>
@@ -243,6 +243,30 @@
 	</element>
 	
 	<element name="Tool Proficiency (Surgeon's tools)" type="Proficiency" source="Tregolani Homebrew Collection" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS">
+		<supports>Tool, Artisan tools</supports>
+		<requirements />
+		<description>
+			<p>These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft.</p>
+		</description>
+		<rules />
+	</element>
+	<element name="Tattooist's tools" type="Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ITEM_TOOL_TATTOOISTS_TOOLS">
+		<description>
+			<p>This thick leather satchel contains everything you'd need to apply a tattoo to someone's skin. Proficiency with these tools allows you to add your proficiency bonus to any ability check you make to apply or attempt to remove a tattoo.</p>
+			<p class="indent"><strong><em>Components.</em></strong> Tattooist's tools include anesthetics, needles, brushes, salves, and various types and colors of ink.</p>
+			<p class="indent"><strong><em>Medicine.</em></strong> Your mastery of after-application salving improves your ability to treat wounds directly and efficiently.</p>
+			<p class="indent"><strong><em>Sleight of Hand.</em></strong> One must have a steady hand when applying a tattoo to a creature's skin. Your proficiency with these tools grants you additional finesse when attempting other sorts of similar tasks, such as picking a lock or sewing with needle and thread.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="3">3 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_TATTOOISTS_TOOLS</set>
+		</setters>
+	</element>
+	
+	<element name="Tool Proficiency (Tattooist's tools)" type="Proficiency" source="Tregolani Homebrew Collection" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TATTOOISTS_TOOLS">
 		<supports>Tool, Artisan tools</supports>
 		<requirements />
 		<description>

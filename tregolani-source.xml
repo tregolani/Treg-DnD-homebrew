@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.15">
+		<update version="0.2.16">
 			<file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
 		</update>
 	</info>
@@ -9,11 +9,11 @@
 		<description>
         <![CDATA[<p>This is a collection of personal homebrew created by Tregolani for DnD campaigns. Currently included in the collection are: </p>
       			<ul>
-              <li><strong>Items:</strong> Captain's Wright, Cursed Amulet of the Chameleon, Earrings of Alluring Charisma, Handwraps of the Flowing Soul, Necklace of Inspired Wisdom, Quiver of Radiance, Sandals of Incredible Dexterity, Sentinel Shield +1, Surgeon's Tools</li>
+              <li><strong>Items:</strong> Captain's Wright, Cursed Amulet of the Chameleon, Earrings of Alluring Charisma, Handwraps of the Flowing Soul, Land of the Dead Focus-Stone, Necklace of Inspired Wisdom, Quiver of Radiance, Sandals of Incredible Dexterity, Sentinel Shield +1, Silver Bell of Codgering, Surgeon's Tools, Tattooist's Tools, Trio of Throwing Knives</li>
               <li><strong>Feats:</strong> Elemental Blood, Healer (Improved), Titan Grip</li>
               <li><strong>Spells:</strong>
   		<ul>
-  		<li><em><strong>Cantrips: </strong>jolt, shockbolt, lance of faith</em></li>
+  		<li><em><strong>Cantrips: </strong>caustic strike, crusader strike, fountain blade, frost strike, heart strike, jolt, lance of faith, psi blade, rose blade, shockbolt, shock strike, storm strike, toxic strike, wind blade</em></li>
 		<li><em><strong>4th-level: </strong>crushing breaker</em></li>
 		<li><em><strong>5th-level: </strong>forked lightning</em></li>
 		<li><em><strong>6th-level: </strong>storm conduit</em></li>
@@ -22,7 +22,7 @@
               </li>
               <li><strong>Classes:</strong> Barbarian (Avarice), Sorcerer (Revised), Sorcerer (Wisdom)</li>
               <li><strong>Subclasses:</strong> College of Glamour (One-Dnd), Path of the Wildheart (Revised), Sea Sorcery (Revised), Tinkerer Physician (Artificer)</li>
-              <li><strong>Races:</strong> Halfling(2024), Hexblood</li>
+              <li><strong>Races:</strong> Halfling (for Solandria), Half-Orc (for Solandria), Hexblood</li>
             </ul>]]>
       </description>
 		<setters>

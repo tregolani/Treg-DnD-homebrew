@@ -10,18 +10,18 @@
   </info>
   <files>
     <file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
+    <file name="thc-artificer-tinkerer-physician.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-artificer-tinkerer-physician.xml" />
     <file name="thc-background-engineer.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-background-engineer.xml" />
     <file name="thc-barbarian-avarice.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-barbarian-avarice.xml" />
     <file name="thc-barbarian-wildheart.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-barbarian-wildheart.xml" />
     <file name="thc-bard-glamour.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-bard-glamour.xml" />
+    <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     <file name="thc-hexblood-race.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-hexblood-race.xml" />
+    <file name="thc-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-items.xml" />
     <file name="thc-race-halfling.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-race-halfling.xml" />
     <file name="thc-race-halforc.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-race-halforc.xml" />
-    <file name="thc-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-spells.xml" />
-    <file name="thc-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-items.xml" />
-    <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
-    <file name="thc-sorcerer-sea-sorcery-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-sorcerer-sea-sorcery-revised.xml" />
     <file name="thc-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-sorcerer-revised.xml" />
-    <file name="thc-artificer-tinkerer-physician.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-artificer-tinkerer-physician.xml" />
+    <file name="thc-sorcerer-sea-sorcery-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-sorcerer-sea-sorcery-revised.xml" />
+    <file name="thc-spells.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-spells.xml" />
   </files>
 </index>

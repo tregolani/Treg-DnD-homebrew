@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.1.5">
+    <update version="0.1.6">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -145,6 +145,45 @@
 	</element>
 
 <!-- Solandria-Specific items -->
+	<!-- Balm of Peace -->
+	<element name="Channel Divinity: Balm of Peace" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_PEACE_DOMAIN_CD_BALM_OF_PEACE">
+		<description>
+			<p><em>2nd-level Peace Domain feature</em></p>
+			<p>You can use your Channel Divinity to make your very presence a soothing balm. As a Magic Action, you can move up to your Speed without provoking opportunity attacks. When you move within 5 feet of any other creature during this Action, you can restore a number of hit points to that creature equal to 2d6 + your Wisdom modifier (minimum of 1 hit point). This increases to 3d6 at level 5, 4d6 at level 9, 5d6 at level 13, and 6d6 at level 17. A creature can receive this healing only once whenever you take this Action.</p>
+		</description>
+		<sheet alt="Balm of Peace" action="Action" usage="Channel Divinity">
+			<description>You can move up to your Speed, without provoking an opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore {{balm of peace:count}}d6+{{wisdom:modifier}} Hit Points to that creature (minimum of 1). A creature can receive this healing only once whenever you take this action.</description>
+		</sheet>
+		<rules>
+			<stat name="balm of peace:count" value="2" bonus="base" />
+			<stat name="balm of peace:count" value="3" bonus="base" level="5"/>
+			<stat name="balm of peace:count" value="4" bonus="base" level="9"/>
+			<stat name="balm of peace:count" value="5" bonus="base" level="13"/>
+			<stat name="balm of peace:count" value="6" bonus="base" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Cleric, Peace Domain, LV02: Balm of Peace" type="Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ITEM_OCF_CLERIC_PEACE_BALM_OF_PEACE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_PEACE_DOMAIN_CD_BALM_OF_PEACE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">2nd level, channel divinity, balm of peace</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_TCOE_FEATURE_REPLACEMENT_CLERIC_PEACE_DOMAIN_BALM_OF_PEACE" />
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_PEACE_DOMAIN_CD_BALM_OF_PEACE" requirements="[level:cleric:2]"/>
+		</rules>
+	</element>
+
+
 	<!-- Favored Foe -->
 	<element name="Favored Enemy" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FAVORED_ENEMY">
 		<description>
@@ -182,6 +221,45 @@
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_FAVORED_ENEMY" />
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FAVORED_ENEMY" requirements="[level:ranger:1]"/>
+		</rules>
+	</element>
+
+	<!-- Tireless -->
+	<element name="Level 10: Tireless" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_TIRELESS">
+		<description>
+			<p>Primal forces now help fuel you on your journeys, granting you the following benefits.</p>
+			<p class="indent"><b><i>Temporary Hit Points.</i></b> As a Magic action, you can give yourself a number of Temporary Hit Points equal to 2d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><b><i>Decrease Exhaustion.</i></b> Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.</p>
+		</description>
+		<sheet alt="Tireless" action="Action" usage="{{tireless:usage}}/Long Rest">
+			<description>You can give yourself a number of Temporary Hit Points equal to 2d8+{{tireless:thp}}. &#13;
+			In addition, whenever you finish a Short Rest, your Exhaustion level decreases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="tireless:thp" value="1" bonus="base" />
+			<stat name="tireless:thp" value="wisdom:modifier" bonus="base" />
+			<stat name="tireless:usage" value="1" bonus="base" />
+			<stat name="tireless:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Ranger, LV10: Tireless" type="Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ITEM_OCF_RANGER_TIRELESS">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_TIRELESS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">tenth level, thp, tireless</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_TIRELESS" />
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_TIRELESS" requirements="[level:ranger:10]"/>
 		</rules>
 	</element>
 

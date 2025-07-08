@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.1.6">
+    <update version="0.2.0">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -131,7 +131,7 @@
 			<ul>
 				<li><b>Guts Grip.</b> You may wield a two-handed melee weapon in one hand, treating it as a one-handed weapon. If you do, reduce the damage die by one step. For example, a greatsword or greataxe wielded in one hand deals 1d10 damage.</li>
 				<li><b>Heavy Handed.</b> The one- and two-handed damage die for versatile melee weapons you wield increases by 1 step. For example, a longsword deals 1d10 damage in one hand or 1d12 damage in two.</li>
-				<li><b>Versatility.</b> You gain a +1 bonus to attack rolls with light melee weapons. You gain a +2 bonus to damage rolls with heavy melee weapons. Increase the range you score a critical hit with a melee weapon that is neither heavy or light by 1.</li>
+				<li><b>Versatility.</b> You gain a +1 bonus to attack rolls with light melee weapons. You gain a +2 bonus to damage rolls with heavy melee weapons. For melee weapons that are neither heavy or light, increase the range you score a critical hit with them by 1.</li>
 				<li><b>Weightless Weapons.</b> You can ignore the heavy quality on weapons you wield, or add the light quality to weapons without the heavy quality (no action required). You may wield heavy weapons without penalties if you are Small or smaller.</li>
 			</ul>
 		</description>
@@ -162,7 +162,6 @@
 			<stat name="balm of peace:count" value="6" bonus="base" level="17"/>
 		</rules>
 	</element>
-
 	<element name="Cleric, Peace Domain, LV02: Balm of Peace" type="Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ITEM_OCF_CLERIC_PEACE_BALM_OF_PEACE">
 		<compendium display="false" />
 		<description>
@@ -183,7 +182,6 @@
 		</rules>
 	</element>
 
-
 	<!-- Favored Foe -->
 	<element name="Favored Enemy" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FAVORED_ENEMY">
 		<description>
@@ -203,7 +201,6 @@
 			<stat name="favored enemy:usage" value="6" bonus="base" level="17"/>
 		</rules>
 	</element>
-
 	<element name="Ranger, LV01: Favored Enemy" type="Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ITEM_OCF_RANGER_FAVORED_ENEMY">
 		<compendium display="false" />
 		<description>
@@ -242,7 +239,6 @@
 			<stat name="tireless:usage" value="wisdom:modifier" bonus="base" />
 		</rules>
 	</element>
-	
 	<element name="Ranger, LV10: Tireless" type="Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ITEM_OCF_RANGER_TIRELESS">
 		<compendium display="false" />
 		<description>
@@ -277,7 +273,6 @@
 			<stat name="natures veil:usage" value="wisdom:modifier" bonus="base" />
 		</rules>
 	</element>
-
 	<element name="Ranger, LV10: Nature's Veil" type="Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ITEM_OCF_RANGER_NATURES_VEIL">
 		<compendium display="false" />
 		<description>
@@ -298,4 +293,646 @@
 		</rules>
 	</element>
 
+<!-- Supernatural Gift Feat Chains -->
+	<!-- Dragon-Blooded -->
+	<element name="Supernatural Gift: Dragon-Blooded" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED">
+		<description>
+			<p>You are the child of a dragon and a mortal, or were transfigured into a half-dragon through rituals, boons, or exposure to the majesty of the mighty dragons. You gain the following traits:</p>
+			<ul>
+				<li><em><strong>Draconic Ancestry.</strong></em> You have draconic ancestry. Choose one type of damage from the Draconic Ancestry table. Your breath weapon and shape as well as your damage resistance are determined by dragons of that type, as shown in the table. Your ancestry does not necessarily determine your appearance.</li>
+			</ul>
+			<table>
+				<thead>
+					<tr><td>Damage Type</td><td>Save Type</td><td>Breath Weapon</td></tr>
+				</thead>
+				<tr><td>Acid</td><td>Dex</td><td>5 ft. by 30 ft. line</td></tr>
+				<tr><td>Cold</td><td>Con</td><td>15 ft. cone</td></tr>
+				<tr><td>Fire</td><td>Dex</td><td>15 ft. cone</td></tr>
+				<tr><td>Force</td><td>Str</td><td>15 ft. cone</td></tr>
+				<tr><td>Lightning</td><td>Dex</td><td>5 ft. by 30 ft. line</td></tr>
+				<tr><td>Necrotic</td><td>Con</td><td>15 ft. cone</td></tr>
+				<tr><td>Poison</td><td>Con</td><td>15 ft. cone</td></tr>
+				<tr><td>Psychic</td><td>Wis</td><td>15 ft. cone</td></tr>
+				<tr><td>Radiant</td><td>Dex</td><td>5 ft. by 30 ft. line</td></tr>
+				<tr><td>Thunder</td><td>Con</td><td>15 ft. cone</td></tr>
+			</table>
+			<ul>
+				<li><em><strong>Breath Weapon.</strong></em> When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a shape determined by your Draconic Ancestry. Each creature in that area must make a saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) of a type determined by your Draconic Ancestry. On a failed save, the creature takes 1d10 damage of the type associated with your Draconic Ancestry. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</li>
+				<li><em><strong>Darkvision.</strong></em> You gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 30 feet.</li>
+				<li><em><strong>Draconic Resistance.</strong></em> You have resistance to the damage type associated with your Draconic Ancestry. If you choose poison, you have Advantage on saving throws you make to avoid or end the @condition[Poisoned] condition on yourself.</li>
+				<li><em><strong>Dragonheart.</strong></em> Your creature type is dragon, rather than humanoid.</li>
+			</ul>
+			<p class="indent">If you already have a Breath Weapon or Draconic Resistance trait (such as from the Dragonborn ancestry), work with your DM to find proper replacements. Common alternatives are options from the Draconic Legacy trait, the Half Dragon feat, or the Wyrm-Blessed Supernatural Gift.</p>
+			</description>
+		<sheet>
+			<description>You are the child of a dragon and a mortal, or were transfigured into a half-dragon through rituals, boons, or exposure to the majesty of the mighty dragons. Your creature type is Dragon, and you gain a breath weapon with which you can replace one of your attacks, Resistance to its damage type, and boosted Darkvision.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_DRAGON" />
+			<select type="Racial Trait" name="Draconic Ancestry" supports="THC Draconic Ancestry" />
+			<stat name="breath weapon:damage" value="1" bonus="base"/>
+			<stat name="breath weapon:damage" value="2" bonus="base" level="5"/>
+			<stat name="breath weapon:damage" value="3" bonus="base" level="11"/>
+			<stat name="breath weapon:damage" value="4" bonus="base" level="17"/>
+			<stat name="breath weapon:dc" value="8" />
+			<stat name="breath weapon:dc" value="proficiency" />
+			<stat name="breath weapon:dc" value="constitution:modifier" />
+		</rules>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Supernatural Gift</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+	</element>
+	<element name="Acid" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_ACID">
+		<supports>THC Draconic Ancestry</supports>
+		<description>
+			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
+		</description>
+		<sheet alt="Draconic Ancestry" usage="{{proficiency}}/LR">
+			<description>Your ancestry is Acid. Your breath weapon deals {{breath weapon:damage}}d10 damage in a 5 by {{draconic-ancestry:breath line}}ft. line (DC{{breath weapon:dc}} Dex. save).</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="!ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<stat name="draconic-ancestry:breath line" value="30" bonus="base"/>
+			<stat name="draconic-ancestry:breath line" value="60" bonus="base" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON" />
+		</rules>
+	</element>
+	<element name="Cold" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_COLD">
+		<supports>THC Draconic Ancestry</supports>
+		<description>
+			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
+		</description>
+		<sheet alt="Draconic Ancestry" usage="{{proficiency}}/LR">
+			<description>Your ancestry is Cold. Your breath weapon deals {{breath weapon:damage}}d10 damage in a {{draconic-ancestry:breath cone}}ft. cone (DC{{breath weapon:dc}} Con. save).</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="!ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<stat name="draconic-ancestry:breath cone" value="15" bonus="base"/>
+			<stat name="draconic-ancestry:breath cone" value="30" bonus="base" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON" />
+		</rules>
+	</element>
+	<element name="Fire" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_FIRE">
+		<supports>THC Draconic Ancestry</supports>
+		<description>
+			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
+		</description>
+		<sheet alt="Draconic Ancestry" usage="{{proficiency}}/LR">
+			<description>Your ancestry is Fire. Your breath weapon deals {{breath weapon:damage}}d10 damage in a {{draconic-ancestry:breath cone}}ft. cone (DC{{breath weapon:dc}} Dex. save).</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="!ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<stat name="draconic-ancestry:breath cone" value="15" bonus="base"/>
+			<stat name="draconic-ancestry:breath cone" value="30" bonus="base" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON" />
+		</rules>
+	</element>
+	<element name="Force" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_FORCE">
+		<supports>THC Draconic Ancestry</supports>
+		<description>
+			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
+		</description>
+		<sheet alt="Draconic Ancestry" usage="{{proficiency}}/LR">
+			<description>Your ancestry is Force. Your breath weapon deals {{breath weapon:damage}}d10 damage in a {{draconic-ancestry:breath cone}}ft. cone (DC{{breath weapon:dc}} Str. save).</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" requirements="!ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FORCE" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<stat name="draconic-ancestry:breath cone" value="15" bonus="base"/>
+			<stat name="draconic-ancestry:breath cone" value="30" bonus="base" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_LIGHTNING">
+		<supports>THC Draconic Ancestry</supports>
+		<description>
+			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
+		</description>
+		<sheet alt="Draconic Ancestry" usage="{{proficiency}}/LR">
+			<description>Your ancestry is Lightning. Your breath weapon deals {{breath weapon:damage}}d10 damage in a 5 by {{draconic-ancestry:breath line}}ft. line (DC{{breath weapon:dc}} Dex. save).</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="!ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<stat name="draconic-ancestry:breath line" value="30" bonus="base"/>
+			<stat name="draconic-ancestry:breath line" value="60" bonus="base" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON" />
+		</rules>
+	</element>
+	<element name="Necrotic" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_NECROTIC">
+		<supports>THC Draconic Ancestry</supports>
+		<description>
+			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
+		</description>
+		<sheet alt="Draconic Ancestry" usage="{{proficiency}}/LR">
+			<description>Your ancestry is Necrotic. Your breath weapon deals {{breath weapon:damage}}d10 damage in a {{draconic-ancestry:breath cone}}ft. cone (DC{{breath weapon:dc}} Con. save).</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="!ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<stat name="draconic-ancestry:breath cone" value="15" bonus="base"/>
+			<stat name="draconic-ancestry:breath cone" value="30" bonus="base" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON" />
+		</rules>
+	</element>
+	<element name="Poison" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_POISON">
+		<supports>THC Draconic Ancestry</supports>
+		<description>
+			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
+		</description>
+		<sheet alt="Draconic Ancestry" usage="{{proficiency}}/LR">
+			<description>Your ancestry is Poison. Your breath weapon deals {{breath weapon:damage}}d10 damage in a {{draconic-ancestry:breath cone}}ft. cone (DC{{breath weapon:dc}} Con. save).</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" requirements="!ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<stat name="draconic-ancestry:breath cone" value="15" bonus="base"/>
+			<stat name="draconic-ancestry:breath cone" value="30" bonus="base" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON" />
+		</rules>
+	</element>
+	<element name="Psychic" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_PSYCHIC">
+		<supports>THC Draconic Ancestry</supports>
+		<description>
+			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
+		</description>
+		<sheet alt="Draconic Ancestry" usage="{{proficiency}}/LR">
+			<description>Your ancestry is Psychic. Your breath weapon deals {{breath weapon:damage}}d10 damage in a {{draconic-ancestry:breath cone}}ft. cone (DC{{breath weapon:dc}} Wis. save).</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" requirements="!ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PSYCHIC" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<stat name="draconic-ancestry:breath cone" value="15" bonus="base"/>
+			<stat name="draconic-ancestry:breath cone" value="30" bonus="base" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON" />
+		</rules>
+	</element>
+	<element name="Radiant" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_RADIANT">
+		<supports>THC Draconic Ancestry</supports>
+		<description>
+			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
+		</description>
+		<sheet alt="Draconic Ancestry" usage="{{proficiency}}/LR">
+			<description>Your ancestry is Radiant. Your breath weapon deals {{breath weapon:damage}}d10 damage in a 5 by {{draconic-ancestry:breath line}}ft. line (DC{{breath weapon:dc}} Dex. save).</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" requirements="!ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<stat name="draconic-ancestry:breath line" value="30" bonus="base"/>
+			<stat name="draconic-ancestry:breath line" value="60" bonus="base" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_THUNDER">
+		<supports>THC Draconic Ancestry</supports>
+		<description>
+			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
+		</description>
+		<sheet alt="Draconic Ancestry" usage="{{proficiency}}/LR">
+			<description>Your ancestry is Thunder. Your breath weapon deals {{breath weapon:damage}}d10 damage in a {{draconic-ancestry:breath cone}}ft. cone (DC{{breath weapon:dc}} Con. save).</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" requirements="!ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_THUNDER" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING" />
+			<stat name="draconic-ancestry:breath cone" value="15" bonus="base"/>
+			<stat name="draconic-ancestry:breath cone" value="30" bonus="base" requirements="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON" />
+		</rules>
+	</element>
+	
+	<element name="Dragon-Blooded: Half-Dragon" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON">
+		<requirements>[level:3],ID_INTERNAL_RACIAL_TRAIT_TYPE_DRAGON</requirements>
+		<prerequisite>Level 3+, Dragon creature type</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 3+, Dragon creature type</em></p>
+			<p>The draconic influence which acts upon your essence grows stronger. Choose <b><u>TWO</u></b> of the following traits:</p>
+			<ul>
+				<li><b><i>Deep Breath.</i></b> As an Action, you can take a deep breath and unleash your Breath Weapon in a more powerful manner. When you do, the damage increases to a number of d10s equal to half your Proficiency Bonus.</li>
+				<li><b><i>Dragon Wrath.</i></b> Once per turn when you damage a creature with a weapon attack or spell, you can also deal 1d8 damage of a type associated with your Draconic Ancestry to that creature.</li>
+				<li><b><i>Wings.</i></b> You have bat-like wings sprouting from your shoulder blades. You have a Fly Speed equal to your Speed.</li>
+				<li><b><i>Visage.</i></b> As a Bonus Action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height between Medium and Small. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait. You stay in the new form until you use a Bonus Action to revert to your true form or until you die.</li>
+			</ul>
+			<p>Instead of one of these traits, you may choose <u>two</u> of the following traits instead:</p>
+			<ul>
+				<li><b><i>Amphibious.</i></b> You can breathe air and water, and you have a Swim Speed equal to your Speed.</li>
+				<li><b><i>Claws.</i></b> Your claws are natural weapons with the Finesse property, which you can use to make unarmed strikes that deal Slashing damage equal to 1d6 + your Strength or Dexterity modifier.</li>
+				<li><b><i>Desert Predator.</i></b> You gain a Burrow Speed equal to half your Speed. You have Advantage on Saving Throws against effects from wind or sand.</li>
+				<li><b><i>Draconic Hide.</i></b> When you aren't wearing armor, your base AC is 13 + Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</li>
+				<li><b><i>Draconic Senses.</i></b> You gain proficiency in the Perception skill. If you are already proficient in this skill, you gain Expertise instead.</li>
+				<li><b><i>Ice Walk.</i></b> You gain a Burrow Speed equal to half your Speed. You can move around on icy surfaces without making ability checks. Difficult terrain composed of ice or snow doesn't cost you extra movement.</li>
+				<li><b><i>Rock Climber.</i></b> You have a Climb Speed equal to your Speed.</li>
+			</ul>
+			</description>
+		<sheet>
+			<description>The draconic influence which acts upon your essence grows stronger.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Half-Dragon" supports="THC Half-Dragon Options" number="2" />
+		</rules>
+	</element>
+	<element name="Deep Breath" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_DEEP_BREATH">
+		<supports>THC Half-Dragon Options</supports>
+		<description>
+				<p>As an Action, you can take a deep breath and unleash your Breath Weapon in a more powerful manner. When you do, the damage increases to a number of d10s equal to your Proficiency Bonus.</p>
+		</description>
+		<sheet action="Action">
+			<description>You unleash your Breath Weapon in a more powerful manner, dealing {{proficiency}}d10 damage.</description>
+		</sheet>
+	</element>
+	<element name="Dragon Wrath" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_DRAGON_WRATH">
+		<supports>THC Half-Dragon Options</supports>
+		<description>
+				<p>Once per turn when you damage a creature with a weapon attack or spell, you can also deal 1d8 damage of a type associated with your Draconic Ancestry to that creature.</p>
+		</description>
+		<sheet usage="1/turn">
+			<description>Deal {{dragon wrath:count}}d8 damage to one creature you hit with a weapon attack or spell. The damage type is that of your Draconic Ancestry.</description>
+		</sheet>
+		<rules>
+			<stat name="dragon wrath:count" value="1" bonus="base" />
+		</rules>
+	</element>
+	<element name="Wings" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_WINGS">
+		<supports>THC Half-Dragon Options</supports>
+		<description>
+				<p>You have bat-like wings sprouting from your shoulder blades. You have a Fly Speed equal to your Speed.</p>
+		</description>
+		<sheet>
+			<description>You have a {{speed}}ft. Fly Speed.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:fly" value="speed" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Visage" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_VISAGE">
+		<supports>THC Half-Dragon Options</supports>
+		<description>
+				<p>As a Bonus Action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height between Medium and Small. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait. You stay in the new form until you use a Bonus Action to revert to your true form or until you die.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height between Medium and Small. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait. You stay in the new form until you use a Bonus Action to revert to your true form or until you die.</description>
+		</sheet>
+	</element>
+	<element name="Physical Traits" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_PHYSICAL_TRAITS">
+		<supports>THC Half-Dragon Options</supports>
+		<description>
+				<p>Instead of one of the base Half-Dragon traits, you can select two of the following traits instead:.</p>
+				<ul>
+					<li><b><i>Amphibious.</i></b> You can breathe air and water, and you have a Swim Speed equal to your Speed.</li>
+					<li><b><i>Claws.</i></b> Your claws are natural weapons with the Finesse property, which you can use to make unarmed strikes that deal Slashing damage equal to 1d6 + your Strength or Dexterity modifier.</li>
+					<li><b><i>Desert Predator.</i></b> You gain a Burrow Speed equal to half your Speed. You have Advantage on Saving Throws against effects from wind or sand.</li>
+					<li><b><i>Draconic Hide.</i></b> When you aren't wearing armor, your base AC is 13 + Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</li>
+					<li><b><i>Draconic Senses.</i></b> You gain proficiency in the Perception skill. If you are already proficient in this skill, you gain Expertise instead.</li>
+					<li><b><i>Ice Walk.</i></b> You gain a Burrow Speed equal to half your Speed. You can move around on icy surfaces without making ability checks. Difficult terrain composed of ice or snow doesn't cost you extra movement.</li>
+					<li><b><i>Rock Climber.</i></b> You have a Climb Speed equal to your Speed.</li>
+				</ul>
+		</description>
+		<sheet>
+			<description>Your body gains draconic traits.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Half-Dragon Physical Traits" supports="THC Half-Dragon Physical Options" number="2" />
+		</rules>
+	</element>
+	<element name="Amphibious" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_AMPHIBIOUS">
+		<supports>THC Half-Dragon Physical Options</supports>
+		<description>
+				<p>You can breathe air and water, and you have a Swim Speed equal to your Speed.</p>
+		</description>
+		<sheet>
+			<description>You can breathe air and water, and you have a {{speed}ft. Swim Speed.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:swim" value="speed" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Claws" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_CLAWS">
+		<supports>THC Half-Dragon Physical Options</supports>
+		<description>
+				<p>Your claws are natural weapons with the Finesse property, which you can use to make unarmed strikes that deal Slashing damage equal to 1d6 + your Strength or Dexterity modifier.</p>
+		</description>
+		<sheet>
+			<description>Your claws are natural weapons that deal 1d6+{{half-dragon:claws:modifier}} Slashing damage.</description>
+		</sheet>
+		<rules>
+			<stat name="half-dragon:claws:modifier" value="strength:modifier" bonus="ability" />
+			<stat name="half-dragon:claws:modifier" value="dexterity:modifier" bonus="ability" />
+		</rules>
+	</element>
+	<element name="Desert Predator" type="Feat Feature " source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_DESERT_PREDATOR">
+		<supports>THC Half-Dragon Physical Options</supports>
+		<description>
+				<p>You gain a Burrow Speed equal to half your Speed. You have Advantage on Saving Throws against effects from wind or sand.</p>
+		</description>
+		<sheet>
+			<description>You gain a {{speed:half}}ft. Burrow Speed. You have Advantage on Saving Throws against effects from wind or sand.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:burrow" value="speed:half" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Draconic Hide" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_DRACONIC_HIDE">
+		<supports>THC Half-Dragon Physical Options</supports>
+		<description>
+				<p>When you aren't wearing armor, your base AC is 13 + Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</p>
+		</description>
+		<sheet>
+			<description>You have a base AC of {{ac:draconic hide}} while not wearing armor. You can still benefit from a shield.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:draconic hide" value="13" bonus="base" />
+			<stat name="ac:draconic hide" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:draconic hide" bonus="calculation" equipped="[armor:none]" alt="Draconic Hide" />
+		</rules>
+	</element>
+	<element name="Draconic Senses" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_DRACONIC_SENSES">
+		<supports>THC Half-Dragon Physical Options</supports>
+		<description>
+				<p>You gain proficiency in the Perception skill. If you are already proficient in this skill, you gain Expertise instead.</p>
+		</description>
+		<sheet>
+			<description>You gain Proficiency (or Expertise) in Perception.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_PROFICIENCY_SKILL_PERCEPTION"/>
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_PERCEPTION" requirements="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_PHB24_PROFICIENCY_SKILL_PERCEPTION"/>
+			<grant type="Proficiency" id="ID_WOTC_PHB24_EXPERTISE_SKILL_PERCEPTION" requirements="ID_WOTC_PHB24_PROFICIENCY_SKILL_PERCEPTION"/>
+		</rules>
+	</element>
+	<element name="Ice Walk" type="Feat Feature " source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_ICE_WALK">
+		<supports>THC Half-Dragon Physical Options</supports>
+		<description>
+				<p>You gain a Burrow Speed equal to half your Speed. You can move around on icy surfaces without making ability checks. Difficult terrain composed of ice or snow doesn't cost you extra movement.</p>
+		</description>
+		<sheet>
+			<description>You gain a {{speed:half}}ft. Burrow Speed. You can move around on icy surfaces without making ability checks. Difficult terrain composed of ice or snow doesn't cost you extra movement.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:burrow" value="speed:half" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Rock Climber" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_ROCK_CLIMBER">
+		<supports>THC Half-Dragon Physical Options</supports>
+		<description>
+				<p>You have a Climb Speed equal to your Speed.</p>
+		</description>
+		<sheet>
+			<description>You have a {{speed}}ft. Climb Speed.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:climb" value="speed" bonus="base"/>
+		</rules>
+	</element>
+
+	<element name="Dragon-Blooded: Soul of the First World" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD">
+		<requirements>[level:9],ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON</requirements>
+		<prerequisite>Level 9+, Half-Dragon feat</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 9+, Half-Dragon feat</em></p>
+			<p>Your soul is connected to echoes of draconic might across time and space. You may choose a total of <b><u>TWO</u></b> traits selected from the Half Dragon feat, or from the following traits:</p>
+			<ul>
+				<li><b><i>Draconic Size.</i></b> You are Large size, and your unarmed strikes deal an additional 1d6 damage of the same type. <i>[Requires a natural weapon, such as a Bite or Claw attack]</i></li>
+				<li><b><i>Empowered Breath Weapon.</i></b> If your breath weapon is a cone, it becomes 30 feet. If your breath weapon is a line, it extends to 60 feet. When you use your breath weapon with the Deep Breath trait, double its range. Additionally, you gain a second breath weapon. When you use your Breath Weapon trait, you can replace your breath weapon with an exhalation of energy in a 30-foot cone (60 feet if you use Deep Breath). Whenever you use this trait, choose:</li>
+				<ul>
+					<li><b><i>Enervating Breath.</i></b> Each creature in the area must succeed on a Constitution Saving Throw or become Incapacitated until the start of your next turn.</li>
+					<li><b><i>Nightmare Breath.</i></b> Each creature in the area must succeed on a Wisdom Saving Throw or become Frightened until the start of your next turn.</li>
+					<li><b><i>Repulsion Breath.</i></b> Each creature in the area must succeed on a Strength Saving Throw or be pushed 20 feet away from you and be knocked Prone.</li>
+					<li><b><i>Sleep Breath.</i></b> Each creature in the area must succeed on a Constitution Saving Throw or fall Unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an Action to wake it.</li>
+					<li><b><i>Slowing Breath.</i></b> Each creature in the area must succeed on a Constitution Saving Throw. On a failed save, the creature's Speed is halved, attack rolls against it have Advantage, it has Disadvantage on Dexterity saving throws, and it cannot take Reactions until the end of your next turn.</li>
+				</ul>
+				<li><b><i>Frightening Presence.</i></b> Creatures of your choice that start their turns within 20 feet of you must make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be Frightened of you until the start of its next turn. If the creature’s saving throw is successful, it is Immune to this ability for the next 24 hours.</li>
+				<li><b><i>Gemstone Telepathy.</i></b> You can communicate telepathically to creatures within 60 feet of you. The contacted creature doesn't need to share a language with you to communicate in this way with it, but it must be able to understand at least one language.</li>
+				<li><b><i>Hybrid Draconic Ancestry.</i></b> Choose two additional Draconic Ancestries. You have Resistance to the damage types associated with these Draconic Ancestries. Additionally, when you use your Breath Weapon, you may choose to use the Breath Weapons associated with those Draconic Ancestries.</li>
+				<li><b><i>Strong Wings.</i></b> Your Fly Speed increases by 20 feet. <i>[Requires the Wings trait, or an innate flying speed]</i></li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your soul is connected to echoes of draconic might across time and space.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Soul of the First World" supports="THC Half-Dragon Options||THC Soul of the First World Options" number="2" />
+		</rules>
+	</element>
+	<element name="Draconic Size" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_DRACONIC_SIZE">
+		<supports>THC Soul of the First World Options</supports>
+		<description>
+				<p>You are Large size, and your unarmed strikes deal an additional 1d6 damage of the same type. <i>[Requires a natural weapon, such as a Bite or Claw attack]</i></p>
+		</description>
+		<sheet>
+			<description>You are Large size, and your unarmed strikes deal an additional 1d6 damage</description>
+		</sheet>
+		<rules>
+			<grant type="Size" id="ID_SIZE_LARGE" />
+		</rules>
+	</element>
+	<element name="Empowered Breath Weapon" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON">
+		<supports>THC Soul of the First World Options</supports>
+		<description>
+				<p>If your breath weapon is a cone, it becomes 30 feet. If your breath weapon is a line, it extends to 60 feet. When you use your breath weapon with the Deep Breath trait, double its range. Additionally, you gain a second breath weapon. When you use your Breath Weapon trait, you can replace your breath weapon with an exhalation of energy in a 30-foot cone (60 feet if you use Deep Breath). Whenever you use this trait, choose:</p>
+				<ul>
+					<li><b><i>Enervating Breath.</i></b> Each creature in the cone must succeed on a Constitution Saving Throw or become Incapacitated until the start of your next turn.</li>
+					<li><b><i>Nightmare Breath.</i></b> Each creature in the cone must succeed on a Wisdom Saving Throw or become Frightened until the start of your next turn.</li>
+					<li><b><i>Repulsion Breath.</i></b> Each creature in the cone must succeed on a Strength Saving Throw or be pushed 20 feet away from you and be knocked Prone.</li>
+					<li><b><i>Sleep Breath.</i></b> Each creature in the cone must succeed on a Constitution Saving Throw or fall Unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an Action to wake it.</li>
+					<li><b><i>Slowing Breath.</i></b> Each creature in the area must succeed on a Constitution Saving Throw. On a failed save, the creature's Speed is halved, attack rolls against it have Advantage, it has Disadvantage on Dexterity saving throws, and it cannot take Reactions until the end of your next turn.</li>
+				</ul>
+		</description>
+		<sheet>
+			<description>The area of your breath weapon increases in size, and you gain a second type of breath weapon that can debilitate creatures.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Empowered Breath Weapon" supports="THC Empowered Breath Weapon Options"/>
+		</rules>
+	</element>
+	<element name="Enervating Breath" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON_ENERVATING_BREATH">
+		<supports>THC Empowered Breath Weapon Options</supports>
+		<description>
+			<p>Each creature in a 30-foot cone must succeed on a Constitution Saving Throw or become Incapacitated until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Each creature in a 30-foot cone must succeed on a DC{{breath weapon:dc}} Constitution Saving Throw or become Incapacitated until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Nightmare Breath" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON_NIGHTMARE_BREATH">
+		<supports>THC Empowered Breath Weapon Options</supports>
+		<description>
+			<p>Each creature in a 30-foot cone must succeed on a Wisdom Saving Throw or become Frightened until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Each creature in a 30-foot cone must succeed on a DC{{breath weapon:dc}} Wisdom Saving Throw or become Frightened until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Repulsion Breath" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON_REPULSION_BREATH">
+		<supports>THC Empowered Breath Weapon Options</supports>
+		<description>
+			<p>Each creature in a 30-foot cone must succeed on a Strength Saving Throw or be pushed 20 feet away from you and be knocked Prone.</p>
+		</description>
+		<sheet>
+			<description>Each creature in a 30-foot cone must succeed on a DC{{breath weapon:dc}} Strength Saving Throw or be pushed 20 feet away from you and be knocked Prone.</description>
+		</sheet>
+	</element>
+	<element name="Sleep Breath" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON_SLEEP_BREATH">
+		<supports>THC Empowered Breath Weapon Options</supports>
+		<description>
+			<p>Each creature in a 30-foot cone must succeed on a Constitution Saving Throw or fall Unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an Action to wake it.</p>
+		</description>
+		<sheet>
+			<description>Each creature in a 30-foot cone must succeed on a DC{{breath weapon:dc}} Constitution Saving Throw or fall Unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an Action to wake it.</description>
+		</sheet>
+	</element>
+	<element name="Slowing Breath" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON_SLOWING_BREATH">
+		<supports>THC Empowered Breath Weapon Options</supports>
+		<description>
+			<p>Each creature in a 30-foot cone must succeed on a Constitution Saving Throw. On a failed save, the creature's Speed is halved, attack rolls against it have Advantage, it has Disadvantage on Dexterity saving throws, and it cannot take Reactions until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Each creature in a 30-foot cone must succeed on a DC{{breath weapon:dc}} Constitution Saving Throw. On a failed save, the creature's Speed is halved, attack rolls against it have Advantage, it has Disadvantage on Dexterity saving throws, and it cannot take Reactions until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Frightening Presence" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_FRIGHTENING_PRESENCE">
+		<supports>THC Soul of the First World Options</supports>
+		<description>
+				<p>Creatures of your choice that start their turns within 20 feet of you must make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be Frightened of you until the start of its next turn. If the creature’s saving throw is successful, it is Immune to this ability for the next 24 hours.</p>
+		</description>
+		<sheet>
+			<description>Creatures of your choice that start their turns within 20 feet of you must make a DC{{frightning presence:DC}} Wisdom saving throw or be Frightened of you until the start of its next turn. If the creature’s saving throw is successful, it is Immune to this ability for the next 24 hours.</description>
+		</sheet>
+		<rules>
+			<stat name="frightning presence:dc" value="8" />
+			<stat name="frightning presence:dc" value="proficiency" />
+			<stat name="frightning presence:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Gemstone Telepathy" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_GEMSTONE_TELEPATHY">
+		<supports>THC Soul of the First World Options</supports>
+		<description>
+				<p>You can communicate telepathically to creatures within 60 feet of you. The contacted creature doesn't need to share a language with you to communicate in this way with it, but it must be able to understand at least one language.</p>
+		</description>
+		<sheet>
+			<description>You can communicate telepathically to creatures within 60 feet of you. The contacted creature doesn't need to share a language with you to communicate in this way with it, but it must be able to understand at least one language.</description>
+		</sheet>
+	</element>
+	<element name="Hybrid Draconic Ancestry" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_HYBRID_DRACONIC_ANCESTRY">
+		<supports>THC Soul of the First World Options</supports>
+		<description>
+				<p>Choose two additional Draconic Ancestries. You have Resistance to the damage types associated with these Draconic Ancestries. Additionally, when you use your Breath Weapon, you may choose to use the Breath Weapons associated with those Draconic Ancestries.</p>
+		</description>
+		<sheet>
+			<description>You have two additional Draconic Ancestries</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Draconic Ancestry" supports="THC Draconic Ancestry" number="2" />
+		</rules>
+	</element>
+	<element name="Strong Wings" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_STRONG_WINGS">
+		<requirements>[speed:fly:1]</requirements>
+		<supports>THC Soul of the First World Options</supports>
+		<description>
+				<p>Your Fly Speed increases by 20 feet.</p>
+		</description>
+		<sheet>
+			<description>Your Fly Speed increases by 20 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:fly" value="20" />
+		</rules>
+	</element>
+
+	<element name="Dragon-Blooded: Blood of Asgorath" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH">
+		<requirements>[level:12],ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD</requirements>
+		<prerequisite>Level 12+, Soul of the First World feat</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 12+, Soul of the First World feat</em></p>
+			<p>You are as close to a true dragon you can be without a total transformation. You may select a total of two traits selected from the Half-Dragon or Soul of the First World feats, or from the following traits:</p>
+			<ul>
+				<li><b><i>Blindsight.</i></b> You gain Blindsight out to 60 feet, and the range of your Darkvision increases by 30 feet. <i>[Requires Expertise in Perception]</i></li>
+				<li><b><i>Draconic Warding.</i></b> You become Immune to the damage type associated with all Draconic Ancestries you have.</li>
+				<li><b><i>Dragon Outrage.</i></b> The damage of your Dragon Wrath becomes 2d8.</li>
+				<li><b><i>Mighty Breath.</i></b> When you use your Breath Weapon using the Deep Breath trait, you can unleash devastation upon your foes by expending two uses of your breath weapon. If you do, choose one of the following modifications of the breath weapon:</li>
+				<ul>
+					<li><b><i>Obliterate.</i></b> Double the damage dice of your breath weapon.</li>
+					<li><b><i>Twin Breath Weapon.</i></b> Creatures who fail the saving throw against your breath weapon are affected by the effects of one of your secondary breath weapons.</li>
+					<li><b><i>Shielding Breath Weapon.</i></b> You gain Temporary Hit Points equal to half of the damage roll of your breath weapon.</li>
+				</ul>
+			</ul>
+			<p class="indent">When you finish a Short Rest, you regain two uses of your Breath Weapon. <i>[Requires Deep Breath and Empowered Breath Weapon]</i></p>
+		</description>
+		<sheet>
+			<description>You are as close to a true dragon you can be without a total transformation.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Blood of Asgorath" supports="THC Half-Dragon Options||THC Soul of the First World Options||THC Blood of Asgorath Options" number="2" />
+		</rules>
+	</element>
+	<element name="Blindsight" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_BLINDSIGHT">
+		<requirements>ID_WOTC_PHB24_EXPERTISE_SKILL_PERCEPTION||ID_EXPERTISE_SKILL_PERCEPTION</requirements>
+		<prerequisites>Expertise in Perception</prerequisites>
+		<supports>THC Blood of Asgorath Options</supports>
+		<description>
+			<p><em>Prerequisite: Expertise in Perception</em></p>
+			<p>You gain Blindsight out to 60 feet, and the range of your Darkvision increases by 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You gain Blindsight out to 60 feet, and the range of your Darkvision increases by 30 feet.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="darkvision:range" value="30" />
+		</rules>
+	</element>
+	<element name="Draconic Warding" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRACONIC_WARDING">
+		<supports>THC Blood of Asgorath Options</supports>
+		<description>
+			<p>You become Immune to the damage type(s) associated with all Draconic Ancestries you have.</p>
+		</description>
+		<sheet>
+			<description>You become Immune to the damage type(s) associated with all Draconic Ancestries you have.</description>
+		</sheet>
+	</element>
+	<element name="Dragon Outrage" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_DRAGON_OUTRAGE">
+		<requirements>ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_DRAGON_WRATH</requirements>
+		<prerequisite>Dragon Wrath</prerequisite>
+		<supports>THC Blood of Asgorath Options</supports>
+		<description>
+			<p>The damage of your Dragon Wrath becomes 2d8.</p>
+		</description>
+		<sheet>
+			<description>Your Dragon Wrath is more deadly.</description>
+		</sheet>
+		<rules>
+			<stat name="dragon wrath:count" value="1" bonus="base" />
+		</rules>
+	</element>
+	<element name="Mighty Breath" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_MIGHTY_BREATH">
+		<requirements>ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_DEEP_BREATH,ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_SOUL_OF_THE_FIRST_WORLD_EMPOWERED_BREATH_WEAPON</requirements>
+		<prerequisite>Deep Breath and Empowered Breath Weapon</prerequisite>
+		<supports>THC Blood of Asgorath Options</supports>
+		<description>
+			<p>When you use your Breath Weapon using the Deep Breath trait, you can unleash devastation upon your foes by expending two uses of your breath weapon. If you do, choose one of the following modifications of the breath weapon:</p>
+				<ul>
+					<li><b><i>Obliterate.</i></b> Double the damage dice of your breath weapon.</li>
+					<li><b><i>Twin Breath Weapon.</i></b> Creatures who fail the saving throw against your breath weapon are affected by the effects of one of your secondary breath weapons.</li>
+					<li><b><i>Shielding Breath Weapon.</i></b> You gain Temporary Hit Points equal to half of the damage roll of your breath weapon.</li>
+				</ul>
+			<p class="indent">When you finish a Short Rest, you regain two uses of your Breath Weapon.</p>
+		</description>
+		<sheet>
+			<description>When you use your Deep Breath Weapon, you can expend 2 uses and modify it in one of the following ways: &#13;
+				• Double the damage dice &#13;
+				• Apply your Empowered Breath Weapon to creatures who fail the saving throw &#13;
+				• Gain THP equal to half the damage roll of your breath weapon &#13;
+				You regain 2 uses of your Breath Weapon when you finish a Short Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Slowed" type="Information" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_INFORMATION_CONDITION_SLOWED">
+	<description>
+		<p>While you are Slowed, you experience the following effects:</p>
+		<ul>
+			<li><b><i>Limited Movement.</i></b> You must spend 1 extra foot of movement for every foot you move using your Speed.</li>
+			<li><b><i>Attacks Affected.</i></b> Attack Rolls against you have Advantage.</li>
+			<li><b><i>Saves Affected.</i></b> You have Disadvantage on Dexterity saving throws.</li>
+			<li><b><i>Limited Actions.</i></b> You can't take Reactions.</li>
+		</ul>
+	</description>
+	</element>
 </elements>

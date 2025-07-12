@@ -3,7 +3,7 @@
 	<info>
 		<name>Items</name>
 		<description>Path of the Wildheart subclass, modified for Avarice and Acquisitions</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="thc-barbarian-wildheart.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-barbarian-wildheart.xml" />
 		</update>
 	</info>
@@ -353,8 +353,14 @@
 			<p>While your Rage is active, any creature within a number of feet equal to your Constitution score (rounded up to the nearest increment of 5) of you that's hostile to you has Disadvantage on attacks against targets other than you.</p>
 		</description>
 		<sheet>
-			<description>While your Rage is active, any creature within {{constitution:score}} feet (rounded up to the nearest increment of 5) of you that's hostile to you has Disadvantage on attacks against targets other than you.</description>
+			<description>While your Rage is active, any hostile creature within {{power of the wilds:lion:range}}ft. of you has Disadvantage on attacks against targets other than you.</description>
 		</sheet>
+		<rules>
+			<stat name="power of the wilds:lion:range" value="15" bonus="base" requirements="[str:11],![str:16]" />
+			<stat name="power of the wilds:lion:range" value="20" bonus="base" requirements="[str:16],![str:21]" />
+			<stat name="power of the wilds:lion:range" value="25" bonus="base" requirements="[str:21],![str:26]" />
+			<stat name="power of the wilds:lion:range" value="30" bonus="base" requirements="[str:26]" />
+		</rules>
 	</element>
 	<element name="Power of the Wilds (Moose)" type="Archetype Feature" source="Tregolani Homebrew Collection" id="ID_THC_ARCHETYPE_FEATURE_PATH_OF_THE_WILD_HEART_POWER_OF_THE_WILDS_MOOSE">
 		<supports>Improved Power of the Wilds</supports>

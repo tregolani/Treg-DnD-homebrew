@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.2.0">
+    <update version="0.2.1">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -325,7 +325,7 @@
 			<p class="indent">If you already have a Breath Weapon or Draconic Resistance trait (such as from the Dragonborn ancestry), work with your DM to find proper replacements. Common alternatives are options from the Draconic Legacy trait, the Half Dragon feat, or the Wyrm-Blessed Supernatural Gift.</p>
 			</description>
 		<sheet>
-			<description>You are the child of a dragon and a mortal, or were transfigured into a half-dragon through rituals, boons, or exposure to the majesty of the mighty dragons. Your creature type is Dragon, and you gain a breath weapon with which you can replace one of your attacks, Resistance to its damage type, and boosted Darkvision.</description>
+			<description>Your creature type is Dragon. You gain a breath weapon with which you can replace one of your attacks, Resistance to its damage type, and boosted Darkvision.</description>
 		</sheet>
 		<rules>
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
@@ -924,6 +924,564 @@
 		</sheet>
 	</element>
 
+	<!-- Fey Blessing -->
+	<element name="Supernatural Gift: Fey Blessing" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING">
+		<description>
+			<p>Your connection to Faerie is deeper than most. No matter what plane you reside on, the wild energy of the Feywild surges through you. You gain the following benefits:</p>
+			<ul>
+				<li><em><strong>Fey Ancestry.</strong></em> You have Advantage on saving throws you make to avoid or end the Charmed condition on yourself.</li>
+				<li><em><strong>Fey Resistance.</strong></em> Choose <i><u>one</u></i> of the following damage types: Fire, Cold, Lightning, Poison, Psychic, or Thunder. You have Resistance to the chosen damage type. If you choose Poison, you have Advantage on saving throws you make to avoid or end the Poisoned condition on yourself.</li>
+				<li><em><strong>Darkvision.</strong></em> You gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 30 feet.</li>
+				<li><em><strong>Wild Soul.</strong></em> Your creature type is Fey, rather than Humanoid.</li>
+			</ul>
+			</description>
+		<sheet>
+			<description>Your creature type is Fey. You have Advantage on saving throws to avoid or end the Charmed condition, Resistance to {{fey resistance:type}} damage, and boosted Darkvision.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FEY" />
+			<select type="Feat Feature" name="Fey Resistance" supports="THC Fey Resistance" />
+		</rules>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Supernatural Gift</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+	</element>
+	<element name="Cold" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING_FEY_RESISTANCE_COLD">
+		<supports>THC Fey Resistance</supports>
+		<description>
+			<p>You have Resistance to Cold damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<stat inline="true" name="fey resistance:type" value="Cold" />
+		</rules>
+	</element>
+	<element name="Fire" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING_FEY_RESISTANCE_FIRE">
+		<supports>THC Fey Resistance</supports>
+		<description>
+			<p>You have Resistance to Fire damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<stat inline="true" name="fey resistance:type" value="Fire" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING_FEY_RESISTANCE_LIGHTNING">
+		<supports>THC Fey Resistance</supports>
+		<description>
+			<p>You have Resistance to Lightning damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<stat inline="true" name="fey resistance:type" value="Lightning" />
+		</rules>
+	</element>
+	<element name="Poison" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING_FEY_RESISTANCE_POISON">
+		<supports>THC Fey Resistance</supports>
+		<description>
+			<p>You have Resistance to Poison damage, and have Advantage on saving throws to avoid or end the Poisoned condition.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<stat inline="true" name="fey resistance:type" value="Poison" />
+		</rules>
+	</element>
+	<element name="Psychic" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING_FEY_RESISTANCE_PSYCHIC">
+		<supports>THC Fey Resistance</supports>
+		<description>
+			<p>You have Resistance to Psychic damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+			<stat inline="true" name="fey resistance:type" value="Psychic" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING_FEY_RESISTANCE_THUNDER">
+		<supports>THC Fey Resistance</supports>
+		<description>
+			<p>You have Resistance to Thunder damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			<stat inline="true" name="fey resistance:type" value="Thunder" />
+		</rules>
+	</element>
+
+	<element name="Fey Blessing: Half-Fey" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY">
+		<requirements>[level:3],ID_INTERNAL_RACIAL_TRAIT_TYPE_FEY</requirements>
+		<prerequisite>Level 3+, Fey creature type</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 3+, Fey creature type</em></p>
+			<p>Your connections to the Feywild are so deep that you could easily pass as one of the Fair Folk, even to denizens of Faerie.  Choose <b><u>TWO</u></b> of the following traits:</p>
+			<ul>
+				<li><b><i>Mark of the Dryad.</i></b> You can communicate with beasts and plants as if you share a language. The starting attitude of beasts and plants is one step higher.</li>
+				<li><b><i>Mark of the Faun.</i></b> Whenever you make a long or high jump, you can roll a d8 and add the number to the number of feet you cover, even when making a standing jump. This extra distance costs movement as normal. Additionally, you have horns that you can use to make unarmed strikes. When you hit with them, you deal 1d6 + your Strength modifier Piercing damage.</li>
+				<li><b><i>Mark of Glamour.</i></b> You know the <i>Disguise Self</i> spell, and can cast it without expending a spell slot. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell when you cast it (choose when you select this ability).</li>
+				<li><b><i>Mark of the Naiad.</i></b> If immersed in water, you can make yourself Invisible as a Bonus Action. You remain Invisible until you leave the water, end it with a Bonus Action, or die.</li>
+				<li><b><i>Mark of the Pixie.</i></b> You have butterfly-like wings sprouting from your shoulder blades. You have a Fly Speed equal to your Speed.</li>
+				<li><b><i>Mark of Seasons.</i></b> You become attuned to the primal magic of the seasons. Choose a season to associate yourself with: autumn, winter, spring, or summer. When finishing a Long Rest, you can change your season. As a bonus action, you can Fey Step, magically teleporting up to 30 feet to an unoccupied space you can see and triggering an additional effect based on your current choice of season. If the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this trait). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+					<ul>
+						<li><b><i>Autumn.</i></b> Immediately after you use your Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be Charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.</li>
+						<li><b><i>Winter.</i></b> When you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be Frightened of you until the end of your next turn.</li>
+						<li><b><i>Spring.</i></b> When you use your Fey Step, you can touch one willing creature within 5 feet of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 30 feet of you.</li>
+						<li><b><i>Summer.</i></b> Immediately after you use your Fey Step, each creature of your choice that you can see within 5 feet of you takes fire damage equal to your proficiency bonus.</li>
+					</ul>
+				<li><b><i>Mark of the Treetops.</i></b> Your Speed increases by 10 feet, and you have a Climb Speed equal to your Speed.</li>
+			</ul>
+			</description>
+		<sheet>
+			<description>Your connections to the Feywild are so deep that you could easily pass as one of the Fair Folk.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Half-Fey" supports="THC Half-Fey Options" number="2" />
+		</rules>
+	</element>
+	<element name="Mark of the Dryad" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_THE_DRYAD">
+		<supports>THC Half-Fey Options</supports>
+		<description>
+				<p>You can communicate with beasts and plants as if you share a language. The starting attitude of beasts and plants is one step higher.</p>
+		</description>
+		<sheet>
+			<description>You can communicate with beasts and plants as if you share a language. The starting attitude of beasts and plants is one step higher.</description>
+		</sheet>
+	</element>
+	<element name="Mark of the Faun" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_THE_FAUN">
+		<supports>THC Half-Fey Options</supports>
+		<description>
+				<p>Whenever you make a long or high jump, you can roll a d8 and add the number to the number of feet you cover, even when making a standing jump. This extra distance costs movement as normal. Additionally, you have horns that you can use to make unarmed strikes. When you hit with them, you deal 1d6 + your Strength modifier Piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Your horns are natural weapons and deal 1d6+{{strength:modifier}} Piercing damage. Whenever you jump, roll 1d8 and add it to the number of feet you cover.</description>
+		</sheet>
+	</element>
+	<element name="Mark of Glamour" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_GLAMOUR">
+		<supports>THC Half-Fey Options</supports>
+		<description>
+				<p>You know the <i>Disguise Self</i> spell, and can cast it without expending a spell slot. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell when you cast it.</p>
+		</description>
+		<sheet>
+			<description>You can cast Disguise Self at will, using {{mark of glamour:ability}} as your spellcasting ability.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Spellcasting Ability (Mark of Glamour)" supports="THC Half Fey Mark of Glamour Spellcasting Ability" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_GLAMOUR_INTELLIGENCE">
+		<supports>THC Half Fey Mark of Glamour Spellcasting Ability</supports>
+		<description>
+				<p>Intelligence is your spellcasting ability for your Mark of Glamour.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="mark of glamour:ability" value="Intelligence" />
+			<select type="Spell" name="Disguise Self (Mark of Glamour)" supports="ID_PHB_SPELL_DISGUISE_SELF|ID_WOTC_PHB24_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_GLAMOUR_WISDOM">
+		<supports>THC Half Fey Mark of Glamour Spellcasting Ability</supports>
+		<description>
+				<p>Wisdom is your spellcasting ability for your Mark of Glamour.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="mark of glamour:ability" value="Wisdom" />
+			<select type="Spell" name="Disguise Self (Mark of Glamour)" supports="ID_PHB_SPELL_DISGUISE_SELF|ID_WOTC_PHB24_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_GLAMOUR_CHARISMA">
+		<supports>THC Half Fey Mark of Glamour Spellcasting Ability</supports>
+		<description>
+				<p>Charisma is your spellcasting ability for your Mark of Glamour.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="mark of glamour:ability" value="Charisma" />
+			<select type="Spell" name="Disguise Self (Mark of Glamour)" supports="ID_PHB_SPELL_DISGUISE_SELF|ID_WOTC_PHB24_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+	<element name="Mark of the Naiad" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_THE_NAIAD">
+		<supports>THC Half-Fey Options</supports>
+		<description>
+				<p>If immersed in water, you can make yourself Invisible as a Bonus Action. You remain Invisible until you leave the water, end it with a Bonus Action, or die.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>If immersed in water, you can make yourself Invisible. You remain Invisible until you leave the water, end it with a Bonus Action, or die.</description>
+		</sheet>
+	</element>
+	<element name="Mark of the Pixie" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_THE_PIXIE">
+		<supports>THC Half-Fey Options</supports>
+		<description>
+				<p>You have butterfly-like wings sprouting from your shoulder blades. You have a Fly Speed equal to your Speed.</p>
+		</description>
+		<sheet>
+			<description>You have a {{speed}}ft. Fly Speed.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:fly" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Mark of Seasons" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS">
+		<supports>THC Half-Fey Options</supports>
+		<description>
+				<p>ou become attuned to the primal magic of the seasons. Choose a season to associate yourself with: autumn, winter, spring, or summer. When finishing a Long Rest, you can change your season. As a bonus action, you can Fey Step, magically teleporting up to 30 feet to an unoccupied space you can see and triggering an additional effect based on your current choice of season. If the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this trait). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+				<ul>
+					<li><b><i>Autumn.</i></b> Immediately after you use your Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be Charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.</li>
+					<li><b><i>Winter.</i></b> When you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be Frightened of you until the end of your next turn.</li>
+					<li><b><i>Spring.</i></b> When you use your Fey Step, you can touch one willing creature within 5 feet of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 30 feet of you.</li>
+					<li><b><i>Summer.</i></b> Immediately after you use your Fey Step, each creature of your choice that you can see within 5 feet of you takes Fire damage equal to your proficiency bonus.</li>
+				</ul>
+		</description>
+		<sheet>
+			<description>Your season of choice is {{mark of seasons:season}}.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Fey Step (Mark of Seasons)" supports="THC Half Fey Mark of Seasons Fey Step" />
+			<stat name="fey step:distance" value="30" bonus="base" />
+			<stat name="fey step:dc" value="8" bonus="base"/>
+			<stat name="fey step:dc" value="proficiency" bonus="proficiency"/>
+		</rules>
+	</element>
+	<element name="Autumn (Intelligence)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_AUTUMN_INTELLIGENCE">
+		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
+		<description>
+				<p>Immediately after you use your Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be Charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.</p>
+		</description>
+		<sheet alt="Fey Step" action="Bonus Action" usage="{{proficiency}}/LR">
+			<description>You can teleport up to {{fey step:distance}}ft to a space you can see. Immediately after you teleport, choose two creatures you can see within 10ft of you. They must succeed on a DC{{fey step:dc}} Wisdom saving throw or be Charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="mark of seasons:season" value="Autumn" />
+			<stat name="fey step:dc" value="intelligence:modifier" bonus="ability"/>
+		</rules>
+	</element>
+	<element name="Autumn (Wisdom)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_AUTUMN_WISDOM">
+		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
+		<description>
+				<p>Immediately after you use your Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be Charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.</p>
+		</description>
+		<sheet alt="Fey Step" action="Bonus Action" usage="{{proficiency}}/LR">
+			<description>You can teleport up to {{fey step:distance}}ft to a space you can see. Immediately after you teleport, choose two creatures you can see within 10ft of you. They must succeed on a DC{{fey step:dc}} Wisdom saving throw or be Charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="mark of seasons:season" value="Autumn" />
+			<stat name="fey step:dc" value="wisdom:modifier" bonus="ability"/>
+		</rules>
+	</element>
+	<element name="Autumn (Charisma)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_AUTUMN_CHARISMA">
+		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
+		<description>
+				<p>Immediately after you use your Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be Charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.</p>
+		</description>
+		<sheet alt="Fey Step" action="Bonus Action" usage="{{proficiency}}/LR">
+			<description>You can teleport up to {{fey step:distance}}ft to a space you can see. Immediately after you teleport, choose two creatures you can see within 10ft of you. They must succeed on a DC{{fey step:dc}} Wisdom saving throw or be Charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="mark of seasons:season" value="Autumn" />
+			<stat name="fey step:dc" value="charisma:modifier" bonus="ability"/>
+		</rules>
+	</element>
+	<element name="Winter (Intelligence)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_WINTER_INTELLIGENCE">
+		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
+		<description>
+				<p>Immediately after you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be Frightened of you until the end of your next turn.</p>
+		</description>
+		<sheet alt="Fey Step" action="Bonus Action" usage="{{proficiency}}/LR">
+			<description>You can teleport up to {{fey step:distance}}ft to a space you can see. Immediately after you teleport, choose one creature you can see within 5ft of you. They must succeed on a DC{{fey step:dc}} Wisdom saving throw or be Frightened until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="mark of seasons:season" value="Winter" />
+			<stat name="fey step:dc" value="intelligence:modifier" bonus="ability"/>
+		</rules>
+	</element>
+	<element name="Winter (Wisdom)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_WINTER_WISDOM">
+		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
+		<description>
+				<p>Immediately after you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be Frightened of you until the end of your next turn.</p>
+		</description>
+		<sheet alt="Fey Step" action="Bonus Action" usage="{{proficiency}}/LR">
+			<description>You can teleport up to {{fey step:distance}}ft to a space you can see. Immediately after you teleport, choose one creature you can see within 5ft of you. They must succeed on a DC{{fey step:dc}} Wisdom saving throw or be Frightened until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="mark of seasons:season" value="Winter" />
+			<stat name="fey step:dc" value="wisdom:modifier" bonus="ability"/>
+		</rules>
+	</element>
+	<element name="Winter (Charisma)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_WINTER_CHARISMA">
+		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
+		<description>
+				<p>Immediately after you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be Frightened of you until the end of your next turn.</p>
+		</description>
+		<sheet alt="Fey Step" action="Bonus Action" usage="{{proficiency}}/LR">
+			<description>You can teleport up to {{fey step:distance}}ft to a space you can see. Immediately after you teleport, choose one creature you can see within 5ft of you. They must succeed on a DC{{fey step:dc}} Wisdom saving throw or be Frightened until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="mark of seasons:season" value="Winter" />
+			<stat name="fey step:dc" value="charisma:modifier" bonus="ability"/>
+		</rules>
+	</element>
+	<element name="Spring" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_SPRING">
+		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
+		<description>
+				<p>When you use your Fey Step, you can touch one willing creature within 5 feet of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 30 feet of you.</p>
+		</description>
+		<sheet alt="Fey Step" action="Bonus Action" usage="{{proficiency}}/LR">
+			<description>You can teleport up to {{fey step:distance}}ft to a space you can see. Alternatively, you can touch one willing creature within 5ft of you, and they can teleport in your place.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="mark of seasons:season" value="Spring" />
+		</rules>
+	</element>
+	<element name="Summer" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_SUMMER">
+		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
+		<description>
+				<p>Immediately after you use your Fey Step, each creature of your choice that you can see within 5 feet of you takes Fire damage equal to your proficiency bonus.</p>
+		</description>
+		<sheet alt="Fey Step" action="Bonus Action" usage="{{proficiency}}/LR">
+			<description>You can teleport up to {{fey step:distance}}ft to a space you can see. Choose any number of creatures you can see within 5ft. of you. They each take {{proficiency}} Fire damage.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="mark of seasons:season" value="Summer" />
+		</rules>
+	</element>
+	<element name="Mark of the Treetops" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_THE_TREETOPS">
+		<supports>THC Half-Fey Options</supports>
+		<description>
+				<p>Your Speed increases by 10 feet, and you have a Climb Speed equal to your Speed.</p>
+		</description>
+		<sheet>
+			<description>You have a {{speed}}ft. Climb Speed.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="10" />
+			<stat name="speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Fey Blessing: Fair Folk" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK">
+		<requirements>[level:9],ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY</requirements>
+		<prerequisite>Level 9+, Half-Fey Feat</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 9+, Half-Fey Feat</em></p>
+			<p>You are as beautiful and terrible as the dawn. You may choose a total of <b><u>TWO</u></b> traits selected from the Half Fey feat, or from the following traits:</p>
+			<ul>
+				<li><b><i>Mark of the Beanstalk.</i></b> You know the <i>Enlarge/Reduce</i> spell. You can cast it on yourself without expending a spell slot and without material components. When you do, the duration is Concentration until dispelled.</li>
+				<li><b><i>Mark of the Fierce.</i></b> Creatures of your choice that start their turns within 20 feet of you must make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be Charmed or Frightened (your choice) of you until the start of its next turn. If the creature’s saving throw is successful, it is immune to this ability for the next 24 hours.</li>
+				<li><b><i>Mark of the Mind.</i></b> You can communicate telepathically to creatures within 60 feet of you. The contacted creature doesn't need to share a language with you to communicate in this way with it, but it must be able to understand at least one language.</li>
+				<li><b><i>Mark of the Nimble.</i></b> When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</li>
+				<li><b><i>Mark of the Quick.</i></b> Your Speed increases by 20 feet.</li>
+				<li><b><i>Mark of Resistance.</i></b> Choose two of the following damage types: Fire, Cold, Lightning, Poison, Psychic, Thunder, or Bludgeoning, Piercing, and Slashing damage. You have Resistance to the chosen damage types. If you choose Poison, you have Advantage on saving throws you make to avoid or end the Poisoned condition on yourself. If you choose Bludgeoning, Piercing, and Slashing damage, choose cold iron or silver. Damage from magic weapons or weapons made of the chosen type bypass this resistance.</li>
+				<li><b><i>Mark of the Stag.</i></b> Your unarmed strikes deal an additional 1d6 damage of the same type, and your weapon attacks, including your unarmed strikes, are magical for the purpose of bypassing damage resistance. <i>Requires Mark of the Faun or a natural weapon trait, such as a Bite or Claw attack.</i></li>
+				<li><b><i>Mark of the Unbound Realm.</i></b> The range of your Fey Step becomes 60 feet, and you regain all uses of Fey Step when you finish a Short or Long Rest. <i>Requires Fey Step.</i></li>
+			</ul>
+			</description>
+		<sheet>
+			<description>You are as beautiful and terrible as the dawn.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Fair Folk" supports="THC Half-Fey Options||THC Fair Folk Options" number="2" />
+		</rules>
+	</element>
+	<element name="Mark of the Beanstalk" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_THE_BEANSTALK">
+		<supports>THC Fair Folk Options</supports>
+		<description>
+				<p>You know the <i>Enlarge/Reduce</i> spell. You can cast it on yourself without expending a spell slot and without material components. When you do, the duration is Concentration until dispelled.</p>
+		</description>
+		<sheet>
+			<description>You can cast Enlarge/Reduce on yourself at will. When you do, the duration is Concentration until dispelled.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Enlarge Reduce spell (Mark of the Beanstalk)" supports="ID_PHB_SPELL_ENLARGE_REDUCE|ID_WOTC_PHB24_SPELL_ENLARGE_REDUCE" />
+		</rules>
+	</element>
+	<element name="Mark of the Fierce" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_THE_FIERCE">
+		<supports>THC Fair Folk Options</supports>
+		<description>
+				<p>Creatures of your choice that start their turns within 20 feet of you must make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be Charmed or Frightened (your choice) of you until the start of its next turn. If the creature’s saving throw is successful, it is immune to this ability for the next 24 hours.</p>
+		</description>
+		<sheet>
+			<description>Creatures of your choice that start their turns within 20ft. of you must make a DC{{mark of the fierce:dc}} Wisdom saving throw or be Charmed or Frightened (your choice) of you until the start of its next turn. If the creature’s saving throw is successful, it is immune to this ability for the next 24 hours.</description>
+		</sheet>
+		<rules>
+			<stat name="mark of the fierce:dc" value="8" bonus="base"/>
+			<stat name="mark of the fierce:dc" value="proficiency" bonus="proficiency"/>
+			<stat name="mark of the fierce:dc" value="charisma:modifier" bonus="ability"/>
+		</rules>
+	</element>
+	<element name="Mark of the Mind" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_THE_MIND">
+		<supports>THC Fair Folk Options</supports>
+		<description>
+				<p>You can communicate telepathically to creatures within 60 feet of you. The contacted creature doesn't need to share a language with you to communicate in this way with it, but it must be able to understand at least one language.</p>
+		</description>
+		<sheet>
+			<description>You can communicate telepathically to creatures within 60 feet of you, as long as it understands one language.</description>
+		</sheet>
+	</element>
+	<element name="Mark of the Nimble" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_THE_NIMBLE">
+		<supports>THC Fair Folk Options</supports>
+		<description>
+				<p>When you’re subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can’t use this feature if you have the Incapacitated condition.</p>
+		</description>
+		<sheet>
+			<description>When you are forced to make a Dexterity saving throw to take only half damage and do not have the Incapacitated condition, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+	</element>
+	<element name="Mark of the Quick" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_THE_QUICK">
+		<supports>THC Fair Folk Options</supports>
+		<description>
+				<p>Your Speed increases by 20 feet.</p>
+		</description>
+		<sheet>
+			<description>Your Speed increases by 20 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="20" />
+		</rules>
+	</element>
+	<element name="Mark of Resistance" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_RESISTANCE">
+		<supports>THC Fair Folk Options</supports>
+		<description>
+				<p>Choose two of the following damage types: Fire, Cold, Lightning, Poison, Psychic, Thunder, or Bludgeoning, Piercing, and Slashing damage. You have Resistance to the chosen damage types. If you choose Poison, you have Advantage on saving throws you make to avoid or end the Poisoned condition on yourself. If you choose Bludgeoning, Piercing, and Slashing damage, choose cold iron or silver. Damage from weapons made of the chosen type bypass this resistance.</p>
+		</description>
+		<sheet>
+			<description>You have Resistance to two damage types. Weapons made with {{mark of resistance:bypass}} bypass these resistances.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Mark of Resistance" supports="THC Fey Resistance||THC Mark of Resistance" number="2" />
+			<select type="Feat Feature" name="Resistance Bypass Material (Mark of Resistance)" supports="THC Mark of Resistance Bypass" />
+		</rules>
+	</element>
+	<element name="Bludgeoning, Piercing, and Slashing" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_RESISTANCE_BPS">
+		<supports>THC Mark of Resistance</supports>
+		<description>
+			<p>You have Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+		</rules>
+	</element>
+	<element name="Cold Iron" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_RESISTANCE_BYPASS_COLD_IRON">
+		<supports>THC Mark of Resistance Bypass</supports>
+		<description>
+			<p>Weapons made of Cold Iron bypass your Fey Resistances.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat inline="true" name="mark of resistance:bypass" value="Cold Iron" />
+		</rules>
+	</element>
+	<element name="Silver" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_RESISTANCE_BYPASS_SILVER">
+		<supports>THC Mark of Resistance Bypass</supports>
+		<description>
+			<p>Weapons made of Silver bypass your Fey Resistances.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat inline="true" name="mark of resistance:bypass" value="Silver" />
+		</rules>
+	</element>
+	<element name="Mark of the Stag" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_THE_STAG">
+		<supports>THC Fair Folk Options</supports>
+		<prerequisites>Mark of the Faun or a natural weapon trait</prerequisites>
+		<description>
+			<p><em>Prerequisite: Mark of the Faun or a natural weapon trait</em></p>
+			<p>Your unarmed strikes deal an additional 1d6 damage of the same type, and your weapon attacks, including your unarmed strikes, are magical for the purpose of bypassing damage resistance.</p>
+		</description>
+		<sheet>
+			<description>Your unarmed strikes deal an additional 1d6 damage of the same type, and all of your unarmed and weapon attacks are magical for the purpose of bypassing Resistance.</description>
+		</sheet>
+
+	</element>
+	<element name="Mark of the Unbound Realm" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_THE_UNBOUND_REALM">
+		<requirements>ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS||ID_WOTC_MOTM_RACIAL_TRAIT_ELADRIN_FEY_STEP</requirements>
+		<supports>THC Fair Folk Options</supports>
+		<prerequisites>Mark of Seasons or Fey Step</prerequisites>
+		<description>
+			<p><em>Prerequisite: Mark of Seasons or Fey Step</em></p>
+			<p>The range of your Fey Step becomes 60 feet, and you regain all uses of Fey Step when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet>
+			<description>The range of your Fey Step becomes 60ft. and you regain all uses of Fey Step when you finish a Short or Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="fey step:distance" value="60" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Fey Blessing: Fey Courtier" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FEY_COURTIER">
+		<requirements>[level:12],ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK</requirements>
+		<prerequisite>Level 12+, Fair Folk Feat</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 12+, Fey Courtier Feat</em></p>
+			<p>You have become indistinguishable from trueborn fey by all but the keenest of folk. You may select a total of <b><u>TWO</u></b> traits selected from the Half Fey or Fair Folk feats, or from the following traits:</p>
+			<ul>
+				<li><b><i>Mark of the Forest Lord.</i></b> Beast and fey creatures you summon with spells are always friendly to you and your allies, and always obey your commands, and their weapon attacks count as magical for the purpose of bypassing damage resistance. Additionally, you ignore the material components of spells that summon beast and fey creatures, and your concentration on such spells can't be broken as a result of taking damage.</li>
+				<li><b><i>Mark of the Grove Keeper.</i></b> Once on your turn, you can use 10 feet of your movement to step magically into one living tree within your reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger.</li>
+				<li><b><i>Mark of the Hunt.</i></b> When you take the Attack action and target a single creature with all of your attacks, you can choose a friendly creature you can see within 30 feet. That creature can use its Reaction to make one melee attack against a target of its choice. If you reduce a creature to 0 hit points, you may attack an additional creature and still use this ability. <i>Requires Extra Attack.</i></li>
+				<li><b><i>Mark of Immortality.</i></b> You no longer require food, drink, or sleep. You are Immune to the Blinded, Charmed, Deafened, Frightened, and Exhaustion conditions.</li>
+			</ul>
+			</description>
+		<sheet>
+			<description>You have become indistinguishable from trueborn fey by all but the keenest of folk.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Fey Courtier" supports="THC Half-Fey Options||THC Fair Folk Options||THC Fey Courtier Options" number="2" />
+		</rules>
+	</element>
+	<element name="Mark of the Forest Lord" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FEY_COURTIER_MARK_OF_THE_FOREST_LORD">
+		<supports>THC Fey Courtier Options</supports>
+		<description>
+				<p>Beast and fey creatures you summon with spells are always friendly to you and your allies, and always obey your commands, and their weapon attacks count as magical for the purpose of bypassing damage resistance. Additionally, you ignore the material components of spells that summon beast and fey creatures, and your concentration on such spells can't be broken as a result of taking damage.</p>
+		</description>
+		<sheet>
+			<description>Beast and Fey creatures you summon with spells are always friendly to you and your allies, always obey your commands, and their weapon attacks count as magical for the purpose of bypassing damage resistance. Additionally, you ignore the material components of spells that summon Beast and Fey creatures, and your Concentration on such spells can't be broken as a result of taking damage.</description>
+		</sheet>
+	</element>
+	<element name="Mark of the Grove Keeper" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FEY_COURTIER_MARK_OF_THE_GROVE_KEEPER">
+		<supports>THC Fey Courtier Options</supports>
+		<description>
+				<p>Once on your turn, you can use 10 feet of your movement to step magically into one living tree within your reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>You can use 10ft. of movement to magically step into a living tree within your reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger.</description>
+		</sheet>
+	</element>
+	<element name="Mark of the Hunt" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FEY_COURTIER_MARK_OF_THE_HUNT">
+		<supports>THC Fey Courtier Options</supports>
+		<prerequisites>Extra Attack</prerequisites>
+		<description>
+			<p><em>Prerequisite: Extra Attack feature.</em></p>
+			<p>When you take the Attack action and target a single creature with all of your attacks, you can choose a friendly creature you can see within 30 feet. That creature can use its Reaction to make one melee attack against a target of its choice. If you reduce a creature to 0 hit points, you may attack an additional creature and still use this ability. <i>Requires Extra Attack.</i></p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action and target a single creature with all of your attacks, you can choose a friendly creature you can see within 30ft. That creature can use its Reaction to make one melee attack against a target of its choice. If you reduce a creature to 0 hit points, you may attack an additional creature and still use this ability.</description>
+		</sheet>
+	</element>
+	<element name="Mark of Immortality" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FEY_COURTIER_MARK_OF_IMMORTALITY">
+		<supports>THC Fey Courtier Options</supports>
+		<description>
+			<p>You no longer require food, drink, or sleep. You are Immune to the Blinded, Charmed, Deafened, Frightened, and Exhaustion conditions.</p>
+		</description>
+		<sheet>
+			<description>You no longer require food, drink, or sleep. You are Immune to the Blinded, Charmed, Deafened, Frightened, and Exhaustion conditions.</description>
+		</sheet>
+	</element>
+
+<!-- Conditions -->
 	<element name="Slowed" type="Information" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_INFORMATION_CONDITION_SLOWED">
 	<description>
 		<p>While you are Slowed, you experience the following effects:</p>

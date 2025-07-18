@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.2.1">
+    <update version="0.2.2">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -124,14 +124,14 @@
 		</sheet>
 	</element>
 	<element name="Titan Grip" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_TITAN_GRIP">
-			<prerequisite>Strength 15</prerequisite>
+			<prerequisite>Strength 15+</prerequisite>
 			<requirements>[str:15]</requirements>
 			<description>
 			<p>You've learned to use the weight of your weapons effectively and have adapted to use large weapons one-handed.</p>
 			<ul>
 				<li><b>Guts Grip.</b> You may wield a two-handed melee weapon in one hand, treating it as a one-handed weapon. If you do, reduce the damage die by one step. For example, a greatsword or greataxe wielded in one hand deals 1d10 damage.</li>
 				<li><b>Heavy Handed.</b> The one- and two-handed damage die for versatile melee weapons you wield increases by 1 step. For example, a longsword deals 1d10 damage in one hand or 1d12 damage in two.</li>
-				<li><b>Versatility.</b> You gain a +1 bonus to attack rolls with light melee weapons. You gain a +2 bonus to damage rolls with heavy melee weapons. For melee weapons that are neither heavy or light, increase the range you score a critical hit with them by 1.</li>
+				<li><b>Versatility.</b> You gain a +1 bonus to attack rolls with light melee weapons. You gain a +2 bonus to damage rolls with heavy melee weapons. For melee weapons that are neither heavy or light, increase the range you score a Critical Hit with them by 1.</li>
 				<li><b>Weightless Weapons.</b> You can ignore the heavy quality on weapons you wield, or add the light quality to weapons without the heavy quality (no action required). You may wield heavy weapons without penalties if you are Small or smaller.</li>
 			</ul>
 		</description>
@@ -142,6 +142,349 @@
 			Can ignore the heavy quality on melee weapons, or add the light quality to all other melee weapons.&#13;
 			Can wield heavy weapons without penalty if you are Small or smaller.</description>
 		</sheet>
+	</element>
+	<element name="Natural Weapon Master" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_NATURAL_WEAPON_MASTER">
+			<prerequisite>A natural weapon trait, such as a Bite or Claw attack</prerequisite>
+			<description>
+			<p><i>Prerequisite(s): A natural weapon trait, such as a Bite or Claw attack.</i></p>
+			<p>Your natural weapons are more powerful than most.</p>
+			<ul>
+				<li><b>Swift Claws.</b> You can make one Unarmed Strike as a Bonus Action.</li>
+				<li><b>Honed Muscles.</b> The weapon damage die of your natural weapon increases by 1 step. For example, if your weapon deals 1d6 damage, it deals 1d8 instead.</li>
+				<li><b>Slayer's Eye.</b> When making an Unarmed Strike, increase the range you score a Critical Hit by 1.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can make one Unarmed Strike as a Bonus Action. The damage die and Critical Hit range of your Unarmed Strikes both increase by 1 step.</description>
+		</sheet>
+	</element>
+	<element name="Dirty Fighter" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DIRTY_FIGHTER">
+			<prerequisite>Strength or Dexterity 13+</prerequisite>
+			<requirements>[str:13]||[dex:13]</requirements>
+			<description>
+			<p><i>Prerequisite(s): Strength or Dexterity 13 or higher</i></p>
+			<p>You've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:</p>
+			<ul>
+				<li><b>Attack Advantage.</b> You have advantage on attack rolls against a creature you are grappling.</li>
+				<li><b>Damage Rerolls.</b> Whenever you roll a damage die for your Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.</li>
+				<li><b>Fast Wrestler.</b> You do not need to spend extra movement when you move a creature grappled by you, provided the creature is your size or smaller.</li>
+				<li><b>Fighting Style.</b> You gain the Unarmed Fighting Style. If you already have this fighting style, you may choose another available to the Fighter class.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have advantage on attack rolls against creatures you are grappling, and do not need to spend extra movement when you move a creature grappled by you as long as it is your size or smaller. When you roll damage for an Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Iron Hero" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO">
+			<prerequisite>Level 12+</prerequisite>
+			<requirements>[level:12]</requirements>
+			<description>
+			<p><i>Prerequisite(s): Level 12+</i></p>
+			<p>You have steeled yourself against grave threats. When all hope is lost, you stand tall against the storm. You gain the following benefits:</p>
+			<ul>
+				<li><b>Shadow of the Colossus.</b> You gain a +2 bonus to your Armor Class against creatures of CR greater than or equal to your level. You lose this benefit if you are Charmed or Frightened by the creature, or if you are Incapacitated.</li>
+				<li><b>Enrage.</b> You have Advantage on attack rolls against a creature that has reduced one of your allies to 0 Hit Points in the last round.</li>
+				<li><b>Quick-Time Event.</b> If a creature you can see within 60 feet takes a Legendary Action, you can use your Reaction to try to interrupt the effect. Choose an ability score you have saving throw proficiency with and make an ability check with it (DC equals 10 plus 3 for each action the Legendary Action expended). On a success, the Legendary Action has no effect, but the actions are still spent. Once this ability successfully negates a Legendary Action, you can't use it again until you finish a Short Rest.</li>
+			</ul>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>If a creature you can see within 60 feet takes a Legendary Action, you can use your Reaction to try to interrupt the effect. Make a {{iron hero:ability score}} ability check (DC10+3 for each action the Legendary Action costs). On a success, the Legendary Action has no effect, but the actions are still spent. Once this ability successfully negates a Legendary Action, you can't use it again until you finish a Short Rest. &#13;
+			Additionally, you always have +2 AC against creatures of CR{{level}} or greater, as long as you are not Charmed or Frightened by said creature, or Incapacitated. You have Advantage on attack rolls against a creature that has reduced one of your allies to 0 Hit Points since your last turn.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Quick-Time Event Ability Score (Iron Hero)" supports="Iron Hero Ability Score" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO_STRENGTH">
+		<compendium display="false" />
+		<supports>Iron Hero Ability Score</supports>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_STRENGTH||ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
+		<description>
+			<p>Your Quick-Time Event ability score is Strength.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat inline="true" name="iron hero:ability score" value="Strength" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO_DEXTERITY">
+		<compendium display="false" />
+		<supports>Iron Hero Ability Score</supports>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_DEXTERITY||ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_DEXTERITY</requirements>
+		<description>
+			<p>Your Quick-Time Event ability score is Dexterity.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat inline="true" name="iron hero:ability score" value="Dexterity" />
+		</rules>
+	</element>
+	<element name="Constitution" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Iron Hero Ability Score</supports>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION||ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_CONSTITUTION</requirements>
+		<description>
+			<p>Your Quick-Time Event ability score is Constitution.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat inline="true" name="iron hero:ability score" value="Constitution" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Iron Hero Ability Score</supports>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE||ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_INTELLIGENCE</requirements>
+		<description>
+			<p>Your Quick-Time Event ability score is Intelligence.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat inline="true" name="iron hero:ability score" value="Intelligence" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO_WISDOM">
+		<compendium display="false" />
+		<supports>Iron Hero Ability Score</supports>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_WISDOM||ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_WISDOM</requirements>
+		<description>
+			<p>Your Quick-Time Event ability score is Wisdom.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat inline="true" name="iron hero:ability score" value="Wisdom" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO_CHARISMA">
+		<compendium display="false" />
+		<supports>Iron Hero Ability Score</supports>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_CHARISMA||ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
+		<description>
+			<p>Your Quick-Time Event ability score is Charisma.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat inline="true" name="iron hero:ability score" value="Charisma" />
+		</rules>
+	</element>
+	<element name="Resilient" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT">
+		<requirements>[level:9]</requirements>
+		<supports>General</supports>
+		<prerequisite>Level 9+</prerequisite>
+		<description>
+			<p><em>Prerequisite(s): Level 9+</em></p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Damage Resistance.</i></b> Choose one damage type. You gain Resistance to that damage type.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Choose one ability in which you lack saving throw proficiency. Increase the chosen ability score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Saving Throw Proficiency.</i></b> You gain saving throw proficiency with the chosen ability.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Damage Resistance (Resilient)" supports="THC Resilient Resistance" />
+			<select type="Feat Feature" name="Saving Throw Proficiency (Resilient)" supports="THC Resilient" />
+		</rules>
+	</element>
+	<element name="Acid" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_ACID">
+		<supports>THC Resilient Resistance</supports>
+		<description>
+			<p>You gain Resistance to Acid Damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+	<element name="Cold" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_COLD">
+		<supports>THC Resilient Resistance</supports>
+		<description>
+			<p>You gain Resistance to Cold Damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Fire" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_FIRE">
+		<supports>THC Resilient Resistance</supports>
+		<description>
+			<p>You gain Resistance to Fire Damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	<element name="Force" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_FORCE">
+		<supports>THC Resilient Resistance</supports>
+		<description>
+			<p>You gain Resistance to Force Damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_LIGHTNING">
+		<supports>THC Resilient Resistance</supports>
+		<description>
+			<p>You gain Resistance to Lightning Damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+	<element name="Necrotic" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_NECROTIC">
+		<supports>THC Resilient Resistance</supports>
+		<description>
+			<p>You gain Resistance to Necrotic Damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	<element name="Poison" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_POISON">
+		<supports>THC Resilient Resistance</supports>
+		<description>
+			<p>You gain Resistance to Poison Damage. You have Advantage on saving throws to avoid or end the Poisoned condition.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Psychic" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_PSYCHIC">
+		<supports>THC Resilient Resistance</supports>
+		<description>
+			<p>You gain Resistance to Psychic Damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Radiant" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_RADIANT">
+		<supports>THC Resilient Resistance</supports>
+		<description>
+			<p>You gain Resistance to Radiant Damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_THUNDER">
+		<supports>THC Resilient Resistance</supports>
+		<description>
+			<p>You gain Resistance to Thunder Damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+	<element name="Resilient (Strength)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_STRENGTH">
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_STRENGTH||!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
+		<compendium display="false" />
+		<supports>THC Resilient</supports>
+		<description>
+			<p>You gain proficiency with Strength saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+		</rules>
+	</element>
+	<element name="Strength Saving Throw Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PROFICIENCY_SAVINGTHROW_STRENGTH">
+		<rules>
+			<stat name="strength:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+	<element name="Resilient (Dexterity)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_DEXTERITY">
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY||!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_DEXTERITY</requirements>
+		<compendium display="false" />
+		<supports>THC Resilient</supports>
+		<description>
+			<p>You gain proficiency with Dexterity saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+		</rules>
+	</element>
+	<element name="Dexterity Saving Throw Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PROFICIENCY_SAVINGTHROW_DEXTERITY">
+		<rules>
+			<stat name="dexterity:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+	<element name="Resilient (Constitution)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_CONSTITUTION">
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION||!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_CONSTITUTION</requirements>
+		<compendium display="false" />
+		<supports>THC Resilient</supports>
+		<description>
+			<p>You gain proficiency with Constitution saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+		</rules>
+	</element>
+	<element name="Constitution Saving Throw Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PROFICIENCY_SAVINGTHROW_CONSTITUTION">
+		<rules>
+			<stat name="constitution:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+	<element name="Resilient (Intelligence)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_INTELLIGENCE">
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE||!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_INTELLIGENCE</requirements>
+		<compendium display="false" />
+		<supports>THC Resilient</supports>
+		<description>
+			<p>You gain proficiency with Intelligence saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+		</rules>
+	</element>
+	<element name="Intelligence Saving Throw Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PROFICIENCY_SAVINGTHROW_INTELLIGENCE">
+		<rules>
+			<stat name="intelligence:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+	<element name="Resilient (Wisdom)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_WISDOM">
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_WISDOM||!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_WISDOM</requirements>
+		<compendium display="false" />
+		<supports>THC Resilient</supports>
+		<description>
+			<p>You gain proficiency with Wisdom saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SAVINGTHROW_WISDOM" />
+		</rules>
+	</element>
+	<element name="Wisdom Saving Throw Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PROFICIENCY_SAVINGTHROW_WISDOM">
+		<rules>
+			<stat name="wisdom:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+	<element name="Resilient (Charisma)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_CHARISMAN">
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CHARISMA||!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
+		<compendium display="false" />
+		<supports>THC Resilient</supports>
+		<description>
+			<p>You gain proficiency with Charisma saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Charisma Saving Throw Proficiency" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_PROFICIENCY_SAVINGTHROW_CHARISMA">
+		<rules>
+			<stat name="charisma:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
 	</element>
 
 <!-- Solandria-Specific items -->

@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.2.3">
+    <update version="0.2.4">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -175,7 +175,7 @@
 			</ul>
 		</description>
 		<rules>
-			<grant type="Feat" id="ID_TREGOLANI_HB_FEAT_UNARMED_FIGHTING_STYLE" />
+			<select type="Feat" name="Dirty Fighter: Unarmed Fighting Style" supports="Fighting Style" default="ID_TREGOLANI_HB_FEAT_UNARMED_FIGHTING_STYLE" />
 		</rules>
 		<sheet>
 			<description>You have Advantage on attack rolls against creatures you are Grappling, and do not need to spend extra movement when you move a creature Grappled by you as long as it is your size or smaller. When you roll damage for an Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.</description>

@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.2.2">
+    <update version="0.2.3">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -157,6 +157,9 @@
 		<sheet>
 			<description>You can make one Unarmed Strike as a Bonus Action. The damage die and Critical Hit range of your Unarmed Strikes both increase by 1 step.</description>
 		</sheet>
+		<rules>
+			<stat name="unarmed strike:dice" value="2" />
+		</rules>
 	</element>
 	<element name="Dirty Fighter" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DIRTY_FIGHTER">
 			<prerequisite>Strength or Dexterity 13+</prerequisite>
@@ -171,9 +174,30 @@
 				<li><b>Fighting Style.</b> You gain the Unarmed Fighting Style. If you already have this fighting style, you may choose another available to the Fighter class.</li>
 			</ul>
 		</description>
+		<rules>
+			<grant type="Feat" id="ID_TREGOLANI_HB_FEAT_UNARMED_FIGHTING_STYLE" />
+		</rules>
 		<sheet>
-			<description>You have advantage on attack rolls against creatures you are grappling, and do not need to spend extra movement when you move a creature grappled by you as long as it is your size or smaller. When you roll damage for an Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.</description>
+			<description>You have Advantage on attack rolls against creatures you are Grappling, and do not need to spend extra movement when you move a creature Grappled by you as long as it is your size or smaller. When you roll damage for an Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.</description>
 		</sheet>
+	</element>
+	<element name="Unarmed Fighting" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_UNARMED_FIGHTING_STYLE">
+		<supports>Fighting Style</supports>
+		<prerequisite>Fighting Style Feature, Fighting Style Feat</prerequisite>
+		<description>
+			<p><em>Fighting Style Feat (Prerequisite: Fighting Style Feature)</em></p>
+			<p> Your Unarmed Strikes can deal Bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8. If the damage die of your unarmed strikes is already a d6 or higher, increase the range you score a Critical Hit with Unarmed Strikes by 1.</p>
+			<p class="indent">Additionally, once on your turn when you hit a creature with an Unarmed Strike, you can deal damage to the creature and also Grapple or Shove them.</p>
+		</description>
+		<sheet>
+			<description>When you hit with your Unarmed Strike and deal damage, you can deal 1d{{unarmed strike:dice}}+{{strength:modifier}} Bludgeoning damage instead of the normal damage of an Unarmed Strike.&#13;
+			Once on your turn when you hit a creature with an Unarmed Strike, you can deal damage to the creature and also Grapple or Shove them.&#13;
+			If the damage die of your Unarmed Strikes is already a d6 or higher, increase the range you score a Critical Hit with Unarmed Strikes by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="unarmed strike:dice" value="6" bonus="unarmed strike" />
+			<stat name="unarmed strike:dice" value="8" bonus="unarmed strike" equipped="[primary:none],[secondary:none],[shield:none]" />
+		</rules>
 	</element>
 	<element name="Iron Hero" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO">
 			<prerequisite>Level 12+</prerequisite>

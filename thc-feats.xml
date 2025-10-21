@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.2.4">
+    <update version="0.2.5">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -561,11 +561,11 @@
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HUNTERS_MARK" spellcasting="Ranger" /> 
-			<stat name="favored enemy:usage" value="2" bonus="base" />
-			<stat name="favored enemy:usage" value="3" bonus="base" level="5"/>
-			<stat name="favored enemy:usage" value="4" bonus="base" level="9"/>
-			<stat name="favored enemy:usage" value="5" bonus="base" level="13"/>
-			<stat name="favored enemy:usage" value="6" bonus="base" level="17"/>
+			<stat name="favored enemy:usage" value="2" bonus="base" requirements="[level:ranger:1]"/>
+			<stat name="favored enemy:usage" value="3" bonus="base" requirements="[level:ranger:5]"/>
+			<stat name="favored enemy:usage" value="4" bonus="base" requirements="[level:ranger:9]"/>
+			<stat name="favored enemy:usage" value="5" bonus="base" requirements="[level:ranger:13]"/>
+			<stat name="favored enemy:usage" value="6" bonus="base" requirements="[level:ranger:17]"/>
 		</rules>
 	</element>
 	<element name="Ranger, LV01: Favored Enemy" type="Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ITEM_OCF_RANGER_FAVORED_ENEMY">

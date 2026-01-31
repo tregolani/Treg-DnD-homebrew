@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.2.14">
+    <update version="0.2.15">
       <file name="thc-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-items.xml" />
     </update>
   </info>
@@ -44,6 +44,7 @@
 		</setters>
 		<rules>
 			<stat name="ki:dc" value="1" bonus="handwraps of the flowing soul" />
+			<stat name="monks focus:dc" value="1" bonus="handwraps of the flowing soul" />
 		</rules>
 	</element>
 	<element name="Handwraps of the Flowing Soul, +2" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_MAGIC_ITEM_HANDWRAPS_OF_THE_FLOWING_SOUL_2">
@@ -63,6 +64,7 @@
 		</setters>
 		<rules>
 			<stat name="ki:dc" value="2" bonus="handwraps of the flowing soul" />
+			<stat name="monks focus:dc" value="2" bonus="handwraps of the flowing soul" />
 		</rules>
 	</element>	<element name="Handwraps of the Flowing Soul, +3" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_MAGIC_ITEM_HANDWRAPS_OF_THE_FLOWING_SOUL_3">
 		<description>
@@ -81,6 +83,7 @@
 		</setters>
 		<rules>
 			<stat name="ki:dc" value="3" bonus="handwraps of the flowing soul" />
+			<stat name="monks focus:dc" value="3" bonus="handwraps of the flowing soul" />
 		</rules>
 	</element>
 	<element name="Sentinel Shield +1" type="Magic Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_MAGIC_ITEM_SENTINEL_SHIELD_1">
@@ -241,15 +244,6 @@
 			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS</set>
 		</setters>
 	</element>
-	
-	<element name="Tool Proficiency (Surgeon's tools)" type="Proficiency" source="Tregolani Homebrew Collection" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS">
-		<supports>Tool, Artisan tools</supports>
-		<requirements />
-		<description>
-			<p>These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft.</p>
-		</description>
-		<rules />
-	</element>
 	<element name="Tattooist's tools" type="Item" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_ITEM_TOOL_TATTOOISTS_TOOLS">
 		<description>
 			<p>This thick leather satchel contains everything you'd need to apply a tattoo to someone's skin. Proficiency with these tools allows you to add your proficiency bonus to any ability check you make to apply or attempt to remove a tattoo.</p>
@@ -266,6 +260,14 @@
 		</setters>
 	</element>
 	
+	<element name="Tool Proficiency (Surgeon's tools)" type="Proficiency" source="Tregolani Homebrew Collection" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SURGEONS_TOOLS">
+		<supports>Tool, Artisan tools</supports>
+		<requirements />
+		<description>
+			<p>These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft.</p>
+		</description>
+		<rules />
+	</element>
 	<element name="Tool Proficiency (Tattooist's tools)" type="Proficiency" source="Tregolani Homebrew Collection" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TATTOOISTS_TOOLS">
 		<supports>Tool, Artisan tools</supports>
 		<requirements />
@@ -274,7 +276,22 @@
 		</description>
 		<rules />
 	</element>
-	
+
+	<!-- Weapons -->
+	<element name="Trio of Small Throwing Daggers" type="Magic Item" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_MAGIC_ITEM_TRIO_OF_THROWING_DAGGERS">
+		<description>
+			<p>What these daggers lack in size and weight, they make up for in versatility. You may draw up to three of these daggers on a single item interaction, and hold up to three daggers with a single hand. These daggers can not be used to make melee attacks, but when you make a ranged attack, you may throw up to three of these weapons part of the same attack, after which they magically reappear in the sheath. Regardless of how many you throw, you may only add your attack modifier once to the damage roll.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">402</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Dagger</set>
+		</setters>
+	</element>
+
 	<!-- Extra Class Features -->
 	<!-- Catalyst of Magic -->
 <!--	<element name="Catalyst of Magic" type="Class Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_CLASS_FEATURE_SORCERER_CATALYST_OF_MAGIC">

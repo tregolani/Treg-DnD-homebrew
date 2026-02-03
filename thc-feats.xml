@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.2.5">
+    <update version="0.2.6">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -64,6 +64,7 @@
 			<stat name="elemental blood:ability" value="Charisma" inline="true"/>
 		</rules>
 	</element>
+
 	<element name="Healer (Improved)" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_HEALER_IMPROVED">
 		<description>
 			<p>You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:</p>
@@ -84,6 +85,7 @@
 			<stat name="healer:bonus" value="wisdom:modifier" bonus="healer" />
 		</rules>
 	</element>
+
 	<element name="Skeptic" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_SKEPTIC">
 		<prerequisite>Wisdom 13 or higher</prerequisite>
 		<requirements>[wis:13]</requirements>
@@ -123,6 +125,7 @@
 			<description>When you make an Insight check, you can choose to learn what the creature's bonus to Charisma (Deception) checks is.</description>
 		</sheet>
 	</element>
+
 	<element name="Titan Grip" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_TITAN_GRIP">
 			<prerequisite>Strength 15+</prerequisite>
 			<requirements>[str:15]</requirements>
@@ -143,6 +146,7 @@
 			Can wield heavy weapons without penalty if you are Small or smaller.</description>
 		</sheet>
 	</element>
+
 	<element name="Natural Weapon Master" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_NATURAL_WEAPON_MASTER">
 			<prerequisite>A natural weapon trait, such as a Bite or Claw attack</prerequisite>
 			<description>
@@ -161,6 +165,7 @@
 			<stat name="unarmed strike:dice" value="2" />
 		</rules>
 	</element>
+
 	<element name="Dirty Fighter" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DIRTY_FIGHTER">
 			<prerequisite>Strength or Dexterity 13+</prerequisite>
 			<requirements>[str:13]||[dex:13]</requirements>
@@ -181,6 +186,7 @@
 			<description>You have Advantage on attack rolls against creatures you are Grappling, and do not need to spend extra movement when you move a creature Grappled by you as long as it is your size or smaller. When you roll damage for an Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.</description>
 		</sheet>
 	</element>
+
 	<element name="Unarmed Fighting" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_UNARMED_FIGHTING_STYLE">
 		<supports>Fighting Style</supports>
 		<prerequisite>Fighting Style Feature, Fighting Style Feat</prerequisite>
@@ -199,6 +205,7 @@
 			<stat name="unarmed strike:dice" value="8" bonus="unarmed strike" equipped="[primary:none],[secondary:none],[shield:none]" />
 		</rules>
 	</element>
+
 	<element name="Iron Hero" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO">
 			<prerequisite>Level 12+</prerequisite>
 			<requirements>[level:12]</requirements>
@@ -291,6 +298,7 @@
 			<stat inline="true" name="iron hero:ability score" value="Charisma" />
 		</rules>
 	</element>
+
 	<element name="Resilient" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT">
 		<requirements>[level:9]</requirements>
 		<supports>General</supports>
@@ -558,6 +566,8 @@
 		<sheet alt="Favored Enemy" usage="{{favored enemy:usage}}/Long Rest">
 			<description>You can cast Hunter's Mark spell without expending a spell slot. You can expend additional uses to increase the damage of your Hunter's Mark by 1d6 per use expended beyond the first. &#13;
 			You regain one use of this ability when you finish a Short Rest.</description>
+			<description level="20">You can cast Hunter's Mark spell without expending a spell slot. You can expend additional uses to increase the damage of your Hunter's Mark by 1d10 per use expended beyond the first. &#13;
+			You regain one use of this ability when you finish a Short Rest.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HUNTERS_MARK" spellcasting="Ranger" /> 
@@ -657,6 +667,23 @@
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_NATURES_VEIL" />
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_NATURES_VEIL" requirements="[level:ranger:10]"/>
+		</rules>
+	</element>
+
+	<!-- Boon of the Empath -->
+	<element name="Blessing of the Empath" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_BLESSING_OF_THE_EMPATH">
+		<requirements>ID_THC_RACIAL_TRAIT_HALFLING_HIN_LEGACY_GHOSTWISE</requirements>
+		<prerequisite>Ghostwise Halfling</prerequisite>
+		<description>
+			<p><em>Prerequisite(s): Ghostwise Halfling</em></p>
+			<p>You always have the <i>Calm Emotions</i> and <i>Fear</i> spells prepared, and can cast each once without a spell slot. Once you do, you cannot do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You always have the Calm Emotions and Fear spells prepared, and can cast each once without a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CALM_EMOTIONS" prepared="true" spellcasting="Cleric" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEAR" prepared="true" spellcasting="Cleric" />
 		</rules>
 	</element>
 

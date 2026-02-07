@@ -4,7 +4,7 @@
 		<name>Ranger</name>
 		<description>The Ranger class from the Player’s Handbook 2024, modified for Solandria.</description>
 		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="thc-class-ranger-solandria.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-class-ranger-solandria.xml" />
 		</update>
 	</info>
@@ -541,7 +541,7 @@
 			<set name="keywords">ritual</set>
 			<set name="level">2</set>
 			<set name="school">Transmutation</set>
-			<set name="time">Action</set>
+			<set name="time">Action or Ritual</set>
 			<set name="range">Touch</set>
 			<set name="duration">8 hours</set>
 			<set name="hasVerbalComponent">true</set>

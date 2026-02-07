@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ranger</name>
+		<description>The Ranger class from the Player’s Handbook 2024, modified for Solandria.</description>
+		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="thc-class-ranger-solandria.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-class-ranger-solandria.xml" />
+		</update>
+	</info>
+
+	<element name="Ranger" type="Class" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_RANGER_SOLANDRIA">
+		<description>
+			<p class="flavor">Far from bustling cities, amid the trees of trackless forests and across wide plains, Rangers keep their unending watch in the wilderness. Rangers learn to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and rubble.</p>
+			<p class="indent">Thanks to their connection with nature, Rangers can also cast spells that harness primal powers of the wilderness. A Ranger's talents and magic are honed with deadly focus to protect the world from the ravages of monsters and tyrants.</p>
+			<div class="sidebar">
+				<h5>CORE RANGER TRAITS</h5>
+				<table>
+					<tr><td><b>Primary Ability</b></td><td>Dexterity and Wisdom</td></tr>
+					<tr><td><b>Hit Point Die</b></td><td>D10 per Ranger level</td></tr>
+					<tr><td><b>Saving Throw Proficiencies</b></td><td>Strength and Dexterity</td></tr>
+					<tr><td><b>Skills Proficiencies</b></td><td><i>Choose 3:</i> Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, or Survival</td></tr>
+					<tr><td><b>Weapon Proficiencies</b></td><td>Simple and Martial weapons</td></tr>
+					<tr><td><b>Armor Training</b></td><td>Light and Medium armor and Shields</td></tr>
+					<tr><td><b>Starting Equipment</b></td><td><i>Choose A or B:</i> (A) Studded Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Druidic Focus (sprig of mistletoe), Explorer's Pack, and 7 CP; or (B) 150 GP</td></tr>
+				</table>
+			</div>
+			<h5 style="margin-top:-2em">AS A LEVEL 1 CHARACTER</h5>
+			<ul style="margin-top:-1em; margin-bottom: 0.5em">
+				<li>Gain all the traits in the Core Ranger Traits table. </li>
+				<li>Gain the Ranger's level 1 features, which are listed in the Ranger Features table.</li>
+			</ul>
+			<h5 style="margin-top: 0px">AS A MULTICLASS CHARACTER</h5>
+			<ul style="margin-top:-1em">
+				<li>Gain the following traits from the Core Ranger Traits table: Hit Point Die, proficiency with Martial weapons, proficiency in one skill of your choice from the Ranger's skill list, and training with Light and Medium armor and Shields.</li>
+				<li>Gain the Ranger's level 1 features, which are listed in the Ranger Features table. See the multiclassing rules in chapter 2 to determine your available spell slots.</li>
+			</ul>
+			<h5>RANGER FEATURES</h5>
+			<table class="class-features">
+				<tr style="font-weight: bold">
+					<td rowspan="2">Level</td>
+					<td class="col-30 left" rowspan="2">Class Features</td>
+					<td rowspan="2">Favored<br />Enemy</td>
+					<td rowspan="2">Prepared<br />Spells</td>
+					<td colspan="5" style="vertical-align:bottom; border-bottom: 0px">Spell Slots per Spell Level</td>
+				</tr>
+				<tr style="font-weight: bold"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+				<tr><td> 1</td><td class="left">Spellcasting, Favored Enemy, Weapon Mastery</td><td>2</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2</td><td class="left">Deft Explorer, Fighting Style</td><td>2</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3</td><td class="left">Ranger Subclass</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4</td><td class="left">Ability Score Improvement</td><td>2</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5</td><td class="left">Extra Attack</td><td>3</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6</td><td class="left">Roving</td><td>3</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7</td><td class="left">Subclass feature</td><td>3</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8</td><td class="left">Ability Score Improvement</td><td>3</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9</td><td class="left">Expertise</td><td>4</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10</td><td class="left">Tireless, Nature's Veil</td><td>4</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>11</td><td class="left">Subclass feature</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12</td><td class="left">Ability Score Improvement</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13</td><td class="left">Relentless Hunter</td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14</td><td class="left">—</td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>15</td><td class="left">Subclass feature</td><td>5</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16</td><td class="left">Ability Score Improvement</td><td>5</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17</td><td class="left">Precise Hunter</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18</td><td class="left">Feral Senses</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>19</td><td class="left">Epic Boon</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>20</td><td class="left">Foe Slayer, Exploit Weakness</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+			</table>
+			<h4>RANGER CLASS FEATURES</h4>
+			<p>As a Ranger, you gain the following class features when you reach the specified Ranger levels. These features are listed in the Ranger Features table.</p>
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING" />
+			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FAVORED_ENEMY" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_WEAPON_MASTERY" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_DEFT_EXPLORER" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FIGHTING_STYLE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EXTRA_ATTACK" />
+			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_ROVING" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EXPERTISE" />
+			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_TIRELESS" />
+			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_NATURES_VEIL" />
+			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER" />
+			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_PRECISE_HUNTER" />
+			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FERAL_SENSES" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EPIC_BOON" />
+			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FOE_SLAYER" />
+			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_EXPLOIT_WEAKNESS" />
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="short">A Wandering Warrior Imbued with Primal Magic</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER, ID_WOTC_SOURCE_PLAYERS_HANDBOOK" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER, ID_WOTC_SOURCE_PLAYERS_HANDBOOK" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+			<select type="Proficiency" name="Skill Proficiency (Ranger)" supports="Skill,Ranger" number="3" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING" level="1"/>
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FAVORED_ENEMY" level="1"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_WEAPON_MASTERY" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_DEFT_EXPLORER" level="2"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FIGHTING_STYLE" level="2"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE" level="3"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_ABILITY_SCORE_IMPROVEMENT" level="4"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EXTRA_ATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_ROVING" level="6"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EXPERTISE" level="9"/>
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_TIRELESS" level="10"/>
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_NATURES_VEIL" level="10"/>
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER" level="13"/>
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_PRECISE_HUNTER" level="17" />
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FERAL_SENSES" level="18"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FOE_SLAYER" level="20"/>
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_EXPLOIT_WEAKNESS" level="20"/>
+		</rules>
+		<multiclass id="ID_WOTC_PHB24_MULTICLASS_RANGER">
+			<prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
+			<requirements>([dex:13],[wis:13]),!(ID_WOTC_PHB_CLASS_RANGER||ID_WOTC_PHB_MULTICLASS_RANGER||!ID_WOTC_PHB24_CLASS_RANGER)</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, martial weapons, one skill from the class's skill list</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<select type="Proficiency" name="Skill Proficiency (Ranger)" supports="Skill,Ranger"/>
+			</rules>
+		</multiclass>
+	</element>
+
+<!--	<element name="Level 1: Spellcasting" type="Class Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_SPELLCASTING</requirements>
+		<description>
+			<p>You have learned to channel the magical essence of nature to cast spells.</p>
+			<p class="indent"><b><i>Spell Slots.</i></b> The Ranger Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
+			<p class="indent"><b><i>Prepared Spells of Level 1+.</i></b> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Ranger spells. <i>Cure Wounds</i> and <i>Ensnaring Strike</i> are recommended.</p>
+			<p class="indent">The number of spells on your list increases as you gain Ranger levels, as shown in the Prepared Spells column of the Ranger Features table. Whenever that number increases, choose additional Ranger spells until the number of spells on your list matches the number in the Ranger Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Ranger, your list of prepared spells can include six Ranger spells of level 1 or 2 in any combination.</p>
+			<p class="indent">If another Ranger feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Ranger spells for you.</p>
+			<p class="indent"><b><i>Changing Your Prepared Spells.</i></b> Whenever you finish a Long Rest, you can replace one spell on your list with another Ranger spell for which you have spell slots.</p>
+			<p class="indent"><b><i>Spellcasting Ability.</i></b> Wisdom is your spellcasting ability for your Ranger spells.</p>
+			<p class="indent"><b><i>Spellcasting Focus.</i></b> You can use a Druidic Focus as a Spellcasting Focus for your Ranger spells.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+		</description>
+		<sheet alt="Spellcasting">
+			<description>Whenever you finish a Long Rest, you can replace one spell on your list with another Ranger spell.</description>
+		</sheet>
+		<spellcasting name="Ranger" ability="Wisdom" allowReplace="true">
+			<list>Ranger</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="ranger:spellcasting:slots:1" value="2" level="1" />
+			<stat name="ranger:spellcasting:slots:1" value="1" level="3" />
+			<stat name="ranger:spellcasting:slots:1" value="1" level="5" />
+			<stat name="ranger:spellcasting:slots:2" value="2" level="5" />
+			<stat name="ranger:spellcasting:slots:2" value="1" level="7" />
+			<stat name="ranger:spellcasting:slots:3" value="2" level="9" />
+			<stat name="ranger:spellcasting:slots:3" value="1" level="11" />
+			<stat name="ranger:spellcasting:slots:4" value="1" level="13" />
+			<stat name="ranger:spellcasting:slots:4" value="1" level="15" />
+			<stat name="ranger:spellcasting:slots:4" value="1" level="17" />
+			<stat name="ranger:spellcasting:slots:5" value="1" level="17" />
+			<stat name="ranger:spellcasting:slots:5" value="1" level="19" />
+			
+			<select type="Spell" name="Spell (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" number="2" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" number="2" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Ranger)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Ranger" />
+		</rules>
+	</element>-->
+
+	<element name="Favored Enemy" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FAVORED_ENEMY">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_FAVORED_ENEMY</requirements>
+		<description>
+			<p>Choose any two spells from the list below that you could select as prepared Ranger spells. Those spells are always prepared for you. This number increases when you reach certain levels in this class: three spells at level 9, four spells at level 13, and five spells at level 17. When you use a spell slot to cast any of the chosen spells, you may immediately recover the spell slot (no action required) by expending a number of uses of this ability equal to the spell slot level.</p>
+			<p class="indent">You begin with two uses of this ability and the uses increase when you reach certain levels as shown on the Ranger class chart. You recover any expended uses of this ability and may change your selected spells when you complete a Long Rest.</p>
+			<h5>FAVORED ENEMY SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Spell Level</td><td>Favored Enemy Spell Options</td></tr>
+				</thead>
+				<tr><td style="text-align:center">1</td><td><em>Ensnaring Strike, Hail of Thorns, Hunter's Mark, Zephyr Strike</em></td></tr>
+				<tr><td style="text-align:center">2</td><td><em>Cordon of Arrows, Summon Beast</em></td></tr>
+				<tr><td style="text-align:center">3</td><td><em>Conjure Barrage, Lightning Arrow</em></td></tr>
+				<tr><td style="text-align:center">4</td><td><em>Grasping Vine, Guardian of Nature</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Conjure Volley, Swift Quiver</em></td></tr>
+			</table>
+		</description>
+		<sheet alt="Favored Enemy" usage="{{favored enemy:usage}}/Long Rest">
+			<description>You choose two Ranger spells from the Favored Enemy spell list for which you have spell slots; these are prepared until you finish a Long Rest. When you cast any of these spells, you can immediately expend a number of Favored Enemy uses to recover the spell slot used.</description>
+			<description level="9">You choose three Ranger spells from the Favored Enemy spell list for which you have spell slots; these are prepared until you finish a Long Rest. When you cast any of these spells, you can immediately expend a number of Favored Enemy uses to recover the spell slot used.</description>
+			<description level="10">You choose three Ranger spells from the Favored Enemy spell list for which you have spell slots; these are prepared until you finish a Long Rest. When you cast any of these spells, you can immediately expend a number of Favored Enemy uses to recover the spell slot used. &#13;
+			You regain one use of this ability when you finish a Short Rest.</description>
+			<description level="13">You choose four Ranger spells from the Favored Enemy spell list for which you have spell slots; these are prepared until you finish a Long Rest. When you cast any of these spells, you can immediately expend a number of Favored Enemy uses to recover the spell slot used. &#13;
+			You regain one use of this ability when you finish a Short Rest.</description>
+			<description level="17">You choose five Ranger spells from the Favored Enemy spell list for which you have spell slots; these are prepared until you finish a Long Rest. When you cast any of these spells, you can immediately expend a number of Favored Enemy uses to recover the spell slot used. &#13;
+			You regain one use of this ability when you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Spell (Favored Enemy)" supports="(Ensnaring Strike||Hail of Thorns||Hunters Mark||Zephyr Strike||Cordon of Arrows||Summon Beast||Conjure Barrage||Lightning Arrow||Grasping Vine||Guardian of Nature||Conjure Volley||Swift Quiver),$(spellcasting:slots)" level="1" number="2" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Favored Enemy)" supports="(Ensnaring Strike||Hail of Thorns||Hunters Mark||Zephyr Strike||Cordon of Arrows||Summon Beast||Conjure Barrage||Lightning Arrow||Grasping Vine||Guardian of Nature||Conjure Volley||Swift Quiver),$(spellcasting:slots)" level="9" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Favored Enemy)" supports="(Ensnaring Strike||Hail of Thorns||Hunters Mark||Zephyr Strike||Cordon of Arrows||Summon Beast||Conjure Barrage||Lightning Arrow||Grasping Vine||Guardian of Nature||Conjure Volley||Swift Quiver),$(spellcasting:slots)" level="13" spellcasting="Ranger" />
+			<select type="Spell" name="Spell (Favored Enemy)" supports="(Ensnaring Strike||Hail of Thorns||Hunters Mark||Zephyr Strike||Cordon of Arrows||Summon Beast||Conjure Barrage||Lightning Arrow||Grasping Vine||Guardian of Nature||Conjure Volley||Swift Quiver),$(spellcasting:slots)" level="17" spellcasting="Ranger" />
+			<stat name="favored enemy:usage" value="2" bonus="base" requirements="[level:ranger:1]"/>
+			<stat name="favored enemy:usage" value="3" bonus="base" requirements="[level:ranger:5]"/>
+			<stat name="favored enemy:usage" value="4" bonus="base" requirements="[level:ranger:9]"/>
+			<stat name="favored enemy:usage" value="5" bonus="base" requirements="[level:ranger:13]"/>
+			<stat name="favored enemy:usage" value="6" bonus="base" requirements="[level:ranger:17]"/>
+		</rules>
+	</element>
+
+<!--	<element name="Level 1: Weapon Mastery" type="Class Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_WEAPON_MASTERY">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_WEAPON_MASTERY</requirements>
+		<description>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
+			<p class="indent">Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
+		</description>
+		<sheet alt="Weapon Mastery">
+			<description>Whenever you finish a Long Rest, you can change one of the weapons you previously chosen for a different one.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2"/>
+		</rules>
+	</element>
+
+	<element name="Level 2: Deft Explorer" type="Class Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_DEFT_EXPLORER">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_DEFT_EXPLORER</requirements>
+		<description>
+			<p>Thanks to your travels, you gain the following benefits.</p>
+			<p class="indent"><i>Expertise.</i> Choose one of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill.</p>
+			<p class="indent"><i>Languages.</i> You know two languages of your choice from the language tables in chapter 2.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Expertise (Deft Explorer)" supports="Expertise"/>
+			<select type="Language" name="Language (Deft Explorer)" supports="Standard||Exotic" number="2" />
+		</rules>
+	</element>
+
+	<element name="Level 2: Fighting Style" type="Class Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FIGHTING_STYLE">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_FIGHTING_STYLE</requirements>
+		<description>
+			<p>You gain a Fighting Style feat of your choice. Instead of choosing one of those feats, you can choose the option below.</p>
+			<p class="indent"><b><i>Druidic Warrior.</i></b> You learn two Druid cantrips of your choice. <i>Guidance</i> and <i>Starry Wisp</i> are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE" />
+			<select type="Feat" name="Fighting Style (Ranger 2)" supports="Fighting Style||PHB24 Druidic Warrior Fighting Style" />
+		</rules>
+	</element>
+	<element name="Druidic Warrior" type="Feat" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_FEAT_DRUIDIC_WARRIOR">
+		<supports>PHB24 Druidic Warrior Fighting Style</supports>
+		<description>
+			<p>You learn two Druid cantrips of your choice (see the Druid class's section for a list of Druid spells). <i>Guidance</i> and <i>Starry Wisp</i> are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.</p>
+		</description>
+		<sheet>
+			<description>Whenever you gain a Ranger level, you can replace one of the chosen cantrips with another Druid cantrip.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Druidic Warrior" supports="0, Druid" number="2" spellcasting="Ranger" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Ranger Subclass" type="Class Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_RANGER_ARCHETYPE</requirements>
+		<description>
+			<p>You gain a Ranger subclass of your choice. A subclass is a specialization that grants you features at certain Ranger levels. For the rest of your career, you gain each of your subclass's features that are of your Ranger level or lower.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Ranger Subclass" supports="Ranger Archetype||Ranger Subclass" />
+		</rules>
+	</element>
+
+	<element name="Level 4: Ability Score Improvement" type="Class Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_ABILITY_SCORE_IMPROVEMENT">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_ABILITY_SCORE_IMPROVEMENT</requirements>
+		<description>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Ranger levels 8, 12, and 16.</p>
+		</description>
+		<sheet display="false" />
+		<rules> 
+			<select type="Feat" name="Ability Score Improvement (Ranger 4)" supports="!Boon" />
+			<select type="Feat" name="Ability Score Improvement (Ranger 8)" supports="!Boon" level="8" />
+			<select type="Feat" name="Ability Score Improvement (Ranger 12)" supports="!Boon" level="12" />
+			<select type="Feat" name="Ability Score Improvement (Ranger 16)" supports="!Boon" level="16" />
+		</rules>
+	</element>
+
+	<element name="Level 5: Extra Attack" type="Class Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_EXTRA_ATTACK</requirements>
+		<description>
+			<p>You can attack twice instead of once whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" />
+		</rules>
+	</element>-->
+
+	<element name="Level 6: Roving" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_ROVING">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_ROVING</requirements>
+		<description>
+			<p>Your Speed increases by 10 feet while you aren’t wearing Heavy armor. You also have a Climb Speed and a Swim Speed equal to your Speed. You have Advantage on the roll whenever you make a Strength (Athletics) or Dexterity (Acrobatics) check to Climb or Swim.</p>
+			<p class="indent">You, and creatures of your choice traveling with you, do not suffer penalties for traveling at a Normal or Fast pace.</p>
+		</description>
+		<sheet alt="Roving">
+			<description>You have Advantage on the roll whenever you make a Strength (Athletics) or Dexterity (Acrobatics) check to Climb or Swim. Additionally, you and any creatures of your choice traveling with you, do not suffer penalties for traveling at a Normal or Fast pace.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:misc" value="10" equipped="![armor:heavy]"/>
+			<stat name="speed:swim" value="speed" bonus="base" />
+			<stat name="speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
+
+<!--	<element name="Level 9: Expertise" type="Class Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EXPERTISE">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_EXPERTISE</requirements>
+		<description>
+			<p>Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Expertise (Ranger 9)" number="2" supports="Expertise"/>
+		</rules>
+	</element>-->
+
+	<element name="Level 10: Tireless" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_TIRELESS">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_TIRELESS</requirements>
+		<description>
+			<p>Primal forces now help fuel you on your journeys, granting you the following benefits.</p>
+			<p class="indent"><b><i>Primal Endurance.</i></b> As a Magic action, you can give yourself and any allies within 10 feet a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). This increases to 2d8 when you reach level 14 in this class. You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><b><i>Decrease Exhaustion.</i></b> Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1, and you regain one expended use of Favored Enemy.</p>
+		</description>
+		<sheet alt="Tireless" action="Action" usage="{{tireless:usage}}/Long Rest">
+			<description>You can give yourself and any allies within 10 feet of you {{tireless:thp:dice}}d8 + {{tireless:thp:wis}} Temporary Hit Points. &#13;
+			In addition, whenever you finish a Short Rest, your Exhaustion level decreases by 1.</description>
+		</sheet>
+		<rules>
+			<stat name="tireless:thp:wis" value="1" bonus="base" />
+			<stat name="tireless:thp:wis" value="wisdom:modifier" bonus="base" />
+			<stat name="tireless:thp:dice" value="1" bonus="base" />
+			<stat name="tireless:thp:dice" value="2" bonus="base" level="14"/>
+			<stat name="tireless:usage" value="1" bonus="base" />
+			<stat name="tireless:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Nature's Veil" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_NATURES_VEIL">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_NATURES_VEIL</requirements>
+		<description>
+			<p>You invoke spirits of nature to magically hide yourself. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn. You may extend your Nature’s Veil for another round by taking a Bonus Action to extend it so long as you have not taken the Attack or Magic actions on that turn, in which case it lasts until the end of your next turn. You can maintain Nature’s Veil for up to 10 minutes.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Nature's Veil" action="Bonus Action" usage="{{natures veil:usage}}/Long Rest">
+			<description>You can give yourself the Invisible condition until the end of your next turn. You can extend it until the end of your next turn by taking a Bonus Action on subsequent turns, provided you have not taken the Attack or Magic action during that turn. You can maintain Nature's Veil for up to 10 minutes.</description>
+		</sheet>
+		<rules>
+			<stat name="natures veil:usage" value="1" bonus="base" />
+			<stat name="natures veil:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 13: Relentless Hunter" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER">
+		<requirements>!(ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_RELENTLESS_HUNTER)</requirements>
+		<description>
+			<p>Taking damage can’t break your Concentration on spells you cast using your Favored Enemy feature.</p>
+		</description>
+		<sheet alt="Relentless Hunter">
+			<description>Taking damage can’t break your Concentration on spells you cast using your Favored Enemy feature.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Precise Hunter" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_PRECISE_HUNTER">
+		<requirements>!(ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_PRECISE_HUNTER)</requirements>
+		<description>
+			<p>You have Advantage on attack rolls against any creature which has taken damage from or failed its saving throw against a spell cast using your Favored Enemy feature. This lasts until the end of your next turn.</p>
+		</description>
+		<sheet alt="Precise Hunter">
+			<description>You have Advantage on attack rolls against any creature which has taken damage from or failed its saving throw against a spell cast using your Favored Enemy feature. This lasts until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Feral Senses" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FERAL_SENSES">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_FERAL_SENSES</requirements>
+		<description>
+			<p>Your connection to the forces of nature grants you Blindsight with a range of 60 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="60" bonus="base" />
+		</rules>
+	</element>
+
+<!--	<element name="Level 19: Epic Boon" type="Class Feature" source="Player’s Handbook 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EPIC_BOON">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_EPIC_BOON</requirements>
+		<description>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Dimensional Travel is recommended.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>  
+			<select type="Feat" name="Epic Boon (Ranger 19)" level="19" />
+		</rules>
+	</element>-->
+
+	<element name="Level 20: Foe Slayer" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FOE_SLAYER">
+		<requirements>!(ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_FOE_SLAYER)</requirements>
+		<description>
+			<p>Any spell you cast using your Favored Enemy feature deals one additional damage die. If the spell does not deal damage, any attacks you make while it is active deal an additional 1d8 Force damage.</p>
+		</description>
+		<sheet alt="Foe Slayer">
+			<description>Any spell you cast using your Favored Enemy feature deals one additional damage die. If the spell does not deal damage, any attacks you make while it is active deal an additional 1d8 Force damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 20: Exploit Weakness" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_EXPLOIT_WEAKNESS">
+		<requirements>!(ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_FOE_SLAYER)</requirements>
+		<description>
+			<p>When you hit with an attack roll, you may turn the hit into a Critical Hit. You may turn a hit into a Critical Hit a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Exploit Weakness" usage="{{wisdom:modifier}}/Long Rest">
+			<description>When you hit with an attack roll, you may turn the hit into a Critical Hit.</description>
+		</sheet>
+	</element>
+
+<!-- Modified Ranger Spells for Solandria -->
+	<element name="Ensnaring Strike" type="Spell" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_SPELL_ENSNARING_STRIKE">
+		<supports>Ranger, Damaging Spell, Spell Saving Throw, Ensnaring Strike</supports>
+		<description>
+			<p>The target takes an extra 1d6 Piercing damage from the attack as grasping vines appear on it, and it must succeed on a Strength saving throw or have the Restrained condition until the spell ends. At the end of each of its turns, the Restrained target repeats the save, ending the spell on itself on a success.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d6 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">restrained</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Bonus Action, which you take immediately after hitting a creature with a weapon</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hail of Thorns" type="Spell" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_SPELL_HAIL_OF_THORNS">
+		<supports>Ranger, Damaging Spell, Hail of Thorns</supports>
+		<description>
+			<p>As you hit the creature, this spell creates a rain of thorns that sprouts from your weapon or ammunition. The target of the attack and each creature of your choice within 5 feet of it takes 1d8 Piercing damage and its Speed is reduced by 10 feet until the end of your next turn.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">piercing</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Bonus Action, which you take immediately after hitting a creature with a Ranged weapon</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hunter’s Mark" type="Spell" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_SPELL_HUNTERS_MARK">
+		<supports>Ranger, Damaging Spell, Hunters Mark</supports>
+		<description>
+			<p>You magically mark one creature within range as your quarry. Until the spell ends, you deal an extra 1d6 Force damage to the target whenever you hit it with an attack roll. For the duration, you see the target if they have the Invisible condition as if they were visible. You also have Advantage on any Wisdom (Perception or Survival) or Intelligence (Investigation) checks you make to find it.</p>
+			<p class="indent">If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action to move the mark to a new creature you can see within range.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> If you cast this spell using a level 3+ spell slot, the spell doesn’t require Concentration, the damage die becomes a 1d8, and the duration becomes 8 hours. If you use a level 5 spell slot, the damage die becomes a d10, and the duration becomes 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">force</set>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">Bonus Action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Zephyr Strike" type="Spell" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_SPELL_ZEPHYR_STRIKE">
+		<supports>Ranger, Damaging Spell, Zephyr Strike</supports>
+		<description>
+			<p>You move like the wind. Until the spell ends, your movement doesn’t provoke opportunity attacks.</p>
+			<p class="indent">Once before the spell ends, you can give yourself advantage on one weapon attack roll on your turn. That attack deals an extra 1d8 force damage on a hit. Whether you hit or miss, your walking speed increases by 30 feet until the end of that turn. You can use a Bonus Action on subsequent turns to grant yourself advantage on one weapon attack roll on that turn, which deals an extra 1d8 Force damage on a hit, or increase your Speed by 30 feet until the end of that turn.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">force</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Cordon of Arrows" type="Spell" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_SPELL_CORDON_OF_ARROWS">
+		<supports>Ranger, Damaging Spell, Ritual, Cordon of Arrows</supports>
+		<description>
+			<p>You touch up to four nonmagical Arrows or Bolts and plant them in the ground in your space. Until the spell ends, the ammunition can’t be physically uprooted, and whenever a creature other than you enters a space within 30 feet of the ammunition for the first time on a turn or ends its turn there, one or two pieces of ammunition (you choose) flies up to strike it. The creature takes 1d8 Piercing damage per piece of ammunition, which is then destroyed. The spell ends when none of the ammunition remains planted in the ground.</p>
+			<p class="indent">When you cast this spell, you can designate any creatures you choose, and the spell ignores them.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">Touch</set>
+			<set name="duration">8 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">four arrows or bolts</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Lightning Arrow" type="Spell" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_SPELL_LIGHTNING_ARROW">
+		<supports>Ranger, Damaging Spell, Lightning Arrow</supports>
+		<description>
+			<p>As your attack hits or misses the target, the weapon or ammunition you’re using transforms into a lightning bolt. The target takes 4d8 Lightning damage. Each creature within 10 feet of the target takes 2d8 Lightning damage.</p>
+			<p class="indent">The weapon or ammunition then returns to its normal form.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage for both effects of the spell increases by 1d8 for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action, which you take immediately after hitting or missing a target with a ranged attack using a weapon</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Guardian of Nature" type="Spell" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_SPELL_GUARDIAN_OF_NATURE">
+		<supports>Druid, Ranger, Damaging Spell, Guardian of Nature</supports>
+		<description>
+			<p>A nature spirit answers your call and transforms you into a powerful guardian. The transformation lasts until the spell ends. You choose one of the following forms to assume: Primal Beast or Great Tree.</p>
+			<p class="indent"><b><i>Primal Beast. </i></b>Bestial fur covers your body, your facial features become feral, and you gain the following benefits:</p>
+			<ul>
+				<li>Your Speed increases by 10 feet.</li>
+				<li>You gain darkvision with a range of 120 feet.</li>
+				<li>You make Strength based attack rolls with advantage.</li>
+				<li>Your melee weapon attacks deal an extra 1d6 Force damage on a hit.</li>
+			</ul>
+			<p class="indent"><b><i>Great Tree. </i></b>Your skin appears barky, leaves sprout from your hair, and you gain the following benefits:</p>
+			<ul>
+				<li>You gain 20 Temporary Hit Points.</li>
+				<li>You make Constitution saving throws with advantage.</li>
+				<li>You make Dexterity- and Wisdom-based attack rolls with advantage.</li>
+				<li>While you are on the ground, the ground within 15 feet of you is Difficult Terrain for your enemies.</li>
+			</ul>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> When choosing Primal Beast, your walking speed increases by 5 feet and the additional damage you deal increases by 1d6 for each spell slot level above 4. When choosing Great Tree, the number of Temporary Hit Points you gain and the radius of difficult terrain you create both increase by 5 for each spell slot level above 4.</p>
+		</description>
+		<setters>
+			<set name="keywords">force</set>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Swift Quiver" type="Spell" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_SPELL_SWIFT_QUIVER">
+		<supports>Ranger, Swift Quiver</supports>
+		<description>
+			<p>When you cast the spell and as a Bonus Action until it ends, you can make two attacks with a weapon that fires Arrows or Bolts, such as a Longbow or a Light Crossbow. The spell magically creates the ammunition needed for each attack. Each Arrow or Bolt created by the spell deals damage like a nonmagical piece of ammunition of its kind and disintegrates immediately after it hits or misses.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> When you cast this spell using a spell slot of 6th or 7th level, the duration is concentration up to 10 minutes. When you cast this spell using a spell slot of 8th or 9th level, the duration is 1 hour and no longer requires concentration.
+</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a Quiver worth 1+ GP</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<append id="ID_WOTC_PHB24_SPELL_SUMMON_BEAST">
+		<supports>Summon Beast</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_CONJURE_BARRAGE">
+		<supports>Conjure Barrage</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_GRASPING_VINE">
+		<supports>Grasping Vine</supports>
+	</append>
+	<append id="ID_WOTC_PHB24_SPELL_CONJURE_VOLLEY">
+		<supports>Conjure Volley</supports>
+	</append>
+</elements>

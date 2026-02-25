@@ -4,7 +4,7 @@
 		<name>Kensei Warrior</name>
 		<description>The Kensei Warrior subclass from Xanathar's Guide to Everything, updated for Solandria.</description>
 		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="thc-monk-kensei-solandria.xml"  url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-monk-kensei-solandria.xml" />
 		</update>
 	</info>
@@ -34,7 +34,7 @@
 			<p class="indent"><b><i>Kensei Weapons.</i></b> Choose one melee and one ranged weapon to be your Kensei weapons. You gain proficiency with these weapons if you don’t already have it. Your Kensei weapons are considered monk weapons for you, and they lose the Heavy property for you. When you reach 6th, 11th, and 17th level in this subclass, you can choose another type of weapon to be a Kensei weapon for you, following the criteria above.</p>
 			<p class="indent"><b><i>Kensei Mastery.</i></b> Your training with weapons allows you to use the mastery property of one melee and one ranged Kensei weapon of your choice. Whenever you finish a Long Rest, you can change one of these weapon mastery property choices to the weapon mastery of another Kensei weapon.</p>
 			<p class="indent"><b><i>Agile Parry.</i></b> When you take the Deflect Attacks reaction and are holding a Kensei weapon, you may add your Proficiency Bonus to the damage reduction and to any damage redirected back to the attacker.</p>
-			<p class="indent"><b><i>Kensei’s Shot.</i></b> You can use your Bonus Action to make your ranged attacks with Kensei weapons more deadly. Until the start of your next turn, when you hit with a ranged attack using a Kensei weapon, you deal additional damage equal to your Wisdom modifier (minimum 1).</p>
+			<p class="indent"><b><i>Kensei’s Shot.</i></b> You can use your Bonus Action to make your ranged attacks with Kensei weapons more deadly. Until the start of your next turn, when you hit with a ranged attack using a Kensei weapon, you deal additional damage equal to your Wisdom modifier (minimum 1). At level 11, you can make a ranged attack with a Kensei weapon as part of this Bonus Action.</p>
 			<p class="indent"><b><i>Way of the Brush.</i></b> You gain proficiency with your choice of Calligrapher's Supplies or Painter's Supplies.</p>
 		</description>
 		<sheet alt="Path of the Kensei">

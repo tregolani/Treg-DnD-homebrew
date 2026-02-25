@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hunter</name>
+		<description>The Hunter from Player’s Handbook 2024, Updated for Solandria</description>
+		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="thc-ranger-hunter-solandria.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-ranger-hunter-solandria.xml" />
+		</update>
+	</info>
+
+	<element name="Hunter (Solandria)" type="Archetype" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_RANGER_HUNTER">
+		<supports>Ranger Subclass</supports>
+		<description>
+			<p class="flavor">Protect Nature and People from Destruction</p>
+			<p>You stalk prey in the wilds and elsewhere, using your abilities as a Hunter to protect nature and people everywhere from forces that would destroy them.</p>
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_HUNTERS_LORE" />
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_HUNTERS_PREY" />
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_DEFENSIVE_TACTICS" />
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_SUPERIOR_HUNTERS_PREY" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_RANGER_HUNTER_SUPERIOR_HUNTERS_DEFENSE" />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_HUNTERS_LORE" level="3" />
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_HUNTERS_PREY" level="3" />
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_DEFENSIVE_TACTICS" level="7" />
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_SUPERIOR_HUNTERS_PREY" level="11" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_RANGER_HUNTER_SUPERIOR_HUNTERS_DEFENSE" level="15" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Hunter's Lore" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_HUNTERS_LORE">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_HUNTER_HUNTERS_LORE</requirements>
+		<description>
+			<p>You can call on the forces of nature to reveal certain strengths and weaknesses of your prey. You always have the <i>Hunter's Mark</i> spell prepared as one of your Favored Enemy spells. </p>
+			<p class="indent">While a creature is marked by your <i>Hunter's Mark</i>, you know whether that creature has any Immunities, Resistances, or Vulnerabilities, and if the creature has any, you know what they are. After gaining this knowledge, you ignore any applicable damage Resistances to any damage you inflict with your attacks or spells against that creature.</p>
+		</description>
+		<sheet alt="Hunter's Lore">
+			<description>You always have the Hunter's Mark spell prepared as one of your Favored Enemy spells; it does not count against the total number of spells you can prepare with that feature. While a creature is marked by your Hunter's Mark, you know its Immunities, Resistances, or Vulnerabilities, and your spells and attacks ignore any damage Resistances it has against them.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Spell (Favored Enemy, Hunter's Lore)" supports="Hunters Mark" default="ID_TREGOLANI_HB_SPELL_HUNTERS_MARK" spellcasting="Ranger" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Hunter's Prey" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_HUNTERS_PREY">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_HUNTER_HUNTERS_PREY</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Colossus Slayer.</i></b> Your tenacity can wear down even the most resilient foes. When you hit a creature with a weapon, the weapon deals an extra 1d8 damage to the target if it's missing any of its Hit Points. You can deal this extra damage only once per turn.</p>
+			<p class="indent"><b><i>Horde Breaker.</i></b> Once on each of your turns when you make an attack with a weapon, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target, that is within the weapon's range, and that you haven't attacked this turn.</p>
+		</description>
+		<sheet alt="Hunter's Prey">
+			<description>You gain the following benefits.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Colossus Slayer" supports="THC Hunters Prey Colossus Slayer" default="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_HUNTERS_PREY_COLOSSUS_SLAYER" />
+			<select type="Archetype Feature" name="Horde Breaker" supports="THC Hunters Prey Horde Breaker" default="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_HUNTERS_PREY_HORDE_BREAKER" />
+		</rules>
+	</element>
+	<element name="Colossus Slayer" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_HUNTERS_PREY_COLOSSUS_SLAYER">
+		<compendium display="false" />
+		<supports>THC Hunters Prey Colossus Slayer</supports>
+		<description>
+			<p>Your tenacity can wear down even the most resilient foes. When you hit a creature with a weapon, the weapon deals an extra 1d8 damage to the target if it's missing any of its Hit Points. You can deal this extra damage only once per turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature that's missing any of its Hit Points with a weapon, you deal an extra 1d8 damage to it.</description>
+		</sheet>
+	</element>
+	<element name="Horde Breaker" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_HUNTERS_PREY_HORDE_BREAKER">
+		<compendium display="false" />
+		<supports>THC Hunters Prey Horde Breaker</supports>
+		<description>
+			<p>Once on each of your turns when you make an attack with a weapon, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target, that is within the weapon's range, and that you haven't attacked this turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you make an attack with a weapon, you can make another attack with the same weapon against a different creature that is within 5ft of the original target, that is within the weapon's range, and that you haven't attacked this turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Defensive Tactics" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_DEFENSIVE_TACTICS">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_HUNTER_DEFENSIVE_TACTICS</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Escape the Horde.</i></b> When you take the Attack action, you may also take the Disengage action as part of that same action.</p>
+			<p class="indent"><b><i>Multiattack Defense.</i></b> When a creature hits you with an attack roll, that creature has Disadvantage on all other attack rolls against you this turn.</p>
+			<p class="indent"><b><i>Focused Mind.</i></b> When you fail a Saving Throw triggered by a creature marked by your <i>Hunter's Mark</i> spell, you can use your Reaction to reroll the saving throw.</p>
+		</description>
+		<sheet alt="Defensive Tactics">
+			<description>You gain the following benefits.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Escape the Horde" supports="THC Defensive Tactics Escape the Horde" default="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_DEFENSIVE_TACTICS_ESCAPE_THE_HORDE" />
+			<select type="Archetype Feature" name="Multiattack Defense" supports="THC Defensive Tactics Multiattack Defense" default="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_DEFENSIVE_TACTICS_MULTIATTACK_DEFENSE" />
+			<select type="Archetype Feature" name="Focused Mind" supports="THC Defensive Tactics Focused Mind" default="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_DEFENSIVE_TACTICS_FOCUSED_MIND" />
+		</rules>
+	</element>
+	<element name="Escape the Horde" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_DEFENSIVE_TACTICS_ESCAPE_THE_HORDE">
+		<compendium display="false" />
+		<supports>THC Defensive Tactics Escape the Horde</supports>
+		<description>
+			<p>When you take the Attack action, you may also take the Disengage action as part of that same action.</p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action, you may also take the Disengage action as part of that same action.</description>
+		</sheet>
+	</element>
+	<element name="Multiattack Defense" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_DEFENSIVE_TACTICS_MULTIATTACK_DEFENSE">
+		<compendium display="false" />
+		<supports>THC Defensive Tactics Multiattack Defense</supports>
+		<description>
+			<p>When a creature hits you with an attack roll, that creature has Disadvantage on all other attack rolls against you this turn.</p>
+		</description>
+		<sheet>
+			<description>When a creature hits you with an attack roll, that creature has Disadvantage on all other attack rolls against you this turn.</description>
+		</sheet>
+	</element>
+	<element name="Focused Mind" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_DEFENSIVE_TACTICS_FOCUSED_MIND">
+		<compendium display="false" />
+		<supports>THC Defensive Tactics Focused Mind</supports>
+		<description>
+			<p>When you fail a Saving Throw triggered by a creature marked by your <i>Hunter's Mark</i> spell, you can use your Reaction to reroll the saving throw.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you fail a Saving Throw triggered by a creature marked by your Hunter's Mark, you can reroll the saving throw.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Superior Hunter's Prey" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_RANGER_HUNTER_SUPERIOR_HUNTERS_PREY">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_HUNTER_SUPERIOR_HUNTERS_PREY</requirements>
+		<description>
+			<p>Once per turn when you deal damage to a creature marked by your <i>Hunter's Mark</i>, the target takes two rolls of the spell's damage die instead of just one.</p>
+		</description>
+		<sheet alt="Superior Hunter's Prey" usage="1/Turn">
+			<description>When you deal damage to a creature marked by your Hunter's Mark, the target takes two rolls of the spell's damage die instead of just one.</description>
+		</sheet>
+	</element>
+
+</elements>

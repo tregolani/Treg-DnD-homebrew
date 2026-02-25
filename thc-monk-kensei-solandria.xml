@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kensei Warrior</name>
+		<description>The Kensei Warrior subclass from Xanathar's Guide to Everything, updated for Solandria.</description>
+		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="thc-monk-kensei-solandria.xml"  url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-monk-kensei-solandria.xml" />
+		</update>
+	</info>
+
+	<element name="Kensei Warrior" type="Archetype" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_MONK_KENSEI_WARRIOR">
+		<supports>Monk Subclass</supports>
+		<description>
+			<p class="flavor">Wield Weapons as Part of a Graceful Dance of Death</p>
+			<p>Kensei Warriors train relentlessly with their weapons, to the point where the weapon becomes an extension of the body. Founded on a mastery of sword fighting, the tradition has expanded to include many different weapons. A Kensei sees a weapon in much the same way a calligrapher or painter regards a pen or brush. Whatever the weapon, the Kensei views it as a tool used to express the beauty and precision of the martial arts. That such mastery makes a Kensei a peerless warrior is but a side effect of intense devotion, practice, and study.</p>
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PATH_OF_THE_KENSEI"/>
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_ONE_WITH_THE_BLADE"/>
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PEERLESS_TECHNIQUE"/>
+			<div element="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_UNERRING_ACCURACY"/>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PATH_OF_THE_KENSEI" level="3"/>
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_ONE_WITH_THE_BLADE" level="6"/>
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PEERLESS_TECHNIQUE" level="11"/>
+			<grant type="Archetype Feature" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_UNERRING_ACCURACY" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Path of the Kensei" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PATH_OF_THE_KENSEI">
+		<description>
+			<p>Your special martial arts training leads you to master the use of certain weapons. This path also includes instruction in the deft strokes of calligraphy or painting. You gain the following benefits.</p>
+			<p class="indent"><b><i>Kensei Weapons.</i></b> Choose one melee and one ranged weapon to be your Kensei weapons. You gain proficiency with these weapons if you don’t already have it. Your Kensei weapons are considered monk weapons for you, and they lose the Heavy property for you. When you reach 6th, 11th, and 17th level in this subclass, you can choose another type of weapon to be a Kensei weapon for you, following the criteria above.</p>
+			<p class="indent"><b><i>Kensei Mastery.</i></b> Your training with weapons allows you to use the mastery property of one melee and one ranged Kensei weapon of your choice. Whenever you finish a Long Rest, you can change one of these weapon mastery property choices to the weapon mastery of another Kensei weapon.</p>
+			<p class="indent"><b><i>Agile Parry.</i></b> When you take the Deflect Attacks reaction and are holding a Kensei weapon, you may add your Proficiency Bonus to the damage reduction and to any damage redirected back to the attacker.</p>
+			<p class="indent"><b><i>Kensei’s Shot.</i></b> You can use your Bonus Action to make your ranged attacks with Kensei weapons more deadly. Until the start of your next turn, when you hit with a ranged attack using a Kensei weapon, you deal additional damage equal to your Wisdom modifier (minimum 1).</p>
+			<p class="indent"><b><i>Way of the Brush.</i></b> You gain proficiency with your choice of Calligrapher's Supplies or Painter's Supplies.</p>
+		</description>
+		<sheet alt="Path of the Kensei">
+			<description>You have the following benefits:</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Way of the Brush (Kensei)" supports="ID_WOTC_PHB24_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES|ID_WOTC_PHB24_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES"/>
+			<select type="Archetype Feature" name="Kensei Weapon (Melee)" supports="Kensei Weapon,Melee" level="3" />
+			<select type="Archetype Feature" name="Kensei Weapon (Ranged)" supports="Kensei Weapon,Ranged" level="3" />
+			<select type="Archetype Feature" name="Kensei Weapon (6)" supports="Kensei Weapon,(Melee||Ranged)" level="6" />
+			<select type="Archetype Feature" name="Kensei Weapon (11)" supports="Kensei Weapon,(Melee||Ranged)" level="11" />
+			<select type="Archetype Feature" name="Kensei Weapon (17)" supports="Kensei Weapon,(Melee||Ranged)" level="17" />
+			<select type="Class Feature" name="Weapon Mastery (Kensei Mastery)" supports="Weapon Mastery" number="2"/>
+			<select type="Archetype Feature" name="Agile Parry" supports="THC Agile Parry" default="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PATH_OF_THE_KENSEI_AGILE_PARRY"/>
+			<select type="Archetype Feature" name="Kensei Shot" supports="THC Kensei Shot" default="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PATH_OF_THE_KENSEI_KENSEIS_SHOT"/>
+		</rules>
+	</element>
+	<element name="Agile Parry" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PATH_OF_THE_KENSEI_AGILE_PARRY">
+		<supports>THC Agile Parry</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Deflect Attacks reaction and are holding a Kensei weapon, you can add your Proficiency Bonus to the damage reduction and to any damage redirected back to the attacker.</p>
+		</description>
+		<sheet action="Deflect Attacks Reaction">
+			<description>When you are holding a Kensei weapon, you can add {{proficiency}} to the damage reduction and to any damage redirected back to the attacker.</description>
+		</sheet>
+	</element>
+	<element name="Kensei’s Shot" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PATH_OF_THE_KENSEI_KENSEIS_SHOT">
+		<supports>THC Kensei Shot</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can use your Bonus Action to make your ranged attacks with Kensei weapons more deadly. Until the start of your next turn, when you hit with a ranged attack using a Kensei weapon, you deal additional damage equal to your Wisdom modifier (minimum 1). When you reach level 11 in this class, you can make one attack with a ranged Kensei weapon as part of the same Bonus Action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Until the start of your next turn, your ranged attacks using a Kensei weapon deal {{kensei wisdom:damage}} additional damage.</description>
+			<description level="11">You can make a ranged attack with a Kensei weapon as part of the same Bonus Action. Until the start of your next turn, your ranged attacks using a Kensei weapon deal {{kensei wisdom:damage}} additional damage.</description>
+		</sheet>
+		<rules>
+			<stat name="kensei wisdom:damage" value="1" bonus="base" />
+			<stat name="kensei wisdom:damage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 6: One with the Blade" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_ONE_WITH_THE_BLADE">
+		<description>
+			<p>Your focus infuses your weapons, granting the following benefits:</p>
+			<p class="indent"><b><i>Empowered Kensei Weapons.</i></b> When you deal damage with a Kensei weapon, it can deal your choice of Force damage or its normal damage type.</p>
+			<p class="indent"><b><i>Deft Strike.</i></b> Once per turn when you hit a creature with a Kensei weapon and deal damage, you can expend 1 Focus Point to deal additional damage equal to one roll of your Martial Arts die plus your Wisdom Modifier (minimum 1).</p>
+		</description>
+		<sheet alt="One with the Blade">
+			<description>You gain the following benefits:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Empowered Kensei Weapons" supports="THC Empowered Kensei Weapons" default="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_ONE_WITH_THE_BLADE_EMPOWERED_KENSEI_WEAPONS"/>
+			<select type="Archetype Feature" name="Deft Strike" supports="THC Deft Strike" default="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_ONE_WITH_THE_BLADE_DEFT_STRIKE"/>
+		</rules>
+	</element>
+
+	<element name="Empowered Kensei Weapons" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_ONE_WITH_THE_BLADE_EMPOWERED_KENSEI_WEAPONS">
+		<supports>THC Empowered Kensei Weapons</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you deal damage with a Kensei weapon, it can deal your choice of Force damage or its normal damage type.</p>
+		</description>
+		<sheet>
+			<description>When you deal damage with a Kensei weapon, it can deal your choice of Force damage or its normal damage type.</description>
+		</sheet>
+	</element>
+	<element name="Deft Strike" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_ONE_WITH_THE_BLADE_DEFT_STRIKE">
+		<supports>THC Deft Strike</supports>
+		<compendium display="false" />
+		<description>
+			<p>Once per turn when you hit a creature with a Kensei weapon and deal damage, you can expend 1 Focus Point to deal additional damage equal to one roll of your Martial Arts die plus your Wisdom Modifier (minimum 1).</p>
+		</description>
+		<sheet usage="Focus Point — 1/Turn">
+			<description>when you hit a creature with a Kensei weapon and deal damage, you can expend 1 Focus Point to deal 1d{{martial arts:dice}}+{{kensei wisdom:damage}} additional damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Peerless Technique" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PEERLESS_TECHNIQUE">
+		<description>
+			<p>Through rigorous practice, you have developed deadly weapon techniques which can lay waste to any foolish enough to challenge you. You gain one of the following feature options of your choice. As an action while wielding one of your Kensei weapons, you can expend 3 Focus Points to unleash your chosen technique. Each creature of your choice within its area of effect must make a Dexterity Saving throw. On a failed save, the creature takes Force damage equal to three rolls of your Martial Arts die plus your Dexterity modifier. On a successful save, the creature takes half as much damage. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.</p>
+			<p class="indent"><b><i>Coiled Serpent.</i></b> You become a whirling dervish, striking any within a 15-foot Emanation.</p>
+			<p class="indent"><b><i>Scything Mantis.</i></b> Your weapon unleashes arcing waves of force, striking any within a 30-foot Cone.</p>
+			<p class="indent"><b><i>Soaring Crane.</i></b> You launch forward with blazing speed, striking any within a 5-foot wide Line equal in length to your Speed.</p>
+			<p>As part of the same Action, you can expend 1 additional Focus Point and move to any unoccupied space touching the perimeter of the technique's area. This movement doesn't provoke Opportunity Attacks.</p>
+		</description>
+		<sheet alt="Peerless Technique" action="Action" usage="3 Focus Points">
+			<description>Each creature of your choice within your chosen technique's area of effect must make a Dexterity Saving Throw. On a failed save, the creature takes 3d{{martial arts:dice}}+{{dexterity:modifier}} Force damage. On a successful save, the creature takes half as much damage. You can then expend 1 additional Focus Point to move to any unoccupied space adjacent to the area of effect; this movement does not provoke Opportunity Attacks. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Peerless Technique Option" supports="Peerless Technique Option" />
+		</rules>
+	</element>
+	<element name="Coiling Serpent" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PEERLESS_TECHNIQUE_COILING_SERPENT">
+		<compendium display="false" />
+		<supports>Peerless Technique Option</supports>
+		<description>
+			<p>You become a whirling dervish, striking any within a 15-foot Emanation.</p>
+		</description>
+		<sheet>
+			<description>You become a whirling dervish, striking any within a 15-foot Emanation.</description>
+		</sheet>
+	</element>
+	<element name="Scything Mantis" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PEERLESS_TECHNIQUE_SCYTHING_MANTIS">
+		<compendium display="false" />
+		<supports>Peerless Technique Option</supports>
+		<description>
+			<p>Your weapon unleashes arcing waves of force, striking any within a 30-foot Cone.</p>
+		</description>
+		<sheet>
+			<description>Your weapon unleashes arcing waves of force, striking any within a 30-foot Cone.</description>
+		</sheet>
+	</element>
+	<element name="Soaring Crane" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PEERLESS_TECHNIQUE_SOARING_CRANE">
+		<compendium display="false" />
+		<supports>Peerless Technique Option</supports>
+		<description>
+			<p>You launch forward with blazing speed, striking any within a 5-foot wide Line equal in length to your Speed.</p>
+		</description>
+		<sheet>
+			<description>You launch forward with blazing speed, striking any within a {{speed}}-foot-long, 5-foot-wide Line.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Unerring Accuracy" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_UNERRING_ACCURACY">
+		<description>
+			<p>Once per turn, when you miss an attack roll with a Kensei weapon, you may reroll it, and you must use the new roll.</p>
+		</description>
+		<sheet alt="Unerring Accuracy" usage="1/Turn">
+			<description>When you miss an attack roll with a Kensei weapon, you may reroll it.</description>
+		</sheet>
+	</element>
+	
+<!-- Kensei Weapons -->
+	<!-- Simple Melee -->
+	<element name="Kensei Weapon (Club)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_CLUB">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Dagger)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_DAGGER">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Greatclub)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_GREATCLUB">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATCLUB" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_GREATCLUB" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Handaxe)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_HANDAXE">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Javelin)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_JAVELIN">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Light Hammer)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_LIGHTHAMMER">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Mace)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_MACE">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Quarterstaff)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_QUARTERSTAFF">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Sickle)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_SICKLE">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Spear)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_SPEAR">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+		</rules>
+		<sheet display="false" />
+	</element>
+
+	<!-- Simple Ranged -->
+	<element name="Kensei Weapon (Dart)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_DART">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Light Crossbow)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_LIGHT_CROSSBOW">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Shortbow)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_SHORTBOW">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Sling)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_SLING">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
+		</rules>
+		<sheet display="false" />
+	</element>
+
+	<!-- Martial Melee -->
+	<element name="Kensei Weapon (Battleaxe)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_BATTLEAXE">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Flail)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_FLAIL">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Glaive)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_GLAIVE">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee, Heavy</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE" />
+		</rules>
+		<sheet display="false" />
+	</element> -->
+	<element name="Kensei Weapon (Greataxe)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_GREATAXE">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee, Heavy</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE" />
+		</rules>
+		<sheet display="false" />
+	</element> -->
+	<element name="Kensei Weapon (Greatsword)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_GREATSWORD">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee, Heavy</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" />
+		</rules>
+		<sheet display="false" />
+	</element> -->
+	<element name="Kensei Weapon (Halberd)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_HALBERD">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee, Heavy</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" />
+		</rules>
+		<sheet display="false" />
+	</element> -->
+	<element name="Kensei Weapon (Lance)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_LANCE">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee, Special</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_LANCE" />
+		</rules>
+		<sheet display="false" />
+	</element> -->
+	<element name="Kensei Weapon (Longsword)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_LONGSWORD">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Maul)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_MAUL">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee, Heavy</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
+		</rules>
+		<sheet display="false" />
+	</element> -->
+	<element name="Kensei Weapon (Morningstar)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_MORNINGSTAR">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Pike)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_PIKE">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee, Heavy</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_PIKE" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_PIKE" />
+		</rules>
+		<sheet display="false" />
+	</element> -->
+	<element name="Kensei Weapon (Rapier)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_RAPIER">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Scimitar)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_SCIMITAR">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Shortsword)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_SHORTSWORD">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Trident)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_TRIDENT">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (War Pick)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_WAR_PICK">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_PICK" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_WAR_PICK" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Warhammer)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_WARHAMMER">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Whip)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_WHIP">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" />
+		</rules>
+		<sheet display="false" />
+	</element>
+
+	<!-- Martial Ranged -->
+	<element name="Kensei Weapon (Blowgun)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_BLOWGUN">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Hand Crossbow)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_HAND_CROSSBOW">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Heavy Crossbow)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_HEAVY_CROSSBOW">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Ranged, Heavy</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" />
+		</rules>
+		<sheet display="false" />
+	</element> -->
+	<element name="Kensei Weapon (Longbow)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_LONGBOW">
+		<compendium display="false" />
+		<supports>Kensei Weapon, Ranged, Heavy</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Musket)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_MUSKET">
+		<compendium display="false" />
+		<requirements>ID_WOTC_DMG_OPTION_FIREARMS||ID_WOTC_DMG24_OPTION_FIREARMS</requirements>
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_MUSKET" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MUSKET" />
+		</rules>
+		<sheet display="false" />
+	</element>
+	<element name="Kensei Weapon (Pistol)" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_WEAPON_PISTOL">
+		<compendium display="false" />
+		<requirements>ID_WOTC_DMG_OPTION_FIREARMS||ID_WOTC_DMG24_OPTION_FIREARMS</requirements>
+		<supports>Kensei Weapon, Ranged</supports>
+		<description>
+			<p>You gain proficiency with this weapon if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_PISTOL" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_PISTOL" />
+		</rules>
+		<sheet display="false" />
+	</element>
+
+</elements>

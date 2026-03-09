@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.16">
+		<update version="0.2.17">
 			<file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
 		</update>
 	</info>
@@ -20,8 +20,8 @@
 		<li><em><strong>9th-level: </strong>tempest barrage</em></li>
   		</ul>
               </li>
-              <li><strong>Classes:</strong> Barbarian (Avarice), Sorcerer (Revised), Sorcerer (Wisdom)</li>
-              <li><strong>Subclasses:</strong> College of Glamour (One-Dnd), Path of the Wildheart (Revised), Sea Sorcery (Revised), Tinkerer Physician (Artificer)</li>
+              <li><strong>Classes:</strong> Barbarian (Avarice), Ranger (Solandria), Sorcerer (Revised), Sorcerer (Wisdom)</li>
+              <li><strong>Subclasses:</strong> College of Glamour (One-Dnd), Hunter Ranger (Solandria), Kensei Monk (Solandria), Path of the Wildheart (Revised), Sea Sorcery (Revised), Tinkerer Physician (Artificer)</li>
               <li><strong>Races:</strong> Halfling (for Solandria), Half-Orc (for Solandria), Hexblood</li>
             </ul>]]>
       </description>
@@ -30,7 +30,7 @@
       			<set name="author">Tregolani</set>
 			<set name="url"></set>
 			<set name="official">false</set>
-			<set name="playtest">true</set>
+			<set name="supplement">true</set>
 			<set name="release">20230927</set>
 		</setters>
 	</element>

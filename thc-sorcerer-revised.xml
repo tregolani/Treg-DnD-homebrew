@@ -4,7 +4,7 @@
 		<name>Tregolani Homebrew Sorcerer</name>
 		<description>Revised Sorcerer based on Tasha's Cauldron of Everything optional content as well as homebrew changes by /u/Lavanis</description>
 		<author>Tregolani</author>
-		<update version="0.2.16">
+		<update version="0.2.17">
 			<file name="thc-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-sorcerer-revised" />
 		</update>
 	</info>
@@ -119,7 +119,7 @@
 		</rules>
 		<multiclass id="ID_WOTC_PHB_MULTICLASS_SORCERER">
 			<prerequisite>Charisma 13</prerequisite>
-			<requirements>[cha:13]</requirements>
+			<requirements>([cha:13],!(ID_WOTC_PHB_CLASS_SORCERER||ID_WOTC_PHB_MULTICLASS_SORCERER||ID_WOTC_PHB24_CLASS_SORCERER||ID_WOTC_PHB24_MULTICLASS_SORCERER))||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
 			<setters>
 				<set name="multiclass proficiencies">—</set>
 			</setters>

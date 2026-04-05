@@ -4,7 +4,7 @@
 		<name>Ranger</name>
 		<description>The Ranger class from the Player’s Handbook 2024, modified for Solandria.</description>
 		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="thc-class-ranger-solandria.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-class-ranger-solandria.xml" />
 		</update>
 	</info>
@@ -33,7 +33,7 @@
 			<h5 style="margin-top: 0px">AS A MULTICLASS CHARACTER</h5>
 			<ul style="margin-top:-1em">
 				<li>Gain the following traits from the Core Ranger Traits table: Hit Point Die, proficiency with Martial weapons, proficiency in one skill of your choice from the Ranger's skill list, and training with Light and Medium armor and Shields.</li>
-				<li>Gain the Ranger's level 1 features, which are listed in the Ranger Features table. See the multiclassing rules in chapter 2 to determine your available spell slots.</li>
+				<li>Gain the Ranger's level 1 features, which are listed in the Ranger Features table.</li>
 			</ul>
 			<h5>RANGER FEATURES</h5>
 			<table class="class-features">
@@ -93,15 +93,13 @@
 			<set name="hd">d10</set>
 		</setters>
 		<rules>
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER, ID_WOTC_SOURCE_PLAYERS_HANDBOOK" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER, ID_WOTC_SOURCE_PLAYERS_HANDBOOK" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
 			<select type="Proficiency" name="Skill Proficiency (Ranger)" supports="Skill,Ranger" number="3" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
 
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING" level="1"/>
@@ -125,9 +123,9 @@
 		</rules>
 		<multiclass id="ID_WOTC_PHB24_MULTICLASS_RANGER">
 			<prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
-			<requirements>([dex:13],[wis:13],!(ID_WOTC_PHB_CLASS_RANGER||ID_WOTC_PHB_MULTICLASS_RANGER||ID_WOTC_PHB24_CLASS_RANGER||ID_WOTC_PHB24_MULTICLASS_RANGER))||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<requirements>(([dex:13],[wis:13]),!(ID_WOTC_PHB_CLASS_RANGER||ID_WOTC_PHB_MULTICLASS_RANGER))||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
 			<setters>
-				<set name="multiclass proficiencies">Light armor, medium armor, shields, martial weapons, one skill from the class's skill list</set>
+				<set name="multiclass proficiencies">Martial weapons, one skill from the Ranger's skill list, Light armor, Medium armor, Shields</set>
 			</setters>
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />

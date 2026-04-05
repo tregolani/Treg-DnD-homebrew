@@ -4,7 +4,7 @@
 		<name>Kensei Warrior</name>
 		<description>The Kensei Warrior subclass from Xanathar's Guide to Everything, updated for Solandria.</description>
 		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="thc-monk-kensei-solandria.xml"  url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-monk-kensei-solandria.xml" />
 		</update>
 	</info>
@@ -41,7 +41,7 @@
 			<description>You have the following benefits:</description>
 		</sheet>
 		<rules>
-			<select type="Proficiency" name="Way of the Brush (Kensei)" supports="ID_WOTC_PHB24_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES|ID_WOTC_PHB24_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES"/>
+			<select type="Proficiency" name="Way of the Brush (Kensei)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES"/>
 			<select type="Archetype Feature" name="Kensei Weapon (Melee)" supports="Kensei Weapon,Melee" level="3" />
 			<select type="Archetype Feature" name="Kensei Weapon (Ranged)" supports="Kensei Weapon,Ranged" level="3" />
 			<select type="Archetype Feature" name="Kensei Weapon (6)" supports="Kensei Weapon,(Melee||Ranged)" level="6" />

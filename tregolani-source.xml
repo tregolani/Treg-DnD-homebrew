@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.2.17">
+		<update version="0.2.18">
 			<file name="tregolani-source.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/tregolani-source.xml" />
 		</update>
 	</info>
@@ -22,7 +22,7 @@
               </li>
               <li><strong>Classes:</strong> Barbarian (Avarice), Ranger (Solandria), Sorcerer (Revised), Sorcerer (Wisdom)</li>
               <li><strong>Subclasses:</strong> College of Glamour (One-Dnd), Hunter Ranger (Solandria), Kensei Monk (Solandria), Path of the Wildheart (Revised), Sea Sorcery (Revised), Tinkerer Physician (Artificer)</li>
-              <li><strong>Races:</strong> Halfling (for Solandria), Half-Orc (for Solandria), Hexblood</li>
+              <li><strong>Races:</strong> Halfling (for Solandria), Half-Orc (for Solandria), Hexblood, Tiefling (for Almir)</li>
             </ul>]]>
       </description>
 		<setters>

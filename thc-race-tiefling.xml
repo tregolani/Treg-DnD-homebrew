@@ -3,7 +3,7 @@
 	<info>
 		<name>Tiefling</name>
 		<description>The Tiefling species from the Player’s Handbook 2024, tweaked for Almir homebrew.</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="thc-race-tiefling.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-race-tiefling.xml" />
 		</update>
 	</info>
@@ -11,15 +11,7 @@
 	<element name="Tiefling" type="Race" source="Tregolani Homebrew Collection" id="ID_THC_2024_RACE_TIEFLING">
 		<description>
 			<p>Tieflings are either born in the Lower Planes or have fiendish ancestors who originated there. A tiefling (pronounced TEE-fling) is linked by blood to a devil, a demon, or some other Fiend. This connection to the Lower Planes is the tiefling’s fiendish legacy, which comes with the promise of power yet has no effect on the tiefling’s moral outlook.</p>
-			<p class="indent">A tiefling chooses whether to embrace or lament their fiendish legacy. The three legacies are described below.</p>
-			<h4>Abyssal</h4>
-			<p>The entropy of the Abyss, the chaos of Pandemonium, and the despair of Carceri call to tieflings who have the abyssal legacy. Horns, fur, tusks, and peculiar scents are common physical features of such tieflings, most of whom have the blood of demons coursing through their veins.</p>
-			<h4>Chthonic</h4>
-			<p>Tieflings who have the chthonic legacy feel not only the tug of Carceri but also the greed of Gehenna and the gloom of Hades. Some of these tieflings look cadaverous. Others possess the unearthly beauty of a succubus, or they have physical features in common with a night hag, a yugoloth, or some other Neutral Evil fiendish ancestor.</p>
-			<h4>Infernal</h4>
-			<p>The infernal legacy connects tieflings not only to Gehenna but also the Nine Hells and the raging battlefields of Acheron. Horns, spines, tails, golden eyes, and a faint odor of sulfur or smoke are common physical features of such tieflings, most of whom trace their ancestry to devils.</p>
-			<h4>Stygian</h4>
-			<p>Those of the Stygian legacy are said to have the very ice of Stygia in their veins. Their skin tends to be of a blue or grey shade and is cold to the touch, and their features tend to have a sharp or jagged quality to them.</p>
+			<p class="indent">A tiefling chooses whether to embrace or lament their fiendish legacy. The four legacies are described below.</p>
 			<h4>Tiefling Traits</h4>
 			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
 				<li><strong>Creature Type:</strong> Humanoid</li>

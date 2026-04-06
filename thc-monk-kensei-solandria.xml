@@ -4,7 +4,7 @@
 		<name>Kensei Warrior</name>
 		<description>The Kensei Warrior subclass from Xanathar's Guide to Everything, updated for Solandria.</description>
 		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="thc-monk-kensei-solandria.xml"  url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-monk-kensei-solandria.xml" />
 		</update>
 	</info>
@@ -179,7 +179,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -191,7 +190,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -203,7 +201,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATCLUB" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_GREATCLUB" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -215,7 +212,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -227,7 +223,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -239,7 +234,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -251,7 +245,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -263,7 +256,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -275,7 +267,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -287,7 +278,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -301,7 +291,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -313,7 +302,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -325,7 +313,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -337,7 +324,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -351,7 +337,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -363,7 +348,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -375,7 +359,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE" />
 		</rules>
 		<sheet display="false" />
 	</element> -->
@@ -387,7 +370,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE" />
 		</rules>
 		<sheet display="false" />
 	</element> -->
@@ -399,7 +381,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" />
 		</rules>
 		<sheet display="false" />
 	</element> -->
@@ -411,7 +392,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" />
 		</rules>
 		<sheet display="false" />
 	</element> -->
@@ -423,7 +403,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_LANCE" />
 		</rules>
 		<sheet display="false" />
 	</element> -->
@@ -435,7 +414,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -447,7 +425,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
 		</rules>
 		<sheet display="false" />
 	</element> -->
@@ -459,7 +436,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -471,7 +447,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_PIKE" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_PIKE" />
 		</rules>
 		<sheet display="false" />
 	</element> -->
@@ -483,7 +458,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -495,7 +469,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -507,7 +480,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -519,7 +491,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -531,7 +502,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_PICK" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_WAR_PICK" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -543,7 +513,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -555,7 +524,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -569,7 +537,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -581,7 +548,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
 		</rules>
 		<sheet display="false" />
 	</element>
@@ -593,7 +559,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" />
 		</rules>
 		<sheet display="false" />
 	</element> -->
@@ -605,7 +570,6 @@
 		</description>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
 		</rules>
 		<sheet display="false" />
 	</element>

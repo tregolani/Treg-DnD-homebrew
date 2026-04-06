@@ -4,7 +4,7 @@
     <name>Tregolani Homebrew Collection</name>
 	<description>A collection of homebrew items for DnD 5e</description>
 	<author>"Tregolani"</author>  
-    <update version="1.16">
+    <update version="1.17">
       <file name="treg-homebrew.index" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/treg-homebrew.index" />
     </update>
   </info>
@@ -22,6 +22,7 @@
     <file name="thc-monk-kensei-solandria.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-monk-kensei-solandria.xml" />
     <file name="thc-race-halfling.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-race-halfling.xml" />
     <file name="thc-race-halforc.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-race-halforc.xml" />
+    <file name="thc-race-tiefling.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-race-tiefling.xml" />
     <file name="thc-ranger-hunter-solandria.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-ranger-hunter-solandria.xml" />
     <file name="thc-sorcerer-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-sorcerer-revised.xml" />
     <file name="thc-sorcerer-sea-sorcery-revised.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-sorcerer-sea-sorcery-revised.xml" />

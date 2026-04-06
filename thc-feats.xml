@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.2.7">
+    <update version="0.3.0">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -229,7 +229,7 @@
 	<element name="Strength" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO_STRENGTH">
 		<compendium display="false" />
 		<supports>Iron Hero Ability Score</supports>
-		<requirements>ID_PROFICIENCY_SAVINGTHROW_STRENGTH||ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
 		<description>
 			<p>Your Quick-Time Event ability score is Strength.</p>
 		</description>
@@ -241,7 +241,7 @@
 	<element name="Dexterity" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO_DEXTERITY">
 		<compendium display="false" />
 		<supports>Iron Hero Ability Score</supports>
-		<requirements>ID_PROFICIENCY_SAVINGTHROW_DEXTERITY||ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_DEXTERITY</requirements>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_DEXTERITY</requirements>
 		<description>
 			<p>Your Quick-Time Event ability score is Dexterity.</p>
 		</description>
@@ -253,7 +253,7 @@
 	<element name="Constitution" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO_CONSTITUTION">
 		<compendium display="false" />
 		<supports>Iron Hero Ability Score</supports>
-		<requirements>ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION||ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_CONSTITUTION</requirements>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION</requirements>
 		<description>
 			<p>Your Quick-Time Event ability score is Constitution.</p>
 		</description>
@@ -265,7 +265,7 @@
 	<element name="Intelligence" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO_INTELLIGENCE">
 		<compendium display="false" />
 		<supports>Iron Hero Ability Score</supports>
-		<requirements>ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE||ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_INTELLIGENCE</requirements>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE</requirements>
 		<description>
 			<p>Your Quick-Time Event ability score is Intelligence.</p>
 		</description>
@@ -277,7 +277,7 @@
 	<element name="Wisdom" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO_WISDOM">
 		<compendium display="false" />
 		<supports>Iron Hero Ability Score</supports>
-		<requirements>ID_PROFICIENCY_SAVINGTHROW_WISDOM||ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_WISDOM</requirements>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_WISDOM</requirements>
 		<description>
 			<p>Your Quick-Time Event ability score is Wisdom.</p>
 		</description>
@@ -289,7 +289,7 @@
 	<element name="Charisma" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_IRON_HERO_CHARISMA">
 		<compendium display="false" />
 		<supports>Iron Hero Ability Score</supports>
-		<requirements>ID_PROFICIENCY_SAVINGTHROW_CHARISMA||ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
 		<description>
 			<p>Your Quick-Time Event ability score is Charisma.</p>
 		</description>
@@ -417,7 +417,7 @@
 		</rules>
 	</element>
 	<element name="Resilient (Strength)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_STRENGTH">
-		<requirements>!ID_PROFICIENCY_SAVINGTHROW_STRENGTH||!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
 		<compendium display="false" />
 		<supports>THC Resilient</supports>
 		<description>
@@ -434,7 +434,7 @@
 		</rules>
 	</element>
 	<element name="Resilient (Dexterity)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_DEXTERITY">
-		<requirements>!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY||!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_DEXTERITY</requirements>
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY</requirements>
 		<compendium display="false" />
 		<supports>THC Resilient</supports>
 		<description>
@@ -451,7 +451,7 @@
 		</rules>
 	</element>
 	<element name="Resilient (Constitution)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_CONSTITUTION">
-		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION||!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_CONSTITUTION</requirements>
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION</requirements>
 		<compendium display="false" />
 		<supports>THC Resilient</supports>
 		<description>
@@ -468,7 +468,7 @@
 		</rules>
 	</element>
 	<element name="Resilient (Intelligence)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_INTELLIGENCE">
-		<requirements>!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE||!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_INTELLIGENCE</requirements>
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE</requirements>
 		<compendium display="false" />
 		<supports>THC Resilient</supports>
 		<description>
@@ -485,7 +485,7 @@
 		</rules>
 	</element>
 	<element name="Resilient (Wisdom)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_WISDOM">
-		<requirements>!ID_PROFICIENCY_SAVINGTHROW_WISDOM||!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_WISDOM</requirements>
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_WISDOM</requirements>
 		<compendium display="false" />
 		<supports>THC Resilient</supports>
 		<description>
@@ -502,7 +502,7 @@
 		</rules>
 	</element>
 	<element name="Resilient (Charisma)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_CHARISMAN">
-		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CHARISMA||!ID_WOTC_PHB24_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
 		<compendium display="false" />
 		<supports>THC Resilient</supports>
 		<description>
@@ -1023,9 +1023,7 @@
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_PROFICIENCY_SKILL_PERCEPTION"/>
-			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_PERCEPTION" requirements="ID_PROFICIENCY_SKILL_PERCEPTION"/>
-			<grant type="Proficiency" id="ID_WOTC_PHB24_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_PHB24_PROFICIENCY_SKILL_PERCEPTION"/>
-			<grant type="Proficiency" id="ID_WOTC_PHB24_EXPERTISE_SKILL_PERCEPTION" requirements="ID_WOTC_PHB24_PROFICIENCY_SKILL_PERCEPTION"/>
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_PERCEPTION" requirements="ID_PROFICIENCY_SKILL_PERCEPTION"/>
 		</rules>
 	</element>
 	<element name="Ice Walk" type="Feat Feature " source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_HALF_DRAGON_ICE_WALK">
@@ -1234,7 +1232,7 @@
 		</rules>
 	</element>
 	<element name="Blindsight" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_DRAGON_BLOODED_BLOOD_OF_ASGORATH_BLINDSIGHT">
-		<requirements>ID_WOTC_PHB24_EXPERTISE_SKILL_PERCEPTION||ID_EXPERTISE_SKILL_PERCEPTION</requirements>
+		<requirements>ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_PERCEPTION</requirements>
 		<prerequisites>Expertise in Perception</prerequisites>
 		<supports>THC Blood of Asgorath Options</supports>
 		<description>

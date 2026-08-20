@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Items</description>
     <author>Homebrew</author>
-    <update version="0.2.17">
+    <update version="0.2.18">
       <file name="thc-items.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-items.xml" />
     </update>
   </info>
@@ -14,7 +14,7 @@
 		<description>
 			<p>A simple silver chain adorned with an intricately carved depiction of a chameleon with a small emerald gem inset for its eye. The elvish word "aethen" is etched in delicate runes circling the gem.</p>
 			<p>While attuned to this amulet, you can touch the gem and speak the command word <em>"aethen"</em> to transform your appearance. You decide your new appearance, including your height, weight, facial features, the sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You cannot appear as a creature of a different size than you, and your basic shape stays the same; if you’re bipedal, you can’t use this amulet to become quadrupedal, for instance. The transformation ends when the wearer touches the gem and speaks the command word again.</p>
-			<p class="indent">This transformation does not register as magical when viewed under the effects of the <em>Detect Magic</em> spell.
+			<p class="indent">This transformation does not register as magical when viewed under the effects of the <em>Detect Magic</em> spell.</p>
 			<p><strong><em>Cursed:</em></strong> This amulet is cursed. Attuning to it curses you until you are targeted by a level 5+ <em>Remove Curse</em> spell or similar magic. Removing the amulet fails to end the curse on you, and if you attempt to discard it, it immediately teleports back into your pocket or pack. The amulet's curse is an insidious, debilitating hex which saps the bearer's physical body, <strong>permanently reducing your Strength score by 1</strong> for each cumulative year you remain attuned to the amulet. This reduction cannot be restored by anything other than a <em>Wish</em> spell.</p>
 		</description>
 		<setters>

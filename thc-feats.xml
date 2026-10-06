@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.3.1">
+    <update version="0.3.2">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -175,6 +175,7 @@
 		</rules>
 	</element>
 	<element name="Acid" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_ACID">
+		<compendium display="false"/>
 		<supports>THC Weave Touched Planar Adaptation</supports>
 		<description>
 			<p>You gain Resistance to Acid Damage.</p>
@@ -187,6 +188,7 @@
 		</rules>
 	</element>
 	<element name="Cold" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_COLD">
+		<compendium display="false"/>
 		<supports>THC Weave Touched Planar Adaptation</supports>
 		<description>
 			<p>You gain Resistance to Cold Damage.</p>
@@ -199,6 +201,7 @@
 		</rules>
 	</element>
 	<element name="Fire" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_FIRE">
+		<compendium display="false"/>
 		<supports>THC Weave Touched Planar Adaptation</supports>
 		<description>
 			<p>You gain Resistance to Fire Damage.</p>
@@ -211,6 +214,7 @@
 		</rules>
 	</element>
 	<element name="Lightning" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_LIGHTNING">
+		<compendium display="false"/>
 		<supports>THC Weave Touched Planar Adaptation</supports>
 		<description>
 			<p>You gain Resistance to Lightning Damage.</p>
@@ -223,6 +227,7 @@
 		</rules>
 	</element>
 	<element name="Thunder" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_THUNDER">
+		<compendium display="false"/>
 		<supports>THC Weave Touched Planar Adaptation</supports>
 		<description>
 			<p>You gain Resistance to Thunder Damage.</p>
@@ -405,6 +410,7 @@
 		</rules>
 	</element>
 	<element name="Acid" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_ACID">
+		<compendium display="false"/>
 		<supports>THC Resilient Resistance</supports>
 		<description>
 			<p>You gain Resistance to Acid Damage.</p>
@@ -415,6 +421,7 @@
 		</rules>
 	</element>
 	<element name="Cold" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_COLD">
+		<compendium display="false"/>
 		<supports>THC Resilient Resistance</supports>
 		<description>
 			<p>You gain Resistance to Cold Damage.</p>
@@ -425,6 +432,7 @@
 		</rules>
 	</element>
 	<element name="Fire" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_FIRE">
+		<compendium display="false"/>
 		<supports>THC Resilient Resistance</supports>
 		<description>
 			<p>You gain Resistance to Fire Damage.</p>
@@ -435,6 +443,7 @@
 		</rules>
 	</element>
 	<element name="Force" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_FORCE">
+		<compendium display="false"/>
 		<supports>THC Resilient Resistance</supports>
 		<description>
 			<p>You gain Resistance to Force Damage.</p>
@@ -445,6 +454,7 @@
 		</rules>
 	</element>
 	<element name="Lightning" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_LIGHTNING">
+		<compendium display="false"/>
 		<supports>THC Resilient Resistance</supports>
 		<description>
 			<p>You gain Resistance to Lightning Damage.</p>
@@ -455,6 +465,7 @@
 		</rules>
 	</element>
 	<element name="Necrotic" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_NECROTIC">
+		<compendium display="false"/>
 		<supports>THC Resilient Resistance</supports>
 		<description>
 			<p>You gain Resistance to Necrotic Damage.</p>
@@ -475,6 +486,7 @@
 		</rules>
 	</element>
 	<element name="Psychic" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_PSYCHIC">
+		<compendium display="false"/>
 		<supports>THC Resilient Resistance</supports>
 		<description>
 			<p>You gain Resistance to Psychic Damage.</p>
@@ -485,6 +497,7 @@
 		</rules>
 	</element>
 	<element name="Radiant" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_RADIANT">
+		<compendium display="false"/>
 		<supports>THC Resilient Resistance</supports>
 		<description>
 			<p>You gain Resistance to Radiant Damage.</p>
@@ -495,6 +508,7 @@
 		</rules>
 	</element>
 	<element name="Thunder" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_RESILIENT_RESISTANCE_THUNDER">
+		<compendium display="false"/>
 		<supports>THC Resilient Resistance</supports>
 		<description>
 			<p>You gain Resistance to Thunder Damage.</p>
@@ -807,6 +821,7 @@
 		</setters>
 	</element>
 	<element name="Acid" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_ACID">
+		<compendium display="false"/>
 		<supports>THC Draconic Ancestry</supports>
 		<description>
 			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
@@ -822,6 +837,7 @@
 		</rules>
 	</element>
 	<element name="Cold" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_COLD">
+		<compendium display="false"/>
 		<supports>THC Draconic Ancestry</supports>
 		<description>
 			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
@@ -837,6 +853,7 @@
 		</rules>
 	</element>
 	<element name="Fire" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_FIRE">
+		<compendium display="false"/>
 		<supports>THC Draconic Ancestry</supports>
 		<description>
 			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
@@ -852,6 +869,7 @@
 		</rules>
 	</element>
 	<element name="Force" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_FORCE">
+		<compendium display="false"/>
 		<supports>THC Draconic Ancestry</supports>
 		<description>
 			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
@@ -867,6 +885,7 @@
 		</rules>
 	</element>
 	<element name="Lightning" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_LIGHTNING">
+		<compendium display="false"/>
 		<supports>THC Draconic Ancestry</supports>
 		<description>
 			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
@@ -882,6 +901,7 @@
 		</rules>
 	</element>
 	<element name="Necrotic" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_NECROTIC">
+		<compendium display="false"/>
 		<supports>THC Draconic Ancestry</supports>
 		<description>
 			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
@@ -897,6 +917,7 @@
 		</rules>
 	</element>
 	<element name="Poison" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_POISON">
+		<compendium display="false"/>
 		<supports>THC Draconic Ancestry</supports>
 		<description>
 			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
@@ -912,6 +933,7 @@
 		</rules>
 	</element>
 	<element name="Psychic" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_PSYCHIC">
+		<compendium display="false"/>
 		<supports>THC Draconic Ancestry</supports>
 		<description>
 			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
@@ -927,6 +949,7 @@
 		</rules>
 	</element>
 	<element name="Radiant" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_RADIANT">
+		<compendium display="false"/>
 		<supports>THC Draconic Ancestry</supports>
 		<description>
 			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
@@ -942,6 +965,7 @@
 		</rules>
 	</element>
 	<element name="Thunder" type="Racial Trait" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED_DRACONIC_ANCESTRY_THUNDER">
+		<compendium display="false"/>
 		<supports>THC Draconic Ancestry</supports>
 		<description>
 			<div element="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_DRAGON_BLOODED" />
@@ -1409,6 +1433,7 @@
 		</setters>
 	</element>
 	<element name="Cold" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING_FEY_RESISTANCE_COLD">
+		<compendium display="false"/>
 		<supports>THC Fey Resistance</supports>
 		<description>
 			<p>You have Resistance to Cold damage.</p>
@@ -1420,6 +1445,7 @@
 		</rules>
 	</element>
 	<element name="Fire" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING_FEY_RESISTANCE_FIRE">
+		<compendium display="false"/>
 		<supports>THC Fey Resistance</supports>
 		<description>
 			<p>You have Resistance to Fire damage.</p>
@@ -1431,6 +1457,7 @@
 		</rules>
 	</element>
 	<element name="Lightning" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING_FEY_RESISTANCE_LIGHTNING">
+		<compendium display="false"/>
 		<supports>THC Fey Resistance</supports>
 		<description>
 			<p>You have Resistance to Lightning damage.</p>
@@ -1442,6 +1469,7 @@
 		</rules>
 	</element>
 	<element name="Poison" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING_FEY_RESISTANCE_POISON">
+		<compendium display="false"/>
 		<supports>THC Fey Resistance</supports>
 		<description>
 			<p>You have Resistance to Poison damage, and have Advantage on saving throws to avoid or end the Poisoned condition.</p>
@@ -1453,6 +1481,7 @@
 		</rules>
 	</element>
 	<element name="Psychic" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING_FEY_RESISTANCE_PSYCHIC">
+		<compendium display="false"/>
 		<supports>THC Fey Resistance</supports>
 		<description>
 			<p>You have Resistance to Psychic damage.</p>
@@ -1464,6 +1493,7 @@
 		</rules>
 	</element>
 	<element name="Thunder" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_SUPERNATURAL_GIFT_FEY_BLESSING_FEY_RESISTANCE_THUNDER">
+		<compendium display="false"/>
 		<supports>THC Fey Resistance</supports>
 		<description>
 			<p>You have Resistance to Thunder damage.</p>
@@ -1535,6 +1565,7 @@
 		</rules>
 	</element>
 	<element name="Intelligence" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_GLAMOUR_INTELLIGENCE">
+		<compendium display="false"/>
 		<supports>THC Half Fey Mark of Glamour Spellcasting Ability</supports>
 		<description>
 				<p>Intelligence is your spellcasting ability for your Mark of Glamour.</p>
@@ -1546,6 +1577,7 @@
 		</rules>
 	</element>
 	<element name="Wisdom" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_GLAMOUR_WISDOM">
+		<compendium display="false"/>
 		<supports>THC Half Fey Mark of Glamour Spellcasting Ability</supports>
 		<description>
 				<p>Wisdom is your spellcasting ability for your Mark of Glamour.</p>
@@ -1557,6 +1589,7 @@
 		</rules>
 	</element>
 	<element name="Charisma" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_GLAMOUR_CHARISMA">
+		<compendium display="false"/>
 		<supports>THC Half Fey Mark of Glamour Spellcasting Ability</supports>
 		<description>
 				<p>Charisma is your spellcasting ability for your Mark of Glamour.</p>
@@ -1610,6 +1643,7 @@
 		</rules>
 	</element>
 	<element name="Autumn (Intelligence)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_AUTUMN_INTELLIGENCE">
+		<compendium display="false"/>
 		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
 		<description>
 				<p>Immediately after you use your Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be Charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.</p>
@@ -1623,6 +1657,7 @@
 		</rules>
 	</element>
 	<element name="Autumn (Wisdom)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_AUTUMN_WISDOM">
+		<compendium display="false"/>
 		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
 		<description>
 				<p>Immediately after you use your Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be Charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.</p>
@@ -1636,6 +1671,7 @@
 		</rules>
 	</element>
 	<element name="Autumn (Charisma)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_AUTUMN_CHARISMA">
+		<compendium display="false"/>
 		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
 		<description>
 				<p>Immediately after you use your Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be Charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.</p>
@@ -1649,6 +1685,7 @@
 		</rules>
 	</element>
 	<element name="Winter (Intelligence)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_WINTER_INTELLIGENCE">
+		<compendium display="false"/>
 		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
 		<description>
 				<p>Immediately after you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be Frightened of you until the end of your next turn.</p>
@@ -1662,6 +1699,7 @@
 		</rules>
 	</element>
 	<element name="Winter (Wisdom)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_WINTER_WISDOM">
+		<compendium display="false"/>
 		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
 		<description>
 				<p>Immediately after you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be Frightened of you until the end of your next turn.</p>
@@ -1675,6 +1713,7 @@
 		</rules>
 	</element>
 	<element name="Winter (Charisma)" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_WINTER_CHARISMA">
+		<compendium display="false"/>
 		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
 		<description>
 				<p>Immediately after you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be Frightened of you until the end of your next turn.</p>
@@ -1688,6 +1727,7 @@
 		</rules>
 	</element>
 	<element name="Spring" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_SPRING">
+		<compendium display="false"/>
 		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
 		<description>
 				<p>When you use your Fey Step, you can touch one willing creature within 5 feet of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 30 feet of you.</p>
@@ -1700,6 +1740,7 @@
 		</rules>
 	</element>
 	<element name="Summer" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_HALF_FEY_MARK_OF_SEASONS_SUMMER">
+		<compendium display="false"/>
 		<supports>THC Half Fey Mark of Seasons Fey Step</supports>
 		<description>
 				<p>Immediately after you use your Fey Step, each creature of your choice that you can see within 5 feet of you takes Fire damage equal to your proficiency bonus.</p>
@@ -1819,6 +1860,7 @@
 		</rules>
 	</element>
 	<element name="Bludgeoning, Piercing, and Slashing" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_RESISTANCE_BPS">
+		<compendium display="false"/>
 		<supports>THC Mark of Resistance</supports>
 		<description>
 			<p>You have Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
@@ -1831,6 +1873,7 @@
 		</rules>
 	</element>
 	<element name="Cold Iron" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_RESISTANCE_BYPASS_COLD_IRON">
+		<compendium display="false"/>
 		<supports>THC Mark of Resistance Bypass</supports>
 		<description>
 			<p>Weapons made of Cold Iron bypass your Fey Resistances.</p>
@@ -1841,6 +1884,7 @@
 		</rules>
 	</element>
 	<element name="Silver" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_FEY_BLESSING_FAIR_FOLK_MARK_OF_RESISTANCE_BYPASS_SILVER">
+		<compendium display="false"/>
 		<supports>THC Mark of Resistance Bypass</supports>
 		<description>
 			<p>Weapons made of Silver bypass your Fey Resistances.</p>

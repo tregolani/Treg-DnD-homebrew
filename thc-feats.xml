@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.3.0">
+    <update version="0.3.1">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -145,6 +145,94 @@
 			Can ignore the heavy quality on melee weapons, or add the light quality to all other melee weapons.&#13;
 			Can wield heavy weapons without penalty if you are Small or smaller.</description>
 		</sheet>
+	</element>
+
+	<element name="Weave-Touched" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED">
+			<description>
+			<p>Your exposure to the Weave, the raw essence of magic, grants you the following benefits.</p>
+			<ul>
+				<li><b>Ability Score Increase.</b> Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li><b>Magic Attunement.</b> You gain proficiency in the Arcana skill, and can use your Constitution modifier in place of your Intelligence modifier when making Arcana checks.</li>
+				<li><b>Planar Adaptation.</b> You gain Resistance to one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. You can change this choice whenever you finish a Short Rest.</li>
+				<li><b>Arcane Sensoria.</b> When you touch a magical object or creature under a magical effect, you perceive it as though you were under the effects of the <i>Detect Magic</i> spell. Additionally, if you are within 30 feet of a planar rift or portal, or see a creature use some form of teleportation magic, you can make an Arcana check (DC determined by the DM) to determine its source or destination plane. If you discover the destination to be the same plane as you currently reside, you know if the destination is less than or greater than 1 mile from your current location.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_DETECT_MAGIC"/>
+			</div>
+		</description>
+		<sheet>
+			<description>You can use Constitution in place of Intelligence for making Arcana checks. When you touch a magical object or a creature under a magical effect, you perceive it as though you were under the effects of Detect Magic. Furthermore, if you are within 5 feet of a planar rift or portal, you can make a DC15 Intelligence (Arcana) check to determine its source or destination plane.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" alt="Weave-Touched" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<stat name="arcane-sensoria:stat" value="intelligence:modifier" bonus="ability" />
+			<stat name="arcane-sensoria:stat" value="constitution:modifier" bonus="ability" />
+			<stat name="arcana:misc" value="-intelligence:modifier" />
+			<stat name="arcana:misc" value="arcane-sensoria:stat" />
+			
+			<select type="Feat Feature" name="Resistance (Planar Adaptation)" supports="THC Weave Touched Planar Adaptation" />
+		</rules>
+	</element>
+	<element name="Acid" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_ACID">
+		<supports>THC Weave Touched Planar Adaptation</supports>
+		<description>
+			<p>You gain Resistance to Acid Damage.</p>
+		</description>
+		<sheet alt="Planar Adaptation: Acid">
+			<description>You gain Resistance to one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. You can change this choice whenever you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+	<element name="Cold" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_COLD">
+		<supports>THC Weave Touched Planar Adaptation</supports>
+		<description>
+			<p>You gain Resistance to Cold Damage.</p>
+		</description>
+		<sheet alt="Planar Adaptation: Cold">
+			<description>You gain Resistance to one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. You can change this choice whenever you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Fire" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_FIRE">
+		<supports>THC Weave Touched Planar Adaptation</supports>
+		<description>
+			<p>You gain Resistance to Fire Damage.</p>
+		</description>
+		<sheet alt="Planar Adaptation: Fire">
+			<description>You gain Resistance to one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. You can change this choice whenever you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_LIGHTNING">
+		<supports>THC Weave Touched Planar Adaptation</supports>
+		<description>
+			<p>You gain Resistance to Lightning Damage.</p>
+		</description>
+		<sheet alt="Planar Adaptation: Lightning">
+			<description>You gain Resistance to one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. You can change this choice whenever you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_THUNDER">
+		<supports>THC Weave Touched Planar Adaptation</supports>
+		<description>
+			<p>You gain Resistance to Thunder Damage.</p>
+		</description>
+		<sheet alt="Planar Adaptation: Thunder">
+			<description>You gain Resistance to one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. You can change this choice whenever you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
 	</element>
 
 	<element name="Natural Weapon Master" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_NATURAL_WEAPON_MASTER">
@@ -527,7 +615,7 @@
 			<p>You can use your Channel Divinity to make your very presence a soothing balm. As a Magic Action, you can move up to your Speed without provoking opportunity attacks. When you move within 5 feet of any other creature during this Action, you can restore a number of hit points to that creature equal to 2d6 + your Wisdom modifier (minimum of 1 hit point). This increases to 3d6 at level 5, 4d6 at level 9, 5d6 at level 13, and 6d6 at level 17. A creature can receive this healing only once whenever you take this Action.</p>
 		</description>
 		<sheet alt="Balm of Peace" action="Action" usage="Channel Divinity">
-			<description>You can move up to your Speed, without provoking an opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore {{balm of peace:count}}d6+{{wisdom:modifier}} Hit Points to that creature (minimum of 1). A creature can receive this healing only once whenever you take this action.</description>
+			<description>You can move up to your Speed without provoking Opportunity Attacks. When you move within 5 feet of any other creature during this action, you can restore {{balm of peace:count}}d6+{{wisdom:modifier}} Hit Points to that creature. A creature can receive this healing only once whenever you take this action.</description>
 		</sheet>
 		<rules>
 			<stat name="balm of peace:count" value="2" bonus="base" />

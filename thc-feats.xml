@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.3.3">
+    <update version="0.3.4">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -148,7 +148,9 @@
 	</element>
 
 	<element name="Weave Synthesis" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS">
-			<description>
+		<prerequisite>Level 4+</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
 			<p>Your exposure to the Weave, the raw essence of magic, grants you the following benefits.</p>
 			<ul>
 				<li><b>Ability Score Increase.</b> Increase your Constitution score by 1, to a maximum of 20.</li>

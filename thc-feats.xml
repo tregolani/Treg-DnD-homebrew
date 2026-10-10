@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.3.2">
+    <update version="0.3.3">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -147,7 +147,7 @@
 		</sheet>
 	</element>
 
-	<element name="Weave-Touched" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED">
+	<element name="Weave Synthesis" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS">
 			<description>
 			<p>Your exposure to the Weave, the raw essence of magic, grants you the following benefits.</p>
 			<ul>
@@ -164,19 +164,18 @@
 			<description>You can use Constitution in place of Intelligence for making Arcana checks. When you touch a magical object or a creature under a magical effect, you perceive it as though you were under the effects of Detect Magic. Furthermore, if you are within 5 feet of a planar rift or portal, you can make a DC15 Intelligence (Arcana) check to determine its source or destination plane.</description>
 		</sheet>
 		<rules>
-			<stat name="constitution" value="1" alt="Weave-Touched" />
+			<stat name="constitution" value="1" alt="Weave Synthesis" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
 			<stat name="arcane-sensoria:stat" value="intelligence:modifier" bonus="ability" />
 			<stat name="arcane-sensoria:stat" value="constitution:modifier" bonus="ability" />
 			<stat name="arcana:misc" value="-intelligence:modifier" />
 			<stat name="arcana:misc" value="arcane-sensoria:stat" />
 			
-			<select type="Feat Feature" name="Resistance (Planar Adaptation)" supports="THC Weave Touched Planar Adaptation" />
+			<select type="Feat Feature" name="Resistance (Planar Adaptation)" supports="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_ACID|ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_COLD|ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_FIRE|ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_LIGHTNING|ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_THUNDER" />
 		</rules>
 	</element>
-	<element name="Acid" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_ACID">
+	<element name="Acid" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_ACID">
 		<compendium display="false"/>
-		<supports>THC Weave Touched Planar Adaptation</supports>
 		<description>
 			<p>You gain Resistance to Acid Damage.</p>
 		</description>
@@ -187,9 +186,8 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
 		</rules>
 	</element>
-	<element name="Cold" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_COLD">
+	<element name="Cold" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_COLD">
 		<compendium display="false"/>
-		<supports>THC Weave Touched Planar Adaptation</supports>
 		<description>
 			<p>You gain Resistance to Cold Damage.</p>
 		</description>
@@ -200,9 +198,8 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
 		</rules>
 	</element>
-	<element name="Fire" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_FIRE">
+	<element name="Fire" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_FIRE">
 		<compendium display="false"/>
-		<supports>THC Weave Touched Planar Adaptation</supports>
 		<description>
 			<p>You gain Resistance to Fire Damage.</p>
 		</description>
@@ -213,9 +210,8 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
 		</rules>
 	</element>
-	<element name="Lightning" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_LIGHTNING">
+	<element name="Lightning" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_LIGHTNING">
 		<compendium display="false"/>
-		<supports>THC Weave Touched Planar Adaptation</supports>
 		<description>
 			<p>You gain Resistance to Lightning Damage.</p>
 		</description>
@@ -226,9 +222,8 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
 		</rules>
 	</element>
-	<element name="Thunder" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_TOUCHED_PLANAR_ADAPTATION_THUNDER">
+	<element name="Thunder" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_THUNDER">
 		<compendium display="false"/>
-		<supports>THC Weave Touched Planar Adaptation</supports>
 		<description>
 			<p>You gain Resistance to Thunder Damage.</p>
 		</description>

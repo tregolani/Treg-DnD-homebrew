@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.3.5">
+    <update version="0.3.6">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -147,15 +147,15 @@
 		</sheet>
 	</element>
 
-	<element name="Weave Synthesis" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS">
+	<element name="Planar Synthesis" type="Feat" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_PLANAR_SYNTHESIS">
 		<prerequisite>Level 4+</prerequisite>
 		<requirements>[level:4]</requirements>
 		<description>
-			<p>Your exposure to the Weave, the raw essence of magic, grants you the following benefits.</p>
+			<p>Your exposure to the raw magic of the planes grants you the following benefits.</p>
 			<ul>
 				<li><b>Ability Score Increase.</b> Increase your Constitution score by 1, to a maximum of 20.</li>
 				<li><b>Magic Attunement.</b> You gain proficiency in the Arcana skill, and can use your Constitution modifier in place of your Intelligence modifier when making Arcana checks.</li>
-				<li><b>Planar Adaptation.</b> You gain Resistance to one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. You can change this choice whenever you finish a Short Rest.</li>
+				<li><b>Planar Adaptation.</b> You gain Resistance to one of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder. You can change this choice (no action required) immediately after you cast a spell or use an ability which causes you to teleport. Once you do so, you cannot do so again until you finish a Long Rest.</li>
 				<li><b>Arcane Sensoria.</b> When you touch a magical object or creature under a magical effect, you perceive it as though you were under the effects of the <i>Detect Magic</i> spell. Additionally, if you are within 30 feet of a planar rift or portal, or see a creature use some form of teleportation magic, you can make an Arcana check (DC determined by the DM) to determine its source or destination plane. If you discover the destination to be the same plane as you currently reside, you know if the destination is less than or greater than 1 mile from your current location.</li>
 			</ul>
 			<div class="reference">
@@ -173,64 +173,121 @@
 			<stat name="arcana:misc" value="-intelligence:modifier" />
 			<stat name="arcana:misc" value="arcane-sensoria:stat" />
 			
-			<select type="Feat Feature" name="Resistance (Planar Adaptation)" supports="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_ACID|ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_COLD|ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_FIRE|ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_LIGHTNING|ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_THUNDER" />
+			<select type="Feat Feature" name="Resistance (Planar Adaptation)" supports="THC Planar Adaptation" />
 		</rules>
 	</element>
-	<element name="Acid" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_ACID">
+	<element name="Acid" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_PLANAR_SYNTHESIS_PLANAR_ADAPTATION_ACID">
+		<supports>THC Planar Adaptation</supports>
 		<compendium display="false"/>
 		<description>
 			<p>You gain Resistance to Acid damage.</p>
 		</description>
-		<sheet alt="Planar Adaptation: Acid">
-			<description>You gain Resistance to Acid damage. You can change this to one of the following types when you finish a Short Rest: Cold, Fire, Lightning, or Thunder.</description>
+		<sheet alt="Planar Adaptation: Acid" usage="1/Long Rest">
+			<description>You gain Resistance to Acid damage. You can change this choice (no action required) immediately after you cast a spell or use an ability which causes you to teleport.</description>
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
 		</rules>
 	</element>
-	<element name="Cold" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_COLD">
+	<element name="Cold" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_PLANAR_SYNTHESIS_PLANAR_ADAPTATION_COLD">
+		<supports>THC Planar Adaptation</supports>
 		<compendium display="false"/>
 		<description>
 			<p>You gain Resistance to Cold damage.</p>
 		</description>
-		<sheet alt="Planar Adaptation: Cold">
-			<description>You gain Resistance to Cold damage. You can change this to one of the following types when you finish a Short Rest: Acid, Fire, Lightning, or Thunder.</description>
+		<sheet alt="Planar Adaptation: Cold" usage="1/Long Rest">
+			<description>You gain Resistance to Cold damage. You can change this choice (no action required) immediately after you cast a spell or use an ability which causes you to teleport.</description>
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
 		</rules>
 	</element>
-	<element name="Fire" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_FIRE">
+	<element name="Fire" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_PLANAR_SYNTHESIS_PLANAR_ADAPTATION_FIRE">
+		<supports>THC Planar Adaptation</supports>
 		<compendium display="false"/>
 		<description>
 			<p>You gain Resistance to Fire damage.</p>
 		</description>
-		<sheet alt="Planar Adaptation: Fire">
-			<description>You gain Resistance to Fire damage. You can change this to one of the following types when you finish a Short Rest: Acid, Cold, Lightning, or Thunder.</description>
+		<sheet alt="Planar Adaptation: Fire" usage="1/Long Rest">
+			<description>You gain Resistance to Fire damage. You can change this choice (no action required) immediately after you cast a spell or use an ability which causes you to teleport.</description>
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
 		</rules>
 	</element>
-	<element name="Lightning" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_LIGHTNING">
+	<element name="Lightning" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_PLANAR_SYNTHESIS_PLANAR_ADAPTATION_LIGHTNING">
+		<supports>THC Planar Adaptation</supports>
 		<compendium display="false"/>
 		<description>
 			<p>You gain Resistance to Lightning damage.</p>
 		</description>
-		<sheet alt="Planar Adaptation: Lightning">
-			<description>You gain Resistance to Lightning damage. You can change this to one of the following types when you finish a Short Rest: Acid, Cold, Fire, or Thunder.</description>
+		<sheet alt="Planar Adaptation: Lightning" usage="1/Long Rest">
+			<description>You gain Resistance to Lightning damage. You can change this choice (no action required) immediately after you cast a spell or use an ability which causes you to teleport.</description>
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
 		</rules>
 	</element>
-	<element name="Thunder" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_WEAVE_SYNTHESIS_PLANAR_ADAPTATION_THUNDER">
+	<element name="Necrotic" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_PLANAR_SYNTHESIS_PLANAR_ADAPTATION_NECROTIC">
+		<supports>THC Planar Adaptation</supports>
+		<compendium display="false"/>
+		<description>
+			<p>You gain Resistance to Necrotic damage.</p>
+		</description>
+		<sheet alt="Planar Adaptation: Necrotic" usage="1/Long Rest">
+			<description>You gain Resistance to Necrotic damage. You can change this choice (no action required) immediately after you cast a spell or use an ability which causes you to teleport.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	<element name="Poison" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_PLANAR_SYNTHESIS_PLANAR_ADAPTATION_POISON">
+		<supports>THC Planar Adaptation</supports>
+		<compendium display="false"/>
+		<description>
+			<p>You gain Resistance to Poison damage.</p>
+		</description>
+		<sheet alt="Planar Adaptation: Poison" usage="1/Long Rest">
+			<description>You gain Resistance to Poison damage. You can change this choice (no action required) immediately after you cast a spell or use an ability which causes you to teleport.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	<element name="Psychic" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_PLANAR_SYNTHESIS_PLANAR_ADAPTATION_PSYCHIC">
+		<supports>THC Planar Adaptation</supports>
+		<compendium display="false"/>
+		<description>
+			<p>You gain Resistance to Psychic damage.</p>
+		</description>
+		<sheet alt="Planar Adaptation: Psychic" usage="1/Long Rest">
+			<description>You gain Resistance to Psychic damage. You can change this choice (no action required) immediately after you cast a spell or use an ability which causes you to teleport.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	<element name="Radiant" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_PLANAR_SYNTHESIS_PLANAR_ADAPTATION_RADIANT">
+		<supports>THC Planar Adaptation</supports>
+		<compendium display="false"/>
+		<description>
+			<p>You gain Resistance to Radiant damage.</p>
+		</description>
+		<sheet alt="Planar Adaptation: Radiant" usage="1/Long Rest">
+			<description>You gain Resistance to Radiant damage. You can change this choice (no action required) immediately after you cast a spell or use an ability which causes you to teleport.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Feat Feature" source="Tregolani Homebrew Collection" id="ID_TREGOLANI_HB_FEAT_PLANAR_SYNTHESIS_PLANAR_ADAPTATION_THUNDER">
+		<supports>THC Planar Adaptation</supports>
 		<compendium display="false"/>
 		<description>
 			<p>You gain Resistance to Thunder damage.</p>
 		</description>
-		<sheet alt="Planar Adaptation: Thunder">
-			<description>You gain Resistance to Thunder damage. You can change this to one of the following types when you finish a Short Rest: Acid, Cold, Fire, or Lightning.</description>
+		<sheet alt="Planar Adaptation: Thunder" usage="1/Long Rest">
+			<description>You gain Resistance to Thunder damage. You can change this choice (no action required) immediately after you cast a spell or use an ability which causes you to teleport.</description>
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />

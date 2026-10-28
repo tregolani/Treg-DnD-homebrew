@@ -4,7 +4,7 @@
 		<name>Kensei Warrior</name>
 		<description>The Kensei Warrior subclass from Xanathar's Guide to Everything, updated for Solandria.</description>
 		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="thc-monk-kensei-solandria.xml"  url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-monk-kensei-solandria.xml" />
 		</update>
 	</info>
@@ -38,7 +38,7 @@
 			<p class="indent"><b><i>Way of the Brush.</i></b> You gain proficiency with your choice of Calligrapher's Supplies or Painter's Supplies.</p>
 		</description>
 		<sheet alt="Path of the Kensei">
-			<description>You have the following benefits:</description>
+			<description>You have {{kensei weapons:count}} Kensei weapons. These are considered Monk weapons for you, and they lose the Heavy property for you.</description>
 		</sheet>
 		<rules>
 			<select type="Proficiency" name="Way of the Brush (Kensei)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES"/>
@@ -48,6 +48,12 @@
 			<select type="Archetype Feature" name="Kensei Weapon (11)" supports="Kensei Weapon,(Melee||Ranged)" level="11" />
 			<select type="Archetype Feature" name="Kensei Weapon (17)" supports="Kensei Weapon,(Melee||Ranged)" level="17" />
 			<select type="Class Feature" name="Weapon Mastery (Kensei Mastery)" supports="Weapon Mastery" number="2"/>
+			
+			<stat name="kensei weapons:count" value="2" bonus="base" level="3"/>
+			<stat name="kensei weapons:count" value="3" bonus="base" level="6"/>
+			<stat name="kensei weapons:count" value="4" bonus="base" level="11"/>
+			<stat name="kensei weapons:count" value="5" bonus="base" level="17"/>
+			
 			<select type="Archetype Feature" name="Agile Parry" supports="THC Agile Parry" default="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PATH_OF_THE_KENSEI_AGILE_PARRY"/>
 			<select type="Archetype Feature" name="Kensei Shot" supports="THC Kensei Shot" default="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PATH_OF_THE_KENSEI_KENSEIS_SHOT"/>
 		</rules>
@@ -70,7 +76,7 @@
 		</description>
 		<sheet action="Bonus Action">
 			<description>Until the start of your next turn, your ranged attacks using a Kensei weapon deal {{kensei wisdom:damage}} additional damage.</description>
-			<description level="11">You can make a ranged attack with a Kensei weapon as part of the same Bonus Action. Until the start of your next turn, your ranged attacks using a Kensei weapon deal {{kensei wisdom:damage}} additional damage.</description>
+			<description level="11">Until the start of your next turn, your ranged attacks using a Kensei weapon deal {{kensei wisdom:damage}} additional damage. You can make one ranged attack with a Kensei weapon as part of the same Bonus Action.</description>
 		</sheet>
 		<rules>
 			<stat name="kensei wisdom:damage" value="1" bonus="base" />
@@ -110,7 +116,7 @@
 			<p>Once per turn when you hit a creature with a Kensei weapon and deal damage, you can expend 1 Focus Point to deal additional damage equal to one roll of your Martial Arts die plus your Wisdom Modifier (minimum 1).</p>
 		</description>
 		<sheet usage="Focus Point — 1/Turn">
-			<description>when you hit a creature with a Kensei weapon and deal damage, you can expend 1 Focus Point to deal 1d{{martial arts:dice}}+{{kensei wisdom:damage}} additional damage.</description>
+			<description>When you hit a creature with a Kensei weapon and deal damage, you can expend 1 Focus Point to deal 1d{{martial arts:dice}}+{{kensei wisdom:damage}} additional damage.</description>
 		</sheet>
 	</element>
 
@@ -118,12 +124,11 @@
 		<description>
 			<p>Through rigorous practice, you have developed deadly weapon techniques which can lay waste to any foolish enough to challenge you. You gain one of the following feature options of your choice. As an action while wielding one of your Kensei weapons, you can expend 3 Focus Points to unleash your chosen technique. Each creature of your choice within its area of effect must make a Dexterity Saving throw. On a failed save, the creature takes Force damage equal to three rolls of your Martial Arts die plus your Dexterity modifier. On a successful save, the creature takes half as much damage. Whenever you finish a Short or Long Rest, you can replace your chosen option with a different one.</p>
 			<p class="indent"><b><i>Coiled Serpent.</i></b> You become a whirling dervish, striking any within a 15-foot Emanation.</p>
-			<p class="indent"><b><i>Scything Mantis.</i></b> Your weapon unleashes arcing waves of force, striking any within a 30-foot Cone.</p>
-			<p class="indent"><b><i>Soaring Crane.</i></b> You launch forward with blazing speed, striking any within a 5-foot wide Line equal in length to your Speed.</p>
-			<p>As part of the same Action, you can expend 1 additional Focus Point and move to any unoccupied space touching the perimeter of the technique's area. This movement doesn't provoke Opportunity Attacks.</p>
+			<p class="indent"><b><i>Scything Mantis.</i></b> Your weapon unleashes arcing waves of force, striking any within a 40-foot Cone.</p>
+			<p class="indent"><b><i>Soaring Crane.</i></b> You launch forward with blazing speed, striking any within a 10-foot wide Line equal in length to your Speed. You can then immediately move to any space adjacent to the end of the line; this movement does not provoke Opportunity Attacks.</p>
 		</description>
 		<sheet alt="Peerless Technique" action="Action" usage="3 Focus Points">
-			<description>Each creature of your choice within your chosen technique's area of effect must make a Dexterity Saving Throw. On a failed save, the creature takes 3d{{martial arts:dice}}+{{dexterity:modifier}} Force damage. On a successful save, the creature takes half as much damage. You can then expend 1 additional Focus Point to move to any unoccupied space adjacent to the area of effect; this movement does not provoke Opportunity Attacks. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.</description>
+			<description>Each creature of your choice within your chosen technique's area of effect must make a Dexterity Saving Throw. On a failed save, the creature takes 3d{{martial arts:dice}}+{{dexterity:modifier}} Force damage. On a successful save, the creature takes half as much damage. Whenever you finish a Short or Long Rest, you can replace the chosen option with a different one.</description>
 		</sheet>
 		<rules>
 			<select type="Archetype Feature" name="Peerless Technique Option" supports="Peerless Technique Option" />
@@ -143,20 +148,20 @@
 		<compendium display="false" />
 		<supports>Peerless Technique Option</supports>
 		<description>
-			<p>Your weapon unleashes arcing waves of force, striking any within a 30-foot Cone.</p>
+			<p>Your weapon unleashes arcing waves of force, striking any within a 40-foot Cone.</p>
 		</description>
 		<sheet>
-			<description>Your weapon unleashes arcing waves of force, striking any within a 30-foot Cone.</description>
+			<description>Your weapon unleashes arcing waves of force, striking any within a 40-foot Cone.</description>
 		</sheet>
 	</element>
 	<element name="Soaring Crane" type="Archetype Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_ARCHETYPE_FEATURE_MONK_KENSEI_PEERLESS_TECHNIQUE_SOARING_CRANE">
 		<compendium display="false" />
 		<supports>Peerless Technique Option</supports>
 		<description>
-			<p>You launch forward with blazing speed, striking any within a 5-foot wide Line equal in length to your Speed.</p>
+			<p>You launch forward with blazing speed, striking any within a 10-foot wide Line equal in length to your Speed. You can then immediately move to any space adjacent to the end of the line; this movement does not provoke Opportunity Attacks.</p>
 		</description>
 		<sheet>
-			<description>You launch forward with blazing speed, striking any within a {{speed}}-foot-long, 5-foot-wide Line.</description>
+			<description>You launch forward with blazing speed, striking any within a {{speed}}-foot-long, 10-foot-wide Line. You can then immediately move to any space adjacent to the end of the line; this movement does not provoke Opportunity Attacks.</description>
 		</sheet>
 	</element>
 

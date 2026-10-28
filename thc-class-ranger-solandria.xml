@@ -4,7 +4,7 @@
 		<name>Ranger</name>
 		<description>The Ranger class from the Player’s Handbook 2024, modified for Solandria.</description>
 		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="thc-class-ranger-solandria.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-class-ranger-solandria.xml" />
 		</update>
 	</info>
@@ -58,11 +58,11 @@
 				<tr><td>11</td><td class="left">Subclass feature</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
 				<tr><td>12</td><td class="left">Ability Score Improvement</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
 				<tr><td>13</td><td class="left">Relentless Hunter</td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
-				<tr><td>14</td><td class="left">—</td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14</td><td class="left">Feral Senses</td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
 				<tr><td>15</td><td class="left">Subclass feature</td><td>5</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
 				<tr><td>16</td><td class="left">Ability Score Improvement</td><td>5</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
 				<tr><td>17</td><td class="left">Precise Hunter</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
-				<tr><td>18</td><td class="left">Feral Senses</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18</td><td class="left">Greater Feral Senses</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
 				<tr><td>19</td><td class="left">Epic Boon</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
 				<tr><td>20</td><td class="left">Foe Slayer, Exploit Weakness</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
 			</table>
@@ -81,8 +81,9 @@
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_TIRELESS" />
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_NATURES_VEIL" />
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER" />
-			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_PRECISE_HUNTER" />
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FERAL_SENSES" />
+			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_PRECISE_HUNTER" />
+			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_GREATER_FERAL_SENSES" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EPIC_BOON" />
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FOE_SLAYER" />
 			<div element="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_EXPLOIT_WEAKNESS" />
@@ -115,8 +116,9 @@
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_TIRELESS" level="10"/>
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_NATURES_VEIL" level="10"/>
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER" level="13"/>
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FERAL_SENSES" level="14"/>
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_PRECISE_HUNTER" level="17" />
-			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FERAL_SENSES" level="18"/>
+			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_GREATER_FERAL_SENSES" level="18"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EPIC_BOON" level="19" />
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FOE_SLAYER" level="20"/>
 			<grant type="Class Feature" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_EXPLOIT_WEAKNESS" level="20"/>
@@ -389,6 +391,18 @@
 		</sheet>
 	</element>
 
+	<element name="Level 14: Feral Senses" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FERAL_SENSES">
+		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_FERAL_SENSES</requirements>
+		<description>
+			<p>Your connection to the forces of nature grants you Blindsight with a range of 10 feet. If you already have Blindsight when you gain this feature, its range instead increases by 10 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="10" bonus="thc-ranger"/>
+		</rules>
+	</element>
+
 	<element name="Level 17: Precise Hunter" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_PRECISE_HUNTER">
 		<requirements>!(ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_PRECISE_HUNTER)</requirements>
 		<description>
@@ -399,15 +413,15 @@
 		</sheet>
 	</element>
 
-	<element name="Level 18: Feral Senses" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_FERAL_SENSES">
+	<element name="Level 18: Greater Feral Senses" type="Class Feature" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_CLASS_FEATURE_RANGER_GREATER_FERAL_SENSES">
 		<requirements>!ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_RANGER_FERAL_SENSES</requirements>
 		<description>
-			<p>Your connection to the forces of nature grants you Blindsight with a range of 60 feet.</p>
+			<p>Your connection to the forces of nature deepens, increasing your Blindsight range by an additional 20 feet.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
-			<stat name="blindsight:range" value="60" bonus="base" />
+			<stat name="blindsight:range" value="30" bonus="thc-ranger" />
 		</rules>
 	</element>
 
@@ -446,8 +460,8 @@
 	<element name="Ensnaring Strike" type="Spell" source="Tregolani Homebrew Collection for Solandria" id="ID_TREGOLANI_HB_SPELL_ENSNARING_STRIKE">
 		<supports>Ranger, Damaging Spell, Spell Saving Throw, Ensnaring Strike</supports>
 		<description>
-			<p>The target takes an extra 1d6 Piercing damage from the attack as grasping vines appear on it, and it must succeed on a Strength saving throw or have the Restrained condition until the spell ends. At the end of each of its turns, the Restrained target repeats the save, ending the spell on itself on a success.</p>
-			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d6 for each spell slot level above 1.</p>
+			<p>The target takes an extra 1d6 Piercing damage from the attack as grasping vines appear on it, and it must succeed on a Strength saving throw or have the Restrained condition until the spell ends. While Restrained, a target takes 1d6 Piercing damage at the start of each of its turns. At the end of each of its turns, the Restrained target repeats the save, ending the spell on itself on a success.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The initial damage increases by 1d6 for each spell slot level above 1.</p>
 		</description>
 		<setters>
 			<set name="keywords">restrained</set>
@@ -533,7 +547,7 @@
 		<description>
 			<p>You touch up to four nonmagical Arrows or Bolts and plant them in the ground in your space. Until the spell ends, the ammunition can’t be physically uprooted, and whenever a creature other than you enters a space within 30 feet of the ammunition for the first time on a turn or ends its turn there, one or two pieces of ammunition (you choose) flies up to strike it. The creature takes 1d8 Piercing damage per piece of ammunition, which is then destroyed. The spell ends when none of the ammunition remains planted in the ground.</p>
 			<p class="indent">When you cast this spell, you can designate any creatures you choose, and the spell ignores them.</p>
-			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 2.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You can enhance 2 more pieces of ammunition for each spell slot level above 2.</p>
 		</description>
 		<setters>
 			<set name="keywords">ritual</set>
@@ -579,15 +593,15 @@
 			<p class="indent"><b><i>Primal Beast. </i></b>Bestial fur covers your body, your facial features become feral, and you gain the following benefits:</p>
 			<ul>
 				<li>Your Speed increases by 10 feet.</li>
-				<li>You gain darkvision with a range of 120 feet.</li>
-				<li>You make Strength based attack rolls with advantage.</li>
+				<li>You gain Darkvision with a range of 120 feet.</li>
+				<li>You have Advantage on Strength-based attack rolls.</li>
 				<li>Your melee weapon attacks deal an extra 1d6 Force damage on a hit.</li>
 			</ul>
 			<p class="indent"><b><i>Great Tree. </i></b>Your skin appears barky, leaves sprout from your hair, and you gain the following benefits:</p>
 			<ul>
 				<li>You gain 20 Temporary Hit Points.</li>
-				<li>You make Constitution saving throws with advantage.</li>
-				<li>You make Dexterity- and Wisdom-based attack rolls with advantage.</li>
+				<li>You have Advantage on Constitution saving throws.</li>
+				<li>You have Advantage on Dexterity- and Wisdom-based attack rolls.</li>
 				<li>While you are on the ground, the ground within 15 feet of you is Difficult Terrain for your enemies.</li>
 			</ul>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> When choosing Primal Beast, your walking speed increases by 5 feet and the additional damage you deal increases by 1d6 for each spell slot level above 4. When choosing Great Tree, the number of Temporary Hit Points you gain and the radius of difficult terrain you create both increase by 5 for each spell slot level above 4.</p>

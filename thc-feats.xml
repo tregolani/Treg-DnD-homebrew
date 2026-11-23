@@ -4,7 +4,7 @@
     <name>Items</name>
     <description>Tregolani Homebrew Feats</description>
     <author>Homebrew</author>
-    <update version="0.3.7">
+    <update version="0.3.8">
       <file name="thc-feats.xml" url="https://raw.githubusercontent.com/tregolani/Treg-DnD-homebrew/master/thc-feats.xml" />
     </update>
   </info>
@@ -151,7 +151,7 @@
 		<prerequisite>Level 4+</prerequisite>
 		<requirements>[level:4]</requirements>
 		<description>
-			<p>Your exposure to the raw magic of the planes grants you the following benefits.</p>
+			<p>Your exposure to the raw essence of the planes has infused you with an innate understanding of primordial magic. You have the following benefits.</p>
 			<ul class="unstyled" style="margin-left:1em; margin-bottom:5px">
 				<li><b>Ability Score Increase.</b> Increase your Constitution score by 1, to a maximum of 20.</li>
 				<li><b>Magic Attunement.</b> You gain proficiency in the Arcana skill, and can use your Constitution modifier in place of your Intelligence modifier when making Arcana checks.</li>
